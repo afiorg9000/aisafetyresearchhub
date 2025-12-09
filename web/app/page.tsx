@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { orgs, slugify, getStats, getAllProjects, getAllBenchmarks, type Org, type Project, type Benchmark } from "./lib/data";
+import { orgs, slugify, getStats, getAllProjects, getAllBenchmarks, getAllOpenProblems, type Org, type Project, type Benchmark, type OpenProblem } from "./lib/data";
 import { UserMenu } from "./components/user-menu";
 
 // Tab types
@@ -174,21 +174,77 @@ function PublicationCard({ project, index }: { project: Project & { org: Org }; 
       className="py-4 border-b border-[var(--border)] last:border-0 animate-fadeIn"
       style={{ animationDelay: `${Math.min(index, 10) * 20}ms` }}
     >
-      <h3 className="font-serif text-base font-medium text-[var(--foreground)] mb-1 leading-snug">
-        {project.paper_url ? (
-          <a href={project.paper_url} target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">
-            {project.name}
-          </a>
-        ) : (
-          <Link href={`/project/${slugify(project.name)}`} className="hover:text-[var(--accent)] transition-colors no-underline">
-            {project.name}
-          </Link>
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1">
+          <h3 className="font-serif text-base font-medium text-[var(--foreground)] mb-1 leading-snug">
+            {project.paper_url || project.url ? (
+              <a href={project.paper_url || project.url} target="_blank" rel="noopener noreferrer" className="hover:text-[var(--accent)] transition-colors">
+                {project.name}
+              </a>
+            ) : (
+              <Link href={`/project/${slugify(project.name)}`} className="hover:text-[var(--accent)] transition-colors no-underline">
+                {project.name}
+              </Link>
+            )}
+          </h3>
+          <div className="flex items-center gap-2 text-sm text-[var(--muted)] mb-1">
+            <span>{project.org.name}</span>
+            {project.year && <span>· {project.year}</span>}
+          </div>
+          {project.description && (
+            <p className="text-sm text-[var(--muted-light)] line-clamp-1">{project.description}</p>
+          )}
+        </div>
+        {project.citations !== undefined && project.citations > 0 && (
+          <div className="flex-shrink-0 text-right">
+            <div className="text-sm font-medium text-[var(--foreground)]">{project.citations.toLocaleString()}</div>
+            <div className="text-xs text-[var(--muted)]">citations</div>
+          </div>
         )}
-      </h3>
-      <p className="text-sm text-[var(--muted)] mb-1">{project.org.name}</p>
-      {project.description && (
-        <p className="text-sm text-[var(--muted-light)] line-clamp-1">{project.description}</p>
-      )}
+      </div>
+    </article>
+  );
+}
+
+// Open Problem Card
+function OpenProblemCard({ problem, index }: { problem: OpenProblem; index: number }) {
+  const difficultyColors: Record<string, string> = {
+    "Hard": "bg-red-50 text-red-700",
+    "Medium": "bg-yellow-50 text-yellow-700",
+    "Easy": "bg-green-50 text-green-700"
+  };
+  
+  const importanceColors: Record<string, string> = {
+    "Critical": "bg-purple-50 text-purple-700",
+    "High": "bg-blue-50 text-blue-700",
+    "Medium": "bg-gray-50 text-gray-600"
+  };
+
+  return (
+    <article
+      className="py-4 border-b border-[var(--border)] last:border-0 animate-fadeIn"
+      style={{ animationDelay: `${Math.min(index, 10) * 20}ms` }}
+    >
+      <div className="flex items-start justify-between gap-4 mb-2">
+        <h3 className="font-serif text-base font-medium text-[var(--foreground)] leading-snug">
+          <Link href={`/problem/${problem.slug}`} className="hover:text-[var(--accent)] transition-colors no-underline">
+            {problem.title}
+          </Link>
+        </h3>
+        <div className="flex gap-1.5 flex-shrink-0">
+          <span className={`text-xs px-2 py-0.5 rounded ${difficultyColors[problem.difficulty] || "bg-gray-50 text-gray-600"}`}>
+            {problem.difficulty}
+          </span>
+          <span className={`text-xs px-2 py-0.5 rounded ${importanceColors[problem.importance] || "bg-gray-50 text-gray-600"}`}>
+            {problem.importance}
+          </span>
+        </div>
+      </div>
+      <p className="text-sm text-[var(--muted-light)] line-clamp-2 mb-2">{problem.description}</p>
+      <div className="flex items-center gap-3 text-xs text-[var(--muted)]">
+        <span className="research-tag">{problem.focus_area}</span>
+        <span>Source: {problem.source}</span>
+      </div>
     </article>
   );
 }
@@ -235,6 +291,7 @@ export default function Home() {
   // Get all data
   const allProjects = useMemo(() => getAllProjects(), []);
   const allBenchmarks = useMemo(() => getAllBenchmarks(), []);
+  const allProblems = useMemo(() => getAllOpenProblems(), []);
   const publications = useMemo(() => allProjects.filter(p => p.status?.toLowerCase() === "published" || p.paper_url), [allProjects]);
 
   // Handle search submission
@@ -316,12 +373,24 @@ export default function Home() {
     });
   }, [allBenchmarks, orgFilter, focusFilter]);
 
+  // Filter open problems
+  const filteredProblems = useMemo(() => {
+    return allProblems.filter((p) => {
+      const matchesSearch = !orgFilter ||
+        p.title.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        p.description.toLowerCase().includes(orgFilter.toLowerCase());
+      const matchesFocus = focusFilter === "all" || 
+        p.focus_area.toLowerCase().includes(focusFilter);
+      return matchesSearch && matchesFocus;
+    });
+  }, [allProblems, orgFilter, focusFilter]);
+
   const tabs = [
     { id: "organizations" as TabType, label: "Organizations", count: orgs.length },
     { id: "projects" as TabType, label: "Projects", count: activeProjects.length },
     { id: "publications" as TabType, label: "Publications", count: publications.length },
     { id: "benchmarks" as TabType, label: "Benchmarks", count: allBenchmarks.length },
-    { id: "problems" as TabType, label: "Open Problems", count: 0 },
+    { id: "problems" as TabType, label: "Open Problems", count: allProblems.length },
   ];
 
   return (
@@ -370,7 +439,7 @@ export default function Home() {
 
           {/* Stats - Understated */}
           <p className="text-sm text-[var(--muted)]">
-            {stats.people} researchers · {stats.orgs} organizations · {stats.projects} projects · {stats.publications} publications
+            {stats.publications} publications · {stats.citations.toLocaleString()} citations · {stats.openProblems} open problems · {stats.orgs} organizations
           </p>
         </div>
       </div>
@@ -511,6 +580,26 @@ export default function Home() {
                   ))}
                 </div>
               )}
+
+              {/* Open Problems focus area tags */}
+              {activeTab === "problems" && (
+                <div className="flex gap-1.5 flex-wrap">
+                  <span className="text-xs text-[var(--muted)] py-1.5">Topic:</span>
+                  {FOCUS_AREAS.map((focus) => (
+                    <button
+                      key={focus.value}
+                      onClick={() => setFocusFilter(focus.value)}
+                      className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
+                        focusFilter === focus.value
+                          ? "bg-[var(--foreground)] text-[var(--background)]"
+                          : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
+                      }`}
+                    >
+                      {focus.label}
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Organizations Tab */}
@@ -611,22 +700,30 @@ export default function Home() {
 
             {/* Open Problems Tab */}
             {activeTab === "problems" && (
-              <div className="paper-card rounded p-8 text-center">
-                <BookIcon className="w-10 h-10 mx-auto text-[var(--muted-light)] mb-4" />
-                <h3 className="font-serif text-lg font-medium text-[var(--foreground)] mb-2">
-                  Open Problems
-                </h3>
-                <p className="text-sm text-[var(--muted)] mb-6 max-w-md mx-auto">
-                  A community-curated collection of important unsolved research questions in AI safety. 
-                  Coming soon.
+              <>
+                <p className="text-xs text-[var(--muted)] uppercase tracking-wide mb-4">
+                  {filteredProblems.length} open research problems
                 </p>
-                <Link
-                  href="/problems/submit"
-                  className="inline-block px-4 py-2 text-sm text-[var(--accent)] border border-[var(--accent)] rounded hover:bg-[var(--accent)] hover:text-white transition-colors no-underline"
-                >
-                  Submit a Problem
-                </Link>
-              </div>
+                {filteredProblems.length === 0 ? (
+                  <div className="text-center py-12">
+                    <p className="text-[var(--muted)]">No problems found</p>
+                  </div>
+                ) : (
+                  <div className="paper-card rounded p-6 space-y-4">
+                    {filteredProblems.slice(0, 25).map((problem, index) => (
+                      <OpenProblemCard key={problem.id} problem={problem} index={index} />
+                    ))}
+                    <div className="pt-4 text-center">
+                      <Link
+                        href="/problems/submit"
+                        className="inline-block px-4 py-2 text-sm text-[var(--accent)] border border-[var(--accent)] rounded hover:bg-[var(--accent)] hover:text-white transition-colors no-underline"
+                      >
+                        Submit a Problem
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </>
             )}
           </div>
 

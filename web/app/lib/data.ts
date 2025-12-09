@@ -1,4 +1,5 @@
 import rawData from "../data.json";
+import openProblemsData from "../open_problems.json";
 
 export type Person = {
   name: string;
@@ -10,6 +11,29 @@ export type Project = {
   description?: string;
   status?: string;
   paper_url?: string;
+  url?: string;
+  citations?: number;
+  influential_citations?: number;
+  year?: number;
+  semantic_scholar_url?: string;
+  focus_areas?: string[];
+};
+
+export type OpenProblem = {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  focus_area: string;
+  status: string;
+  source: string;
+  source_url: string;
+  difficulty: string;
+  importance: string;
+  votes: number;
+  created_at: string;
+  comments: { id: string; author: string; text: string; date: string }[];
+  working_on: { user_id: string; name: string; project_url?: string }[];
 };
 
 export type Benchmark = {
@@ -136,6 +160,17 @@ export const FOCUS_COLORS: Record<string, string> = {
   Benchmarks: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
 };
 
+// Open Problems
+export const openProblems: OpenProblem[] = openProblemsData as OpenProblem[];
+
+export function getAllOpenProblems(): OpenProblem[] {
+  return openProblems;
+}
+
+export function getOpenProblemBySlug(slug: string): OpenProblem | undefined {
+  return openProblems.find((p) => p.slug === slug);
+}
+
 // Stats
 export function getStats() {
   const totalProjects = orgs.reduce((acc, org) => acc + (org.projects?.length || 0), 0);
@@ -145,13 +180,18 @@ export function getStats() {
   const totalPublications = orgs.reduce((acc, org) => {
     return acc + (org.projects?.filter(p => p.status?.toLowerCase() === "published" || p.paper_url)?.length || 0);
   }, 0);
+  const totalCitations = orgs.reduce((acc, org) => {
+    return acc + (org.projects?.reduce((sum, p) => sum + (p.citations || 0), 0) || 0);
+  }, 0);
   return { 
     orgs: orgs.length, 
     projects: totalProjects, 
     benchmarks: totalBenchmarks, 
     people: totalPeople, 
     employees: totalEmployees,
-    publications: totalPublications 
+    publications: totalPublications,
+    openProblems: openProblems.length,
+    citations: totalCitations
   };
 }
 

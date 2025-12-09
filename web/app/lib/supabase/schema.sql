@@ -265,4 +265,136 @@ create index if not exists open_problems_status_idx on public.open_problems(stat
 create index if not exists problem_votes_problem_idx on public.problem_votes(problem_id);
 create index if not exists problem_comments_problem_idx on public.problem_comments(problem_id);
 create index if not exists problem_workers_problem_idx on public.problem_workers(problem_id);
-create index if not exists activity_feed_created_idx on public.activity_feed(created_at desc)
+create index if not exists activity_feed_created_idx on public.activity_feed(created_at desc);
+
+-- ============================================
+-- PAPER READING & COMMENTS
+-- ============================================
+
+-- Paper reads (user marks paper as read)
+create table if not exists public.paper_reads (
+  id uuid default gen_random_uuid() primary key,
+  user_id uuid references public.profiles on delete cascade not null,
+  paper_slug text not null,
+  paper_title text,
+  read_at timestamptz default now() not null,
+  notes text,
+  rating integer check (rating >= 1 and rating <= 5),
+  unique(user_id, paper_slug)
+);
+
+alter table public.paper_reads enable row level security;
+
+create policy "Users can view own paper reads"
+  on public.paper_reads for select
+  using (auth.uid() = user_id);
+
+create policy "Users can create own paper reads"
+  on public.paper_reads for insert
+  with check (auth.uid() = user_id);
+
+create policy "Users can update own paper reads"
+  on public.paper_reads for update
+  using (auth.uid() = user_id);
+
+create policy "Users can delete own paper reads"
+  on public.paper_reads for delete
+  using (auth.uid() = user_id);
+
+-- Paper comments
+create table if not exists public.paper_comments (
+  id uuid default gen_random_uuid() primary key,
+  user_id uuid references public.profiles on delete cascade not null,
+  paper_slug text not null,
+  paper_title text,
+  content text not null,
+  parent_id uuid references public.paper_comments on delete cascade,
+  created_at timestamptz default now() not null,
+  updated_at timestamptz default now() not null
+);
+
+alter table public.paper_comments enable row level security;
+
+create policy "Paper comments are viewable by everyone"
+  on public.paper_comments for select
+  using (true);
+
+create policy "Authenticated users can create paper comments"
+  on public.paper_comments for insert
+  with check (auth.uid() = user_id);
+
+create policy "Users can update own paper comments"
+  on public.paper_comments for update
+  using (auth.uid() = user_id);
+
+create policy "Users can delete own paper comments"
+  on public.paper_comments for delete
+  using (auth.uid() = user_id);
+
+-- Reading lists / collections
+create table if not exists public.reading_lists (
+  id uuid default gen_random_uuid() primary key,
+  user_id uuid references public.profiles on delete cascade not null,
+  name text not null,
+  description text,
+  is_public boolean default false,
+  created_at timestamptz default now() not null
+);
+
+alter table public.reading_lists enable row level security;
+
+create policy "Public reading lists are viewable by everyone"
+  on public.reading_lists for select
+  using (is_public or auth.uid() = user_id);
+
+create policy "Users can create own reading lists"
+  on public.reading_lists for insert
+  with check (auth.uid() = user_id);
+
+create policy "Users can update own reading lists"
+  on public.reading_lists for update
+  using (auth.uid() = user_id);
+
+create policy "Users can delete own reading lists"
+  on public.reading_lists for delete
+  using (auth.uid() = user_id);
+
+-- Reading list items
+create table if not exists public.reading_list_items (
+  id uuid default gen_random_uuid() primary key,
+  list_id uuid references public.reading_lists on delete cascade not null,
+  paper_slug text not null,
+  paper_title text,
+  added_at timestamptz default now() not null,
+  notes text,
+  unique(list_id, paper_slug)
+);
+
+alter table public.reading_list_items enable row level security;
+
+create policy "Reading list items follow list visibility"
+  on public.reading_list_items for select
+  using (
+    exists (
+      select 1 from public.reading_lists
+      where id = list_id
+      and (is_public or user_id = auth.uid())
+    )
+  );
+
+create policy "Users can manage items in own lists"
+  on public.reading_list_items for all
+  using (
+    exists (
+      select 1 from public.reading_lists
+      where id = list_id
+      and user_id = auth.uid()
+    )
+  );
+
+-- Indexes for paper features
+create index if not exists paper_reads_user_idx on public.paper_reads(user_id);
+create index if not exists paper_reads_paper_idx on public.paper_reads(paper_slug);
+create index if not exists paper_comments_paper_idx on public.paper_comments(paper_slug);
+create index if not exists reading_lists_user_idx on public.reading_lists(user_id);
+create index if not exists reading_list_items_list_idx on public.reading_list_items(list_id)

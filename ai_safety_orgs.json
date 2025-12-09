@@ -101,7 +101,11 @@
         "name": "AI Persuasion Study",
         "description": "Study of the persuasive capabilities of conversational AI through large-scale experiments",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 454,
+        "influential_citations": 59,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/732ce53c573475f2691a7cfc716cf4f568d17360"
       },
       {
         "name": "ControlArena",
@@ -149,73 +153,100 @@
         "name": "International Scientific Report on Advanced AI Safety",
         "description": "Evidence-based report on the science of advanced AI safety, highlighting findings about AI progress and risks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 38,
+        "influential_citations": 3,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/4d44f9ce850fd1ad976af1a7cf8a4a0d80de4334"
       },
       {
         "name": "Breaking agent backbones: Evaluating the security of backbone LLMs in AI agents",
         "description": "Research on evaluating security vulnerabilities in backbone LLMs used in AI agents",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Understanding AI Trajectories: Mapping the Limitations of Current AI Systems",
         "description": "Strategic awareness research mapping current limitations of AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Poisoning Attacks on LLMs Require a Near-constant Number of Poison Samples",
         "description": "Research on data poisoning attacks against large language models",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Inoculation Prompting: Eliciting traits from LLMs during training can suppress them at test-time",
         "description": "Alignment research on suppressing unwanted traits in LLMs through inoculation prompting",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Deep ignorance: Filtering pretraining data builds tamper-resistant safeguards into open-weight LLMs",
         "description": "Research on building tamper-resistant safeguards through pretraining data filtering",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 13,
+        "influential_citations": 2,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/de4a5ac7bf593fca349bb7e3e0305cfc802994e6"
       },
       {
         "name": "STACK: Adversarial attacks on LLM safeguard pipelines",
         "description": "Research on adversarial attacks targeting LLM safety safeguards",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 2,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/59db5498605113c8b2567219a5041ff08f7a4587"
       },
       {
         "name": "Chain of thought monitorability: A new and fragile opportunity for AI safety",
         "description": "Control research examining monitorability of chain of thought reasoning for AI safety",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 50,
+        "influential_citations": 3,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/79cdd3a41ec8f5cb050f87d38f0bc33fa16c6b3e"
       },
       {
         "name": "White Box Control at UK AISI - update on sandbagging investigations",
         "description": "Control research investigating AI systems' tendency to underperform capabilities",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Avoiding obfuscation with prover-estimator debate",
         "description": "Alignment research using debate methods to avoid obfuscation in AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "An example safety case for safeguards against misuse",
         "description": "Safety case framework demonstrating safeguards against AI misuse",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 1,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/1f708e10a131d72b76d2920245735e99498dc267"
       },
       {
         "name": "Safety Cases: A scalable approach to Frontier AI safety",
         "description": "Framework for creating scalable safety cases for frontier AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       }
     ],
     "notes": "UK government-backed institute with over 100 technical staff including alumni from OpenAI, Google DeepMind and University of Oxford. Has substantial funding, computing resources, and priority access to top models.",
@@ -348,43 +379,62 @@
         "name": "Project Fetch: Can Claude train a robot dog?",
         "description": "Research project testing how much Claude helps people program robots, where two teams raced to teach quadruped robots to fetch beach balls",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 68,
+        "influential_citations": 5,
+        "year": 1998,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/01e9dec0f53adadfac7be3180a52974898e1f887"
       },
       {
         "name": "Signs of introspection in large language models",
         "description": "Research investigating whether Claude can access and report on its own internal states, finding evidence for limited but functional introspective ability",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/f2ba72b944892e03c31fea14b87d7b018e87419a"
       },
       {
         "name": "Tracing the thoughts of a large language model",
         "description": "Circuit tracing research that watches Claude think, uncovering a shared conceptual space where reasoning happens before being translated into language",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 22,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/6c6cb32f026fccc11c98c36913651b992d477a56"
       },
       {
         "name": "Constitutional Classifiers: Defending against universal jailbreaks",
         "description": "Development of classifiers that filter the overwhelming majority of jailbreaks while maintaining practical deployment, withstanding over 3,000 hours of red teaming",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Alignment faking in large language models",
         "description": "Research providing the first empirical example of a model engaging in alignment faking without being trained to do so, selectively complying with training objectives while strategically preserving existing preferences",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "From shortcuts to sabotage: natural emergent misalignment from reward hacking",
         "description": "Research on natural emergent misalignment behaviors arising from reward hacking",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 1,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/f29cd5cab35c06518b9fab95168c11ab55ae2170"
       },
       {
         "name": "A small number of samples can poison LLMs of any size",
         "description": "Research on data poisoning vulnerabilities in large language models",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Claude Alignment Research",
@@ -396,13 +446,17 @@
         "name": "Political Bias Measurement",
         "description": "Research measuring political bias in Claude models",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "AI-orchestrated Cyber Espionage Campaign Disruption",
         "description": "Research on disrupting the first reported AI-orchestrated cyber espionage campaign",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 2,
+        "influential_citations": 0,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/47a078d3a88484bfb1ad580b1db4cfd8077d4558"
       }
     ],
     "notes": "Has specialized teams including Alignment, Interpretability, Societal Impacts, Economic Research, and Frontier Red Team. Recent research includes evidence of introspection in LLMs and alignment faking behavior.",
@@ -473,55 +527,74 @@
         "name": "GPT-5 System Card",
         "description": "Safety evaluation and documentation for GPT-5 models including main and thinking variants",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "OpenAI o3 and o4-mini System Card",
         "description": "First launch under Version 2 of Preparedness Framework, evaluating biological, cybersecurity, and AI self-improvement risks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Sora 2 System Card",
         "description": "Safety evaluation for advanced video generation model addressing nonconsensual use and misleading generations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "OpenAI o1 System Card",
         "description": "Safety work for OpenAI o1 and o1-mini including external red teaming and frontier risk evaluations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "GPT-4o System Card",
         "description": "Detailed safety evaluation of speech-to-speech capabilities along with text and image capabilities",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Deep research System Card",
         "description": "Safety work for deep research including external red teaming and frontier risk evaluations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 3,
+        "influential_citations": 0,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/5149d6e12ee4c1dd28c669e537cc6eccaa236c07"
       },
       {
         "name": "Operator System Card",
         "description": "Safety evaluation for Computer Using Agent capable of web interaction, powered by o3-based model",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 14,
+        "influential_citations": 1,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/9b8c4cdbad4dcd2c12f116abc138933f6bb65f0f"
       },
       {
         "name": "Aligning language models to follow instructions",
         "description": "Research on aligning language models to follow human instructions",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 16811,
+        "influential_citations": 1901,
+        "year": 2022,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/d766bffc357127e0dc86dd69561d5aeb520d6f4c"
       },
       {
         "name": "Summarizing books with human feedback",
         "description": "Research on using human feedback to train models for book summarization",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 333,
+        "influential_citations": 29,
+        "year": 2021,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/a6fdb277d0a4b09899f802bda3359f5c2021a156"
       }
     ],
     "benchmarks": [
@@ -615,37 +688,55 @@
         "name": "AI Governance to Avoid Extinction: The Strategic Landscape and Actionable Research Questions",
         "description": "AI governance research agenda laying out strategic landscape and actionable research questions to reduce catastrophic and extinction risks from AI",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "What AI evaluations for preventing catastrophic risks can and cannot do",
         "description": "Examines what AI evaluations can tell us about capabilities and misuse risks, and their fundamental limitations for ensuring AI safety",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 3,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/8b21e90e6df2a30f96577f504a0fabdc89ab042a"
       },
       {
         "name": "Mechanisms to Verify International Agreements About AI Development",
         "description": "Overview of potential verification approaches for international agreements about AI development to reduce catastrophic risks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 8,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/1ee0d0d1d3fa12de0c782e3c1ed2d73654e60ed7"
       },
       {
         "name": "Corrigibility",
         "description": "Research on making AI systems cooperate with corrective interventions while avoiding incentives to resist shutdown or modification",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Parametric Bounded L\u00f6b's Theorem and Robust Cooperation of Bounded Agents",
         "description": "Demonstrates that robust cooperative equilibria exist for bounded agents and proves a generalization of L\u00f6b's theorem",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 8,
+        "influential_citations": 2,
+        "year": 2016,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/ad26c0c20dd1e1f278f93261fc1bde849842a28e"
       },
       {
         "name": "If Anyone Builds It, Everyone Dies",
         "description": "MIRI's major attempt to warn the policy world and the general public about AI dangers through a book by Eliezer Yudkowsky and Nate Soares",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/9af450628443c724e73e8dce57d258457d7b853c"
       }
     ],
     "notes": "MIRI announced a strategy pivot in 2024, shifting from primarily AI alignment research to policy solutions after concluding alignment research was unlikely to succeed in time to prevent catastrophe. Organization has 20+ year history in AI safety research.",
@@ -722,37 +813,55 @@
         "name": "Ctrl-Z: Controlling AI Agents via Resampling",
         "description": "Research on controlling AI agents through resampling techniques",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 9,
+        "influential_citations": 1,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/e91b2b373a663fe923beb11a5c84ba826fc44f14"
       },
       {
         "name": "Stress-Testing Capability Elicitation With Password-Locked Models",
         "description": "Methods for testing AI capability elicitation using password-locked model approaches",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 6,
+        "influential_citations": 0,
+        "year": 2007,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/9d0e720f6a831ae00c62356be044f9eb13d304ee"
       },
       {
         "name": "Preventing Language Models From Hiding Their Reasoning",
         "description": "Research on ensuring transparency in language model reasoning processes",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 28,
+        "influential_citations": 3,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/b6630f37b281a80ec7365160526c2cebbfa49392"
       },
       {
         "name": "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
         "description": "Strategies for safely deploying potentially untrustworthy large language models",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small",
         "description": "Mechanistic interpretability research identifying specific circuits in language models",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 747,
+        "influential_citations": 125,
+        "year": 2022,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/6edd112383ad494f5f2eba72b6f4ffae122ce61f"
       },
       {
         "name": "Adversarial Training for High-Stakes Reliability",
         "description": "Training methods to improve AI system reliability in critical applications",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       }
     ],
     "notes": "Pioneered the research area of 'AI control' and collaborates with governments and major AI companies including Google DeepMind and Anthropic on assessing misalignment risks. Their alignment faking work with Anthropic provided the strongest concrete evidence that LLMs might naturally fake alignment.",
@@ -790,37 +899,55 @@
         "name": "Eliciting Latent Knowledge",
         "description": "Broader research agenda focusing on alignment methodology and approaches",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 40,
+        "influential_citations": 1,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/6902fd1ed5b6da79ed3fa7842b8a8474dd0931d1"
       },
       {
         "name": "Competing with sampling",
         "description": "Research publication on sampling methods",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 27,
+        "influential_citations": 0,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/782d3729c99342c88438f8653b820ad36549ed6e"
       },
       {
         "name": "A computational no-coincidence principle",
         "description": "Research work on computational principles",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/fbab9519dffa8ea22ef714d63442b0db6c7109c3"
       },
       {
         "name": "Low Probability Estimation in Language Models",
         "description": "Research on probability estimation in language models",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Backdoors as an analogy for deceptive alignment",
         "description": "Research exploring the analogy between backdoors and deceptive alignment",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Formal verification, heuristic explanations and surprise accounting",
         "description": "Research on formal verification methods and explanations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 2,
+        "influential_citations": 0,
+        "year": 2011,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/4f1cad57f02b77ff22e356026dcb0023ca103e79"
       }
     ],
     "notes": "The Evaluations team was incubated at ARC and has now spun off as METR, a new 501(c)(3)",
@@ -860,79 +987,116 @@
         "name": "The Loss of Control Playbook: Degrees, Dynamics, and Preparedness",
         "description": "A novel taxonomy and preparedness framework for Loss of Control that explores degrees and dynamics through literature review and presents actionable tools to counter threats to national security and humanity",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/549bd7cdd1da56e4708db46eced062780664b9cc"
       },
       {
         "name": "Stress Testing Deliberative Alignment for Anti-Scheming Training",
         "description": "Partnership with OpenAI to assess frontier language models for early signs of scheming in controlled stress-tests and study training methods to reduce these behaviors",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Internal Deployment of AI Models and Systems in the EU AI Act",
         "description": "Research on governance aspects of internal AI model deployment under EU regulations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Assurance of Frontier AI Built for National Security",
         "description": "Research on governance and assurance frameworks for frontier AI systems in national security contexts",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/4239f9e1a7ab4d2bc7a92f154e31b403ea68f1d3"
       },
       {
         "name": "Frontier Models are Capable of In-Context Scheming",
         "description": "Evaluation research demonstrating that frontier AI models can engage in scheming behaviors within context",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Detecting Strategic Deception Using Linear Probes",
         "description": "Interpretability research on methods to detect strategic deception in AI models using linear probing techniques",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 31,
+        "influential_citations": 3,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/13c1ff15952da462a986270e86a430ebe6361da4"
       },
       {
         "name": "Towards Safety Cases For AI Scheming",
         "description": "Evaluation framework development for creating safety cases related to AI scheming behaviors",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 19,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/be60e58e175c8940e2608aa699ded1818d83ef45"
       },
       {
         "name": "In-Context Scheming",
         "description": "Evaluation of models for in-context scheming capabilities using a suite of evals",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 2,
+        "influential_citations": 0,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/0cf5d6a2c804135035dd3a2d382532454958b60c"
       },
       {
         "name": "Scheming Precursor Evals",
         "description": "Research on scheming precursor evaluations and their predictive power for in-context scheming evals",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Frontier Language Model Agent Capabilities Forecasting",
         "description": "New forecasting technique to predict frontier LM agent capabilities ahead of time",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 2,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/143c5fa755cd96c111d40e7a6078a440989265e6"
       },
       {
         "name": "AI Alignment Evaluation Detection",
         "description": "Research on Claude Sonnet 3.7's ability to know when it's in alignment evaluations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/41e9066e20fb757a03106fa15640daa80a78ee4d"
       },
       {
         "name": "Scheming Reasoning Evaluations",
         "description": "Demo example of scheming reasoning evaluations",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Strategic Deception and Deceptive Alignment",
         "description": "Understanding strategic deception and deceptive alignment in AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 8,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/cbc66b7815da8a0e67b42568df0fde83c35e1936"
       }
     ],
     "notes": "Partners with frontier labs, multinational companies, governments, and foundations. Provides consultancy services for responsible AI development frameworks. Currently seeking collaborators in AI governance, policy, and strategy, and partnerships with leading AI developers for model evaluations.",
@@ -997,49 +1161,72 @@
         "name": "GPT-5.1-Codex-Max Evaluation Results",
         "description": "Evaluation of whether GPT-5.1-Codex-Max poses significant catastrophic risks via AI self-improvement or rogue replication",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 86,
+        "influential_citations": 9,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/7c2b3c4ab6d701de7bd9df91d7448f3c06a1e9d7"
       },
       {
         "name": "MALT: A Dataset of Natural and Prompted Behaviors That Threaten Eval Integrity",
         "description": "Dataset of natural and prompted examples of behaviors that threaten evaluation integrity (like generalized reward hacking or sandbagging)",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Forecasting the Impacts of AI R&D Acceleration",
         "description": "Pilot study examining AI agents' improving capabilities at autonomous software development and ML tasks, and potential impacts of AI research automation",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Algorithmic vs. Holistic Evaluation",
         "description": "Research examining differences between algorithmic scoring and holistic evaluation of AI systems, particularly in coding tasks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "CoT May Be Highly Informative Despite Unfaithfulness",
         "description": "Research on whether chains of thought contain enough information to allow developers to monitor AI models in practice",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 3,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/49cc06236de2e1a9df2cdc3eb8a51f8906831de7"
       },
       {
         "name": "GPT-5 Evaluation Results",
         "description": "Evaluation of whether GPT-5 poses significant catastrophic risks via AI self-improvement, rogue replication, or sabotage of AI labs",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/8de134ae5e45955027a2854e726319c9a23cc707"
       },
       {
         "name": "Anthropic Summer 2025 Pilot Sabotage Risk Report Review",
         "description": "External review from METR of Anthropic's Summer 2025 Sabotage Risk Report",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/dbabfb9086ded21247dee64c6b7b12a553e69281"
       },
       {
         "name": "gpt-oss methodology review",
         "description": "External recommendations from METR for gpt-oss Preparedness experiments and follow-up from OpenAI",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 26,
+        "influential_citations": 1,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/695db5e425733de45f7003a37e1a8eb402e9db35"
       }
     ],
     "benchmarks": [
@@ -1115,97 +1302,146 @@
         "name": "Remote Labor Index: Measuring AI Automation of Remote Work",
         "description": "Capability benchmark measuring AI automation of remote work",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "MoReBench: Evaluating Procedural and Pluralistic Moral Reasoning in Language Models",
         "description": "Machine ethics benchmark evaluating moral reasoning in language models beyond just outcomes",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/10bb18d5fa851968e525d8cf9eab94207881f39c"
       },
       {
         "name": "Safety Pretraining: Toward the Next Generation of Safe AI",
         "description": "Robustness research on safety pretraining methods for AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 15,
+        "influential_citations": 2,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/82d49ba73ffdc760e9a98147fe19290166d2e06c"
       },
       {
         "name": "Virology Capabilities Test (VCT): A Multimodal Virology Q&A Benchmark",
         "description": "Biosecurity benchmark testing AI capabilities in virology",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems",
         "description": "Machine ethics benchmark measuring honesty versus accuracy in AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 18,
+        "influential_citations": 1,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/547f4b9a751bd502ab13bed7299d7dae039a6022"
       },
       {
         "name": "EnigmaEval: A Benchmark of Long Multimodal Reasoning Challenges",
         "description": "Capability benchmark for long multimodal reasoning challenges",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs",
         "description": "Machine ethics research on analyzing and controlling value systems in AI",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 27,
+        "influential_citations": 2,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/06446d1f549799d234ba780830549284e2d627f0"
       },
       {
         "name": "Humanity's Last Exam",
         "description": "Capability benchmark testing AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 229,
+        "influential_citations": 34,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/a5524d085ac586d531021dcb1ec156eaf942b109"
       },
       {
         "name": "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents",
         "description": "Robustness benchmark measuring harmfulness of LLM agents",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 113,
+        "influential_citations": 11,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/716c6f6a6e653bebfa676402b887fe2927e06c73"
       },
       {
         "name": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
         "description": "Unlearning benchmark for measuring and reducing malicious use of AI",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 289,
+        "influential_citations": 83,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/06b9ad0b52d23231f650be0aeb0b17cc52c8a74b"
       },
       {
         "name": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
         "description": "Robustness benchmark for automated red teaming and robust refusal evaluation",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 672,
+        "influential_citations": 174,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/b82ccc66c14f531a444c74d2a9a9d86a86a8be99"
       },
       {
         "name": "MACHIAVELLI Benchmark",
         "description": "Machine ethics benchmark measuring trade-offs between rewards and ethical behavior",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 163,
+        "influential_citations": 13,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/5da2d404d789aeff266b63a760d07fe8bc31ba23"
       },
       {
         "name": "Representation Engineering: A Top-Down Approach to AI Transparency",
         "description": "Research on improving AI transparency through representation engineering methods",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/7c8385e40fd4296ffcb688949a9486f7213df23c"
       },
       {
         "name": "Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark",
         "description": "Research measuring trade-offs between rewards and ethical behavior using the MACHIAVELLI benchmark",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 163,
+        "influential_citations": 13,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/5da2d404d789aeff266b63a760d07fe8bc31ba23"
       },
       {
         "name": "Scaling Out-of-Distribution Detection for Real-World Settings",
         "description": "Research on scaling out-of-distribution detection methods for practical applications",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Dreamlike Pictures Comprehensively Improve Safety Measures",
         "description": "Research on using dreamlike pictures to improve AI safety measures",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "AI Safety, Ethics, and Society",
@@ -1223,7 +1459,11 @@
         "name": "Statement on AI Risk",
         "description": "Open letter signed by hundreds of AI experts and public figures expressing concern about AI risk",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/384db041256fc6bd005967ce6cce679d861fe704"
       },
       {
         "name": "Compute Cluster",
@@ -1337,13 +1577,18 @@
         "name": "AI Governance at the Frontier",
         "description": "Analytic approach to help U.S. policymakers deconstruct artificial intelligence governance proposals by identifying their underlying assumptions",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "The Mechanisms of AI Harm: Lessons Learned from AI Incidents",
         "description": "Analysis of AI incidents to improve understanding of how risks from AI materialize in practice, identifying six mechanisms of harm",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 5,
+        "influential_citations": 0,
+        "year": 2022,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/8d76eb22b453faca425958c727a9e2edc6603987"
       },
       {
         "name": "PATHWISE",
@@ -1355,7 +1600,8 @@
         "name": "AI Control: How to Make Use of Misbehaving AI Agents",
         "description": "Research on AI control and managing misbehaving AI agents",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       }
     ]
   },
@@ -1400,79 +1646,110 @@
         "name": "STREAM (ChemBio): A Standard for Transparently Reporting Evaluations in AI Model Reports",
         "description": "Framework for transparently reporting evaluations of dangerous AI capabilities in model reports",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 1,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/ad4066de43f1c78066b9bd3b540504a78a7dbc54"
       },
       {
         "name": "Survey on Thresholds for Advanced AI Systems",
         "description": "Research on government thresholds for managing risks from advanced AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Incident Analysis for AI Agents",
         "description": "Framework for analyzing incidents involving AI agent deployment",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 1,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/5403bb51a90e8d1b24dc9064ae8b10a70c3112cb"
       },
       {
         "name": "Forecasting LLM-enabled biorisk and the efficacy of safeguards",
         "description": "Analysis of biosecurity risks from large language models and effectiveness of safety measures",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Third-Party Compliance Reviews for Frontier AI Safety Frameworks",
         "description": "Research on external oversight mechanisms for AI safety frameworks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Safety Case Template for Frontier AI: A Cyber Inability Argument",
         "description": "Template for creating safety cases demonstrating AI systems lack dangerous cyber capabilities",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Safety Cases for Frontier AI",
         "description": "Framework for developers to explain why their AI systems are sufficiently safe",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 18,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/b027886d9064a71b1b1f28b09f3463c422fd8a7a"
       },
       {
         "name": "A Grading Rubric for AI Safety Frameworks",
         "description": "Evaluation criteria for assessing AI company safety frameworks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 7,
+        "influential_citations": 2,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/898a7910ff333e6fe637f6fd7a59ebea618064cf"
       },
       {
         "name": "Risk Thresholds for Frontier AI",
         "description": "Framework for determining acceptable risk levels from frontier AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Model Evaluation for Extreme Risks",
         "description": "Approaches for evaluating AI systems for extreme risks and dangerous capabilities",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 193,
+        "influential_citations": 5,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/65f604325b1403bc835691d905c2cd50bc04a309"
       },
       {
         "name": "Towards Best Practices in AGI Safety and Governance",
         "description": "Survey of expert opinion on AGI safety and governance best practices",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Visibility into AI Agents",
         "description": "Framework for monitoring and oversight of AI agent activities",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "IDs for AI Systems",
         "description": "System for identifying and tracking AI systems for safety and governance purposes",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 11,
+        "influential_citations": 1,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/16fe3a050d72677d39446213d1f3917d24099e85"
       }
     ],
     "notes": "Organization publishes annual reports and focuses on technical AI governance research to inform policy decisions",
@@ -1615,49 +1892,66 @@
         "name": "MAGICAL Benchmark for Robust Imitation",
         "description": "Benchmark for testing robustness of imitation learning algorithms",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 37,
+        "influential_citations": 3,
+        "year": 2020,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/e0acae87ae6d1d14bb2852aad7d645fceee87eb2"
       },
       {
         "name": "DERAIL: Diagnostic Environments for Reward And Imitation Learning",
         "description": "Diagnostic environments for testing reward and imitation learning systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 6,
+        "influential_citations": 1,
+        "year": 2020,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/399fb3685f93709013ef9e05b2d7387c941029cf"
       },
       {
         "name": "MineRL BASALT Competition on Learning from Human Feedback",
         "description": "Competition focused on learning from human feedback in Minecraft environment",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Cooperative Inverse Reinforcement Learning",
         "description": "Framework for learning human values through cooperative interaction",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "B-Pref: Benchmarking Preference-Based Reinforcement Learning",
         "description": "Benchmark suite for preference-based reinforcement learning algorithms",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "APReL: A Library for Active Preference-based Reward Learning Algorithms",
         "description": "Software library implementing active preference-based reward learning methods",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "imitation: Clean Imitation Learning Implementations",
         "description": "Clean implementations of imitation learning algorithms",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 43,
+        "influential_citations": 3,
+        "year": 2022,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/c51f3fdf341dbbe7ca3af0327b2bf1e6672c0e87"
       },
       {
         "name": "TASRA: A Taxonomy of Societal-Scale Risks from AI",
         "description": "Comprehensive taxonomy of large-scale AI risks to society",
         "status": "published",
-        "paper_url": "https://arxiv.org/abs/2310.17688"
+        "paper_url": "https://arxiv.org/abs/2310.17688",
+        "citations": 0
       }
     ],
     "benchmarks": [
@@ -1732,55 +2026,76 @@
         "name": "Risks of Astronomical Future Suffering",
         "description": "Research on how space colonization would likely increase rather than decrease total suffering, focusing on reducing risks of astronomical future suffering",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Suffering-Focused AI Safety: In Favor of \"Fail-Safe\" Measures",
         "description": "AI safety approach that tries to avert the worst outcomes containing large amounts of suffering, focusing on fail-safe measures rather than best-case outcomes",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "How the Simulation Argument Dampens Future Fanaticism",
         "description": "Research on how the simulation argument affects prioritization between short-term helping versus focusing on the far future",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 1,
+        "influential_citations": 0,
+        "year": 2020,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/cf63131b1791995644fc9a11d2bfe8a1c3667488"
       },
       {
         "name": "Superintelligence as a Cause or Cure for Risks of Astronomical Suffering",
         "description": "Analysis of how superintelligent AI can both cause and reduce suffering risks (s-risks) comparable to existential risks",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Multiverse-wide Cooperation via Correlated Decision Making",
         "description": "Decision theory research on superrationality and cooperation in prisoner's dilemma-type games with implications for multiverse scenarios",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2021,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/60c5e884c70b012825fdb1184f51e4687b74d0a4"
       },
       {
         "name": "Approval-directed agency and the decision theory of Newcomb-like problems",
         "description": "Research examining which decision theory is implemented by approval-directed agents in AI systems",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Robust program equilibrium",
         "description": "Proposing new approaches to achieve more robust cooperative program equilibria in one-shot prisoner's dilemma scenarios",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 28,
+        "influential_citations": 2,
+        "year": 2018,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/87aa572a45a9f48e81c9ded76faa81f22748ea3a"
       },
       {
         "name": "Do Artificial Reinforcement-Learning Agents Matter Morally?",
         "description": "Research on whether artificial reinforcement learning agents could qualify as sentient and deserve moral consideration",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 0
       },
       {
         "name": "Formalizing Preference Utilitarianism in Physical World Models",
         "description": "Using Bayesian inference to formalize preference utilitarianism in physical world models as a basis for ethical inquiry",
         "status": "published",
-        "paper_url": ""
+        "paper_url": "",
+        "citations": 11,
+        "influential_citations": 1,
+        "year": 2015,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/f80cbde825c4317f86abd6088ae11d495f193919"
       }
     ],
     "notes": "Organization focuses specifically on s-risk (astronomical suffering risks) and multi-agent conflict scenarios. They conduct interdisciplinary research, make grants, and build community around these priorities. Also associated with Polaris Research Institute.",
@@ -2441,313 +2756,467 @@
         "name": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Hoagy Cunningham",
-        "paper_url": "https://arxiv.org/abs/2309.08600"
+        "paper_url": "https://arxiv.org/abs/2309.08600",
+        "citations": 0
       },
       {
         "name": "Representation Engineering: A Top-Down Approach to AI Transparency",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Shashwat Goel, Annah Dombrowski",
-        "paper_url": "https://arxiv.org/abs/2310.01405"
+        "paper_url": "https://arxiv.org/abs/2310.01405",
+        "citations": 0,
+        "influential_citations": 0,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/7c8385e40fd4296ffcb688949a9486f7213df23c"
       },
       {
         "name": "Towards Automated Circuit Discovery for Mechanistic Interpretability",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Stefan Heimersheim, Arthur Conmy, Aengus Lynch",
-        "paper_url": "https://arxiv.org/abs/2304.14997"
+        "paper_url": "https://arxiv.org/abs/2304.14997",
+        "citations": 427,
+        "influential_citations": 47,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/eefbd8b384a58f464827b19e30a6920ba976def9"
       },
       {
         "name": "The Reversal Curse: LLMs trained on \"A is B\" fail to learn \"B is A\"",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Lukas Berglund, Meg Tong, Max Kaufmann, Asa Cooper Stickland",
-        "paper_url": "https://arxiv.org/abs/2309.12288"
+        "paper_url": "https://arxiv.org/abs/2309.12288",
+        "citations": 0
       },
       {
         "name": "Towards Understanding Sycophancy in Language Models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Meg Tong",
-        "paper_url": "https://arxiv.org/abs/2310.13548"
+        "paper_url": "https://arxiv.org/abs/2310.13548",
+        "citations": 435,
+        "influential_citations": 33,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/e6423c211fea2945aa71e1ac5ea24f8f595b4b0a"
       },
       {
         "name": "Steering Llama 2 via Contrastive Activation Addition",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Nick Gabrieli, Nina Panickssery (n\u00e9e Rimsky), Julian Schulz, Meg Tong",
-        "paper_url": "https://arxiv.org/abs/2312.06681"
+        "paper_url": "https://arxiv.org/abs/2312.06681",
+        "citations": 400,
+        "influential_citations": 80,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/edd1dc1e8d7989f36c0e54f69f4aeb5e597edc8b"
       },
       {
         "name": "Refusal in Language Models Is Mediated by a Single Direction",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Aaquib Syed, Andy Arditi",
-        "paper_url": "https://arxiv.org/abs/2406.11717"
+        "paper_url": "https://arxiv.org/abs/2406.11717",
+        "citations": 0
       },
       {
         "name": "Finding Neurons in a Haystack: Case Studies with Sparse Probing",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Wes Gurnee",
-        "paper_url": "https://arxiv.org/abs/2305.01610"
+        "paper_url": "https://arxiv.org/abs/2305.01610",
+        "citations": 0
       },
       {
         "name": "LLM Evaluators Recognize and Favor Their Own Generations",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Arjun Panickssery",
-        "paper_url": "https://arxiv.org/abs/2404.13076"
+        "paper_url": "https://arxiv.org/abs/2404.13076",
+        "citations": 0
       },
       {
         "name": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Oam Patel, Samuel Marks, Annah Dombrowski",
-        "paper_url": "https://arxiv.org/abs/2403.03218"
+        "paper_url": "https://arxiv.org/abs/2403.03218",
+        "citations": 0
       },
       {
         "name": "Steering Language Models With Activation Engineering",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Lisa Thiergart, David Udell, Ulisse Mini",
-        "paper_url": "https://arxiv.org/abs/2308.10248"
+        "paper_url": "https://arxiv.org/abs/2308.10248",
+        "citations": 243,
+        "influential_citations": 23,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/fe303bbaae47b1b08d0641b41d3288fcd74a3a80"
       },
       {
         "name": "Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jonathan Ng, Hanlin Zhang",
-        "paper_url": "https://arxiv.org/abs/2304.03279"
+        "paper_url": "https://arxiv.org/abs/2304.03279",
+        "citations": 0
       },
       {
         "name": "A Toy Model of Universality: Reverse Engineering How Networks Learn Group Operations",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Bilal Chughtai",
-        "paper_url": "https://arxiv.org/abs/2302.03025"
+        "paper_url": "https://arxiv.org/abs/2302.03025",
+        "citations": 123,
+        "influential_citations": 17,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/5969eff0e72e4a5bc0c7392c700be74a01ac2822"
       },
       {
         "name": "LoRA Fine-tuning Efficiently Undoes Safety Training in Llama 2-Chat 70B",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Simon Lermen",
-        "paper_url": "https://arxiv.org/abs/2310.20624"
+        "paper_url": "https://arxiv.org/abs/2310.20624",
+        "citations": 0
       },
       {
         "name": "Linear Representations of Sentiment in Large Language Models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Oskar John Hollinsworth, Curt Tigges",
-        "paper_url": "https://arxiv.org/abs/2310.15154"
+        "paper_url": "https://arxiv.org/abs/2310.15154",
+        "citations": 0
       },
       {
         "name": "Eight Methods to Evaluate Robust Unlearning in LLMs",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Aidan Ewart, Aengus Lynch, Phillip Guo",
-        "paper_url": "https://arxiv.org/abs/2402.16835"
+        "paper_url": "https://arxiv.org/abs/2402.16835",
+        "citations": 114,
+        "influential_citations": 14,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/0044140fdd4547a380b0b82052ae0b6ffd95216c"
       },
       {
         "name": "Taken out of context: On measuring situational awareness in LLMs",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Lukas Berglund, Asa Cooper Stickland, Max Kaufmann, Meg Tong",
-        "paper_url": "https://arxiv.org/abs/2309.00667"
+        "paper_url": "https://arxiv.org/abs/2309.00667",
+        "citations": 95,
+        "influential_citations": 5,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/135ae2ea7a2c966815e85a232469a0a14b4d8d67"
       },
       {
         "name": "Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Aidan Ewart, Aengus Lynch, Phillip Guo, Cindy Wu, Vivek Hebbar",
-        "paper_url": "https://arxiv.org/abs/2407.15549"
+        "paper_url": "https://arxiv.org/abs/2407.15549",
+        "citations": 100,
+        "influential_citations": 17,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/c5b9f501c01fec7afff1c5df862803f88f19236b"
       },
       {
         "name": "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Lorenzo Pacchiardi, Alex Chan, Ilan Moscovitz",
-        "paper_url": "https://arxiv.org/abs/2309.15840"
+        "paper_url": "https://arxiv.org/abs/2309.15840",
+        "citations": 78,
+        "influential_citations": 4,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/f148b3a0106cbaba356b9f099f1a10c072c0b3c5"
       },
       {
         "name": "Language Models Learn to Mislead Humans via RLHF",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jiaxin Wen",
-        "paper_url": "https://arxiv.org/abs/2409.12822"
+        "paper_url": "https://arxiv.org/abs/2409.12822",
+        "citations": 69,
+        "influential_citations": 4,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/0eaf243f2f7c8a381baf0952f85396e2f6a655c5"
       },
       {
         "name": "Copy Suppression: Comprehensively Understanding an Attention Head",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Callum McDougall, Arthur Conmy, Cody Rushing",
-        "paper_url": "https://arxiv.org/abs/2310.04625"
+        "paper_url": "https://arxiv.org/abs/2310.04625",
+        "citations": 53,
+        "influential_citations": 4,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/0eae83a76b2db97547d8ed42bb048c3eaaf78027"
       },
       {
         "name": "Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jordan Taylor",
-        "paper_url": "https://arxiv.org/abs/2405.12241"
+        "paper_url": "https://arxiv.org/abs/2405.12241",
+        "citations": 50,
+        "influential_citations": 7,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/02ad427b0d20fb976741e332f69c2fd00c751164"
       },
       {
         "name": "Transcoders Find Interpretable LLM Feature Circuits",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jacob Dunefsky, Philippe Chlenski",
-        "paper_url": "https://arxiv.org/abs/2406.11944"
+        "paper_url": "https://arxiv.org/abs/2406.11944",
+        "citations": 0
       },
       {
         "name": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Javier Ferrando Monsonis, Oscar Balcells Obeso",
-        "paper_url": "https://arxiv.org/abs/2411.14257"
+        "paper_url": "https://arxiv.org/abs/2411.14257",
+        "citations": 66,
+        "influential_citations": 6,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/ee480ff85412144887ab8f48eef37db273d9d952"
       },
       {
         "name": "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Daniel Tan, Mart\u00edn Soto Quintanilla",
-        "paper_url": "https://arxiv.org/abs/2502.17424"
+        "paper_url": "https://arxiv.org/abs/2502.17424",
+        "citations": 97,
+        "influential_citations": 15,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/4070a490f1cd1b9938666dbbb27c4ee627f1ddaa"
       },
       {
         "name": "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Felix Hofst\u00e4tter, Teun van der Weij",
-        "paper_url": "https://arxiv.org/abs/2406.07358"
+        "paper_url": "https://arxiv.org/abs/2406.07358",
+        "citations": 55,
+        "influential_citations": 3,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/07d73ca3e2b7bbb4ea09309d96834cd2a036c237"
       },
       {
         "name": "Open Problems in Mechanistic Interpretability",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Joseph Miller",
-        "paper_url": "https://arxiv.org/abs/2501.16496"
+        "paper_url": "https://arxiv.org/abs/2501.16496",
+        "citations": 0
       },
       {
         "name": "Can LLMs Follow Simple Rules?",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: David Karamardian",
-        "paper_url": "https://arxiv.org/abs/2311.04235"
+        "paper_url": "https://arxiv.org/abs/2311.04235",
+        "citations": 41,
+        "influential_citations": 12,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/937205cf51b7ee46aa2983c129b7f5d596ea8293"
       },
       {
         "name": "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Iv\u00e1n Arcuschin Moreno, Kajetan (Jett) Janiak",
-        "paper_url": "https://arxiv.org/abs/2503.08679"
+        "paper_url": "https://arxiv.org/abs/2503.08679",
+        "citations": 0
       },
       {
         "name": "Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Adam Karvonen, Can Rager, Benjamin Wright, Samuel Marks",
-        "paper_url": "https://arxiv.org/abs/2408.00113"
+        "paper_url": "https://arxiv.org/abs/2408.00113",
+        "citations": 44,
+        "influential_citations": 2,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/b244b80d0a2d36412b56c0156532d9cbeb298ffa"
       },
       {
         "name": "Improving Steering Vectors by Targeting Sparse Autoencoder Features",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Matthew Siu, Sviatoslav Chalnev, Arthur Conmy",
-        "paper_url": "https://arxiv.org/abs/2411.02193"
+        "paper_url": "https://arxiv.org/abs/2411.02193",
+        "citations": 46,
+        "influential_citations": 5,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/07e75d71986027a0861a681ca18c2f24a2f68747"
       },
       {
         "name": "Do Unlearning Methods Remove Information from Language Model Weights?",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Aghyad Deeb",
-        "paper_url": "https://arxiv.org/abs/2410.08827"
+        "paper_url": "https://arxiv.org/abs/2410.08827",
+        "citations": 0
       },
       {
         "name": "BadLlama: cheaply removing safety fine-tuning from Llama 2-Chat 13B",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Simon Lermen, Pranav Gade",
-        "paper_url": "https://arxiv.org/abs/2311.00117"
+        "paper_url": "https://arxiv.org/abs/2311.00117",
+        "citations": 34,
+        "influential_citations": 2,
+        "year": 2023,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/512b3097ffcd6afcde6b58da1e656d5d9a635678"
       },
       {
         "name": "Applying sparse autoencoders to unlearn knowledge in language models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Eoin Farrell, Yeu-Tong Lau, Arthur Conmy",
-        "paper_url": "https://arxiv.org/abs/2410.19278"
+        "paper_url": "https://arxiv.org/abs/2410.19278",
+        "citations": 46,
+        "influential_citations": 7,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/666aaab90b9558f82e5bde5dc62d97f9d961caa0"
       },
       {
         "name": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Georg Lange, Aleksandar Makelov",
-        "paper_url": "https://arxiv.org/abs/2311.17030"
+        "paper_url": "https://arxiv.org/abs/2311.17030",
+        "citations": 0
       },
       {
         "name": "BatchTopK Sparse Autoencoders",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Patrick Leask, Bart Bussmann",
-        "paper_url": "https://arxiv.org/abs/2412.06410"
+        "paper_url": "https://arxiv.org/abs/2412.06410",
+        "citations": 0
       },
       {
         "name": "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Adam Karvonen, Can Rager, David Chanin",
-        "paper_url": "https://arxiv.org/abs/2503.09532"
+        "paper_url": "https://arxiv.org/abs/2503.09532",
+        "citations": 47,
+        "influential_citations": 10,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/447b7fa233fe9b129001f0bb7f5c4a900de29e5d"
       },
       {
         "name": "Interpreting Attention Layer Outputs with Sparse Autoencoders",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Connor Kissane, Joseph Isaac Bloom, Robert Krzyzanowski",
-        "paper_url": "https://arxiv.org/abs/2406.17759"
+        "paper_url": "https://arxiv.org/abs/2406.17759",
+        "citations": 34,
+        "influential_citations": 3,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/efbe48e4c17a097f4feaec8cf9dec40218a27a87"
       },
       {
         "name": "Tell Me About Yourself: LLMs are Aware of their Learned Behaviors",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jenny Bao",
-        "paper_url": "https://arxiv.org/pdf/2501.11120"
+        "paper_url": "https://arxiv.org/pdf/2501.11120",
+        "citations": 45,
+        "influential_citations": 5,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/a3ec0b75274a29bf7637f9090d5ca5047e2c7545"
       },
       {
         "name": "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Joshua Engels",
-        "paper_url": "https://arxiv.org/pdf/2502.16681"
+        "paper_url": "https://arxiv.org/pdf/2502.16681",
+        "citations": 0
       },
       {
         "name": "Simple Mechanistic Explanations for Out-Of-Context Reasoning",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Atticus Wang, Joshua Engels",
-        "paper_url": "https://arxiv.org/abs/2507.08218"
+        "paper_url": "https://arxiv.org/abs/2507.08218",
+        "citations": 1,
+        "influential_citations": 1,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/4a37bffe6587bee07ed38f1fb953347502e9cccd"
       },
       {
         "name": "Sparse Autoencoders Do Not Find Canonical Units of Analysis",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Patrick Leask, Bart Bussmann, Michael Pearce",
-        "paper_url": "https://arxiv.org/abs/2502.04878"
+        "paper_url": "https://arxiv.org/abs/2502.04878",
+        "citations": 0
       },
       {
         "name": "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Marcus Williams, Constantin Weisser",
-        "paper_url": "https://arxiv.org/abs/2411.02306"
+        "paper_url": "https://arxiv.org/abs/2411.02306",
+        "citations": 39,
+        "influential_citations": 1,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/33a4b77f0c278fbe24f8203d6c958db5be439f43"
       },
       {
         "name": "Understanding and Controlling a Maze-Solving Policy Network",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Ulisse Mini, Peli Grietzer",
-        "paper_url": "https://arxiv.org/abs/2310.08043"
+        "paper_url": "https://arxiv.org/abs/2310.08043",
+        "citations": 35,
+        "influential_citations": 3,
+        "year": 2020,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/db3574a611f5e832218c5f14c6f85af06370caf7"
       },
       {
         "name": "SolidGoldMagikarp (plus, prompt generation)",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jessica Cooper (Rumbelow), Matthew Watkins",
-        "paper_url": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation"
+        "paper_url": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation",
+        "citations": 0
       },
       {
         "name": "Secret Collusion Among Generative AI Agents",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Sumeet Motwani",
-        "paper_url": "https://arxiv.org/abs/2402.07510"
+        "paper_url": "https://arxiv.org/abs/2402.07510",
+        "citations": 21,
+        "influential_citations": 2,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/5c430e2ac5da64e410f6e7c7ef775c47916fe74c"
       },
       {
         "name": "Efficient Dictionary Learning with Switch Sparse Autoencoders",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Anish Mudide",
-        "paper_url": "https://arxiv.org/abs/2410.08201"
+        "paper_url": "https://arxiv.org/abs/2410.08201",
+        "citations": 27,
+        "influential_citations": 1,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/7713145541360109564a0c76926a5a8b279ad6e6"
       },
       {
         "name": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Alexander Meinke, Rudolf Laine, Bilal Chughtai, Marius Hobbhahn",
-        "paper_url": "https://arxiv.org/abs/2407.04694"
+        "paper_url": "https://arxiv.org/abs/2407.04694",
+        "citations": 36,
+        "influential_citations": 3,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/d8f56c0f368c23cf67538f89bcb6ae075495a8f6"
       },
       {
         "name": "Explorations of Self-Repair in Language Models",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Cody Rushing",
-        "paper_url": "https://arxiv.org/abs/2402.15390"
+        "paper_url": "https://arxiv.org/abs/2402.15390",
+        "citations": 22,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/6c6cb32f026fccc11c98c36913651b992d477a56"
       },
       {
         "name": "Best-of-N Jailbreaking",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Sara Price, Aengus Lynch",
-        "paper_url": "https://arxiv.org/abs/2412.03556"
+        "paper_url": "https://arxiv.org/abs/2412.03556",
+        "citations": 258,
+        "influential_citations": 45,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/c9c0324fcdc92cf7e24f9c4230864851a552f953"
       },
       {
         "name": "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Jiaxin Wen, Vivek Hebbar, Caleb Larson",
-        "paper_url": "https://arxiv.org/abs/2411.17693"
+        "paper_url": "https://arxiv.org/abs/2411.17693",
+        "citations": 14,
+        "influential_citations": 0,
+        "year": 2024,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/731d34bc338d24a34f42a23097642c1437e14edb"
       },
       {
         "name": "Auditing language models for hidden objectives",
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Florian Dietz, Kei Nishimura-Gasparian, Jeanne Salle, Satvik Golechha",
-        "paper_url": "https://arxiv.org/abs/2503.10965"
+        "paper_url": "https://arxiv.org/abs/2503.10965",
+        "citations": 22,
+        "influential_citations": 2,
+        "year": 2025,
+        "semantic_scholar_url": "https://www.semanticscholar.org/paper/eeea3cc563b4e880a618b62961b107407990bac4"
       },
       {
         "name": "Goodhart's Law in Reinforcement Learning",
