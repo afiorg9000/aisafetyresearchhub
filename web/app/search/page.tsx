@@ -3,6 +3,7 @@
 import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
 import { orgs, slugify, type Org, type Project, getAllOpenProblems } from "../lib/data";
+import { SiteHeader, SiteFooter } from "../components/site-header";
 
 // Build search index from all entities
 function buildSearchIndex() {
@@ -406,26 +407,7 @@ export default function SearchPage() {
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      {/* Header */}
-      <header className="border-b border-[var(--border)] bg-[var(--card)]">
-        <div className="max-w-6xl mx-auto px-6 py-6">
-          <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-            AI Safety Research Hub
-          </Link>
-        </div>
-      </header>
-
-      {/* Navigation */}
-      <nav className="border-b border-[var(--border)] bg-[var(--background-alt)]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-6 py-3 text-sm">
-            <Link href="/" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Organizations</Link>
-            <Link href="/publications" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Publications</Link>
-            <Link href="/benchmarks" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Benchmarks</Link>
-            <Link href="/problems" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Open Problems</Link>
-          </div>
-        </div>
-      </nav>
+      <SiteHeader />
 
       {/* Search Hero */}
       <div className="bg-[var(--background-alt)] border-b border-[var(--border)]">
@@ -611,6 +593,8 @@ export default function SearchPage() {
           </div>
         )}
       </main>
+
+      <SiteFooter />
     </div>
   );
 }

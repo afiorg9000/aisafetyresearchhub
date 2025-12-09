@@ -2,8 +2,8 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { useAuth } from "../components/auth-provider";
 import { getAllOpenProblems, type OpenProblem } from "../lib/data";
+import { SiteHeader, SiteFooter } from "../components/site-header";
 
 // Focus areas for filtering
 const FOCUS_AREAS = [
@@ -92,7 +92,6 @@ function ProblemCard({ problem, index }: { problem: OpenProblem; index: number }
 }
 
 export default function ProblemsPage() {
-  const { user } = useAuth();
   const [search, setSearch] = useState("");
   const [focusArea, setFocusArea] = useState("All Areas");
   const [sortBy, setSortBy] = useState("newest");
@@ -123,7 +122,7 @@ export default function ProblemsPage() {
         filtered.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
         break;
       case "difficulty":
-        const diffOrder = { foundational: 0, hard: 1, medium: 2 };
+        const diffOrder: Record<string, number> = { foundational: 0, hard: 1, medium: 2 };
         filtered.sort((a, b) => diffOrder[a.difficulty] - diffOrder[b.difficulty]);
         break;
     }
@@ -133,68 +132,7 @@ export default function ProblemsPage() {
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      {/* Header */}
-      <header className="border-b border-[var(--border)] bg-[var(--card)]">
-        <div className="max-w-6xl mx-auto px-6 py-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-                AI Safety Research Hub
-              </Link>
-              <p className="text-sm text-[var(--muted)] mt-1">
-                Open problems in AI safety research
-              </p>
-            </div>
-            {user ? (
-              <Link
-                href="/problems/submit"
-                className="px-4 py-2 bg-[var(--accent)] text-white text-sm font-medium rounded-sm hover:bg-[var(--accent-light)] transition-colors no-underline"
-              >
-                Submit Problem
-              </Link>
-            ) : (
-              <Link
-                href="/login"
-                className="px-4 py-2 bg-[var(--card)] border border-[var(--border)] text-sm font-medium rounded-sm hover:border-[var(--border-dark)] transition-colors no-underline"
-              >
-                Sign in to submit
-              </Link>
-            )}
-          </div>
-        </div>
-      </header>
-
-      {/* Navigation */}
-      <nav className="border-b border-[var(--border)] bg-[var(--background-alt)]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-6 py-3 text-sm">
-            <Link
-              href="/"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Organizations
-            </Link>
-            <Link
-              href="/publications"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Publications
-            </Link>
-            <Link
-              href="/benchmarks"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Benchmarks
-            </Link>
-            <Link
-              href="/problems"
-              className="font-medium text-[var(--foreground)] no-underline border-b-2 border-[var(--accent)] pb-3 -mb-3"
-            >
-              Open Problems
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteHeader />
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-6 py-8">
@@ -216,7 +154,7 @@ export default function ProblemsPage() {
             <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--muted)]" />
             <input
               type="text"
-              placeholder="Search problems..."
+              placeholder="Filter problems..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full pl-10 pr-4 py-2.5 bg-[var(--card)] border border-[var(--border)] rounded text-sm placeholder:text-[var(--muted-light)] focus:outline-none focus:border-[var(--accent)] focus:ring-1 focus:ring-[var(--accent-muted)] transition-all"
@@ -276,14 +214,7 @@ export default function ProblemsPage() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <p className="text-sm text-[var(--muted)] text-center">
-            AI Safety Research Hub — Curated open problems in AI safety
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

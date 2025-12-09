@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Link from "next/link";
 import { orgs } from "../lib/data";
+import { SiteHeader, SiteFooter } from "../components/site-header";
 
 // Extract all publications from all orgs
 function getAllPublications() {
@@ -76,63 +76,15 @@ export default function PublicationsPage() {
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      {/* Header */}
-      <header className="border-b border-[var(--border)] bg-[var(--card)]">
-        <div className="max-w-6xl mx-auto px-6 py-6">
-          <h1 className="font-serif text-2xl md:text-3xl font-semibold text-[var(--foreground)] tracking-tight">
-            AI Safety Research Hub
-          </h1>
-          <p className="text-sm text-[var(--muted)] mt-1">
-            A directory of organizations, research projects, and publications in AI safety
-          </p>
-        </div>
-      </header>
-
-      {/* Navigation */}
-      <nav className="border-b border-[var(--border)] bg-[var(--background-alt)]">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="flex items-center gap-6 py-3 text-sm">
-            <Link
-              href="/"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Organizations
-            </Link>
-            <Link
-              href="/publications"
-              className="font-medium text-[var(--foreground)] no-underline border-b-2 border-[var(--accent)] pb-3 -mb-3"
-            >
-              Publications
-            </Link>
-            <Link
-              href="/benchmarks"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Benchmarks
-            </Link>
-            <Link
-              href="/problems"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Open Problems
-            </Link>
-            <Link
-              href="/submit"
-              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
-            >
-              Submit
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <SiteHeader />
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-6 py-8">
         {/* Page Title */}
         <div className="mb-8">
-          <h2 className="font-serif text-2xl font-semibold text-[var(--foreground)] mb-2">
+          <h1 className="font-serif text-2xl font-semibold text-[var(--foreground)] mb-2">
             Publications
-          </h2>
+          </h1>
           <p className="text-[var(--muted)]">
             Research papers and publications from AI safety organizations
           </p>
@@ -143,7 +95,7 @@ export default function PublicationsPage() {
           <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[var(--muted)]" />
           <input
             type="text"
-            placeholder="Search by title, author, or organization..."
+            placeholder="Filter by title, author, or organization..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full pl-10 pr-4 py-2.5 bg-[var(--card)] border border-[var(--border)] rounded text-sm placeholder:text-[var(--muted-light)] focus:outline-none focus:border-[var(--accent)] focus:ring-1 focus:ring-[var(--accent-muted)] transition-all"
@@ -221,15 +173,7 @@ export default function PublicationsPage() {
         )}
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <p className="text-sm text-[var(--muted)] text-center">
-            AI Safety Research Hub — Data compiled from public sources.
-          </p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }
-
