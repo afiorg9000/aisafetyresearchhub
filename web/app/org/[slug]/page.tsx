@@ -37,7 +37,7 @@ export default async function OrgPage({ params }: { params: Promise<{ slug: stri
     notFound();
   }
 
-  const publishedProjects = org.projects?.filter((p) => p.status === "published") || [];
+  const publishedProjects = org.projects?.filter((p) => p.status?.toLowerCase() === "published") || [];
   const activeProjects = org.projects?.filter((p) => p.status === "Active") || [];
   const completedProjects = org.projects?.filter((p) => p.status === "Completed") || [];
   const otherProjects = org.projects?.filter((p) => 

@@ -45,7 +45,7 @@ function BookIcon({ className }: { className?: string }) {
 // Organization Card
 function OrgCard({ org, index }: { org: Org; index: number }) {
   const projectCount = org.projects?.length || 0;
-  const publishedCount = org.projects?.filter(p => p.status === "published").length || 0;
+  const publishedCount = org.projects?.filter(p => p.status?.toLowerCase() === "published").length || 0;
   const activeCount = org.projects?.filter(p => p.status === "Active").length || 0;
 
   return (
@@ -177,7 +177,7 @@ export default function Home() {
   // Get all data
   const allProjects = useMemo(() => getAllProjects(), []);
   const allBenchmarks = useMemo(() => getAllBenchmarks(), []);
-  const publications = useMemo(() => allProjects.filter(p => p.status === "published" || p.paper_url), [allProjects]);
+  const publications = useMemo(() => allProjects.filter(p => p.status?.toLowerCase() === "published" || p.paper_url), [allProjects]);
 
   // Handle search submission
   const handleSearchSubmit = (e: React.FormEvent) => {

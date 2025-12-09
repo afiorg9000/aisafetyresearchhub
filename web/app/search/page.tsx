@@ -30,7 +30,7 @@ function buildSearchIndex() {
     // Add projects
     if (org.projects) {
       for (const project of org.projects) {
-        const isPublication = project.status === "published" || project.paper_url;
+        const isPublication = project.status?.toLowerCase() === "published" || project.paper_url;
         index.push({
           type: isPublication ? "publication" : "project",
           title: project.name,

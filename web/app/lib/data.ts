@@ -143,7 +143,7 @@ export function getStats() {
   const totalPeople = getAllPeople().length;
   const totalEmployees = orgs.reduce((acc, org) => acc + (org.employees || 0), 0);
   const totalPublications = orgs.reduce((acc, org) => {
-    return acc + (org.projects?.filter(p => p.status === "published" || p.paper_url)?.length || 0);
+    return acc + (org.projects?.filter(p => p.status?.toLowerCase() === "published" || p.paper_url)?.length || 0);
   }, 0);
   return { 
     orgs: orgs.length, 

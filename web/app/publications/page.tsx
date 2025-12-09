@@ -18,7 +18,7 @@ function getAllPublications() {
     if (org.projects) {
       for (const project of org.projects) {
         // Include published papers or projects with paper URLs
-        if (project.status === "published" || project.paper_url) {
+        if (project.status?.toLowerCase() === "published" || project.paper_url) {
           publications.push({
             title: project.name,
             url: project.paper_url || "",
