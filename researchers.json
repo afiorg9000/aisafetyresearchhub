@@ -1,0 +1,1242 @@
+[
+  {
+    "name": "Hoagy Cunningham",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Shashwat Goel",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Annah Dombrowski",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Stefan Heimersheim",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Arthur Conmy",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Aengus Lynch",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Lukas Berglund",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Meg Tong",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Max Kaufmann",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Asa Cooper Stickland",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Nick Gabrieli",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Nina Panickssery",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Julian Schulz",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Aaquib Syed",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Andy Arditi",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Wes Gurnee",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Arjun Panickssery",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Oam Patel",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Samuel Marks",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Lisa Thiergart",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "David Udell",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Ulisse Mini",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jonathan Ng",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Hanlin Zhang",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Bilal Chughtai",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Simon Lermen",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Oskar John Hollinsworth",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Curt Tigges",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Aidan Ewart",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Phillip Guo",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Cindy Wu",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Vivek Hebbar",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Lorenzo Pacchiardi",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Alex Chan",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Ilan Moscovitz",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jiaxin Wen",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Callum McDougall",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Cody Rushing",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jordan Taylor",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jacob Dunefsky",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Philippe Chlenski",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Javier Ferrando Monsonis",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Oscar Balcells Obeso",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Daniel Tan",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Mart\u00edn Soto Quintanilla",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Felix Hofst\u00e4tter",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Teun van der Weij",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Joseph Miller",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "David Karamardian",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Iv\u00e1n Arcuschin Moreno",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Kajetan  Janiak",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Adam Karvonen",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Can Rager",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Benjamin Wright",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Matthew Siu",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Sviatoslav Chalnev",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Aghyad Deeb",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Pranav Gade",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Eoin Farrell",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Yeu-Tong Lau",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Georg Lange",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Aleksandar Makelov",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Patrick Leask",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Bart Bussmann",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "David Chanin",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Connor Kissane",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Joseph Isaac Bloom",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Robert Krzyzanowski",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jenny Bao",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Joshua Engels",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Atticus Wang",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Michael Pearce",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Marcus Williams",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Constantin Weisser",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Peli Grietzer",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jessica Cooper",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Matthew Watkins",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Sumeet Motwani",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Anish Mudide",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Alexander Meinke",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Rudolf Laine",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Marius Hobbhahn",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Sara Price",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Caleb Larson",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Florian Dietz",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Kei Nishimura-Gasparian",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jeanne Salle",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Satvik Golechha",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jacek Karwowski",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Zora Che",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Dan Valentine",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "James Chua",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "John Hughes",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Rajashree Agrawal",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Artur Zolkowski",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Robert McCarthy",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Elizabeth Donoway",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Yashvardhan Sharma",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jakub Kry\u015b",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jack Foxabbott",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Ev\u017een Wybitul",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Evan Ryan Gunter",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Rohan Gupta",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Constantin Venhoff",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jake Ward",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Helena Casademunt",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Caden Juang",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Claire Short",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Bartosz Cywi\u0144ski",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Emil Ryd",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Su Hyeong Lee",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Wen Xing",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Roy Rinberg",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Daniel Reuter",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Tim Hua",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Andrew Qin",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Luke Marks",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Winnie X",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Joschka Braun",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Damon Falck",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Yeonwoo Jang",
+    "org": "MATS",
+    "role": "Author"
+  },
+  {
+    "name": "Jan Batzner",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Volker Stocker",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Stefan Schmid",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Deep Patel",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Rufin VanRullen",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Subramanyam Sahoo",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Aman Chadha",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Vinija Jain",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Austin Spizzirri",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Hao Lang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Fei Huang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yongbin Li",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Andreas Chouliaras",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Dimitris Chatzopoulos",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Dena Mujtaba",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Brian Hu",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Anthony Hoogs",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Ayush Pandey",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Jai Bardhan",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Ishita Jain",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Vijay Keswani",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Cyrus Cousins",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Breanna Nguyen",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Samih Fadli",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Shigeki Kusaka",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Keita Saito",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Mikoto Kudo",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Zhen Wang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yufan Zhou",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Zhongyan Luo",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Mohammad Afzal",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "S. Akshay",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Ashutosh Gupta",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Weiyan Shi",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Kenny Tsu Wei Choo",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Claire Yang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Maya Cakmak",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Max Kleiman-Weiner",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Rom Himelstein",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Amit LeVi",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Brit Youngmann",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Bryce-Allen Bagley",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Navin Khoshnan",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Joshua Ashkinaze",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Hua Shen",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Sai Avula",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Kyung-Hoon Kim",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Ana-Maria Cretu",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Klim Kireev",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Amro Abdalla",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Panuthep Tasawong",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Jian Gang Ngui",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Alham Fikri Aji",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Afshin Khadangi",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Hanna Marxen",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Amir Sartipi",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Alexander Boyd",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Franz Nowak",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "David Hyland",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Lily Stelling",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Malcolm Murray",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Simeon Campos",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Kaike Zhang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Jiakai Tang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Du Su",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yoshua Bengio",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Stephen Clare",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Carina Prunkl",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Svitlana Volkova",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Will Dupree",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Hsien-Te Kao",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Joseph Kim",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Saahith Potluri",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Heather J. Alexander",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Jonathan A. Simon",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Fr\u00e9d\u00e9ric Pinard",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "JoonHo Lee",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "HyeonMin Cho",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Jaewoong Yun",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Dhanesh Ramachandram",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Anne Loefler",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Surain Roberts",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Zhiyu An",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Wan Du",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Fred Heiding",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Adam Tauman Kalai",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yael Tauman Kalai",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Or Zamir",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Eren Kurshan",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yuan Xie",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Paul Franzon",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Shu Yang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Junchao Wu",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Xilin Gong",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Tyler Slater",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yilin Jiang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Mingzi Zhang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Xuanyu Yin",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Isha Gupta",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "David Khachaturov",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Robert Mullins",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yuzhe Lu",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yilong Qin",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Runtian Zhai",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yann Fraboni",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Martin Van Waerebeke",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Kevin Scaman",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Joris Guerin",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Raul Sena Ferreira",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Kevin Delmas",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Puja Trivedi",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Danai Koutra",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Jayaraman J. Thiagarajan",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Siddhartha Datta",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Sina Mohseni",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Haotao Wang",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Zhiding Yu",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Doyup Lee",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Yeongjae Cheon",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Mandar Pitale",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Vasu Singh",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Kush R. Varshney",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Homa Alemzadeh",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Florent Forest",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Amaury Wei",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  },
+  {
+    "name": "Olga Fink",
+    "org": "arXiv AI Safety Papers",
+    "role": "Author"
+  }
+]

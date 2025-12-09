@@ -273,7 +273,7 @@ export default function Home() {
 
           {/* Stats - Understated */}
           <p className="text-sm text-[var(--muted)]">
-            {stats.orgs} organizations · {stats.employees.toLocaleString()} staff · {stats.publications} publications · {stats.benchmarks} benchmarks
+            {stats.people} researchers · {stats.orgs} organizations · {stats.publications} publications · {stats.benchmarks} benchmarks
           </p>
         </div>
       </div>
@@ -433,20 +433,20 @@ export default function Home() {
               <h3 className="text-xs text-[var(--muted)] uppercase tracking-wide mb-3">Database</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-[var(--muted)]">Organizations</span>
-                  <span className="font-medium text-[var(--foreground)]">{stats.orgs}</span>
+                  <span className="text-[var(--muted)]">Researchers</span>
+                  <span className="font-medium text-[var(--foreground)]">{stats.people}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-[var(--muted)]">Total Staff</span>
-                  <span className="font-medium text-[var(--foreground)]">{stats.employees.toLocaleString()}</span>
+                  <span className="text-[var(--muted)]">Organizations</span>
+                  <span className="font-medium text-[var(--foreground)]">{stats.orgs}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[var(--muted)]">Publications</span>
                   <span className="font-medium text-[var(--foreground)]">{stats.publications}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-[var(--muted)]">Benchmarks</span>
-                  <span className="font-medium text-[var(--foreground)]">{stats.benchmarks}</span>
+                  <span className="text-[var(--muted)]">Est. staff</span>
+                  <span className="font-medium text-[var(--foreground)]">{stats.employees.toLocaleString()}</span>
                 </div>
               </div>
             </div>
