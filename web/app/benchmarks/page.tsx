@@ -47,7 +47,7 @@ export default function BenchmarksPage() {
       <header className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <h1 className="font-serif text-2xl md:text-3xl font-semibold text-[var(--foreground)] tracking-tight">
-            AI Safety Research Hub
+            Knowledge Base for AI Safety Research
           </h1>
           <p className="text-sm text-[var(--muted)] mt-1">
             A directory of organizations, research projects, and publications in AI safety
@@ -183,7 +183,7 @@ export default function BenchmarksPage() {
       <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <p className="text-sm text-[var(--muted)] text-center">
-            AI Safety Research Hub — Data compiled from public sources.
+            Knowledge Base for AI Safety Research — Data compiled from public sources.
           </p>
         </div>
       </footer>

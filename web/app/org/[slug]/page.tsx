@@ -23,7 +23,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
   return params.then(({ slug }) => {
     const org = getOrgBySlug(slug);
     return {
-      title: org ? `${org.name} — AI Safety Research Hub` : "Organization Not Found",
+      title: org ? `${org.name} — Knowledge Base for AI Safety Research` : "Organization Not Found",
       description: org?.mission || "AI Safety organization details",
     };
   });
@@ -57,7 +57,7 @@ export default async function OrgPage({ params }: { params: Promise<{ slug: stri
       <header className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-4xl mx-auto px-6 py-6">
           <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-            AI Safety Research Hub
+            Knowledge Base for AI Safety Research
           </Link>
         </div>
       </header>

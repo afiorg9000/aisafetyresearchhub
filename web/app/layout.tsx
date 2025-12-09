@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Safety Research Hub",
+  title: "Knowledge Base for AI Safety Research",
   description: "A comprehensive directory of AI safety research organizations, projects, and publications",
 };
 

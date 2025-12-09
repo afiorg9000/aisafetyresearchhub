@@ -400,7 +400,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-8">
             <h1 className="font-serif text-xl font-semibold text-[var(--foreground)]">
-              AI Safety Research Hub
+              Knowledge Base for AI Safety Research
             </h1>
             <nav className="hidden md:flex items-center gap-6 text-sm">
               <Link href="/submit" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Submit</Link>
@@ -812,7 +812,7 @@ export default function Home() {
       <footer className="border-t border-[var(--border)] mt-16">
         <div className="max-w-5xl mx-auto px-6 py-6">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-[var(--muted)]">
-            <p>AI Safety Research Hub · Data from public sources · December 2024</p>
+            <p>Knowledge Base for AI Safety Research · Data from public sources · December 2024</p>
             <div className="flex gap-6">
               <Link href="/about" className="hover:text-[var(--foreground)] no-underline">About</Link>
               <Link href="/submit" className="hover:text-[var(--foreground)] no-underline">Contribute</Link>

@@ -185,7 +185,7 @@ export default function ProblemsPage() {
           <div className="flex items-center justify-between">
             <div>
               <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-                AI Safety Research Hub
+                Knowledge Base for AI Safety Research
               </Link>
               <p className="text-sm text-[var(--muted)] mt-1">
                 Open problems in AI safety research
@@ -338,7 +338,7 @@ export default function ProblemsPage() {
       <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <p className="text-sm text-[var(--muted)] text-center">
-            AI Safety Research Hub — Community-driven problem identification
+            Knowledge Base for AI Safety Research — Community-driven problem identification
           </p>
         </div>
       </footer>

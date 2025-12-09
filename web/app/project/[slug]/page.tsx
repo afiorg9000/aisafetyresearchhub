@@ -22,7 +22,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
   return params.then(({ slug }) => {
     const project = getProjectBySlug(slug);
     return {
-      title: project ? `${project.name} — AI Safety Research Hub` : "Project Not Found",
+      title: project ? `${project.name} — Knowledge Base for AI Safety Research` : "Project Not Found",
       description: project?.description || "AI Safety project details",
     };
   });

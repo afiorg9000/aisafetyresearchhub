@@ -178,7 +178,7 @@ function SearchContent() {
       <header className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-            AI Safety Research Hub
+            Knowledge Base for AI Safety Research
           </Link>
         </div>
       </header>
@@ -393,7 +393,7 @@ function SearchLoading() {
       <header className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-            AI Safety Research Hub
+            Knowledge Base for AI Safety Research
           </Link>
         </div>
       </header>

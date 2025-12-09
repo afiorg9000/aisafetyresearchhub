@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
   return params.then(({ slug }) => {
     const benchmark = getBenchmarkBySlug(slug);
     return {
-      title: benchmark ? `${benchmark.name} — AI Safety Research Hub` : "Benchmark Not Found",
+      title: benchmark ? `${benchmark.name} — Knowledge Base for AI Safety Research` : "Benchmark Not Found",
       description: benchmark?.measures || "AI Safety benchmark details",
     };
   });

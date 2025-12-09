@@ -19,7 +19,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
   return params.then(({ slug }) => {
     const person = getPersonBySlug(slug);
     return {
-      title: person ? `${person.name} — AI Safety Research Hub` : "Person Not Found",
+      title: person ? `${person.name} — Knowledge Base for AI Safety Research` : "Person Not Found",
       description: person ? `${person.role} at ${person.org.name}` : "AI Safety researcher details",
     };
   });

@@ -10,7 +10,7 @@ export default function ActivityPage() {
       <header className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-            AI Safety Research Hub
+            Knowledge Base for AI Safety Research
           </Link>
         </div>
       </header>
@@ -54,7 +54,7 @@ export default function ActivityPage() {
       <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <p className="text-sm text-[var(--muted)] text-center">
-            AI Safety Research Hub — Data compiled from public sources.
+            Knowledge Base for AI Safety Research — Data compiled from public sources.
           </p>
         </div>
       </footer>

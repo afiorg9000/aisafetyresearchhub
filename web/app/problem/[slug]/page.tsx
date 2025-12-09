@@ -158,7 +158,7 @@ export default function ProblemDetailPage({ params }: { params: Promise<{ slug: 
         <header className="border-b border-[var(--border)] bg-[var(--card)]">
           <div className="max-w-4xl mx-auto px-6 py-6">
             <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-              AI Safety Research Hub
+              Knowledge Base for AI Safety Research
             </Link>
           </div>
         </header>
@@ -210,7 +210,7 @@ export default function ProblemDetailPage({ params }: { params: Promise<{ slug: 
       <header className="border-b border-[var(--border)] bg-[var(--card)]">
         <div className="max-w-4xl mx-auto px-6 py-6">
           <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
-            AI Safety Research Hub
+            Knowledge Base for AI Safety Research
           </Link>
         </div>
       </header>
