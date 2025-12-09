@@ -3286,6 +3286,90 @@
         "description": "Trading off security and collaboration capabilities in multi-agent systems",
         "status": "published",
         "paper_url": ""
+      },
+      {
+        "name": "Catastrophic Cyber Capabilities Benchmark (3CB): Robustly Evaluating LLM Agent Cyber Offense Capabilities",
+        "description": "Shows realistic challenges for cyber offense can be completed by SoTA LLMs while open source models lag behind.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Interpreting Context Look-ups in Transformers: Investigating Attention-MLP Interactions",
+        "description": null,
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Increasing Trust in Language Models through the Reuse of Verified Circuits",
+        "description": null,
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Large Language Models Relearn Removed Concepts",
+        "description": null,
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
+      },
+      {
+        "name": "DeepDecipher: Accessing and Investigating Neuron Activation in Large Language Models",
+        "description": null,
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Locating cross-task sequence continuation circuits in transformers",
+        "description": null,
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Interpreting language model neurons at scale",
+        "description": null,
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Alignment",
+          "Interpretability",
+          "Evals"
+        ]
       }
     ],
     "benchmarks": [
@@ -9134,5 +9218,988 @@
     ],
     "projects": [],
     "benchmarks": []
+  },
+  {
+    "name": "Center for Human-Compatible AI",
+    "url": "https://humancompatible.ai/",
+    "type": "Academic",
+    "country": "USA",
+    "mission": "Stuart Russell's research center at UC Berkeley focused on building AI systems that are provably beneficial to humans.",
+    "focus_areas": [
+      "Alignment",
+      "Control",
+      "Cooperative AI"
+    ],
+    "projects": [
+      {
+        "name": "TASRA: A Taxonomy of Societal-Scale Risks from AI",
+        "description": "A taxonomic framework for categorizing and understanding societal-scale risks posed by AI systems.",
+        "status": "published",
+        "url": "https://arxiv.org/abs/2310.17688",
+        "paper_url": "https://arxiv.org/abs/2310.17688",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Managing AI Risks in an Era of Rapid Progress",
+        "description": "A collaborative paper addressing the management of AI risks as the technology rapidly advances.",
+        "status": "published",
+        "url": "https://arxiv.org/abs/2310.17688",
+        "paper_url": "https://arxiv.org/abs/2310.17688",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Automatically Auditing Large Language Models via Discrete Optimization",
+        "description": "A method for automatically auditing large language models using discrete optimization techniques.",
+        "status": "published",
+        "url": "https://arxiv.org/abs/2303.04381",
+        "paper_url": "https://arxiv.org/abs/2303.04381",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "On Representation Complexity of Model-based and Model-free Reinforcement Learning",
+        "description": "Analysis of representation complexity differences between model-based and model-free reinforcement learning approaches.",
+        "status": "published",
+        "url": "https://arxiv.org/abs/2310.01706",
+        "paper_url": "https://arxiv.org/abs/2310.01706",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Humans decompose tasks by trading off utility and computational cost",
+        "description": "Study showing how humans decompose complex tasks by balancing utility gains against computational costs.",
+        "status": "published",
+        "url": "",
+        "paper_url": "",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Provably Efficient Reinforcement Learning via Surprise Bound",
+        "description": "A reinforcement learning approach that achieves provable efficiency through surprise bound mechanisms.",
+        "status": "published",
+        "url": "",
+        "paper_url": "",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Provably Efficient Offline Goal-Conditioned Reinforcement Learning with General Function Approximation and Single-Policy Concentrability",
+        "description": "Framework for efficient offline goal-conditioned RL with theoretical guarantees under general function approximation.",
+        "status": "published",
+        "url": "https://arxiv.org/abs/2302.03770",
+        "paper_url": "https://arxiv.org/abs/2302.03770",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Importance Weighted Actor-Critic for Optimal Conservative Offline Reinforcement Learning",
+        "description": "An actor-critic algorithm using importance weighting for optimal conservative offline reinforcement learning.",
+        "status": "published",
+        "url": "",
+        "paper_url": "",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Bridging RL Theory and Practice with the Effective Horizon",
+        "description": "Work connecting reinforcement learning theory to practice through the concept of effective horizon.",
+        "status": "published",
+        "url": "",
+        "paper_url": "",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      },
+      {
+        "name": "Optimal Conservative Offline RL with General Function Approximation via Augmented Lagrangian",
+        "description": "A method for optimal conservative offline reinforcement learning using augmented Lagrangian techniques.",
+        "status": "published",
+        "url": "",
+        "paper_url": "",
+        "focus_areas": [
+          "Alignment",
+          "Control",
+          "Cooperative AI"
+        ]
+      }
+    ],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "FAR.AI",
+    "url": "https://far.ai/",
+    "type": "Nonprofit",
+    "country": "USA",
+    "mission": "",
+    "focus_areas": [
+      "Evals",
+      "Red-teaming",
+      "Alignment"
+    ],
+    "projects": [
+      {
+        "name": "It's the Thought that Counts: Evaluating the Attempts of Frontier LLMs to Persuade on Harmful Topics",
+        "description": "Presents the Attempt to Persuade Eval (APE) benchmark that tests how willing LLMs are to generate content aimed at shaping beliefs and behavior on harmful topics.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      },
+      {
+        "name": "Exploiting Novel GPT-4 APIs",
+        "description": "Red-team study of GPT-4 APIs showing that fine-tuning on as few as 15 harmful examples can remove core safeguards, and reveals vulnerabilities in function calling and knowledge retrieval.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      },
+      {
+        "name": "Inverse Scaling: When Bigger Isn't Better",
+        "description": "Presents 11 instances of inverse scaling where language models get worse with scale rather than better, selected from 99 submissions in an open competition.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      },
+      {
+        "name": "Beyond the Board: Exploring AI Robustness Through Go",
+        "description": "Tests three approaches to defend Go AIs from adversarial strategies, finding that defenses protect against known adversaries but uncover new adversaries that undermine these defenses.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      },
+      {
+        "name": "Adversarial Policies Beat Superhuman Go AIs",
+        "description": "Describes an attack on KataGo that tricks the superhuman Go AI into making serious blunders without learning to play Go better, demonstrating surprising failure modes.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      },
+      {
+        "name": "InterpBench: Semi-Synthetic Transformers for Evaluating Mechanistic Interpretability Techniques",
+        "description": "Collection of 17 semi-synthetic transformers with known circuits trained using SIIT, providing a benchmark for evaluating mechanistic interpretability techniques.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      },
+      {
+        "name": "Codebook Features: Sparse and Discrete Interpretability for Neural Networks",
+        "description": "Demonstrates a method to modify neural networks using quantization bottlenecks to make their internals more interpretable and steerable with minimal performance degradation.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Evals",
+          "Red-teaming",
+          "Alignment"
+        ]
+      }
+    ],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "MIT Algorithmic Alignment Group",
+    "url": "https://algorithmicalignment.csail.mit.edu/",
+    "type": "Academic",
+    "country": "USA",
+    "mission": "",
+    "focus_areas": [
+      "Alignment",
+      "Control",
+      "Governance"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "NYU Alignment Research Group",
+    "url": "https://wp.nyu.edu/arg/",
+    "type": "Academic",
+    "country": "USA",
+    "mission": "Sam Bowman's research group at NYU focusing on language model alignment and evaluation.",
+    "focus_areas": [
+      "Alignment",
+      "Evals",
+      "Interpretability"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Rethink Priorities",
+    "url": "https://rethinkpriorities.org/",
+    "type": "Nonprofit",
+    "country": "USA",
+    "mission": "",
+    "focus_areas": [
+      "Governance",
+      "Policy",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Mapping salmon welfare: sea lice treatments",
+        "description": "This second report in the series is a factual overview of the landscape of sea lice treatments in the salmon farming industry.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Mapping salmon welfare: a global overview",
+        "description": "We describe the broad patterns of the global salmon farming industry.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Interrater reliability of the Cumulative Pain Framework: Welfare threats in egg and chicken production",
+        "description": "We assessed the extent to which estimates of Cumulative Pain based on the Welfare Footprint Framework vary depending on who is conducting the evaluation.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "A Moral Parliament Tool for Distributing Movement Building Resources",
+        "description": "We present a Moral Parliament Tool that can be used to set funding priorities across different kinds of EA movement-building projects.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "A Moral Parliament Tool for Distributing Resources across Farmed Animal Recipients",
+        "description": "We present a Moral Parliament Tool to set funding priorities across different kinds of farmed animals: chickens, fish, shrimp, and insects.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "A Moral Parliament Tool for Evaluating GiveWell Projects",
+        "description": "We present a Moral Parliament Tool that decides how to allocate resources to GiveWell-evaluated global health charities.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "A Moral Parliament Tool for Navigating Bioethical Disagreements",
+        "description": "We present a Moral Parliament Tools that incorporates delegates with diverse bioethical views.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Instructions for modifying the Moral Parliament Tool",
+        "description": "In this guide we provide instructions to modifying Moral Parliament Tool to specific allocation needs.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Navigating donation dilemmas: customizable Moral Parliament tools for better decision-making",
+        "description": "We present our Moral Parliament customization sequence.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Research summary: Grinding parameters for humane slaughter of yellow mealworm larvae",
+        "description": "We explore plate size and fillers as parameters for the humane slaughter of farmed yellow mealworm larvae.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Research Summary: The Era Beyond Eisemann\u2014Insect Pain in the 21st Century",
+        "description": "This post is a short summary of The Era Beyond Eisemann et al. (1984): Insect pain in the 21st century, a peer-reviewed, open-access publication on insect welfare.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Improving the Lead Impact Model",
+        "description": "This report was initially produced by Rethink Priorities for Open Philanthropy and Pure Earth during August and September 2024.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Adoption and uses of LLMs among U.S. tech workers",
+        "description": "A survey of 1963 U.S. respondents with software development or programming backgrounds, focusing on how and to what extent they use large language models (LLMs) in their work.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Estimating the usage and utility of LLMs in the US general public",
+        "description": "This report presents findings from a survey of 1,370 U.S. adults conducted in November 2024. The report assesses LLM awareness and usage, highlighting prevalence, use cases, and utility.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "LLM use in the workplace Qualitative interviews with LLM power users and early adopters",
+        "description": "This report covers findings from 19 semi-structured interviews with self-identified LLM power users, conducted between April and July of 2024.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Cost-effectiveness analysis of Lafiya Nigeria intervention",
+        "description": "This document is intended to explain some of the modeling decisions we made in assessing the cost-effectiveness of Lafiya Nigeria's intervention.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Database of sources investigating interventions to reduce meat and animal product consumption",
+        "description": "We developed a database of sources investigating interventions to reduce meat and edible animal product consumption, which we are now releasing as a resource to help advocates and researchers.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Overview and funding priorities for reproductive health in East and Francophone West Africa",
+        "description": "Medical manufacturing and regional regulatory harmonization efforts. Overview and funding priorities for reproductive health in East and Francophone West Africa.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Data systems for malaria burden estimation: Challenges, initiatives, and opportunities",
+        "description": "This report was commissioned by GiveWell and produced by Rethink Priorities from August to September 2023. The primary focus of the report is a landscape analysis to provide insights into data systems for malaria burden estimation.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Plant-Based Diet-Shift Initiative Case Studies: New York City",
+        "description": "This case study presents a comprehensive analysis of New York City's multi-tiered nutritional policy interventions, which have demonstrably reduced municipal food-related emissions.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Plant-Based Diet-Shift Initiative Case Studies: Coolfood",
+        "description": "This systematic evaluation quantifies the effectiveness of Coolfood's institutional intervention model, which has achieved measurable reductions in food-related emissions.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Plant-Based Diet-Shift Initiative Case Studies: Denmark's Plant-Based Food Grant",
+        "description": "This policy analysis examines Denmark's structural intervention in agricultural systems through targeted fiscal mechanisms supporting 71 plant-based initiatives across production sectors.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Plant-Based Diet-Shift Initiative Case Studies: GoodDot Alternative Protein Company",
+        "description": "This market analysis evaluates GoodDot's operational framework in India's emerging alternative protein sector, documenting their methodological approach to product development.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Plant-Based Diet-Shift Initiative Case Studies: German Retailer Transitions",
+        "description": "This case evaluation examines Lidl Germany's data-driven protein transition framework targeting a 20/80 plant/animal ratio by 2030, with potential to reduce GHG emissions.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Research Summary: Exploring Physiological Indicators of Farmed Insect Welfare",
+        "description": "This post is a summary of Review: Exploring correctness, usefulness, and feasibility of potential physiological operational welfare indicators for farmed insects.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Health Systems Strengthening",
+        "description": "Our report focuses on exploring health systems strengthening (HSS) as a potential new cause area for Open Philanthropy. We examined a range of interventions to improve health systems capacity.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Forecasting Farmed Animal Numbers in 2033",
+        "description": "We produced rough-and-ready forecasts of the number of animals farmed in 2033 with the aim of helping advocates and funders with prioritization decisions.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "EU Farmed Animal Welfare Policy: Strategic Assessment (2025)",
+        "description": "A strategic assessment for philanthropic funders who wish to support greater protections for farmed animals in European Union (EU) legislation and animal advocacy organisations.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "US Foreign Aid Funding Pause: A Framework for Giving in Uncertain Times",
+        "description": "In January 2025, the US government initiated a 90-day pause on new foreign aid. This report provides a framework for giving during uncertain times.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Promising Interventions in Maternal and Neonatal Health",
+        "description": "This report, commissioned by Open Philanthropy (OP), provides an initial exploration of maternal and neonatal health (MNH) interventions in low- and middle-income countries.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Landscape of Malaria Bednet Programs",
+        "description": "An in-depth analysis of malaria bednet programs across 14 countries uncovers critical shifts in funding patterns, distribution strategies, and technological innovations.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Effects of Restrictive Animal Product Alternative Labeling Laws on Supply-chain Costs",
+        "description": "After conducting expert interviews, we deem it unlikely that the animal products alternative sector will experience significant supply-chain cost increases from restrictive labeling laws.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Can Black Soldier Fly Larvae (BSFL) producers displace fishmeal?",
+        "description": "We investigated costs of production at four of the largest BSFL producers to better understand the prospects of them making major inroads into the aquatic animal feed market.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Strategic Directions for a Digital Consciousness Model",
+        "description": "The Worldview Investigations Team is in the process of building a model to estimate the probabilities of consciousness in near-future AIs.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Insect farming: investment trends and projected production capacity",
+        "description": "Since 2014, $2B of investment has flowed into insect farming. Investment flows were growing rapidly prior to 2021, but have since slowed.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Hypertension in low- and middle-income countries",
+        "description": "This report explores the burden, interventions, and potential for philanthropic funding related to hypertension\u2014or high blood pressure\u2014a risk factor for cardiovascular disease.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Pulse: US attitudes and awareness regarding effective giving and philanthropic cause areas",
+        "description": "Rethink Priorities' Pulse project seeks to address the critical knowledge gap around US public awareness and perceptions regarding effective giving and related topics.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "The Welfare of Digital Minds",
+        "description": "The research agenda explores critical philosophical and empirical questions about the potential welfare and moral status of digital minds, focusing on understanding when digital minds may have morally relevant welfare.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Resource Allocation: A Research Agenda",
+        "description": "Rethink Priorities' Worldview Investigations research agenda on resource allocation challenges and methodologies.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Governance",
+          "Policy",
+          "Evals"
+        ]
+      }
+    ],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Centre for the Study of Existential Risk",
+    "url": "https://www.cser.ac.uk/",
+    "type": "Academic",
+    "country": "UK",
+    "mission": "Cambridge University research centre studying existential risks including from advanced AI.",
+    "focus_areas": [
+      "Governance",
+      "Policy",
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Quantified Uncertainty Research Institute",
+    "url": "https://quantifieduncertainty.org/",
+    "type": "Nonprofit",
+    "country": "USA",
+    "mission": "Research institute developing tools and methods for quantifying uncertainty and improving forecasting.",
+    "focus_areas": [
+      "Forecasting",
+      "Evals"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Forecasting Research Institute",
+    "url": "https://forecastingresearch.org/",
+    "type": "Nonprofit",
+    "country": "USA",
+    "mission": "",
+    "focus_areas": [
+      "Forecasting",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Improving Judgments of Existential Risk: Better Forecasts, Questions, Explanations, Policies",
+        "description": "Research on improving forecasting methods for existential risk assessment.",
+        "status": "published",
+        "url": "https://ssrn.com/abstract=4013668",
+        "paper_url": "https://ssrn.com/abstract=4013668",
+        "focus_areas": [
+          "Forecasting",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Reciprocal Scoring: A Method for Forecasting Unanswerable Questions",
+        "description": "A method for scoring and incentivizing accuracy on questions that may never resolve.",
+        "status": "published",
+        "url": "https://ssrn.com/abstract=3954498",
+        "paper_url": "https://ssrn.com/abstract=3954498",
+        "focus_areas": [
+          "Forecasting",
+          "Evals"
+        ]
+      },
+      {
+        "name": "A Better Crystal Ball: The Right Way to Think About the Future",
+        "description": "Analysis of forecasting methods and approaches for thinking about future events.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Forecasting",
+          "Evals"
+        ]
+      },
+      {
+        "name": "Conditional Trees: A Method for Generating Informative Questions about Complex Topics",
+        "description": "A new process for generating high-value forecasting questions using simplified Bayesian networks as frameworks.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Forecasting",
+          "Evals"
+        ]
+      }
+    ],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Institute for AI Policy and Strategy",
+    "url": "https://www.iaps.ai/",
+    "type": "Nonprofit",
+    "country": "USA",
+    "mission": "",
+    "focus_areas": [
+      "Policy",
+      "Governance"
+    ],
+    "projects": [
+      {
+        "name": "The Emergence of Autonomous Cyber Attacks: Analysis and Implications",
+        "description": "Analysis of Anthropic's detection of the first publicly known autonomous AI cyber espionage campaign in November 2025. Examines implications for nation-state operations and defensive capabilities.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Building AI Surge Capacity: Mobilizing Technical Talent into Government for AI-Related National Security Crises",
+        "description": "Report addressing the U.S. government's lack of specialized AI security talent and hiring mechanisms for AI-related national security crises.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Policy Options for Preserving Chain of Thought Monitorability",
+        "description": "Framework for determining when coordination mechanisms are needed to preserve chain of thought monitorability in AI systems as competitive pressures drive toward non-monitorable architectures.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Accelerating AI Data Center Security",
+        "description": "Analysis of AI data center security risks from sophisticated adversaries like China and Russia seeking to steal intellectual property or sabotage AI systems.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Verification for International AI Governance",
+        "description": "Analysis of potential international AI agreements and verification methods, examining political feasibility based on verifiability of state compliance.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Managing Risks from Internal AI Systems",
+        "description": "Report on risks from powerful AI systems used internally before public release, recommending technical and policy solutions for internal AI systems with capabilities ahead of public frontier.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Countering AI Chip Smuggling Has Become a National Security Priority: An Updated Playbook for Preventing AI Chip Smuggling to the PRC",
+        "description": "Working paper cataloguing evidence of substantial AI chip smuggling into China and providing updated strategies to counter this national security threat.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      },
+      {
+        "name": "Asymmetry by Design: Boosting Cyber Defenders with Differential Access to AI",
+        "description": "Strategy framework for tilting cybersecurity balance toward defense through differential access to AI-powered cyber capabilities, introducing three approaches: Promote Access, Manage Access, and Deny by Default.",
+        "status": "published",
+        "url": null,
+        "paper_url": null,
+        "focus_areas": [
+          "Policy",
+          "Governance"
+        ]
+      }
+    ],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Simon Institute for Longterm Governance",
+    "url": "https://www.simoninstitute.ch/",
+    "type": "Nonprofit",
+    "country": "Switzerland",
+    "mission": "Geneva-based institute supporting multilateral governance of frontier technologies.",
+    "focus_areas": [
+      "Governance",
+      "Policy"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "Safe Superintelligence Inc.",
+    "url": "https://ssi.inc/",
+    "type": "Lab Safety Team",
+    "country": "USA",
+    "mission": "",
+    "focus_areas": [
+      "Alignment",
+      "Control"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
+  },
+  {
+    "name": "TruthfulAI",
+    "url": "https://www.truthful.ai/",
+    "type": "Nonprofit",
+    "country": "UK",
+    "mission": "",
+    "focus_areas": [
+      "Alignment",
+      "Evals"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "key_people": []
   }
 ]
