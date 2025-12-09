@@ -26,12 +26,17 @@ const PROJECT_STATUSES = [
 
 const FOCUS_AREAS = [
   { value: "all", label: "All" },
-  { value: "Alignment", label: "Alignment" },
-  { value: "Interpretability", label: "Interpretability" },
-  { value: "Evals", label: "Evaluations" },
-  { value: "Governance", label: "Governance" },
-  { value: "Policy", label: "Policy" },
-  { value: "Control", label: "Control" },
+  { value: "control", label: "AI Control" },
+  { value: "oversight", label: "Scalable Oversight" },
+  { value: "governance", label: "AI Governance" },
+  { value: "interpretability", label: "Mech Interp" },
+  { value: "evals", label: "Evaluations" },
+  { value: "unlearning", label: "Unlearning" },
+  { value: "cooperative", label: "Cooperative AI" },
+  { value: "open-weight", label: "Open-Weight Safety" },
+  { value: "rlhf", label: "RLHF" },
+  { value: "deception", label: "Deception" },
+  { value: "alignment", label: "Alignment" },
 ];
 
 function SearchIcon({ className }: { className?: string }) {
@@ -260,7 +265,20 @@ export default function Home() {
     });
   }, [allProjects]);
 
-  // Filter active projects by search and status
+  // Helper: check if project matches focus area keyword
+  const matchesFocusArea = (p: { name: string; description?: string; org: { focus_areas?: string[] } }, focus: string) => {
+    if (focus === "all") return true;
+    const searchText = `${p.name} ${p.description || ""} ${p.org.focus_areas?.join(" ") || ""}`.toLowerCase();
+    // Handle special cases
+    if (focus === "interpretability") return searchText.includes("interp") || searchText.includes("mechanistic");
+    if (focus === "oversight") return searchText.includes("oversight") || searchText.includes("scalable");
+    if (focus === "cooperative") return searchText.includes("cooperat") || searchText.includes("multi-agent");
+    if (focus === "open-weight") return searchText.includes("open-weight") || searchText.includes("open source") || searchText.includes("open-source");
+    if (focus === "evals") return searchText.includes("eval") || searchText.includes("benchmark") || searchText.includes("testing");
+    return searchText.includes(focus);
+  };
+
+  // Filter active projects by search, status, and focus
   const filteredProjects = useMemo(() => {
     return activeProjects.filter((p) => {
       const matchesSearch = !orgFilter ||
@@ -268,32 +286,32 @@ export default function Home() {
         p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
         p.org.name.toLowerCase().includes(orgFilter.toLowerCase());
       const matchesStatus = statusFilter === "all" || p.status === statusFilter;
-      return matchesSearch && matchesStatus;
+      const matchesFocus = matchesFocusArea(p, focusFilter);
+      return matchesSearch && matchesStatus && matchesFocus;
     });
-  }, [activeProjects, orgFilter, statusFilter]);
+  }, [activeProjects, orgFilter, statusFilter, focusFilter]);
 
-  // Filter publications by search and org focus area
+  // Filter publications by search and focus area keyword
   const filteredPublications = useMemo(() => {
     return publications.filter((p) => {
       const matchesSearch = !orgFilter ||
         p.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
         p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
         p.org.name.toLowerCase().includes(orgFilter.toLowerCase());
-      const matchesFocus = focusFilter === "all" || 
-        p.org.focus_areas?.some(fa => fa.toLowerCase().includes(focusFilter.toLowerCase()));
+      const matchesFocus = matchesFocusArea(p, focusFilter);
       return matchesSearch && matchesFocus;
     });
   }, [publications, orgFilter, focusFilter]);
 
-  // Filter benchmarks by search and status
+  // Filter benchmarks by search and focus area keyword
   const filteredBenchmarks = useMemo(() => {
     return allBenchmarks.filter((b) => {
       const matchesSearch = !orgFilter ||
         b.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
         b.measures?.toLowerCase().includes(orgFilter.toLowerCase()) ||
         b.org.name.toLowerCase().includes(orgFilter.toLowerCase());
-      const matchesFocus = focusFilter === "all" || 
-        b.org.focus_areas?.some(fa => fa.toLowerCase().includes(focusFilter.toLowerCase()));
+      const searchText = `${b.name} ${b.measures || ""} ${b.org.focus_areas?.join(" ") || ""}`.toLowerCase();
+      const matchesFocus = focusFilter === "all" || searchText.includes(focusFilter);
       return matchesSearch && matchesFocus;
     });
   }, [allBenchmarks, orgFilter, focusFilter]);
@@ -416,28 +434,48 @@ export default function Home() {
                 </div>
               )}
 
-              {/* Project status tags */}
+              {/* Project tags: status + focus areas */}
               {activeTab === "projects" && (
-                <div className="flex gap-1.5 flex-wrap">
-                  {PROJECT_STATUSES.map((status) => (
-                    <button
-                      key={status.value}
-                      onClick={() => setStatusFilter(status.value)}
-                      className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
-                        statusFilter === status.value
-                          ? "bg-[var(--foreground)] text-[var(--background)]"
-                          : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
-                      }`}
-                    >
-                      {status.label}
-                    </button>
-                  ))}
+                <div className="flex flex-col gap-2">
+                  <div className="flex gap-1.5 flex-wrap">
+                    <span className="text-xs text-[var(--muted)] py-1.5">Status:</span>
+                    {PROJECT_STATUSES.map((status) => (
+                      <button
+                        key={status.value}
+                        onClick={() => setStatusFilter(status.value)}
+                        className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
+                          statusFilter === status.value
+                            ? "bg-[var(--foreground)] text-[var(--background)]"
+                            : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
+                        }`}
+                      >
+                        {status.label}
+                      </button>
+                    ))}
+                  </div>
+                  <div className="flex gap-1.5 flex-wrap">
+                    <span className="text-xs text-[var(--muted)] py-1.5">Topic:</span>
+                    {FOCUS_AREAS.map((focus) => (
+                      <button
+                        key={focus.value}
+                        onClick={() => setFocusFilter(focus.value)}
+                        className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
+                          focusFilter === focus.value
+                            ? "bg-[var(--foreground)] text-[var(--background)]"
+                            : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
+                        }`}
+                      >
+                        {focus.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
 
               {/* Publication focus area tags */}
               {activeTab === "publications" && (
                 <div className="flex gap-1.5 flex-wrap">
+                  <span className="text-xs text-[var(--muted)] py-1.5">Topic:</span>
                   {FOCUS_AREAS.map((focus) => (
                     <button
                       key={focus.value}
@@ -457,6 +495,7 @@ export default function Home() {
               {/* Benchmark focus area tags */}
               {activeTab === "benchmarks" && (
                 <div className="flex gap-1.5 flex-wrap">
+                  <span className="text-xs text-[var(--muted)] py-1.5">Topic:</span>
                   {FOCUS_AREAS.map((focus) => (
                     <button
                       key={focus.value}
