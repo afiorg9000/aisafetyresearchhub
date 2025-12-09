@@ -39,8 +39,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const relatedProjects = getRelatedProjects(project);
 
   const editFields = [
-    { name: "description", label: "Description", currentValue: project.description },
-    { name: "status", label: "Status", currentValue: project.status },
+    { name: "description", label: "Description", currentValue: project.description || null },
+    { name: "status", label: "Status", currentValue: project.status || null },
   ];
 
   return (
@@ -53,7 +53,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           subtitle={project.description}
           meta={
             <>
-              <StatusBadge status={project.status} />
+              <StatusBadge status={project.status || "Unknown"} />
             </>
           }
           tags={project.org.focus_areas}
