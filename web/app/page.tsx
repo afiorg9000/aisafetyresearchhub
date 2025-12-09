@@ -18,6 +18,22 @@ const ORG_TYPES = [
   { value: "Think Tank", label: "Think Tanks" },
 ];
 
+const PROJECT_STATUSES = [
+  { value: "all", label: "All" },
+  { value: "Active", label: "Active" },
+  { value: "Completed", label: "Completed" },
+];
+
+const FOCUS_AREAS = [
+  { value: "all", label: "All" },
+  { value: "Alignment", label: "Alignment" },
+  { value: "Interpretability", label: "Interpretability" },
+  { value: "Evals", label: "Evaluations" },
+  { value: "Governance", label: "Governance" },
+  { value: "Policy", label: "Policy" },
+  { value: "Control", label: "Control" },
+];
+
 function SearchIcon({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
@@ -207,6 +223,8 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
   const [orgFilter, setOrgFilter] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
+  const [statusFilter, setStatusFilter] = useState("all");
+  const [focusFilter, setFocusFilter] = useState("all");
   const stats = getStats();
 
   // Get all data
@@ -234,26 +252,6 @@ export default function Home() {
     });
   }, [orgFilter, typeFilter]);
 
-  // Filter publications
-  const filteredPublications = useMemo(() => {
-    if (!orgFilter) return publications;
-    return publications.filter((p) =>
-      p.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
-      p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
-      p.org.name.toLowerCase().includes(orgFilter.toLowerCase())
-    );
-  }, [publications, orgFilter]);
-
-  // Filter benchmarks
-  const filteredBenchmarks = useMemo(() => {
-    if (!orgFilter) return allBenchmarks;
-    return allBenchmarks.filter((b) =>
-      b.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
-      b.measures?.toLowerCase().includes(orgFilter.toLowerCase()) ||
-      b.org.name.toLowerCase().includes(orgFilter.toLowerCase())
-    );
-  }, [allBenchmarks, orgFilter]);
-
   // Active projects (not published)
   const activeProjects = useMemo(() => {
     return allProjects.filter(p => {
@@ -262,15 +260,43 @@ export default function Home() {
     });
   }, [allProjects]);
 
-  // Filter active projects
+  // Filter active projects by search and status
   const filteredProjects = useMemo(() => {
-    if (!orgFilter) return activeProjects;
-    return activeProjects.filter((p) =>
-      p.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
-      p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
-      p.org.name.toLowerCase().includes(orgFilter.toLowerCase())
-    );
-  }, [activeProjects, orgFilter]);
+    return activeProjects.filter((p) => {
+      const matchesSearch = !orgFilter ||
+        p.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        p.org.name.toLowerCase().includes(orgFilter.toLowerCase());
+      const matchesStatus = statusFilter === "all" || p.status === statusFilter;
+      return matchesSearch && matchesStatus;
+    });
+  }, [activeProjects, orgFilter, statusFilter]);
+
+  // Filter publications by search and org focus area
+  const filteredPublications = useMemo(() => {
+    return publications.filter((p) => {
+      const matchesSearch = !orgFilter ||
+        p.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        p.org.name.toLowerCase().includes(orgFilter.toLowerCase());
+      const matchesFocus = focusFilter === "all" || 
+        p.org.focus_areas?.some(fa => fa.toLowerCase().includes(focusFilter.toLowerCase()));
+      return matchesSearch && matchesFocus;
+    });
+  }, [publications, orgFilter, focusFilter]);
+
+  // Filter benchmarks by search and status
+  const filteredBenchmarks = useMemo(() => {
+    return allBenchmarks.filter((b) => {
+      const matchesSearch = !orgFilter ||
+        b.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        b.measures?.toLowerCase().includes(orgFilter.toLowerCase()) ||
+        b.org.name.toLowerCase().includes(orgFilter.toLowerCase());
+      const matchesFocus = focusFilter === "all" || 
+        b.org.focus_areas?.some(fa => fa.toLowerCase().includes(focusFilter.toLowerCase()));
+      return matchesSearch && matchesFocus;
+    });
+  }, [allBenchmarks, orgFilter, focusFilter]);
 
   const tabs = [
     { id: "organizations" as TabType, label: "Organizations", count: orgs.length },
@@ -338,7 +364,7 @@ export default function Home() {
             {tabs.map((tab) => (
               <button
                 key={tab.id}
-                onClick={() => { setActiveTab(tab.id); setOrgFilter(""); }}
+                onClick={() => { setActiveTab(tab.id); setOrgFilter(""); setTypeFilter("all"); setStatusFilter("all"); setFocusFilter("all"); }}
                 className={`py-3 text-sm whitespace-nowrap transition-colors border-b-2 -mb-px ${
                   activeTab === tab.id
                     ? "text-[var(--foreground)] border-[var(--foreground)] font-medium"
@@ -358,18 +384,22 @@ export default function Home() {
           {/* Main Column */}
           <div className="lg:col-span-3">
             {/* Filter bar */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <div className="relative flex-1">
-                <input
-                  type="text"
-                  placeholder={`Filter ${activeTab}...`}
-                  value={orgFilter}
-                  onChange={(e) => setOrgFilter(e.target.value)}
-                  className="w-full px-4 py-2 bg-[var(--background)] border border-[var(--border)] rounded text-sm placeholder:text-[var(--muted-light)] focus:outline-none focus:border-[var(--accent)] transition-colors"
-                />
+            <div className="flex flex-col gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="relative flex-1">
+                  <input
+                    type="text"
+                    placeholder={`Filter ${activeTab}...`}
+                    value={orgFilter}
+                    onChange={(e) => setOrgFilter(e.target.value)}
+                    className="w-full px-4 py-2 bg-[var(--background)] border border-[var(--border)] rounded text-sm placeholder:text-[var(--muted-light)] focus:outline-none focus:border-[var(--accent)] transition-colors"
+                  />
+                </div>
               </div>
+              
+              {/* Organization type tags */}
               {activeTab === "organizations" && (
-                <div className="flex gap-1 overflow-x-auto">
+                <div className="flex gap-1.5 flex-wrap">
                   {ORG_TYPES.map((type) => (
                     <button
                       key={type.value}
@@ -381,6 +411,63 @@ export default function Home() {
                       }`}
                     >
                       {type.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Project status tags */}
+              {activeTab === "projects" && (
+                <div className="flex gap-1.5 flex-wrap">
+                  {PROJECT_STATUSES.map((status) => (
+                    <button
+                      key={status.value}
+                      onClick={() => setStatusFilter(status.value)}
+                      className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
+                        statusFilter === status.value
+                          ? "bg-[var(--foreground)] text-[var(--background)]"
+                          : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
+                      }`}
+                    >
+                      {status.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Publication focus area tags */}
+              {activeTab === "publications" && (
+                <div className="flex gap-1.5 flex-wrap">
+                  {FOCUS_AREAS.map((focus) => (
+                    <button
+                      key={focus.value}
+                      onClick={() => setFocusFilter(focus.value)}
+                      className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
+                        focusFilter === focus.value
+                          ? "bg-[var(--foreground)] text-[var(--background)]"
+                          : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
+                      }`}
+                    >
+                      {focus.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {/* Benchmark focus area tags */}
+              {activeTab === "benchmarks" && (
+                <div className="flex gap-1.5 flex-wrap">
+                  {FOCUS_AREAS.map((focus) => (
+                    <button
+                      key={focus.value}
+                      onClick={() => setFocusFilter(focus.value)}
+                      className={`px-3 py-1.5 text-xs rounded whitespace-nowrap transition-colors ${
+                        focusFilter === focus.value
+                          ? "bg-[var(--foreground)] text-[var(--background)]"
+                          : "text-[var(--muted)] hover:text-[var(--foreground)] border border-[var(--border)]"
+                      }`}
+                    >
+                      {focus.label}
                     </button>
                   ))}
                 </div>
