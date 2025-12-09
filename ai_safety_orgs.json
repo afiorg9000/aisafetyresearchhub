@@ -6500,7 +6500,7 @@
   },
   {
     "name": "Guide Labs",
-    "url": "",
+    "url": "https://guidelabs.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -6508,12 +6508,28 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Interpretable AI Systems and Foundation Models",
+        "description": "Building a new class of interpretable AI systems and foundation models that humans can reliably debug, trust, and understand",
+        "status": "Active"
+      },
+      {
+        "name": "Interpretable Generative Diffusion Model",
+        "description": "The first interpretable generative diffusion model",
+        "status": "Active"
+      },
+      {
+        "name": "Interpretable LLM",
+        "description": "The first interpretable large language model",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "CSIS Wadhwani AI Center",
-    "url": "",
+    "url": "https://www.csis.org/programs/wadhwani-center-ai-and-advanced-technologies",
     "type": "Think Tank",
     "country": "United States",
     "mission": "AI policy center at CSIS.",
@@ -6521,12 +6537,59 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "AI Governance & Regulation",
+        "description": "Research analyzing and proposing solutions for national and multilateral AI governance efforts",
+        "status": "Active"
+      },
+      {
+        "name": "Geopolitics of Advanced Technology",
+        "description": "Research investigating how emerging technologies affect the balance of power between nations, semiconductor export controls efforts, and U.S. economic security",
+        "status": "Active"
+      },
+      {
+        "name": "AI, Autonomy, and National Security",
+        "description": "Analysis of challenges and opportunities posed by AI for national security and defense, focusing on U.S. Department of Defense and intelligence community AI adoption",
+        "status": "Active"
+      },
+      {
+        "name": "The AI Policy Podcast",
+        "description": "Regular podcast covering AI policy developments and analysis",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Gregory C. Allen",
+        "role": "Senior Fellow/Director"
+      },
+      {
+        "name": "Matt Mande",
+        "role": "Research Associate"
+      },
+      {
+        "name": "Sadie McCullough",
+        "role": "Program Manager"
+      },
+      {
+        "name": "Laura Caroli",
+        "role": "Researcher"
+      },
+      {
+        "name": "Kateryna Bondar",
+        "role": "Researcher"
+      },
+      {
+        "name": "Hiroki Habuka",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Encode AI",
-    "url": "",
+    "url": "https://encode.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI policy organization.",
@@ -6534,12 +6597,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "PowerShift\u00ae",
+        "description": "An end-to-end self-governing system for startups, companies, DAOs, and non-profits to enable decentralized, purpose-driven operations and self-organization",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Meridian",
-    "url": "",
+    "url": "https://www.meridian.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6565,7 +6634,7 @@
   },
   {
     "name": "Tarbell Fellowship",
-    "url": "",
+    "url": "https://tarbellfellowship.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Fellowship program for AI journalism.",
@@ -6573,12 +6642,28 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "AI Reporting Fellowship",
+        "description": "$60,000 to $80,000 for early-career fellows; $90,000 to $110,000 for senior fellows. AI Journalism Fundamentals training. Newsroom placements at Bloomberg, TIME, MIT Tech Review, the Guardian, and many more",
+        "status": "Active"
+      },
+      {
+        "name": "Grants",
+        "description": "From $1,000 to $15,000. Forward-looking stories on AI and its impacts. Open to freelancers, staff reporters, and newsroom teams",
+        "status": "Active"
+      },
+      {
+        "name": "Journalist in Residence",
+        "description": "$80,000+ stipend. Freedom to upskill on AI and produce in-depth reporting. Open to senior journalists and experienced editors",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Safe AI Forum",
-    "url": "",
+    "url": "https://safeaiforum.org/",
     "type": "Nonprofit",
     "country": "International",
     "mission": "International AI safety forum.",
@@ -6586,13 +6671,29 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "RFIDshoe",
+        "description": "Technology project",
+        "status": "Active"
+      },
+      {
+        "name": "RFIDhat",
+        "description": "Entertainment project",
+        "status": "Active"
+      },
+      {
+        "name": "RFIDrock",
+        "description": "Music project",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
     "directors": 2
   },
   {
     "name": "Forethought",
-    "url": "",
+    "url": "https://forethought.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6600,13 +6701,73 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Preparing for the Intelligence Explosion",
+        "description": "Research on grand challenges that arise during rapid technological progress driven by AI, including new weapons of mass destruction, AI-enabled autocracies, races to grab offworld resources, and digital beings worthy of moral consideration",
+        "status": "Active"
+      },
+      {
+        "name": "AI-Enabled Coups: How a Small Group Could Use AI to Seize Power",
+        "description": "Analysis of how advanced AI could enable small groups or individuals to stage coups through singularly loyal AI systems, secretly loyal AI, or exclusive access to superhuman capabilities",
+        "status": "Active"
+      },
+      {
+        "name": "Better Futures Series",
+        "description": "Exploration of approaches to improve futures where humanity survives to achieve truly great outcomes, complementing catastrophe prevention efforts",
+        "status": "Active"
+      },
+      {
+        "name": "Will AI R&D Automation Cause a Software Intelligence Explosion?",
+        "description": "Research on whether AI systems automating AI development could trigger runaway feedback loops leading to extremely fast AI progress without additional compute requirements",
+        "status": "Active"
+      },
+      {
+        "name": "AI Tools for Existential Security",
+        "description": "Development of AI tools to help humanity anticipate and address AI-driven challenges, including epistemic tools, coordination tools, and risk-targeted tools",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
-    "directors": 2
+    "directors": 2,
+    "key_people": [
+      {
+        "name": "William MacAskill",
+        "role": "Researcher"
+      },
+      {
+        "name": "Fin Moorhouse",
+        "role": "Researcher"
+      },
+      {
+        "name": "Tom Davidson",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lukas Finnveden",
+        "role": "Researcher"
+      },
+      {
+        "name": "Rose Hadshar",
+        "role": "Researcher"
+      },
+      {
+        "name": "Daniel Eth",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lizka Vaintrob",
+        "role": "Researcher"
+      },
+      {
+        "name": "Owen Cotton-Barratt",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Arcadia Impact",
-    "url": "",
+    "url": "https://www.arcadiaimpact.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety philanthropy advisory.",
@@ -6614,12 +6775,48 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "LASR Labs",
+        "description": "A technical AI safety research programme focused on reducing the risk of loss of control to advanced AI. Participants work in teams of three to four, supervised by an experienced AI safety researcher, to write an academic-style paper and accompanying blog post.",
+        "status": "Active"
+      },
+      {
+        "name": "AI Governance Taskforce",
+        "description": "A career development programme for experienced professionals looking to transition careers into AI governance, focussed on reducing risks from advanced AI. 12 week, remote, part-time cohorts producing policy research in teams of 4.",
+        "status": "Active"
+      },
+      {
+        "name": "Impact Research Groups (IRG)",
+        "description": "Designed to support talented and ambitious students in London who wish to pursue high-impact research careers. Participants work in small groups with experienced mentors to explore a research question over 8 weeks.",
+        "status": "Active"
+      },
+      {
+        "name": "The Orion AI Governance Initiative",
+        "description": "A talent development initiative based in the UK that aims to support outstanding students to launch a career shaping the future of artificial intelligence. Offers AI policy Accelerator, Mentorship Programme, and internship.",
+        "status": "Active"
+      },
+      {
+        "name": "AI Safety Engineering Taskforce (ASET)",
+        "description": "Connects experienced technical professionals with high-profile AI safety projects. Builds and manages teams of skilled engineers and scientists, supporting their transition into full-time AI safety careers.",
+        "status": "Active"
+      },
+      {
+        "name": "Safe AI London (SAIL)",
+        "description": "Supports individuals in London that are interested in reducing the risks posed from advanced artificial intelligence by raising awareness and providing high-quality resources and support.",
+        "status": "Active"
+      },
+      {
+        "name": "LEAH Coworking Space",
+        "description": "A coworking office in central London supporting people working on projects aiming to have a large positive impact on the world, providing productive space and facilitating connections.",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Pivotal Research",
-    "url": "",
+    "url": "https://pivotal-research.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6627,12 +6824,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "The Pivotal Fellowship",
+        "description": "A 9-week research program dedicated to the responsible development of emerging technologies where Fellows work with experienced researchers in AI on important questions facing humanity",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Seismic",
-    "url": "",
+    "url": "https://seismic.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6640,8 +6843,50 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "2025 Seismic report",
+        "description": "Report publication by Seismic Foundation",
+        "status": "Active"
+      },
+      {
+        "name": "AI Literacy Building",
+        "description": "Helping to build AI literacy through powerful storytelling and targeted media campaigns to help individuals understand and engage with AI",
+        "status": "Active"
+      },
+      {
+        "name": "Media Campaigns",
+        "description": "Creating highly engaging campaigns through partnerships with leading media, production, and public affairs organizations to raise awareness and drive action",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Sander Volten",
+        "role": "CEO"
+      },
+      {
+        "name": "Alice Anselmi",
+        "role": "Chief of Staff"
+      },
+      {
+        "name": "Philip Trippenbach",
+        "role": "Strategy director"
+      },
+      {
+        "name": "Jeroen Thissen",
+        "role": "Creative Director"
+      },
+      {
+        "name": "Nina Tihy",
+        "role": "Operations & Projects Manager"
+      },
+      {
+        "name": "Daron Acemoglu",
+        "role": "Professor Massachusetts Institute for Technology, Nobel Prize in Economics in 2024"
+      }
+    ]
   },
   {
     "name": "BlueDot Impact",
@@ -6717,7 +6962,7 @@
   },
   {
     "name": "Odyssean Institute",
-    "url": "",
+    "url": "https://odysseaninstitute.org/",
     "type": "Think Tank",
     "country": "United Kingdom",
     "mission": "Technology policy think tank.",
@@ -6725,12 +6970,33 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "GRAIN",
+        "description": "",
+        "status": "Active"
+      },
+      {
+        "name": "Horizon Scan on Global Catastrophic Risks",
+        "description": "Horizon scanning project focused on global catastrophic risks",
+        "status": "Active"
+      },
+      {
+        "name": "Resilient Supply Chains",
+        "description": "Project focused on building resilient supply chains",
+        "status": "Active"
+      },
+      {
+        "name": "AI Governance Assembly",
+        "description": "Project related to AI governance through assembly processes",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Hortus AI",
-    "url": "",
+    "url": "https://hortus.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety company.",
@@ -6743,20 +7009,7 @@
   },
   {
     "name": "AVERI",
-    "url": "",
-    "type": "Nonprofit",
-    "country": "United States",
-    "mission": "AI safety research organization.",
-    "employees": 6,
-    "focus_areas": [
-      "Alignment"
-    ],
-    "projects": [],
-    "benchmarks": []
-  },
-  {
-    "name": "Tilde Research",
-    "url": "",
+    "url": "https://averi.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6766,11 +7019,90 @@
     ],
     "projects": [],
     "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Wyo L",
+        "role": "Creative Direction"
+      },
+      {
+        "name": "Olivia C",
+        "role": "Public Relations"
+      },
+      {
+        "name": "Micah J",
+        "role": "Graphic Design"
+      },
+      {
+        "name": "Jack M",
+        "role": "Growth Strategy"
+      },
+      {
+        "name": "Emily Z",
+        "role": "Email Marketing"
+      },
+      {
+        "name": "Daniel R",
+        "role": "SEO"
+      },
+      {
+        "name": "Caleb W",
+        "role": "Conversion Optimization"
+      },
+      {
+        "name": "Rachel J",
+        "role": "Demand Generation"
+      },
+      {
+        "name": "Adam S",
+        "role": "Web Development"
+      },
+      {
+        "name": "Adrian V",
+        "role": "UX/UI & Web Design"
+      },
+      {
+        "name": "Simone E",
+        "role": "Animation & Motion Graphics"
+      },
+      {
+        "name": "Javier M",
+        "role": "Performance Marketing"
+      }
+    ]
+  },
+  {
+    "name": "Tilde Research",
+    "url": "https://tilderesearch.com/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [
+      {
+        "name": "Mechanistic Interpretability",
+        "description": "Research focused on understanding the internal mechanisms of AI models",
+        "status": "Active"
+      },
+      {
+        "name": "New Architectures",
+        "description": "Development of novel AI model architectures",
+        "status": "Active"
+      },
+      {
+        "name": "Pretraining Science",
+        "description": "Research into the science and methods of pretraining AI models",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
     "directors": 3
   },
   {
     "name": "Conscium",
-    "url": "",
+    "url": "https://conscium.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI consciousness research.",
@@ -6778,12 +7110,54 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "AI agent verification",
+        "description": "Verification services for AI agents that can affect the real world directly, checking they do what they are supposed to do and only that",
+        "status": "Active"
+      },
+      {
+        "name": "Arena ax",
+        "description": "Third-party environment platform for organizations to verify their own agents, providing confidential testing and simulation services",
+        "status": "Active"
+      },
+      {
+        "name": "Neuromorphic computing",
+        "description": "Development of spiking neural networks (SNNs) for more efficient AI systems, partnering with UC Santa Cruz to create digital twins that constantly learn and improve",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Dr. Daniel Hulme",
+        "role": "Leader/Co-founder, pioneer in Artificial Life, former founder of Satalia (sold to WPP for $100m), WPP's Chief AI Officer"
+      },
+      {
+        "name": "Ass. Prof. Ted Lappas",
+        "role": "Expert in spatio-temporal computation and neural architectures, technical lead for WPP's AI programme"
+      },
+      {
+        "name": "Dr Panagiotis [Panos] Repoussis",
+        "role": "Expert in evolutionary computation and data-driven optimisation, leads WPP's AI Research Labs"
+      },
+      {
+        "name": "Ed Charvet",
+        "role": "Serial entrepreneur, former COO, advises private equity firms and angel investor"
+      },
+      {
+        "name": "Calum Chace",
+        "role": "Strategy consultant, author of AI books, keynote speaker, advises governments and companies on AI policy"
+      },
+      {
+        "name": "Jason Eshragian",
+        "role": "Partner from University of California Santa Cruz, developer of snnTorch Python library"
+      }
+    ]
   },
   {
     "name": "LISA",
-    "url": "",
+    "url": "https://lisa.ai/",
     "type": "Academic",
     "country": "United States",
     "mission": "Laboratory for Intelligent Systems and AI Safety.",
@@ -6796,7 +7170,7 @@
   },
   {
     "name": "Geodesic Research",
-    "url": "",
+    "url": "https://geodesicresearch.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6804,12 +7178,100 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Empirical Study of Fulfilling Misalignment",
+        "description": "Research investigating whether pretraining data related to AI misalignment makes models less aligned and controllable, studying the Self-Fulfilling Misalignment Problem (SFM). Includes collaboration with HyperstitionAI to generate billions of tokens of positive alignment data.",
+        "status": "Active"
+      },
+      {
+        "name": "Generalisation of Chain-of-Thought Obfuscation",
+        "description": "Investigation of whether chain-of-thought obfuscation learned in one domain generalizes to safety-critical contexts, examining if problematic reasoning hiding transfers across domains from benign to high-stakes scenarios.",
+        "status": "Active"
+      },
+      {
+        "name": "Chain-of-Thought Health Metrics (MARS 3.0)",
+        "description": "Development of metrics to measure chain-of-thought pathologies including post-hoc reasoning, internalized reasoning, and steganography to assess CoT faithfulness and increase visibility into frontier model safety behaviors.",
+        "status": "Active"
+      },
+      {
+        "name": "Externalisation (MARS 3.0)",
+        "description": "Development of early exit mechanisms to increase transparency in language model reasoning by training models to externalize internal reasoning processes through early forward pass exits.",
+        "status": "Active"
+      },
+      {
+        "name": "Chain-of-Thought Injection for AI Control (MARS 3.0)",
+        "description": "Investigation of whether LLMs can be effectively steered using chain-of-thought injections to steer untrusted models away from misaligned behavior through targeted reasoning interventions.",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Edward James Young",
+        "role": "Co-Founder"
+      },
+      {
+        "name": "Puria Radmard",
+        "role": "Co-Founder and Co-Director"
+      },
+      {
+        "name": "Cameron Tice",
+        "role": "Co-Founder and Co-Director"
+      },
+      {
+        "name": "Olivia Benoit",
+        "role": "Co-Founder and Operations"
+      },
+      {
+        "name": "Hannes Whittingham",
+        "role": "Operations"
+      },
+      {
+        "name": "Kyle O'Brien",
+        "role": "Researcher"
+      },
+      {
+        "name": "David Williams-King",
+        "role": "Researcher"
+      },
+      {
+        "name": "Linh Le",
+        "role": "Researcher"
+      },
+      {
+        "name": "Ida Caspary",
+        "role": "Researcher"
+      },
+      {
+        "name": "Manqing Liu",
+        "role": "Researcher"
+      },
+      {
+        "name": "Liza Pavlova",
+        "role": "Researcher"
+      },
+      {
+        "name": "Karthik Viswanathan",
+        "role": "Researcher"
+      },
+      {
+        "name": "Mariia Koroliuk",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lindsay Smith",
+        "role": "Researcher"
+      },
+      {
+        "name": "Ananya Malik",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Dovetail Research",
-    "url": "",
+    "url": "https://dovetailresearch.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -6848,7 +7310,7 @@
   },
   {
     "name": "Whitebox Research",
-    "url": "",
+    "url": "https://whiteboxresearch.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI interpretability research.",
@@ -6856,12 +7318,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Gutenberg",
+        "description": "Uses cutting-edge interpretability techniques to understand and optimize AI models, making them transparent rather than black boxes",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Cadenza Labs",
-    "url": "",
+    "url": "https://cadenzalabs.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -6869,12 +7337,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Building Robust Lie Detectors",
+        "description": "Research and build robust lie detectors for LLMs",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "EleosAI",
-    "url": "",
+    "url": "https://eleosai.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety company.",
@@ -6882,12 +7356,76 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Taking AI Welfare Seriously",
+        "description": "Report arguing there is a realistic possibility of consciousness and/or robust agency in near-future AI systems, with recommendations for AI companies (joint output with NYU Center for Mind, Ethics, and Policy)",
+        "status": "Active"
+      },
+      {
+        "name": "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+        "description": "Study of introspection by finetuning LLMs to predict properties of their own behavior in hypothetical scenarios to inform about moral status",
+        "status": "Active"
+      },
+      {
+        "name": "Towards Evaluating AI Systems for Moral Status Using Self-Reports",
+        "description": "Research agenda towards making AI self-reports more introspection-based and reliable for investigating whether AI systems have states of moral significance",
+        "status": "Active"
+      },
+      {
+        "name": "Consciousness in Artificial Intelligence: Insights from the Science of Consciousness",
+        "description": "Rigorous and empirically grounded approach to AI consciousness, assessing existing AI systems in light of neuroscientific theories of consciousness",
+        "status": "Active"
+      },
+      {
+        "name": "Claude 4 model welfare interviews",
+        "description": "Study of model self-reports examining why they are insufficient for determining AI welfare",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Robert Long",
+        "role": "Executive Director"
+      },
+      {
+        "name": "Rosie Campbell",
+        "role": "Managing Director"
+      },
+      {
+        "name": "Larissa Schiavo",
+        "role": "Events and Comms Specialist"
+      },
+      {
+        "name": "Patrick Butlin",
+        "role": "Senior Research Lead"
+      },
+      {
+        "name": "Abraham Rowe",
+        "role": "Head of Operations"
+      },
+      {
+        "name": "David Chalmers",
+        "role": "Advisor"
+      },
+      {
+        "name": "Owain Evans",
+        "role": "Advisor"
+      },
+      {
+        "name": "Jeff Sebo",
+        "role": "Advisor"
+      },
+      {
+        "name": "Emma Abele",
+        "role": "Advisor"
+      }
+    ]
   },
   {
     "name": "Realm Labs",
-    "url": "",
+    "url": "https://www.realmlabs.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -6895,7 +7433,23 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Realm OmniGuard",
+        "description": "State-of-the-art content moderation that classifies harmful content across text, audio, images, and video in 15+ languages. Detects profanity, CSAM, violence, hate speech, and more with 60-150ms latency.",
+        "status": "Active"
+      },
+      {
+        "name": "Realm Prism",
+        "description": "Real-time AI observability that reveals what your model is thinking with every token. Detect hallucinations, measure grounding, understand user intent, and debug AI behavior 50-300x faster than LLM-as-judge.",
+        "status": "Active"
+      },
+      {
+        "name": "DataRealm",
+        "description": "Discover and protect your sensitive data assets across the enterprise. Scan repositories to identify over-exposed crown jewels and block exfiltration to email, cloud, and AI tools like ChatGPT and Cursor.",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
@@ -6927,7 +7481,7 @@
   },
   {
     "name": "Heron AI Security",
-    "url": "",
+    "url": "https://heron.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI security company.",
@@ -6940,7 +7494,7 @@
   },
   {
     "name": "TFI",
-    "url": "",
+    "url": "https://tfi.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Technical AI safety research.",
@@ -6953,7 +7507,7 @@
   },
   {
     "name": "CBAI",
-    "url": "",
+    "url": "https://cbai.ai/",
     "type": "Academic",
     "country": "United States",
     "mission": "Center for Beneficial AI.",
@@ -6961,7 +7515,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "AI Safety Student Team",
+        "description": "Educational program supported by CBAI",
+        "status": "Active"
+      },
+      {
+        "name": "MIT AI Alignment",
+        "description": "AI alignment research initiative supported by CBAI",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
@@ -7070,7 +7635,7 @@
   },
   {
     "name": "Harmony Intelligence",
-    "url": "",
+    "url": "https://harmonyintelligence.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety company.",
@@ -7085,7 +7650,7 @@
   },
   {
     "name": "AI Safety Awareness Project",
-    "url": "",
+    "url": "https://aisafetyawarenessproject.org/",
     "type": "Nonprofit",
     "country": "International",
     "mission": "AI safety awareness and education.",
@@ -7093,7 +7658,23 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Workshops and Education Programs",
+        "description": "Running workshops and education programs for community groups and public institutions including law enforcement agencies, libraries, churches, universities, and the general public",
+        "status": "Active"
+      },
+      {
+        "name": "Situational Awareness Partnership",
+        "description": "Partnering with industry experts to inform organizations about frontier AI research and developments including workforce augmentation, AI agents, cybercrime, AGI, and loss of control risk",
+        "status": "Active"
+      },
+      {
+        "name": "AI Safety Seminars",
+        "description": "Variety of AI safety seminars and workshops for individuals and organizations of all different levels of AI sophistication",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
@@ -7111,7 +7692,7 @@
   },
   {
     "name": "Evitable",
-    "url": "",
+    "url": "https://evitable.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7124,7 +7705,7 @@
   },
   {
     "name": "GPAI Policy Lab",
-    "url": "",
+    "url": "https://gpai.ai/",
     "type": "Think Tank",
     "country": "International",
     "mission": "Global Partnership on AI policy research.",
@@ -7150,7 +7731,7 @@
   },
   {
     "name": "Charles University ACS",
-    "url": "",
+    "url": "https://ufal.mff.cuni.cz/",
     "type": "Academic",
     "country": "Czech Republic",
     "mission": "AI safety research at Charles University.",
@@ -7158,12 +7739,58 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "CorefUD and CRAC Shared Tasks",
+        "description": "Multilingual work on CorefUD with annotated coreference and anaphoric relations, advancing cross-linguistic research",
+        "status": "Active"
+      },
+      {
+        "name": "PaReNT",
+        "description": "Deep learning tool that models word formation in seven languages",
+        "status": "Active"
+      },
+      {
+        "name": "Neural Models for Multilingual Inflection",
+        "description": "Research on neural models for multilingual inflection",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Milan Straka",
+        "role": "Teacher/Researcher"
+      },
+      {
+        "name": "Jirka Hana",
+        "role": "Teacher/Researcher"
+      },
+      {
+        "name": "Michal Nov\u00e1k",
+        "role": "Researcher"
+      },
+      {
+        "name": "Emil Svoboda",
+        "role": "Researcher"
+      },
+      {
+        "name": "Patr\u00edcia Schmidtov\u00e1",
+        "role": "Ph.D. Student"
+      },
+      {
+        "name": "Jana Strakov\u00e1",
+        "role": "Researcher/Supervisor"
+      },
+      {
+        "name": "Tom\u00e1\u0161 Sourada",
+        "role": "Student"
+      }
+    ]
   },
   {
     "name": "Kairos",
-    "url": "",
+    "url": "https://kairos.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7176,7 +7803,7 @@
   },
   {
     "name": "Truthful AI",
-    "url": "",
+    "url": "https://truthful.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI truthfulness and honesty research.",
@@ -7184,14 +7811,54 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Truthful AI: Developing and governing AI that does not lie",
+        "description": "Research on establishing standards, institutions, and technical methods to prevent AI systems from lying, including avoiding 'negligent falsehoods', creating evaluation institutions, and training AI systems to be truthful via curated datasets and human interaction",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
     "directors": 1,
-    "subteams": 1
+    "subteams": 1,
+    "key_people": [
+      {
+        "name": "Owain Evans",
+        "role": "Lead Author/Researcher"
+      },
+      {
+        "name": "Owen Cotton-Barratt",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lukas Finnveden",
+        "role": "Researcher"
+      },
+      {
+        "name": "Adam Bales",
+        "role": "Researcher"
+      },
+      {
+        "name": "Avital Balwit",
+        "role": "Researcher"
+      },
+      {
+        "name": "Peter Wills",
+        "role": "Researcher"
+      },
+      {
+        "name": "Luca Righetti",
+        "role": "Researcher"
+      },
+      {
+        "name": "William Saunders",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "AI Underwriting Company",
-    "url": "",
+    "url": "https://aiunderwriting.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI risk assessment company.",
@@ -7199,12 +7866,67 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "AIUC-1",
+        "description": "The world's first standard for AI agents covering data & privacy, security, safety, reliability, accountability and societal risks",
+        "status": "Active"
+      },
+      {
+        "name": "AI-Proofing The Board and C-suite",
+        "description": "Research paper by Dr. Keri Pearlson at MIT Sloan and Rajiv Dattani at AIUC",
+        "status": "Active"
+      },
+      {
+        "name": "Stanford Trustworthy AI Research x AIUC partnership",
+        "description": "Partnership with Stanford Professor Dr. Sanmi Koyejo on real-world AI risk for enterprises",
+        "status": "Active"
+      },
+      {
+        "name": "Orrick x AIUC partnership",
+        "description": "Partnership with top AI law firm Orrick, Herrington & Sutcliffe to create AIUC-1",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Rajiv Dattani",
+        "role": "AIUC team member"
+      },
+      {
+        "name": "Phil Venables",
+        "role": "Former CISO at Google"
+      },
+      {
+        "name": "Dr. Keri Pearlson",
+        "role": "Principal Research Scientist at MIT Sloan"
+      },
+      {
+        "name": "Lena Smart",
+        "role": "SecurityPal (former CISO of MongoDB)"
+      },
+      {
+        "name": "Dr. Christina Liaghati",
+        "role": "MITRE ATLAS Lead"
+      },
+      {
+        "name": "Sanmi Koyejo",
+        "role": "Professor, Stanford"
+      },
+      {
+        "name": "John Bautista",
+        "role": "Orrick Partner, Creator of the YC SAFE"
+      },
+      {
+        "name": "Hyrum Anderson",
+        "role": "AI security expert"
+      }
+    ]
   },
   {
     "name": "Midas Project",
-    "url": "",
+    "url": "https://midasproject.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7217,7 +7939,7 @@
   },
   {
     "name": "Oxford Martin AIGI",
-    "url": "",
+    "url": "https://www.oxfordmartin.ox.ac.uk/ai-governance/",
     "type": "Academic",
     "country": "United Kingdom",
     "mission": "Oxford Martin AI Governance Initiative.",
@@ -7225,12 +7947,84 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "A Blueprint for Multinational Advanced AI Development",
+        "description": "Research on multinational approaches to advanced AI development",
+        "status": "Active"
+      },
+      {
+        "name": "The Annual AI Governance Report 2025: Steering the Future of AI",
+        "description": "Annual report on AI governance trends and recommendations",
+        "status": "Active"
+      },
+      {
+        "name": "Examining AI Safety as a Global Public Good",
+        "description": "Research on AI safety implications, challenges, and research priorities from a global public good perspective",
+        "status": "Active"
+      },
+      {
+        "name": "Open Problems in Machine Unlearning for AI Safety",
+        "description": "Research on machine unlearning techniques for AI safety applications",
+        "status": "Active"
+      },
+      {
+        "name": "Justice AI initiative",
+        "description": "Initiative focusing on the use of AI in the American criminal justice system",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Robert Trager",
+        "role": "Director"
+      },
+      {
+        "name": "Michael Osborne",
+        "role": "Professor of Machine Learning"
+      },
+      {
+        "name": "Nikki Sun",
+        "role": "Programme Manager"
+      },
+      {
+        "name": "Marta Ziosi",
+        "role": "Postdoctoral Researcher"
+      },
+      {
+        "name": "Nicholas Caputo",
+        "role": "Legal Researcher"
+      },
+      {
+        "name": "Fazl Barez",
+        "role": "Postdoctoral Research Fellow"
+      },
+      {
+        "name": "Ben Garfinkel",
+        "role": "Postdoctoral Researcher"
+      },
+      {
+        "name": "Allan Dafoe",
+        "role": "Director of Frontier Safety and Governance at Google DeepMind (Visiting Fellow)"
+      },
+      {
+        "name": "Julia C. Morse",
+        "role": "Visiting Fellow"
+      },
+      {
+        "name": "Sam Daws",
+        "role": "Visiting Fellow"
+      },
+      {
+        "name": "Henry de Zoete",
+        "role": "Visiting Fellow"
+      }
+    ]
   },
   {
     "name": "Watertight AI",
-    "url": "",
+    "url": "https://watertight.ai/",
     "type": "Lab Safety Team",
     "country": "United Kingdom",
     "mission": "AI safety and security company.",
@@ -7243,7 +8037,7 @@
   },
   {
     "name": "MAI",
-    "url": "",
+    "url": "https://mai.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7251,13 +8045,35 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "BodyMap",
+        "description": "VR platform for exploring human anatomy in an engaging 3D environment",
+        "status": "Active"
+      },
+      {
+        "name": "AcuMap",
+        "description": "The world's first VR training solution for acupuncture",
+        "status": "Active"
+      },
+      {
+        "name": "Project OME",
+        "description": "Platform for building patient-specific models",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
-    "directors": 3
+    "directors": 3,
+    "key_people": [
+      {
+        "name": "Gregory Katz",
+        "role": "Assistant Professor of Medicine, NYU Grossman School of Medicine"
+      }
+    ]
   },
   {
     "name": "CLAIR",
-    "url": "",
+    "url": "https://clair.ai/",
     "type": "Academic",
     "country": "United States",
     "mission": "Center for Language and AI Research.",
@@ -7270,7 +8086,7 @@
   },
   {
     "name": "Asymmetric Security",
-    "url": "",
+    "url": "https://asymmetricsecurity.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI security research.",
@@ -7283,7 +8099,7 @@
   },
   {
     "name": "Atlas Computing",
-    "url": "",
+    "url": "https://atlascomputing.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety computing infrastructure.",
@@ -7291,14 +8107,35 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "cybersecurity asymmetry",
+        "description": "Developing tools that enable formal verification as a defense-dominant paradigm to address the problem where AI systems used to find and fix vulnerabilities could become powerful cyber weapons",
+        "status": "Active"
+      },
+      {
+        "name": "Focused Research Organization for formal specifications",
+        "description": "Building tools that generate and validate formal specifications in partnership with Convergent Research",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
     "directors": 3,
-    "subteams": 1
+    "subteams": 1,
+    "key_people": [
+      {
+        "name": "Evan",
+        "role": "CEO"
+      },
+      {
+        "name": "Jason Gross",
+        "role": "Former researcher (left to start Theorem Labs)"
+      }
+    ]
   },
   {
     "name": "Fulcrum Research",
-    "url": "",
+    "url": "https://fulcrumresearch.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7306,12 +8143,23 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Quibbler and Orchestra",
+        "description": "Tooling that tells you what your ML evals and environments are truly testing for",
+        "status": "Active"
+      },
+      {
+        "name": "Inference time infrastructure for agent deployment",
+        "description": "Building infrastructure to safely deploy agents in the world",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Safeguarded AI",
-    "url": "",
+    "url": "https://safeguardedai.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety company.",
@@ -7325,7 +8173,7 @@
   },
   {
     "name": "Secure AI Project",
-    "url": "",
+    "url": "https://secureaiproject.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI security research project.",
@@ -7339,7 +8187,7 @@
   },
   {
     "name": "Lucid Computing",
-    "url": "",
+    "url": "https://lucidcomputing.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI interpretability company.",
@@ -7347,12 +8195,28 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Landmark Endorser Network",
+        "description": "Robust server network being deployed to achieve 97% country reach, covering all relevant jurisdictions globally for location verification",
+        "status": "Active"
+      },
+      {
+        "name": "Cryptographic Location Verification Platform",
+        "description": "Platform providing hardware-rooted cryptographic proof that AI workloads operate within designated boundaries using Trusted Execution Environments",
+        "status": "Active"
+      },
+      {
+        "name": "Delay-based Location Protocol",
+        "description": "Protocol that verifies distance and location of AI accelerators through timing measurements in TEE connections",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Contramont Research",
-    "url": "",
+    "url": "https://contramont.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7360,12 +8224,33 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "LM backdoors",
+        "description": "Research on backdoors in language models",
+        "status": "Active"
+      },
+      {
+        "name": "real-world evals",
+        "description": "Real-world evaluations research",
+        "status": "Active"
+      },
+      {
+        "name": "scalable oversight",
+        "description": "Research on scalable oversight methods",
+        "status": "Active"
+      },
+      {
+        "name": "Unelicitable Backdoors in Language Models via Cryptographic Transformer Circuits",
+        "description": "Research on unelicitable backdoors in language models using cryptographic transformer circuits",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Cosmos Institute",
-    "url": "",
+    "url": "https://cosmosinstitute.com/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Long-term AI research institute.",
@@ -7378,7 +8263,7 @@
   },
   {
     "name": "CaML",
-    "url": "",
+    "url": "https://caml.org/",
     "type": "Academic",
     "country": "United States",
     "mission": "Center for AI and Machine Learning safety.",
@@ -7405,7 +8290,7 @@
   },
   {
     "name": "EconTAI",
-    "url": "",
+    "url": "https://econtai.org/",
     "type": "Academic",
     "country": "United States",
     "mission": "Economics of transformative AI research.",
@@ -7413,12 +8298,57 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Labor Market Transformation",
+        "description": "Evaluation of AI impact on employment, analysis of changing skill demands, transition policies for displaced workers, and future of work scenario planning",
+        "status": "Active"
+      },
+      {
+        "name": "Macroeconomic Implications",
+        "description": "AI's impact on productivity and growth, income and wealth distribution effects, demand management in an AI economy, and international competitiveness",
+        "status": "Active"
+      },
+      {
+        "name": "AI Safety & Economic Governance",
+        "description": "Governance of transformative AI, economic metrics for AI safety trade-offs, new taxation frameworks, and international coordination mechanisms",
+        "status": "Active"
+      },
+      {
+        "name": "Economic Research Automation",
+        "description": "AI agents for economic research, development of autonomous co-scientists, automated research dissemination, and automated research evaluation",
+        "status": "Active"
+      },
+      {
+        "name": "Financial Sector Implications",
+        "description": "AI transformation of financial services, AI agents in the financial sector, financial stability risks, and systemic vulnerabilities",
+        "status": "Active"
+      },
+      {
+        "name": "Economics of AI Agents",
+        "description": "Economic theory for AI agent interactions, market dynamics with AI participants, regulatory frameworks for AI agents, and AI-driven economic systems",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Anton Korinek",
+        "role": "Faculty Director"
+      },
+      {
+        "name": "Basil Halperin",
+        "role": "Associated Faculty"
+      },
+      {
+        "name": "Lee Lockwood",
+        "role": "Associated Faculty"
+      }
+    ]
   },
   {
     "name": "Aether",
-    "url": "",
+    "url": "https://aether.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI ethics and safety research.",
@@ -7432,7 +8362,7 @@
   },
   {
     "name": "CivAI",
-    "url": "",
+    "url": "https://civai.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Civic AI safety organization.",
@@ -7440,13 +8370,29 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "We Need To Talk: The AI Voice Game",
+        "description": "Interactive demo tool for the public",
+        "status": "Active"
+      },
+      {
+        "name": "Briefings for civil society organizations",
+        "description": "Eye-opening presentations of AI technology for leadership and constituents, delivered free of charge",
+        "status": "Active"
+      },
+      {
+        "name": "Interactive tools for the public",
+        "description": "Demos that strive for 'aha' moments while illuminating societal consequences from AI",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
     "directors": 2
   },
   {
     "name": "Equistamp",
-    "url": "",
+    "url": "https://equistamp.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI evaluation company.",
@@ -7454,12 +8400,57 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Evaluation Implementation",
+        "description": "Build and run evaluations, baselines, and benchmarks using Inspect and similar frameworks",
+        "status": "Active"
+      },
+      {
+        "name": "Data Annotation",
+        "description": "Quality data labeling and annotation pipelines for research projects with managed annotation teams",
+        "status": "Active"
+      },
+      {
+        "name": "Red/Blue Teaming",
+        "description": "Adversarial testing and stress-testing for AI systems to find vulnerabilities and improve robustness",
+        "status": "Active"
+      },
+      {
+        "name": "Project Operations",
+        "description": "Administrative and organizational support including grant administration, hiring logistics, and operational overhead",
+        "status": "Active"
+      },
+      {
+        "name": "Research Support",
+        "description": "General technical labor pool for AI safety research with task-based work on flexible schedule",
+        "status": "Active"
+      },
+      {
+        "name": "Financing",
+        "description": "Flexible payment terms and assistance with grant writing and fund raising",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Chris Canal",
+        "role": "CEO"
+      },
+      {
+        "name": "Daniel O'Connell",
+        "role": "CTO"
+      },
+      {
+        "name": "Rob Miles",
+        "role": "AI Advisor"
+      }
+    ]
   },
   {
     "name": "dmodel",
-    "url": "",
+    "url": "https://dmodel.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI model analysis company.",
@@ -7467,13 +8458,29 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "RLVR",
+        "description": "Research focus area mentioned as part of fundamental AI research",
+        "status": "Active"
+      },
+      {
+        "name": "Interpretability",
+        "description": "Research focus area for understanding AI models",
+        "status": "Active"
+      },
+      {
+        "name": "Agents",
+        "description": "Research on agents to automate the path to aligned superintelligence",
+        "status": "Active"
+      }
+    ],
     "benchmarks": [],
     "directors": 2
   },
   {
     "name": "CORAL",
-    "url": "",
+    "url": "https://coral.ai/",
     "type": "Academic",
     "country": "United States",
     "mission": "Center for Open and Responsible AI Lab.",
@@ -7486,7 +8493,7 @@
   },
   {
     "name": "Seldon Labs",
-    "url": "",
+    "url": "https://seldonlabs.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -7499,7 +8506,7 @@
   },
   {
     "name": "Principia Labs",
-    "url": "",
+    "url": "https://principialabs.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -7507,12 +8514,24 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Automated Mathematical Discovery",
+        "description": "AI systems that can reason, discover, and prove at the frontier of mathematical knowledge using large-scale pretraining with reinforcement learning",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Harry",
+        "role": "Contact/Team Member"
+      }
+    ]
   },
   {
     "name": "DeepResponse",
-    "url": "",
+    "url": "https://deepresponse.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI incident response company.",
@@ -7525,7 +8544,7 @@
   },
   {
     "name": "Decode Research",
-    "url": "",
+    "url": "https://decoderesearch.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI interpretability research.",
@@ -7533,12 +8552,38 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Neuronpedia",
+        "description": "Interpretability platform for understanding, visualizing, testing, and searching AI internals",
+        "status": "Active"
+      },
+      {
+        "name": "SAELens",
+        "description": "Open-source library for training and analyzing Sparse Autoencoders (SAEs)",
+        "status": "Active"
+      },
+      {
+        "name": "SAEDashboard",
+        "description": "Generate dashboards for visualizing SAE features",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Johnny Lin",
+        "role": "Leader"
+      },
+      {
+        "name": "David Chanin",
+        "role": "Significant support"
+      }
+    ]
   },
   {
     "name": "Coordinal",
-    "url": "",
+    "url": "https://coordinal.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI coordination research.",
@@ -7551,7 +8596,7 @@
   },
   {
     "name": "Mosaic Labs",
-    "url": "",
+    "url": "https://mosaiclabs.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -7564,7 +8609,7 @@
   },
   {
     "name": "Andon Labs",
-    "url": "",
+    "url": "https://andonlabs.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety monitoring company.",
@@ -7572,7 +8617,38 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Safe Autonomous Organization",
+        "description": "Building and iteratively launching autonomous organizations while bridging AI control research with real-world testing",
+        "status": "Active"
+      },
+      {
+        "name": "Vending-Bench 2 and Arena",
+        "description": "A benchmark where models manage a simulated vending machine business for a full year, navigating adversarial suppliers, negotiations, and customer complaints while maximizing profits. Arena version allows models to compete with each other",
+        "status": "Active"
+      },
+      {
+        "name": "Butter-Bench",
+        "description": "Evaluating LLM controlled robots for practical intelligence by testing delivery tasks in household settings",
+        "status": "Active"
+      },
+      {
+        "name": "Blueprint-Bench",
+        "description": "Testing spatial intelligence in AI models by asking them to convert apartment photographs into accurate 2D floor plans",
+        "status": "Active"
+      },
+      {
+        "name": "Andon Vending",
+        "description": "A vending machine operated entirely by an AI agent, accessible through messaging apps to provide insights into safety and alignment of LLMs in the real world",
+        "status": "Active"
+      },
+      {
+        "name": "Vending-Bench",
+        "description": "A benchmark where models manage a simulated vending machine business over long time horizons (months)",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
@@ -7603,7 +8679,7 @@
   },
   {
     "name": "Workshop Labs",
-    "url": "",
+    "url": "https://workshoplabs.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety experimentation lab.",
@@ -7611,12 +8687,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Personal AI Models",
+        "description": "Building technology to train billions of models, one for each person, that are aligned to individual goals and values with verifiable privacy",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Aelus",
-    "url": "",
+    "url": "https://aelus.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety company.",
@@ -7629,7 +8711,7 @@
   },
   {
     "name": "Simplex",
-    "url": "",
+    "url": "https://simplex.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety simplification research.",
@@ -7668,7 +8750,7 @@
   },
   {
     "name": "Theorem Labs",
-    "url": "",
+    "url": "https://theoremlabs.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI verification research.",
@@ -7681,7 +8763,7 @@
   },
   {
     "name": "Ulyssean",
-    "url": "",
+    "url": "https://ulyssean.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Long-term AI safety research.",
@@ -7694,7 +8776,7 @@
   },
   {
     "name": "Trajectory Labs",
-    "url": "",
+    "url": "https://trajectorylabs.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI trajectory research.",
@@ -7707,7 +8789,7 @@
   },
   {
     "name": "TamperSec",
-    "url": "",
+    "url": "https://tampersec.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI tamper-resistance security.",
@@ -7715,12 +8797,23 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Physical Defense Mechanisms for High-Performance Computing",
+        "description": "Developing physical defense mechanisms that can be retrofitted to existing High-Performance Computing servers while addressing thermal and space constraints",
+        "status": "Active"
+      },
+      {
+        "name": "Attack Vector Research",
+        "description": "Research into potential offensive attack vectors for high-performance compute chips to better understand and defend against sophisticated physical attacks",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "AI Standards Lab",
-    "url": "",
+    "url": "https://aistandardslab.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety standards research.",
@@ -7728,12 +8821,58 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "GPAI Risk Sources and Risk Management Catalog",
+        "description": "Converting insights from existing literature into ready-made text for formal AI safety standards documents, including a 150-page contribution of state-of-the-art GPAI risk sources and risk management practices",
+        "status": "Active"
+      },
+      {
+        "name": "EU AI Act Codes of Practice Support",
+        "description": "Providing technical contributions to EU AI Office for drafting AI Codes of Practice in support of the EU AI Act, covering GPAI models transparency, systemic risk assessment and mitigation",
+        "status": "Active"
+      },
+      {
+        "name": "Risk Sources and Risk Management Measures for General-Purpose AI Systems",
+        "description": "Published paper offering a catalog of state-of-the-art risks and risk management measures for GPAIs, released with public domain license for adoption into GPAI standards globally",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Koen Holtman",
+        "role": "Co-lead and resident standards expert"
+      },
+      {
+        "name": "Chin Ze Shen",
+        "role": "Co-Lead"
+      },
+      {
+        "name": "Ariel Gil",
+        "role": "Co-founder / Board President"
+      },
+      {
+        "name": "Jonathan Happel",
+        "role": "Co-Founder / Member of Board"
+      },
+      {
+        "name": "Rokas Gipiskis",
+        "role": "Research Analyst"
+      },
+      {
+        "name": "Ayrton San Joaquin",
+        "role": "Research Analyst"
+      },
+      {
+        "name": "Adrian Regenfu\u00df",
+        "role": "Research Analyst"
+      }
+    ]
   },
   {
     "name": "LASST",
-    "url": "",
+    "url": "https://lasst.org/",
     "type": "Academic",
     "country": "United States",
     "mission": "Lab for AI Safety and Security Testing.",
@@ -7741,12 +8880,28 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Research on Legal Advocacy for Science and Technology Safety",
+        "description": "Research ways legal advocacy can make advances in science and technology safer for people and the planet",
+        "status": "Active"
+      },
+      {
+        "name": "Legal Professional Education and Empowerment",
+        "description": "Empower legal professionals with the knowledge and tools they need to contribute to a safer future",
+        "status": "Active"
+      },
+      {
+        "name": "Court and Policy Advocacy",
+        "description": "Advocate in courts and policy-making institutions to promote safe and responsible science and technology",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Groundless",
-    "url": "",
+    "url": "https://groundless.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7754,7 +8909,38 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Diffuse Concepts",
+        "description": "An approach to theorization that is not grounded on a fixed core template, using AI to combine flexible 'theory-prompts' with 'application-prompts' for more context-sensitive theorization",
+        "status": "Active"
+      },
+      {
+        "name": "Modeling copilots",
+        "description": "Building AI systems that assist with interface design by drawing from theoretical frameworks while remaining flexible to specific contexts",
+        "status": "Active"
+      },
+      {
+        "name": "Connection interfaces",
+        "description": "Creating custom interfaces that can recognize and respond to unique characteristics and needs of each context without bureaucratic constraints",
+        "status": "Active"
+      },
+      {
+        "name": "Empty Form",
+        "description": "A groundless approach to AI alignment that doesn't rely on establishing fixed foundations, embracing uncertainty and change as fundamental aspects",
+        "status": "Active"
+      },
+      {
+        "name": "Diffuse Response",
+        "description": "Live Theories or metaformalisms that allow insights to scale without exclusion using AI infrastructure for conceptual transformations",
+        "status": "Active"
+      },
+      {
+        "name": "Live Machinery",
+        "description": "Dynamic systems that allow keeping pace with evasive intelligence through personalized, context-adaptive approaches rather than rigid templates",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
@@ -7823,7 +9009,7 @@
   },
   {
     "name": "Poseidon Research",
-    "url": "",
+    "url": "https://poseidonresearch.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7836,7 +9022,7 @@
   },
   {
     "name": "Formation Research",
-    "url": "",
+    "url": "https://formationresearch.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7844,12 +9030,23 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Lock-In Risk Research",
+        "description": "Researching fundamental lock-in dynamics",
+        "status": "Active"
+      },
+      {
+        "name": "High-Impact Interventions",
+        "description": "Implementing high-impact interventions to reduce lock-in risks",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Theomachia Labs",
-    "url": "",
+    "url": "https://theomachialabs.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research lab.",
@@ -7857,12 +9054,18 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Novel AI Control Protocol Classes Evaluation and Scalability",
+        "description": "Investigating alternative AI control protocol classes and their scaling properties as model capabilities increase, building on Greenblatt et al.'s control evaluation framework. Focuses on hierarchical and parallel control structures for superior safety-usefulness tradeoffs.",
+        "status": "Active"
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Ashgro",
-    "url": "",
+    "url": "https://ashgro.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -7870,8 +9073,41 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "AI Safety Info",
+        "description": "Project made possible through Ashgro's fiscal sponsorship, involving a global team",
+        "status": "Active"
+      },
+      {
+        "name": "Timaeus",
+        "description": "Project using Ashgro as fiscal sponsor for nonprofit operations and admin handling",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Luke Freeman",
+        "role": "Board of Directors"
+      },
+      {
+        "name": "Greg Sadler",
+        "role": "Board of Directors"
+      },
+      {
+        "name": "JJ Hepburn",
+        "role": "Board of Directors"
+      },
+      {
+        "name": "Plex",
+        "role": "Coordinator, AI Safety Info"
+      },
+      {
+        "name": "Jesse Hoogland",
+        "role": "Executive Director, Timaeus"
+      }
+    ]
   },
   {
     "name": "Deducto",
@@ -7888,7 +9124,7 @@
   },
   {
     "name": "Luthien",
-    "url": "",
+    "url": "https://luthien.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
