@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
-import { orgs, slugify, getStats, type Org } from "./lib/data";
-import { UserMenu } from "./components/user-menu";
+import { useRouter } from "next/navigation";
+import { orgs, slugify, getStats, type Org, getAllProjects, getAllBenchmarks } from "./lib/data";
 
 const ORG_TYPES = [
   { value: "all", label: "All" },
@@ -106,10 +106,120 @@ function OrgCard({ org, index }: { org: Org; index: number }) {
   );
 }
 
+// AI Search result types
+type SearchResult = {
+  type: "org" | "project" | "benchmark";
+  name: string;
+  slug: string;
+  description?: string;
+  score: number;
+};
+
+function SparklesIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+    </svg>
+  );
+}
+
 export default function Home() {
+  const router = useRouter();
   const [search, setSearch] = useState("");
+  const [aiQuery, setAiQuery] = useState("");
+  const [aiResults, setAiResults] = useState<SearchResult[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [showResults, setShowResults] = useState(false);
   const [typeFilter, setTypeFilter] = useState("all");
+  const searchRef = useRef<HTMLDivElement>(null);
   const stats = getStats();
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+        setShowResults(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // AI Search function - searches across all entities
+  const performAiSearch = (query: string) => {
+    if (!query.trim()) {
+      setAiResults([]);
+      return;
+    }
+
+    setIsSearching(true);
+    const queryLower = query.toLowerCase();
+    const results: SearchResult[] = [];
+
+    // Search organizations
+    orgs.forEach((org) => {
+      let score = 0;
+      if (org.name.toLowerCase().includes(queryLower)) score += 10;
+      if (org.mission?.toLowerCase().includes(queryLower)) score += 5;
+      if (org.focus_areas?.some(a => a.toLowerCase().includes(queryLower))) score += 3;
+      if (score > 0) {
+        results.push({
+          type: "org",
+          name: org.name,
+          slug: slugify(org.name),
+          description: org.mission?.slice(0, 100),
+          score,
+        });
+      }
+    });
+
+    // Search projects
+    const projects = getAllProjects();
+    projects.forEach((project) => {
+      let score = 0;
+      if (project.name.toLowerCase().includes(queryLower)) score += 10;
+      if (project.description?.toLowerCase().includes(queryLower)) score += 5;
+      if (score > 0) {
+        results.push({
+          type: "project",
+          name: project.name,
+          slug: slugify(project.name),
+          description: project.description?.slice(0, 100),
+          score,
+        });
+      }
+    });
+
+    // Search benchmarks
+    const benchmarks = getAllBenchmarks();
+    benchmarks.forEach((benchmark) => {
+      let score = 0;
+      if (benchmark.name.toLowerCase().includes(queryLower)) score += 10;
+      if (benchmark.measures?.toLowerCase().includes(queryLower)) score += 5;
+      if (score > 0) {
+        results.push({
+          type: "benchmark",
+          name: benchmark.name,
+          slug: slugify(benchmark.name),
+          description: benchmark.measures?.slice(0, 100),
+          score,
+        });
+      }
+    });
+
+    // Sort by score and limit results
+    results.sort((a, b) => b.score - a.score);
+    setAiResults(results.slice(0, 8));
+    setIsSearching(false);
+  };
+
+  // Debounced search
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      performAiSearch(aiQuery);
+    }, 200);
+    return () => clearTimeout(timer);
+  }, [aiQuery]);
 
   const filteredOrgs = useMemo(() => {
     return orgs.filter((org) => {
@@ -127,6 +237,24 @@ export default function Home() {
     });
   }, [search, typeFilter]);
 
+  const handleResultClick = (result: SearchResult) => {
+    setShowResults(false);
+    setAiQuery("");
+    router.push(`/${result.type}/${result.slug}`);
+  };
+
+  const typeLabels = {
+    org: "Organization",
+    project: "Project",
+    benchmark: "Benchmark",
+  };
+
+  const typeColors = {
+    org: "bg-blue-100 text-blue-700",
+    project: "bg-emerald-100 text-emerald-700",
+    benchmark: "bg-purple-100 text-purple-700",
+  };
+
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Hero Header */}
@@ -142,17 +270,83 @@ export default function Home() {
                 publications, and open problems
               </p>
             </div>
-            <UserMenu />
+            <div className="flex items-center gap-4">
+              <Link 
+                href="/about" 
+                className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] no-underline"
+              >
+                About
+              </Link>
+              <a 
+                href="https://github.com/afiorg9000/aisafetyresearchhub" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm text-[var(--muted)] hover:text-[var(--foreground)] no-underline"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.417 2.865 8.17 6.821 9.504.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.364-1.34-3.364-1.34-.455-1.157-1.11-1.465-1.11-1.465-.908-.618.069-.606.069-.606 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.084 2.902.829.091-.645.356-1.084.654-1.33-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" clipRule="evenodd" />
+                </svg>
+                GitHub
+              </a>
+            </div>
           </div>
 
-          {/* Search Bar */}
-          <Link
-            href="/search"
-            className="mt-6 flex items-center gap-3 w-full max-w-2xl px-4 py-3.5 bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--muted)] hover:border-[var(--border-dark)] transition-colors no-underline"
-          >
-            <SearchIcon className="w-5 h-5" />
-            <span>Search organizations, publications, benchmarks, problems...</span>
-          </Link>
+          {/* AI Search Bar */}
+          <div className="relative mt-6 max-w-2xl" ref={searchRef}>
+            <div className="relative">
+              <SparklesIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--accent)]" />
+              <input
+                type="text"
+                value={aiQuery}
+                onChange={(e) => {
+                  setAiQuery(e.target.value);
+                  setShowResults(true);
+                }}
+                onFocus={() => setShowResults(true)}
+                placeholder="Search organizations, projects, benchmarks..."
+                className="w-full pl-12 pr-4 py-3.5 bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--foreground)] placeholder:text-[var(--muted)] hover:border-[var(--border-dark)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-muted)] focus:outline-none transition-all"
+              />
+              {isSearching && (
+                <div className="absolute right-4 top-1/2 -translate-y-1/2">
+                  <div className="w-4 h-4 border-2 border-[var(--accent)] border-t-transparent rounded-full animate-spin" />
+                </div>
+              )}
+            </div>
+
+            {/* Search Results Dropdown */}
+            {showResults && aiQuery.trim() && (
+              <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg overflow-hidden z-50">
+                {aiResults.length > 0 ? (
+                  <div className="max-h-96 overflow-y-auto">
+                    {aiResults.map((result, i) => (
+                      <button
+                        key={`${result.type}-${result.slug}-${i}`}
+                        onClick={() => handleResultClick(result)}
+                        className="w-full px-4 py-3 text-left hover:bg-[var(--background-alt)] transition-colors border-b border-[var(--border)] last:border-b-0"
+                      >
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className={`text-xs px-2 py-0.5 rounded font-medium ${typeColors[result.type]}`}>
+                            {typeLabels[result.type]}
+                          </span>
+                          <span className="font-medium text-[var(--foreground)]">{result.name}</span>
+                        </div>
+                        {result.description && (
+                          <p className="text-sm text-[var(--muted)] line-clamp-1">
+                            {result.description}...
+                          </p>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="px-4 py-6 text-center text-[var(--muted)]">
+                    <p>No results found for &quot;{aiQuery}&quot;</p>
+                    <p className="text-sm mt-1">Try different keywords</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-6 mt-6">
