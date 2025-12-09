@@ -128,9 +128,9 @@ export default function ProblemDetailPage({ params }: { params: Promise<{ slug: 
   const [newComment, setNewComment] = useState("");
 
   // Will be replaced with Supabase query
-  const problem: Problem | null = null;
-  const workers: Worker[] = [];
-  const comments: Comment[] = [];
+  const [problem] = useState<Problem | null>(null);
+  const [workers] = useState<Worker[]>([]);
+  const [comments] = useState<Comment[]>([]);
 
   const handleVote = (voteType: -1 | 1) => {
     if (!user) return;
