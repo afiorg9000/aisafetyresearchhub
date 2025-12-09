@@ -2897,5 +2897,679 @@
     ],
     "projects": [],
     "benchmarks": []
+  },
+  {
+    "name": "Truthful AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI truthfulness and honesty research.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 1,
+    "subteams": 1
+  },
+  {
+    "name": "AI Underwriting Company",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI risk assessment company.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Midas Project",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Oxford Martin AIGI",
+    "url": "",
+    "type": "Academic",
+    "country": "United Kingdom",
+    "mission": "Oxford Martin AI Governance Initiative.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Watertight AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "AI safety and security company.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "MAI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "CLAIR",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Center for Language and AI Research.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Asymmetric Security",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI security research.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Atlas Computing",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety computing infrastructure.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3,
+    "subteams": 1
+  },
+  {
+    "name": "Fulcrum Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Safeguarded AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety company.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 1
+  },
+  {
+    "name": "Secure AI Project",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI security research project.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "Lucid Computing",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI interpretability company.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Contramont Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Cosmos Institute",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Long-term AI research institute.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "CaML",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Center for AI and Machine Learning safety.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 1
+  },
+  {
+    "name": "Equilibria Network",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI coordination research.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "EconTAI",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Economics of transformative AI research.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Aether",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI ethics and safety research.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 1
+  },
+  {
+    "name": "CivAI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Civic AI safety organization.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Equistamp",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI evaluation company.",
+    "employees": 3,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "dmodel",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI model analysis company.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "CORAL",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Center for Open and Responsible AI Lab.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Seldon Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Principia Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "DeepResponse",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI incident response company.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Decode Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI interpretability research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Coordinal",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI coordination research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Mosaic Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Andon Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety monitoring company.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Aligned AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "AI alignment company.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Orthogonal",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "AI safety research company.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Workshop Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety experimentation lab.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Aelus",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety company.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Simplex",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety simplification research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Aethra Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Freestyle Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Independent AI safety research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Theorem Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI verification research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Ulyssean",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Long-term AI safety research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Trajectory Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI trajectory research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "TamperSec",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI tamper-resistance security.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "AI Standards Lab",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety standards research.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "LASST",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Lab for AI Safety and Security Testing.",
+    "employees": 2,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Groundless",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "AI Impacts",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI forecasting and impact research.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Poseidon Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Formation Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Theomachia Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Ashgro",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Deducto",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI reasoning verification company.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Luthien",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 1,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
   }
 ]
