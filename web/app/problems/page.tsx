@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useAuth } from "../components/auth-provider";
+import { getAllOpenProblems, type OpenProblem } from "../lib/data";
 
 // Focus areas for filtering
 const FOCUS_AREAS = [
@@ -10,35 +11,14 @@ const FOCUS_AREAS = [
   "Alignment",
   "Interpretability",
   "Governance",
-  "Evaluations",
-  "Red Teaming",
-  "Biosecurity",
-  "Cyber",
-  "Agent Safety",
-  "Scalable Oversight",
+  "Evals",
+  "Robustness",
 ];
 
 const SORT_OPTIONS = [
   { value: "newest", label: "Newest" },
-  { value: "score", label: "Most Upvoted" },
-  { value: "workers", label: "Most Active" },
-  { value: "comments", label: "Most Discussed" },
+  { value: "difficulty", label: "By Difficulty" },
 ];
-
-// Problem type definition
-type Problem = {
-  id: string;
-  slug: string;
-  title: string;
-  description: string;
-  focus_area: string;
-  status: string;
-  score: number;
-  workers_count: number;
-  comments_count: number;
-  created_at: string;
-  submitted_by: { name: string };
-};
 
 function SearchIcon({ className }: { className?: string }) {
   return (
@@ -48,36 +28,17 @@ function SearchIcon({ className }: { className?: string }) {
   );
 }
 
-function ArrowUpIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
-    </svg>
-  );
-}
-
-function ChatIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
-    </svg>
-  );
-}
-
-function UsersIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
-    </svg>
-  );
-}
-
-function ProblemCard({ problem, index }: { problem: Problem; index: number }) {
+function ProblemCard({ problem, index }: { problem: OpenProblem; index: number }) {
   const statusColors: Record<string, string> = {
     open: "!bg-amber-50 !text-amber-700 !border-amber-200",
     in_progress: "!bg-blue-50 !text-blue-700 !border-blue-200",
     solved: "!bg-green-50 !text-green-700 !border-green-200",
-    closed: "!bg-gray-50 !text-gray-500 !border-gray-200",
+  };
+
+  const difficultyColors: Record<string, string> = {
+    foundational: "!bg-red-50 !text-red-700 !border-red-200",
+    hard: "!bg-orange-50 !text-orange-700 !border-orange-200",
+    medium: "!bg-yellow-50 !text-yellow-700 !border-yellow-200",
   };
 
   return (
@@ -87,16 +48,14 @@ function ProblemCard({ problem, index }: { problem: Problem; index: number }) {
     >
       {/* Header */}
       <div className="flex items-start justify-between gap-4 mb-3">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
           <span className="research-tag">{problem.focus_area}</span>
           <span className={`research-tag ${statusColors[problem.status]}`}>
             {problem.status.replace("_", " ")}
           </span>
-        </div>
-        {/* Vote score */}
-        <div className="flex items-center gap-1 text-[var(--muted)]">
-          <ArrowUpIcon className="w-4 h-4" />
-          <span className="text-sm font-medium">{problem.score}</span>
+          <span className={`research-tag ${difficultyColors[problem.difficulty]}`}>
+            {problem.difficulty}
+          </span>
         </div>
       </div>
 
@@ -115,16 +74,17 @@ function ProblemCard({ problem, index }: { problem: Problem; index: number }) {
         {problem.description}
       </p>
 
+      {/* Related Work */}
+      {problem.related_work && problem.related_work.length > 0 && (
+        <div className="text-xs text-[var(--muted-light)] mb-4">
+          Related: {problem.related_work.slice(0, 2).join(", ")}
+          {problem.related_work.length > 2 && ` +${problem.related_work.length - 2} more`}
+        </div>
+      )}
+
       {/* Meta */}
       <div className="flex items-center gap-4 pt-4 border-t border-[var(--border)] text-xs text-[var(--muted-light)]">
-        <div className="flex items-center gap-1">
-          <UsersIcon className="w-3.5 h-3.5" />
-          <span>{problem.workers_count} working on this</span>
-        </div>
-        <div className="flex items-center gap-1">
-          <ChatIcon className="w-3.5 h-3.5" />
-          <span>{problem.comments_count} comments</span>
-        </div>
+        <span>Submitted by {problem.submitted_by}</span>
         <span className="ml-auto">{problem.created_at}</span>
       </div>
     </article>
@@ -135,10 +95,9 @@ export default function ProblemsPage() {
   const { user } = useAuth();
   const [search, setSearch] = useState("");
   const [focusArea, setFocusArea] = useState("All Areas");
-  const [sortBy, setSortBy] = useState("score");
+  const [sortBy, setSortBy] = useState("newest");
 
-  // Will be replaced with Supabase query
-  const problems: Problem[] = [];
+  const problems = getAllOpenProblems();
 
   const filteredProblems = useMemo(() => {
     let filtered = [...problems];
@@ -163,14 +122,9 @@ export default function ProblemsPage() {
       case "newest":
         filtered.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
         break;
-      case "score":
-        filtered.sort((a, b) => b.score - a.score);
-        break;
-      case "workers":
-        filtered.sort((a, b) => b.workers_count - a.workers_count);
-        break;
-      case "comments":
-        filtered.sort((a, b) => b.comments_count - a.comments_count);
+      case "difficulty":
+        const diffOrder = { foundational: 0, hard: 1, medium: 2 };
+        filtered.sort((a, b) => diffOrder[a.difficulty] - diffOrder[b.difficulty]);
         break;
     }
 
@@ -250,8 +204,8 @@ export default function ProblemsPage() {
             Open Problems
           </h1>
           <p className="text-[var(--muted)]">
-            Important unsolved problems in AI safety research. Upvote problems you think are important, 
-            or mark yourself as working on them.
+            Curated list of important unsolved problems in AI safety research. 
+            These are the key challenges the field needs to solve.
           </p>
         </div>
 
@@ -305,25 +259,13 @@ export default function ProblemsPage() {
         {/* Problems List */}
         {filteredProblems.length === 0 ? (
           <div className="text-center py-16 paper-card rounded-sm">
-            <p className="text-[var(--muted)] mb-2">No open problems yet.</p>
-            <p className="text-sm text-[var(--muted-light)] mb-6">
-              Be the first to submit an open problem in AI safety research.
-            </p>
-            {user ? (
-              <Link
-                href="/problems/submit"
-                className="inline-block px-6 py-3 bg-[var(--accent)] text-white text-sm font-medium rounded-sm hover:bg-[var(--accent-light)] transition-colors no-underline"
-              >
-                Submit a Problem
-              </Link>
-            ) : (
-              <Link
-                href="/login"
-                className="inline-block px-6 py-3 bg-[var(--card)] border border-[var(--border)] text-sm font-medium rounded-sm hover:border-[var(--border-dark)] transition-colors no-underline"
-              >
-                Sign in to submit
-              </Link>
-            )}
+            <p className="text-[var(--muted)] mb-2">No problems found matching your criteria.</p>
+            <button
+              onClick={() => { setSearch(""); setFocusArea("All Areas"); }}
+              className="text-sm text-[var(--accent)] hover:underline"
+            >
+              Clear filters
+            </button>
           </div>
         ) : (
           <div className="space-y-4">
@@ -338,7 +280,7 @@ export default function ProblemsPage() {
       <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
         <div className="max-w-6xl mx-auto px-6 py-8">
           <p className="text-sm text-[var(--muted)] text-center">
-            AI Safety Research Hub — Community-driven problem identification
+            AI Safety Research Hub — Curated open problems in AI safety
           </p>
         </div>
       </footer>
