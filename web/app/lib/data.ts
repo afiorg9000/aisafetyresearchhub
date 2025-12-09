@@ -30,6 +30,10 @@ export type Org = {
   projects?: Project[];
   benchmarks?: Benchmark[];
   notes?: string;
+  employees?: number;
+  directors?: number;
+  managers?: number;
+  subteams?: number;
 };
 
 export const orgs: Org[] = rawData as Org[];
@@ -137,9 +141,17 @@ export function getStats() {
   const totalProjects = orgs.reduce((acc, org) => acc + (org.projects?.length || 0), 0);
   const totalBenchmarks = orgs.reduce((acc, org) => acc + (org.benchmarks?.length || 0), 0);
   const totalPeople = getAllPeople().length;
+  const totalEmployees = orgs.reduce((acc, org) => acc + (org.employees || 0), 0);
   const totalPublications = orgs.reduce((acc, org) => {
     return acc + (org.projects?.filter(p => p.status === "published" || p.paper_url)?.length || 0);
   }, 0);
-  return { orgs: orgs.length, projects: totalProjects, benchmarks: totalBenchmarks, people: totalPeople, publications: totalPublications };
+  return { 
+    orgs: orgs.length, 
+    projects: totalProjects, 
+    benchmarks: totalBenchmarks, 
+    people: totalPeople, 
+    employees: totalEmployees,
+    publications: totalPublications 
+  };
 }
 

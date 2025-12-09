@@ -59,6 +59,12 @@ function OrgCard({ org, index }: { org: Org; index: number }) {
             <span className="text-xs text-[var(--muted)] uppercase tracking-wide">{org.type}</span>
             <span className="text-xs text-[var(--muted-light)]">·</span>
             <span className="text-xs text-[var(--muted-light)]">{org.country}</span>
+            {org.employees && (
+              <>
+                <span className="text-xs text-[var(--muted-light)]">·</span>
+                <span className="text-xs text-[var(--muted-light)]">{org.employees} staff</span>
+              </>
+            )}
           </div>
           
           <h3 className="font-serif text-lg font-semibold text-[var(--foreground)] mb-1.5 leading-snug">
@@ -89,15 +95,17 @@ function OrgCard({ org, index }: { org: Org; index: number }) {
           </div>
         </div>
         
-        <a
-          href={org.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-shrink-0 p-2 text-[var(--muted-light)] hover:text-[var(--accent)] transition-colors"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <ExternalLinkIcon className="w-4 h-4" />
-        </a>
+        {org.url && (
+          <a
+            href={org.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 p-2 text-[var(--muted-light)] hover:text-[var(--accent)] transition-colors"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ExternalLinkIcon className="w-4 h-4" />
+          </a>
+        )}
       </div>
     </article>
   );
@@ -265,7 +273,7 @@ export default function Home() {
 
           {/* Stats - Understated */}
           <p className="text-sm text-[var(--muted)]">
-            {stats.people || 37} researchers · {stats.orgs} organizations · {stats.publications} publications · {stats.benchmarks} benchmarks
+            {stats.employees.toLocaleString()} researchers · {stats.orgs} organizations · {stats.publications} publications · {stats.benchmarks} benchmarks
           </p>
         </div>
       </div>
@@ -426,7 +434,7 @@ export default function Home() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-[var(--muted)]">Researchers</span>
-                  <span className="font-medium text-[var(--foreground)]">{stats.people || 37}</span>
+                  <span className="font-medium text-[var(--foreground)]">{stats.employees.toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[var(--muted)]">Organizations</span>

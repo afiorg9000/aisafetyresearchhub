@@ -57,7 +57,8 @@
         "status": "Active"
       }
     ],
-    "notes": "UK government-backed institute with over 100 technical staff including alumni from OpenAI, Google DeepMind and University of Oxford. Has substantial funding, computing resources, and priority access to top models."
+    "notes": "UK government-backed institute with over 100 technical staff including alumni from OpenAI, Google DeepMind and University of Oxford. Has substantial funding, computing resources, and priority access to top models.",
+    "employees": 200
   },
   {
     "name": "EU AI Office",
@@ -135,7 +136,9 @@
         "status": "Active"
       }
     ],
-    "notes": "Has specialized teams including Alignment, Interpretability, Societal Impacts, Economic Research, and Frontier Red Team. Recent research includes evidence of introspection in LLMs and alignment faking behavior."
+    "notes": "Has specialized teams including Alignment, Interpretability, Societal Impacts, Economic Research, and Frontier Red Team. Recent research includes evidence of introspection in LLMs and alignment faking behavior.",
+    "employees": 50,
+    "directors": 2
   },
   {
     "name": "OpenAI Safety",
@@ -195,7 +198,8 @@
         "measures": "Frontier risk assessment across tracked categories under Preparedness Framework v2"
       }
     ],
-    "notes": "OpenAI has a Safety Advisory Group (SAG) that reviews preparedness evaluations. They focus on iterative safety approaches and publish detailed system cards for each major model release. Recent work includes safety for multimodal capabilities, computer-using agents, and advanced reasoning models."
+    "notes": "OpenAI has a Safety Advisory Group (SAG) that reviews preparedness evaluations. They focus on iterative safety approaches and publish detailed system cards for each major model release. Recent work includes safety for multimodal capabilities, computer-using agents, and advanced reasoning models.",
+    "employees": 85
   },
   {
     "name": "MIRI",
@@ -246,7 +250,10 @@
         "status": "Completed"
       }
     ],
-    "notes": "MIRI announced a strategy pivot in 2024, shifting from primarily AI alignment research to policy solutions after concluding alignment research was unlikely to succeed in time to prevent catastrophe. Organization has 20+ year history in AI safety research."
+    "notes": "MIRI announced a strategy pivot in 2024, shifting from primarily AI alignment research to policy solutions after concluding alignment research was unlikely to succeed in time to prevent catastrophe. Organization has 20+ year history in AI safety research.",
+    "employees": 17,
+    "directors": 6,
+    "subteams": 2
   },
   {
     "name": "Redwood Research",
@@ -276,7 +283,9 @@
         "status": "Completed"
       }
     ],
-    "notes": "Pioneered the research area of 'AI control' and collaborates with governments and major AI companies including Google DeepMind and Anthropic on assessing misalignment risks. Their alignment faking work with Anthropic provided the strongest concrete evidence that LLMs might naturally fake alignment."
+    "notes": "Pioneered the research area of 'AI control' and collaborates with governments and major AI companies including Google DeepMind and Anthropic on assessing misalignment risks. Their alignment faking work with Anthropic provided the strongest concrete evidence that LLMs might naturally fake alignment.",
+    "employees": 11,
+    "directors": 2
   },
   {
     "name": "ARC (Alignment Research Center)",
@@ -300,7 +309,10 @@
         "status": "Completed"
       }
     ],
-    "notes": "The Evaluations team was incubated at ARC and has now spun off as METR, a new 501(c)(3)"
+    "notes": "The Evaluations team was incubated at ARC and has now spun off as METR, a new 501(c)(3)",
+    "employees": 7,
+    "directors": 1,
+    "subteams": 1
   },
   {
     "name": "Apollo Research",
@@ -331,7 +343,8 @@
         "status": "Active"
       }
     ],
-    "notes": "Partners with frontier labs, multinational companies, governments, and foundations. Provides consultancy services for responsible AI development frameworks. Currently seeking collaborators in AI governance, policy, and strategy, and partnerships with leading AI developers for model evaluations."
+    "notes": "Partners with frontier labs, multinational companies, governments, and foundations. Provides consultancy services for responsible AI development frameworks. Currently seeking collaborators in AI governance, policy, and strategy, and partnerships with leading AI developers for model evaluations.",
+    "employees": 19
   },
   {
     "name": "METR",
@@ -378,7 +391,10 @@
         "measures": "Performance on day-long ML research engineering tasks for tracking automation of AI R&D"
       }
     ],
-    "notes": "Conducts third-party evaluations for companies like Anthropic and OpenAI without compensation. Partner with AI Security Institute and part of NIST AI Safety Institute Consortium. Has evaluated multiple frontier models including GPT-4.5, Claude 3.5 Sonnet, DeepSeek-V3, and OpenAI o1 series."
+    "notes": "Conducts third-party evaluations for companies like Anthropic and OpenAI without compensation. Partner with AI Security Institute and part of NIST AI Safety Institute Consortium. Has evaluated multiple frontier models including GPT-4.5, Claude 3.5 Sonnet, DeepSeek-V3, and OpenAI o1 series.",
+    "employees": 31,
+    "directors": 2,
+    "subteams": 3
   },
   {
     "name": "Center for AI Safety",
@@ -414,7 +430,9 @@
         "status": "Active"
       }
     ],
-    "notes": "Takes a multidisciplinary approach working across academic disciplines, public and private entities. Conducts both technical research (creating foundational benchmarks and methods) and conceptual research incorporating insights from safety engineering, complex systems, international relations, and philosophy. Publishes in top ML conferences and releases datasets and code publicly."
+    "notes": "Takes a multidisciplinary approach working across academic disciplines, public and private entities. Conducts both technical research (creating foundational benchmarks and methods) and conceptual research incorporating insights from safety engineering, complex systems, international relations, and philosophy. Publishes in top ML conferences and releases datasets and code publicly.",
+    "employees": 26,
+    "directors": 3
   },
   {
     "name": "CSET Georgetown",
@@ -474,7 +492,10 @@
         "status": "Active"
       }
     ],
-    "notes": "Organization publishes annual reports and focuses on technical AI governance research to inform policy decisions"
+    "notes": "Organization publishes annual reports and focuses on technical AI governance research to inform policy decisions",
+    "employees": 26,
+    "directors": 4,
+    "managers": 7
   },
   {
     "name": "CHAI Berkeley",
@@ -540,7 +561,9 @@
         "measures": "When AI should act autonomously vs. seek expert assistance across diverse domains"
       }
     ],
-    "notes": "Based at UC Berkeley. Brian Christian published work connecting AI alignment to human care relationships in Daedalus journal."
+    "notes": "Based at UC Berkeley. Brian Christian published work connecting AI alignment to human care relationships in Daedalus journal.",
+    "employees": 26,
+    "directors": 2
   },
   {
     "name": "Center on Long-Term Risk",
@@ -581,7 +604,10 @@
         "status": "Active"
       }
     ],
-    "notes": "Organization focuses specifically on s-risk (astronomical suffering risks) and multi-agent conflict scenarios. They conduct interdisciplinary research, make grants, and build community around these priorities. Also associated with Polaris Research Institute."
+    "notes": "Organization focuses specifically on s-risk (astronomical suffering risks) and multi-agent conflict scenarios. They conduct interdisciplinary research, make grants, and build community around these priorities. Also associated with Polaris Research Institute.",
+    "employees": 10,
+    "directors": 3,
+    "managers": 1
   },
   {
     "name": "Google DeepMind Safety",
@@ -639,7 +665,9 @@
         "paper_url": ""
       }
     ],
-    "notes": "Has dedicated Responsibility and Safety Council (RSC) and AGI Safety Council. Co-founded Frontier Model Forum and Partnership on AI. Focus on privacy-preserving AI and preventing misuse. Active in AI education globally with $10M funding reaching 2M+ young people."
+    "notes": "Has dedicated Responsibility and Safety Council (RSC) and AGI Safety Council. Co-founded Frontier Model Forum and Partnership on AI. Focus on privacy-preserving AI and preventing misuse. Active in AI education globally with $10M funding reaching 2M+ young people.",
+    "employees": 40,
+    "directors": 3
   },
   {
     "name": "Japan AI Safety Institute",
@@ -1163,7 +1191,11 @@
         "paper_url": "https://openreview.net/pdf/2645934ae38765d0fd2446ed66cb06e5f406dcbd.pdf"
       }
     ],
-    "notes": "357 scholars and 75 mentors supported since 2021. Produced 115 research publications with 5100+ citations (h-index 31). 80% of alumni work in AI alignment. ~10% of alumni founded AI safety organizations. Provides $14.4k stipend, $12k compute budget, housing, and travel. Notable spin-off organizations include Apollo Research, PRISM Eval, Timaeus, and many others."
+    "notes": "357 scholars and 75 mentors supported since 2021. Produced 115 research publications with 5100+ citations (h-index 31). 80% of alumni work in AI alignment. ~10% of alumni founded AI safety organizations. Provides $14.4k stipend, $12k compute budget, housing, and travel. Notable spin-off organizations include Apollo Research, PRISM Eval, Timaeus, and many others.",
+    "employees": 33,
+    "directors": 2,
+    "managers": 7,
+    "subteams": 5
   },
   {
     "name": "Conjecture",
@@ -1216,7 +1248,8 @@
         "status": "Unknown"
       }
     ],
-    "notes": "London-based startup with VC backing from notable investors including Nat Friedman, Daniel Gross, Collison brothers, Andrej Karpathy, and Sam Bankman-Fried. Team includes EleutherAI alumni and independent researchers."
+    "notes": "London-based startup with VC backing from notable investors including Nat Friedman, Daniel Gross, Collison brothers, Andrej Karpathy, and Sam Bankman-Fried. Team includes EleutherAI alumni and independent researchers.",
+    "employees": 13
   },
   {
     "name": "FAR AI",
@@ -1265,7 +1298,11 @@
         "status": "Active"
       }
     ],
-    "notes": "Organization hosts alignment workshops globally, runs grantmaking programs for academics and independent researchers, and collaborates with organizations like UC Berkeley, University of Montreal, Mozilla, and government agencies."
+    "notes": "Organization hosts alignment workshops globally, runs grantmaking programs for academics and independent researchers, and collaborates with organizations like UC Berkeley, University of Montreal, Mozilla, and government agencies.",
+    "employees": 29,
+    "directors": 2,
+    "managers": 4,
+    "subteams": 4
   },
   {
     "name": "Epoch AI",
@@ -1305,7 +1342,9 @@
         "measures": "Expert-level mathematics problems that take specialists hours to days to solve"
       }
     ],
-    "notes": "Maintains the largest public database of notable ML models, conducts research on AI scaling through 2030, and provides data insights on AI trends including training compute and hardware advancements."
+    "notes": "Maintains the largest public database of notable ML models, conducts research on AI scaling through 2030, and provides data insights on AI trends including training compute and hardware advancements.",
+    "employees": 22,
+    "directors": 2
   },
   {
     "name": "Apart Research",
@@ -1317,7 +1356,8 @@
       "Alignment",
       "Control"
     ],
-    "notes": "Organization focuses on building global research communities, organizing hackathons, and providing career development support for AI safety researchers. Multiple testimonials highlight their role in career transitions and community building."
+    "notes": "Organization focuses on building global research communities, organizing hackathons, and providing career development support for AI safety researchers. Multiple testimonials highlight their role in career transitions and community building.",
+    "employees": 9
   },
   {
     "name": "EleutherAI",
@@ -1357,7 +1397,8 @@
         "status": "Active"
       }
     ],
-    "notes": "Research focus includes tamper-resistant safeguards, morphological alignment of tokenizers, and composable interventions for language models. Active in Summer of Open Science initiative."
+    "notes": "Research focus includes tamper-resistant safeguards, morphological alignment of tokenizers, and composable interventions for language models. Active in Summer of Open Science initiative.",
+    "employees": 16
   },
   {
     "name": "Future of Life Institute",
@@ -1422,7 +1463,8 @@
         "status": "Active"
       }
     ],
-    "notes": "Organization works across AI, biotechnology, and nuclear weapons risks. Has 40,000+ newsletter subscribers and provides grants to individuals and organizations. Recently announced petition with 65,000+ signatures to ban superintelligence development."
+    "notes": "Organization works across AI, biotechnology, and nuclear weapons risks. Has 40,000+ newsletter subscribers and provides grants to individuals and organizations. Recently announced petition with 65,000+ signatures to ban superintelligence development.",
+    "employees": 5
   },
   {
     "name": "AI Safety Camp",
@@ -1492,7 +1534,8 @@
         "status": "Active"
       }
     ],
-    "notes": "Used by over 5 million researchers across pharmaceuticals, academia, medical devices, policy/government, and other industries. Claims to be the most accurate AI product for scientific research with sentence-level citations and transparency features."
+    "notes": "Used by over 5 million researchers across pharmaceuticals, academia, medical devices, policy/government, and other industries. Claims to be the most accurate AI product for scientific research with sentence-level citations and transparency features.",
+    "employees": 23
   },
   {
     "name": "arXiv AI Safety Papers",
@@ -1807,5 +1850,1052 @@
         "paper_url": "https://arxiv.org/abs/2512.03578v1"
       }
     ]
+  },
+  {
+    "name": "RAND TASP",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United States",
+    "mission": "RAND Technology and Security Policy program focusing on AI safety research and policy.",
+    "employees": 75,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 4,
+    "managers": 5,
+    "subteams": 4
+  },
+  {
+    "name": "CSET",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United States",
+    "mission": "Center for Security and Emerging Technology at Georgetown University.",
+    "employees": 63,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "80,000 Hours",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "Career advice organization focused on high-impact careers including AI safety.",
+    "employees": 35,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Lakera",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "Switzerland",
+    "mission": "AI security company building guardrails for LLM applications.",
+    "employees": 33,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "AISLE",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "AI Safety Labs Europe.",
+    "employees": 33,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Partnership on AI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Multi-stakeholder organization working on AI best practices.",
+    "employees": 30,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Longview",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "Philanthropic advisory organization focused on AI safety and other cause areas.",
+    "employees": 25,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 4
+  },
+  {
+    "name": "Virtue AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety startup.",
+    "employees": 24,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Palisade Research",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 20,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Goodfire",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI interpretability startup.",
+    "employees": 20,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "LawAI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI and law research organization.",
+    "employees": 13,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "CSER",
+    "url": "",
+    "type": "Academic",
+    "country": "United Kingdom",
+    "mission": "Centre for the Study of Existential Risk at Cambridge University.",
+    "employees": 19,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Gray Swan AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety company focused on adversarial robustness.",
+    "employees": 18,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "Constellation",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research and community organization.",
+    "employees": 18,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2,
+    "managers": 3,
+    "subteams": 3
+  },
+  {
+    "name": "The Future Society",
+    "url": "",
+    "type": "Think Tank",
+    "country": "International",
+    "mission": "AI governance and policy research organization.",
+    "employees": 17,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "CLTC",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Center for Long-Term Cybersecurity at UC Berkeley.",
+    "employees": 16,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "IAPS",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Institute for AI Policy and Strategy.",
+    "employees": 15,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 4,
+    "managers": 2
+  },
+  {
+    "name": "Dreadnode",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI red teaming and security company.",
+    "employees": 15,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "Transluce",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI transparency and interpretability company.",
+    "employees": 15,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "AI Now Institute",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Research institute examining the social implications of AI.",
+    "employees": 14,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Global Center on AI Governance",
+    "url": "",
+    "type": "Think Tank",
+    "country": "International",
+    "mission": "Research center focused on AI governance frameworks.",
+    "employees": 14,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Timaeus",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization focused on developmental interpretability.",
+    "employees": 13,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 4
+  },
+  {
+    "name": "CLTR",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United Kingdom",
+    "mission": "Centre for Long-Term Resilience.",
+    "employees": 13,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Iliad",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 12,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "LawZero",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI legal safety company.",
+    "employees": 12,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "CeSIA",
+    "url": "",
+    "type": "Academic",
+    "country": "Italy",
+    "mission": "Center for AI Safety Italy.",
+    "employees": 12,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 4
+  },
+  {
+    "name": "AOI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "AI Objectives Institute.",
+    "employees": 12,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "Concordia AI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 12,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "HAIST",
+    "url": "",
+    "type": "Academic",
+    "country": "South Korea",
+    "mission": "Human-centered AI Safety & Trust lab.",
+    "employees": 12,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "BAIF",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Berkeley AI Futures lab.",
+    "employees": 11,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "SaferAI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "France",
+    "mission": "French AI safety organization.",
+    "employees": 11,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2,
+    "managers": 5
+  },
+  {
+    "name": "CARMA",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Center for AI Risk Management and Alignment.",
+    "employees": 11,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 1
+  },
+  {
+    "name": "Horizon Institute",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 10,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Atla AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "AI evaluation company.",
+    "employees": 10,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "CIP",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United States",
+    "mission": "Center for AI Policy.",
+    "employees": 9,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Fathom",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 8,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Leap Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "AI interpretability research lab.",
+    "employees": 8,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "ERA",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "Existential Risk Alliance.",
+    "employees": 8,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Guide Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 8,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "CSIS Wadhwani AI Center",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United States",
+    "mission": "AI policy center at CSIS.",
+    "employees": 8,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Encode AI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI policy organization.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Meridian",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "MAIA",
+    "url": "",
+    "type": "Academic",
+    "country": "United Kingdom",
+    "mission": "Machine Intelligence and Autonomy lab.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Tarbell Fellowship",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Fellowship program for AI journalism.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Safe AI Forum",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "International",
+    "mission": "International AI safety forum.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Forethought",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "Arcadia Impact",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety philanthropy advisory.",
+    "employees": 7,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Pivotal Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Seismic",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "BlueDot Impact",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "AI safety education organization.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2,
+    "subteams": 1
+  },
+  {
+    "name": "Odyssean Institute",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United Kingdom",
+    "mission": "Technology policy think tank.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Hortus AI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety company.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "AVERI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Tilde Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 6,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 3
+  },
+  {
+    "name": "Conscium",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI consciousness research.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "LISA",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Laboratory for Intelligent Systems and AI Safety.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Geodesic Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Dovetail Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "ARENA",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "AI safety education program.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "AI Futures Project",
+    "url": "",
+    "type": "Think Tank",
+    "country": "United States",
+    "mission": "AI futures research.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Whitebox Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI interpretability research.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Cadenza Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "EleosAI",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety company.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Realm Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety research lab.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Haize Labs",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI red teaming company.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2
+  },
+  {
+    "name": "PRISM Eval",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI evaluation company founded by MATS alumni.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Heron AI Security",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI security company.",
+    "employees": 5,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "TFI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Technical AI safety research.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "CBAI",
+    "url": "",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "Center for Beneficial AI.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "PIBBSS",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Program for AI and Neuroscience Safety.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Harmony Intelligence",
+    "url": "",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "AI safety company.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": [],
+    "directors": 2,
+    "subteams": 1
+  },
+  {
+    "name": "AI Safety Awareness Project",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "International",
+    "mission": "AI safety awareness and education.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Noema Research",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Evitable",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "GPAI Policy Lab",
+    "url": "",
+    "type": "Think Tank",
+    "country": "International",
+    "mission": "Global Partnership on AI policy research.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Golden Gate Institute for AI",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research institute.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Charles University ACS",
+    "url": "",
+    "type": "Academic",
+    "country": "Czech Republic",
+    "mission": "AI safety research at Charles University.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
+  },
+  {
+    "name": "Kairos",
+    "url": "",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "AI safety research organization.",
+    "employees": 4,
+    "focus_areas": [
+      "Alignment"
+    ],
+    "projects": [],
+    "benchmarks": []
   }
 ]
