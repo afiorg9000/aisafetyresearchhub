@@ -3,7 +3,6 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import { orgs, slugify } from "../lib/data";
-import { SiteHeader, SiteFooter } from "../components/site-header";
 
 // Extract all benchmarks from all orgs
 function getAllBenchmarks() {
@@ -44,15 +43,63 @@ export default function BenchmarksPage() {
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      <SiteHeader />
+      {/* Header */}
+      <header className="border-b border-[var(--border)] bg-[var(--card)]">
+        <div className="max-w-6xl mx-auto px-6 py-6">
+          <h1 className="font-serif text-2xl md:text-3xl font-semibold text-[var(--foreground)] tracking-tight">
+            AI Safety Research Hub
+          </h1>
+          <p className="text-sm text-[var(--muted)] mt-1">
+            A directory of organizations, research projects, and publications in AI safety
+          </p>
+        </div>
+      </header>
+
+      {/* Navigation */}
+      <nav className="border-b border-[var(--border)] bg-[var(--background-alt)]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center gap-6 py-3 text-sm">
+            <Link
+              href="/"
+              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
+            >
+              Organizations
+            </Link>
+            <Link
+              href="/publications"
+              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
+            >
+              Publications
+            </Link>
+            <Link
+              href="/benchmarks"
+              className="font-medium text-[var(--foreground)] no-underline border-b-2 border-[var(--accent)] pb-3 -mb-3"
+            >
+              Benchmarks
+            </Link>
+            <Link
+              href="/problems"
+              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
+            >
+              Open Problems
+            </Link>
+            <Link
+              href="/submit"
+              className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent"
+            >
+              Submit
+            </Link>
+          </div>
+        </div>
+      </nav>
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-6 py-8">
         {/* Page Title */}
         <div className="mb-8">
-          <h1 className="font-serif text-2xl font-semibold text-[var(--foreground)] mb-2">
+          <h2 className="font-serif text-2xl font-semibold text-[var(--foreground)] mb-2">
             Evaluation Benchmarks
-          </h1>
+          </h2>
           <p className="text-[var(--muted)]">
             Standardized benchmarks and evaluation frameworks for AI safety research
           </p>
@@ -132,7 +179,15 @@ export default function BenchmarksPage() {
         )}
       </main>
 
-      <SiteFooter />
+      {/* Footer */}
+      <footer className="border-t border-[var(--border)] bg-[var(--background-alt)] mt-16">
+        <div className="max-w-6xl mx-auto px-6 py-8">
+          <p className="text-sm text-[var(--muted)] text-center">
+            AI Safety Research Hub — Data compiled from public sources.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
+

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useMemo, useRef, useEffect } from "react";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { orgs, slugify, getStats, type Org, getAllProjects, getAllBenchmarks } from "./lib/data";
+import { orgs, slugify, getStats, type Org } from "./lib/data";
 import { UserMenu } from "./components/user-menu";
 
 const ORG_TYPES = [
@@ -107,120 +107,19 @@ function OrgCard({ org, index }: { org: Org; index: number }) {
   );
 }
 
-// AI Search result types
-type SearchResult = {
-  type: "org" | "project" | "benchmark";
-  name: string;
-  slug: string;
-  description?: string;
-  score: number;
-};
-
-function SparklesIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
-    </svg>
-  );
-}
-
 export default function Home() {
   const router = useRouter();
   const [search, setSearch] = useState("");
-  const [aiQuery, setAiQuery] = useState("");
-  const [aiResults, setAiResults] = useState<SearchResult[]>([]);
-  const [isSearching, setIsSearching] = useState(false);
-  const [showResults, setShowResults] = useState(false);
+  const [heroSearch, setHeroSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
-  const searchRef = useRef<HTMLDivElement>(null);
   const stats = getStats();
 
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
-        setShowResults(false);
-      }
+  const handleHeroSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (heroSearch.trim()) {
+      router.push(`/search?q=${encodeURIComponent(heroSearch.trim())}`);
     }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  // AI Search function - searches across all entities
-  const performAiSearch = (query: string) => {
-    if (!query.trim()) {
-      setAiResults([]);
-      return;
-    }
-
-    setIsSearching(true);
-    const queryLower = query.toLowerCase();
-    const results: SearchResult[] = [];
-
-    // Search organizations
-    orgs.forEach((org) => {
-      let score = 0;
-      if (org.name.toLowerCase().includes(queryLower)) score += 10;
-      if (org.mission?.toLowerCase().includes(queryLower)) score += 5;
-      if (org.focus_areas?.some(a => a.toLowerCase().includes(queryLower))) score += 3;
-      if (score > 0) {
-        results.push({
-          type: "org",
-          name: org.name,
-          slug: slugify(org.name),
-          description: org.mission?.slice(0, 100),
-          score,
-        });
-      }
-    });
-
-    // Search projects
-    const projects = getAllProjects();
-    projects.forEach((project) => {
-      let score = 0;
-      if (project.name.toLowerCase().includes(queryLower)) score += 10;
-      if (project.description?.toLowerCase().includes(queryLower)) score += 5;
-      if (score > 0) {
-        results.push({
-          type: "project",
-          name: project.name,
-          slug: slugify(project.name),
-          description: project.description?.slice(0, 100),
-          score,
-        });
-      }
-    });
-
-    // Search benchmarks
-    const benchmarks = getAllBenchmarks();
-    benchmarks.forEach((benchmark) => {
-      let score = 0;
-      if (benchmark.name.toLowerCase().includes(queryLower)) score += 10;
-      if (benchmark.measures?.toLowerCase().includes(queryLower)) score += 5;
-      if (score > 0) {
-        results.push({
-          type: "benchmark",
-          name: benchmark.name,
-          slug: slugify(benchmark.name),
-          description: benchmark.measures?.slice(0, 100),
-          score,
-        });
-      }
-    });
-
-    // Sort by score and limit results
-    results.sort((a, b) => b.score - a.score);
-    setAiResults(results.slice(0, 8));
-    setIsSearching(false);
   };
-
-  // Debounced search
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      performAiSearch(aiQuery);
-    }, 200);
-    return () => clearTimeout(timer);
-  }, [aiQuery]);
 
   const filteredOrgs = useMemo(() => {
     return orgs.filter((org) => {
@@ -238,24 +137,6 @@ export default function Home() {
     });
   }, [search, typeFilter]);
 
-  const handleResultClick = (result: SearchResult) => {
-    setShowResults(false);
-    setAiQuery("");
-    router.push(`/${result.type}/${result.slug}`);
-  };
-
-  const typeLabels = {
-    org: "Organization",
-    project: "Project",
-    benchmark: "Benchmark",
-  };
-
-  const typeColors = {
-    org: "bg-blue-100 text-blue-700",
-    project: "bg-emerald-100 text-emerald-700",
-    benchmark: "bg-purple-100 text-purple-700",
-  };
-
   return (
     <div className="min-h-screen bg-[var(--background)]">
       {/* Hero Header */}
@@ -265,7 +146,7 @@ export default function Home() {
             <div>
               <h1 className="font-serif text-3xl md:text-4xl font-semibold text-[var(--foreground)] tracking-tight">
                 AI Safety Research Hub
-              </h1>
+          </h1>
               <p className="text-[var(--muted)] mt-2 max-w-xl">
                 A comprehensive directory of AI safety organizations, research projects, 
                 publications, and open problems
@@ -274,62 +155,19 @@ export default function Home() {
             <UserMenu />
           </div>
 
-          {/* AI Search Bar */}
-          <div className="relative mt-6 max-w-2xl" ref={searchRef}>
+          {/* Search Bar */}
+          <form onSubmit={handleHeroSearch} className="mt-6 w-full max-w-2xl">
             <div className="relative">
-              <SparklesIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--accent)]" />
+              <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--muted)]" />
               <input
                 type="text"
-                value={aiQuery}
-                onChange={(e) => {
-                  setAiQuery(e.target.value);
-                  setShowResults(true);
-                }}
-                onFocus={() => setShowResults(true)}
-                placeholder="Search organizations, projects, benchmarks..."
-                className="w-full pl-12 pr-4 py-3.5 bg-[var(--background)] border border-[var(--border)] rounded-lg text-[var(--foreground)] placeholder:text-[var(--muted)] hover:border-[var(--border-dark)] focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-muted)] focus:outline-none transition-all"
+                value={heroSearch}
+                onChange={(e) => setHeroSearch(e.target.value)}
+                placeholder="Search organizations, publications, benchmarks, problems..."
+                className="w-full pl-12 pr-4 py-3.5 bg-[var(--background)] border border-[var(--border)] rounded-lg text-base placeholder:text-[var(--muted)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-muted)] transition-all"
               />
-              {isSearching && (
-                <div className="absolute right-4 top-1/2 -translate-y-1/2">
-                  <div className="w-4 h-4 border-2 border-[var(--accent)] border-t-transparent rounded-full animate-spin" />
-                </div>
-              )}
             </div>
-
-            {/* Search Results Dropdown */}
-            {showResults && aiQuery.trim() && (
-              <div className="absolute top-full left-0 right-0 mt-2 bg-[var(--card)] border border-[var(--border)] rounded-lg shadow-lg overflow-hidden z-50">
-                {aiResults.length > 0 ? (
-                  <div className="max-h-96 overflow-y-auto">
-                    {aiResults.map((result, i) => (
-                      <button
-                        key={`${result.type}-${result.slug}-${i}`}
-                        onClick={() => handleResultClick(result)}
-                        className="w-full px-4 py-3 text-left hover:bg-[var(--background-alt)] transition-colors border-b border-[var(--border)] last:border-b-0"
-                      >
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className={`text-xs px-2 py-0.5 rounded font-medium ${typeColors[result.type]}`}>
-                            {typeLabels[result.type]}
-                          </span>
-                          <span className="font-medium text-[var(--foreground)]">{result.name}</span>
-                        </div>
-                        {result.description && (
-                          <p className="text-sm text-[var(--muted)] line-clamp-1">
-                            {result.description}...
-                          </p>
-                        )}
-                      </button>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="px-4 py-6 text-center text-[var(--muted)]">
-                    <p>No results found for &quot;{aiQuery}&quot;</p>
-                    <p className="text-sm mt-1">Try different keywords</p>
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
+          </form>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-6 mt-6">

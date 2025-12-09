@@ -1,14 +1,14 @@
 "use client";
 
-import { useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { orgs, slugify, type Org, type Project, getAllOpenProblems } from "../lib/data";
-import { SiteHeader, SiteFooter } from "../components/site-header";
+import { orgs, slugify, type Org, type Project } from "../lib/data";
 
 // Build search index from all entities
 function buildSearchIndex() {
   const index: Array<{
-    type: "org" | "project" | "benchmark" | "publication" | "problem";
+    type: "org" | "project" | "benchmark" | "publication";
     title: string;
     description: string;
     url: string;
@@ -54,18 +54,6 @@ function buildSearchIndex() {
         });
       }
     }
-  }
-
-  // Add open problems
-  const problems = getAllOpenProblems();
-  for (const problem of problems) {
-    index.push({
-      type: "problem",
-      title: problem.title,
-      description: problem.description,
-      url: `/problem/${problem.slug}`,
-      focus_areas: [problem.focus_area],
-    });
   }
 
   return index;
@@ -127,7 +115,6 @@ const TYPE_LABELS: Record<string, string> = {
   project: "Project",
   benchmark: "Benchmark",
   publication: "Publication",
-  problem: "Open Problem",
 };
 
 const TYPE_COLORS: Record<string, string> = {
@@ -135,241 +122,21 @@ const TYPE_COLORS: Record<string, string> = {
   project: "!bg-green-50 !text-green-700 !border-green-200",
   benchmark: "!bg-purple-50 !text-purple-700 !border-purple-200",
   publication: "!bg-amber-50 !text-amber-700 !border-amber-200",
-  problem: "!bg-red-50 !text-red-700 !border-red-200",
 };
 
-// Known focus areas in AI safety
-const KNOWN_TOPICS = [
-  "alignment", "interpretability", "mechanistic interpretability", "RLHF", 
-  "scalable oversight", "deception", "deceptive alignment", "robustness",
-  "adversarial", "jailbreaking", "red teaming", "governance", "policy",
-  "evals", "evaluations", "benchmarks", "dangerous capabilities",
-  "biosecurity", "cyber", "CBRN", "autonomy", "agent safety",
-  "corrigibility", "reward hacking", "specification gaming",
-  "mesa-optimization", "inner alignment", "outer alignment",
-  "value learning", "preference learning", "constitutional AI",
-  "debate", "amplification", "recursive reward modeling"
-];
-
-// Gap analysis component - shows when no results found
-function GapAnalysis({ query, searchIndex }: { 
-  query: string; 
-  searchIndex: ReturnType<typeof buildSearchIndex>;
-}) {
-  // Find similar topics
-  const queryLower = query.toLowerCase();
-  const similarTopics = KNOWN_TOPICS.filter(topic => {
-    // Check if any word in query appears in topic or vice versa
-    const queryWords = queryLower.split(/\s+/);
-    const topicWords = topic.toLowerCase().split(/\s+/);
-    return queryWords.some(qw => 
-      topicWords.some(tw => tw.includes(qw) || qw.includes(tw))
-    ) || topic.toLowerCase().includes(queryLower.slice(0, 4));
-  }).slice(0, 5);
-
-  // Find loosely related results (lower threshold)
-  const looseResults = searchIndex
-    .map(item => {
-      const title = item.title.toLowerCase();
-      const desc = item.description.toLowerCase();
-      let score = 0;
-      
-      // Check for partial word matches
-      const queryWords = queryLower.split(/\s+/).filter(w => w.length >= 3);
-      for (const word of queryWords) {
-        if (title.includes(word.slice(0, 4))) score += 3;
-        if (desc.includes(word.slice(0, 4))) score += 1;
-      }
-      
-      return { ...item, score };
-    })
-    .filter(item => item.score > 0)
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 5);
-
-  // Identify potential gaps
-  const hasOrg = looseResults.some(r => r.type === "org");
-  const hasProject = looseResults.some(r => r.type === "project");
-  const hasBenchmark = looseResults.some(r => r.type === "benchmark");
-  const hasPublication = looseResults.some(r => r.type === "publication");
-
-  return (
-    <div className="py-8">
-      {/* No exact matches message */}
-      <div className="text-center mb-8 p-6 bg-[var(--background-alt)] rounded-lg border border-[var(--border)]">
-        <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-amber-100 flex items-center justify-center">
-          <svg className="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
-          </svg>
-        </div>
-        <h2 className="font-serif text-xl font-semibold text-[var(--foreground)] mb-2">
-          No exact matches for &quot;{query}&quot;
-        </h2>
-        <p className="text-[var(--muted)]">
-          This topic may be underrepresented in our database, or try different keywords.
-        </p>
-      </div>
-
-      {/* Gap identification */}
-      <div className="mb-8 p-6 paper-card rounded-sm">
-        <h3 className="font-serif text-lg font-semibold text-[var(--foreground)] mb-4 flex items-center gap-2">
-          <svg className="w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" />
-          </svg>
-          Gap Analysis
-        </h3>
-        <p className="text-sm text-[var(--muted)] mb-4">
-          Based on your search, here&apos;s what we found (or didn&apos;t find) in our database:
-        </p>
-        <div className="grid md:grid-cols-2 gap-3">
-          <div className={`p-3 rounded border ${hasOrg ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
-            <div className="flex items-center gap-2">
-              {hasOrg ? (
-                <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-              )}
-              <span className={`text-sm font-medium ${hasOrg ? 'text-green-700' : 'text-red-700'}`}>
-                {hasOrg ? 'Related organizations exist' : 'No organizations found'}
-              </span>
-            </div>
-          </div>
-          <div className={`p-3 rounded border ${hasPublication ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
-            <div className="flex items-center gap-2">
-              {hasPublication ? (
-                <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-              )}
-              <span className={`text-sm font-medium ${hasPublication ? 'text-green-700' : 'text-red-700'}`}>
-                {hasPublication ? 'Related publications exist' : 'No publications found'}
-              </span>
-            </div>
-          </div>
-          <div className={`p-3 rounded border ${hasBenchmark ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'}`}>
-            <div className="flex items-center gap-2">
-              {hasBenchmark ? (
-                <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
-                </svg>
-              )}
-              <span className={`text-sm font-medium ${hasBenchmark ? 'text-green-700' : 'text-amber-700'}`}>
-                {hasBenchmark ? 'Related benchmarks exist' : 'No benchmarks — potential gap!'}
-              </span>
-            </div>
-          </div>
-          <div className={`p-3 rounded border ${hasProject ? 'bg-green-50 border-green-200' : 'bg-amber-50 border-amber-200'}`}>
-            <div className="flex items-center gap-2">
-              {hasProject ? (
-                <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                </svg>
-              ) : (
-                <svg className="w-4 h-4 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z" />
-                </svg>
-              )}
-              <span className={`text-sm font-medium ${hasProject ? 'text-green-700' : 'text-amber-700'}`}>
-                {hasProject ? 'Related projects exist' : 'No active projects — potential gap!'}
-              </span>
-            </div>
-          </div>
-        </div>
-        
-        {(!hasBenchmark || !hasProject) && (
-          <div className="mt-4 p-3 bg-[var(--accent-muted)] rounded border border-[var(--accent)]/20">
-            <p className="text-sm text-[var(--accent)]">
-              💡 <strong>This looks like a gap in AI safety research!</strong> Consider{" "}
-              <Link href="/problems/submit" className="underline">submitting this as an open problem</Link>.
-            </p>
-          </div>
-        )}
-      </div>
-
-      {/* Similar topics */}
-      {similarTopics.length > 0 && (
-        <div className="mb-8">
-          <h3 className="font-serif text-lg font-semibold text-[var(--foreground)] mb-3">
-            Related Topics You Might Search
-          </h3>
-          <div className="flex flex-wrap gap-2">
-            {similarTopics.map(topic => (
-              <button
-                key={topic}
-                onClick={() => {
-                  const input = document.querySelector('input[type="text"]') as HTMLInputElement;
-                  if (input) {
-                    input.value = topic;
-                    input.dispatchEvent(new Event('input', { bubbles: true }));
-                  }
-                }}
-                className="px-3 py-1.5 bg-[var(--card)] border border-[var(--border)] rounded text-sm text-[var(--foreground)] hover:border-[var(--accent)] transition-colors"
-              >
-                {topic}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
-
-      {/* Loosely related results */}
-      {looseResults.length > 0 && (
-        <div>
-          <h3 className="font-serif text-lg font-semibold text-[var(--foreground)] mb-3">
-            Loosely Related Results
-          </h3>
-          <p className="text-sm text-[var(--muted)] mb-4">
-            These don&apos;t match exactly, but might be relevant:
-          </p>
-          <div className="space-y-3">
-            {looseResults.map((result, index) => (
-              <div
-                key={`${result.type}-${result.title}-${index}`}
-                className="p-4 bg-[var(--card)] border border-[var(--border)] rounded-sm"
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className={`research-tag ${TYPE_COLORS[result.type]}`}>
-                    {TYPE_LABELS[result.type]}
-                  </span>
-                  {result.org && (
-                    <span className="text-xs text-[var(--muted)]">{result.org}</span>
-                  )}
-                </div>
-                <Link
-                  href={result.url}
-                  className="font-medium text-[var(--foreground)] hover:text-[var(--accent)] no-underline"
-                >
-                  {result.title}
-                </Link>
-                {result.description && (
-                  <p className="text-sm text-[var(--muted)] mt-1 line-clamp-1">
-                    {result.description}
-                  </p>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
-export default function SearchPage() {
-  const [query, setQuery] = useState("");
+function SearchContent() {
+  const searchParams = useSearchParams();
+  const initialQuery = searchParams.get("q") || "";
+  const [query, setQuery] = useState(initialQuery);
   const [typeFilter, setTypeFilter] = useState<string>("all");
+  
+  // Update query if URL changes
+  useEffect(() => {
+    const urlQuery = searchParams.get("q") || "";
+    if (urlQuery !== query) {
+      setQuery(urlQuery);
+    }
+  }, [searchParams]);
   
   const searchIndex = useMemo(() => buildSearchIndex(), []);
   
@@ -392,9 +159,9 @@ export default function SearchPage() {
   }, [query, typeFilter, searchIndex]);
 
   const resultCounts = useMemo(() => {
-    if (!query.trim()) return { org: 0, project: 0, benchmark: 0, publication: 0, problem: 0 };
+    if (!query.trim()) return { org: 0, project: 0, benchmark: 0, publication: 0 };
     
-    const counts: Record<string, number> = { org: 0, project: 0, benchmark: 0, publication: 0, problem: 0 };
+    const counts = { org: 0, project: 0, benchmark: 0, publication: 0 };
     for (const item of searchIndex) {
       if (scoreResult(item, query) > 0) {
         counts[item.type]++;
@@ -407,7 +174,26 @@ export default function SearchPage() {
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      <SiteHeader />
+      {/* Header */}
+      <header className="border-b border-[var(--border)] bg-[var(--card)]">
+        <div className="max-w-6xl mx-auto px-6 py-6">
+          <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
+            AI Safety Research Hub
+          </Link>
+        </div>
+      </header>
+
+      {/* Navigation */}
+      <nav className="border-b border-[var(--border)] bg-[var(--background-alt)]">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="flex items-center gap-6 py-3 text-sm">
+            <Link href="/" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Organizations</Link>
+            <Link href="/publications" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Publications</Link>
+            <Link href="/benchmarks" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Benchmarks</Link>
+            <Link href="/problems" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Open Problems</Link>
+          </div>
+        </div>
+      </nav>
 
       {/* Search Hero */}
       <div className="bg-[var(--background-alt)] border-b border-[var(--border)]">
@@ -466,7 +252,7 @@ export default function SearchPage() {
               >
                 All ({totalResults})
               </button>
-              {(["publication", "org", "project", "benchmark", "problem"] as const).map((type) => (
+              {(["publication", "org", "project", "benchmark"] as const).map((type) => (
                 <button
                   key={type}
                   onClick={() => setTypeFilter(type)}
@@ -483,7 +269,10 @@ export default function SearchPage() {
 
             {/* Results list */}
             {results.length === 0 ? (
-              <GapAnalysis query={query} searchIndex={searchIndex} />
+              <div className="text-center py-16">
+                <p className="text-[var(--muted)]">No results found for "{query}"</p>
+                <p className="text-sm text-[var(--muted-light)] mt-2">Try different keywords or check spelling</p>
+              </div>
             ) : (
               <div className="space-y-4">
                 {results.map((result, index) => (
@@ -593,9 +382,37 @@ export default function SearchPage() {
           </div>
         )}
       </main>
-
-      <SiteFooter />
     </div>
   );
 }
 
+// Loading fallback for Suspense
+function SearchLoading() {
+  return (
+    <div className="min-h-screen bg-[var(--background)]">
+      <header className="border-b border-[var(--border)] bg-[var(--card)]">
+        <div className="max-w-6xl mx-auto px-6 py-6">
+          <Link href="/" className="font-serif text-xl font-semibold text-[var(--foreground)] no-underline hover:text-[var(--accent)]">
+            AI Safety Research Hub
+          </Link>
+        </div>
+      </header>
+      <div className="bg-[var(--background-alt)] border-b border-[var(--border)]">
+        <div className="max-w-3xl mx-auto px-6 py-12">
+          <h1 className="font-serif text-3xl font-semibold text-[var(--foreground)] text-center mb-6">
+            Search AI Safety Research
+          </h1>
+          <div className="h-14 bg-[var(--card)] border border-[var(--border)] rounded-lg animate-pulse" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<SearchLoading />}>
+      <SearchContent />
+    </Suspense>
+  );
+}

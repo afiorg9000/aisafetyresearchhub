@@ -31,7 +31,7 @@
   --font-sans: var(--font-source-sans);
   --font-serif: var(--font-source-serif);
   --font-mono: var(--font-jetbrains);
-}
+  }
 
 * {
   box-sizing: border-box;
