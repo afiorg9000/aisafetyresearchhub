@@ -1,103 +1,39 @@
 "use client";
 
-import { useState, useMemo, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { orgs, slugify, type Org, type Project } from "../lib/data";
 
-// Build search index from all entities
-function buildSearchIndex() {
-  const index: Array<{
-    type: "org" | "project" | "benchmark" | "publication";
-    title: string;
-    description: string;
-    url: string;
-    org?: string;
-    focus_areas?: string[];
-    score?: number;
-  }> = [];
+type SearchResult = {
+  type: "publication" | "project" | "benchmark" | "organization";
+  title: string;
+  org?: string;
+  match_reason: string;
+  relevance: "high" | "medium" | "low";
+  slug: string;
+};
 
-  for (const org of orgs) {
-    // Add org
-    index.push({
-      type: "org",
-      title: org.name,
-      description: org.mission || "",
-      url: `/org/${slugify(org.name)}`,
-      focus_areas: org.focus_areas,
-    });
-
-    // Add projects
-    if (org.projects) {
-      for (const project of org.projects) {
-        const isPublication = project.status?.toLowerCase() === "published" || project.paper_url;
-        index.push({
-          type: isPublication ? "publication" : "project",
-          title: project.name,
-          description: project.description || "",
-          url: isPublication && project.paper_url ? project.paper_url : `/project/${slugify(project.name)}`,
-          org: org.name,
-          focus_areas: org.focus_areas,
-        });
-      }
-    }
-
-    // Add benchmarks
-    if (org.benchmarks) {
-      for (const benchmark of org.benchmarks) {
-        index.push({
-          type: "benchmark",
-          title: benchmark.name,
-          description: benchmark.measures || "",
-          url: `/benchmark/${slugify(benchmark.name)}`,
-          org: org.name,
-        });
-      }
-    }
-  }
-
-  return index;
-}
-
-// Simple relevance scoring
-function scoreResult(item: ReturnType<typeof buildSearchIndex>[0], query: string): number {
-  const q = query.toLowerCase();
-  const title = item.title.toLowerCase();
-  const desc = item.description.toLowerCase();
-  
-  let score = 0;
-  
-  // Exact title match
-  if (title === q) score += 100;
-  // Title starts with query
-  else if (title.startsWith(q)) score += 50;
-  // Title contains query
-  else if (title.includes(q)) score += 30;
-  
-  // Description contains query
-  if (desc.includes(q)) score += 10;
-  
-  // Focus area match
-  if (item.focus_areas?.some(f => f.toLowerCase().includes(q))) score += 20;
-  
-  // Org name match
-  if (item.org?.toLowerCase().includes(q)) score += 15;
-  
-  // Word-level matching
-  const queryWords = q.split(/\s+/);
-  for (const word of queryWords) {
-    if (word.length < 3) continue;
-    if (title.includes(word)) score += 5;
-    if (desc.includes(word)) score += 2;
-  }
-  
-  return score;
-}
+type SearchResponse = {
+  summary: string;
+  results: SearchResult[];
+  related_topics?: string[];
+  open_questions?: string[];
+  no_results?: boolean;
+  error?: string;
+};
 
 function SearchIcon({ className }: { className?: string }) {
   return (
     <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
       <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+    </svg>
+  );
+}
+
+function SparklesIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
     </svg>
   );
 }
@@ -111,66 +47,86 @@ function ExternalLinkIcon({ className }: { className?: string }) {
 }
 
 const TYPE_LABELS: Record<string, string> = {
-  org: "Organization",
+  organization: "Organization",
   project: "Project",
   benchmark: "Benchmark",
   publication: "Publication",
 };
 
 const TYPE_COLORS: Record<string, string> = {
-  org: "!bg-blue-50 !text-blue-700 !border-blue-200",
-  project: "!bg-green-50 !text-green-700 !border-green-200",
-  benchmark: "!bg-purple-50 !text-purple-700 !border-purple-200",
-  publication: "!bg-amber-50 !text-amber-700 !border-amber-200",
+  organization: "bg-blue-50 text-blue-700 border-blue-200",
+  project: "bg-green-50 text-green-700 border-green-200",
+  benchmark: "bg-purple-50 text-purple-700 border-purple-200",
+  publication: "bg-amber-50 text-amber-700 border-amber-200",
 };
+
+const RELEVANCE_COLORS: Record<string, string> = {
+  high: "bg-green-100 text-green-800",
+  medium: "bg-yellow-100 text-yellow-800",
+  low: "bg-gray-100 text-gray-600",
+};
+
+function getResultUrl(result: SearchResult): string {
+  switch (result.type) {
+    case "organization":
+      return `/org/${result.slug}`;
+    case "project":
+    case "publication":
+      return `/project/${result.slug}`;
+    case "benchmark":
+      return `/benchmark/${result.slug}`;
+    default:
+      return "#";
+  }
+}
 
 function SearchContent() {
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get("q") || "";
   const [query, setQuery] = useState(initialQuery);
-  const [typeFilter, setTypeFilter] = useState<string>("all");
-  
-  // Update query if URL changes
+  const [isSearching, setIsSearching] = useState(false);
+  const [searchResponse, setSearchResponse] = useState<SearchResponse | null>(null);
+  const [hasSearched, setHasSearched] = useState(false);
+
+  // Auto-search when query from URL
   useEffect(() => {
     const urlQuery = searchParams.get("q") || "";
-    if (urlQuery !== query) {
+    if (urlQuery && urlQuery !== query) {
       setQuery(urlQuery);
+      performSearch(urlQuery);
     }
   }, [searchParams]);
-  
-  const searchIndex = useMemo(() => buildSearchIndex(), []);
-  
-  const results = useMemo(() => {
-    if (!query.trim()) return [];
-    
-    let scored = searchIndex
-      .map(item => ({ ...item, score: scoreResult(item, query) }))
-      .filter(item => item.score > 0);
-    
-    // Filter by type
-    if (typeFilter !== "all") {
-      scored = scored.filter(item => item.type === typeFilter);
-    }
-    
-    // Sort by score
-    scored.sort((a, b) => b.score - a.score);
-    
-    return scored.slice(0, 50);
-  }, [query, typeFilter, searchIndex]);
 
-  const resultCounts = useMemo(() => {
-    if (!query.trim()) return { org: 0, project: 0, benchmark: 0, publication: 0 };
+  async function performSearch(searchQuery: string) {
+    if (!searchQuery.trim()) return;
     
-    const counts = { org: 0, project: 0, benchmark: 0, publication: 0 };
-    for (const item of searchIndex) {
-      if (scoreResult(item, query) > 0) {
-        counts[item.type]++;
-      }
+    setIsSearching(true);
+    setHasSearched(true);
+    
+    try {
+      const response = await fetch("/api/search", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ query: searchQuery }),
+      });
+      
+      const data = await response.json();
+      setSearchResponse(data);
+    } catch (error) {
+      setSearchResponse({
+        summary: "Search failed. Please try again.",
+        results: [],
+        error: "Network error",
+      });
+    } finally {
+      setIsSearching(false);
     }
-    return counts;
-  }, [query, searchIndex]);
+  }
 
-  const totalResults = Object.values(resultCounts).reduce((a, b) => a + b, 0);
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    performSearch(query);
+  }
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
@@ -187,10 +143,10 @@ function SearchContent() {
       <nav className="border-b border-[var(--border)] bg-[var(--background-alt)]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex items-center gap-6 py-3 text-sm">
-            <Link href="/" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Organizations</Link>
-            <Link href="/publications" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Publications</Link>
-            <Link href="/benchmarks" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Benchmarks</Link>
-            <Link href="/problems" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline pb-3 -mb-3 border-b-2 border-transparent">Open Problems</Link>
+            <Link href="/" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Organizations</Link>
+            <Link href="/publications" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Publications</Link>
+            <Link href="/benchmarks" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Benchmarks</Link>
+            <Link href="/problems" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Open Problems</Link>
           </div>
         </div>
       </nav>
@@ -198,37 +154,55 @@ function SearchContent() {
       {/* Search Hero */}
       <div className="bg-[var(--background-alt)] border-b border-[var(--border)]">
         <div className="max-w-3xl mx-auto px-6 py-12">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <SparklesIcon className="w-6 h-6 text-[var(--accent)]" />
+            <span className="text-sm font-medium text-[var(--accent)] uppercase tracking-wide">AI-Powered Search</span>
+          </div>
+          
           <h1 className="font-serif text-3xl font-semibold text-[var(--foreground)] text-center mb-6">
             Search AI Safety Research
           </h1>
           <p className="text-center text-[var(--muted)] mb-8">
-            Find organizations, projects, publications, and benchmarks across the AI safety ecosystem
+            Ask questions naturally. Get results with explanations of why they match.
           </p>
           
           {/* Search Input */}
-          <div className="relative">
-            <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--muted)]" />
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search for interpretability, RLHF, deception, governance..."
-              className="w-full pl-12 pr-4 py-4 bg-[var(--card)] border border-[var(--border)] rounded-lg text-base placeholder:text-[var(--muted-light)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-muted)] transition-all"
-              autoFocus
-            />
-          </div>
+          <form onSubmit={handleSubmit}>
+            <div className="relative">
+              <SearchIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[var(--muted)]" />
+              <input
+                type="text"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="What are the main approaches to scalable oversight?"
+                className="w-full pl-12 pr-24 py-4 bg-[var(--card)] border border-[var(--border)] rounded-lg text-base placeholder:text-[var(--muted-light)] focus:outline-none focus:border-[var(--accent)] focus:ring-2 focus:ring-[var(--accent-muted)] transition-all"
+                autoFocus
+              />
+              <button
+                type="submit"
+                disabled={isSearching || !query.trim()}
+                className="absolute right-2 top-1/2 -translate-y-1/2 px-4 py-2 bg-[var(--accent)] text-white rounded-md text-sm font-medium hover:opacity-90 disabled:opacity-50 transition-opacity"
+              >
+                {isSearching ? "Searching..." : "Search"}
+              </button>
+            </div>
+          </form>
           
           {/* Example queries */}
-          {!query && (
+          {!hasSearched && (
             <div className="mt-4 text-center">
               <span className="text-xs text-[var(--muted)]">Try: </span>
-              {["interpretability", "deceptive alignment", "MATS", "scalable oversight"].map((q, i) => (
+              {[
+                "How does RLHF work?",
+                "Who is researching deceptive alignment?",
+                "Benchmarks for evaluating honesty",
+              ].map((q, i) => (
                 <button
                   key={q}
-                  onClick={() => setQuery(q)}
+                  onClick={() => { setQuery(q); performSearch(q); }}
                   className="text-xs text-[var(--accent)] hover:underline mx-1"
                 >
-                  {q}{i < 3 ? "," : ""}
+                  {q}{i < 2 ? " ·" : ""}
                 </button>
               ))}
             </div>
@@ -238,113 +212,168 @@ function SearchContent() {
 
       {/* Results */}
       <main className="max-w-6xl mx-auto px-6 py-8">
-        {query.trim() && (
-          <>
-            {/* Filter tabs */}
-            <div className="flex items-center gap-2 mb-6 overflow-x-auto pb-2">
-              <button
-                onClick={() => setTypeFilter("all")}
-                className={`px-4 py-2 text-sm font-medium rounded-sm whitespace-nowrap transition-colors ${
-                  typeFilter === "all"
-                    ? "bg-[var(--foreground)] text-[var(--background)]"
-                    : "bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:text-[var(--foreground)]"
-                }`}
-              >
-                All ({totalResults})
-              </button>
-              {(["publication", "org", "project", "benchmark"] as const).map((type) => (
-                <button
-                  key={type}
-                  onClick={() => setTypeFilter(type)}
-                  className={`px-4 py-2 text-sm font-medium rounded-sm whitespace-nowrap transition-colors ${
-                    typeFilter === type
-                      ? "bg-[var(--foreground)] text-[var(--background)]"
-                      : "bg-[var(--card)] border border-[var(--border)] text-[var(--muted)] hover:text-[var(--foreground)]"
-                  }`}
-                >
-                  {TYPE_LABELS[type]}s ({resultCounts[type]})
-                </button>
-              ))}
+        {/* Loading state */}
+        {isSearching && (
+          <div className="text-center py-16">
+            <div className="inline-flex items-center gap-3">
+              <div className="w-5 h-5 border-2 border-[var(--accent)] border-t-transparent rounded-full animate-spin" />
+              <span className="text-[var(--muted)]">Searching with AI...</span>
             </div>
+          </div>
+        )}
 
-            {/* Results list */}
-            {results.length === 0 ? (
-              <div className="text-center py-16">
-                <p className="text-[var(--muted)]">No results found for "{query}"</p>
-                <p className="text-sm text-[var(--muted-light)] mt-2">Try different keywords or check spelling</p>
-              </div>
-            ) : (
-              <div className="space-y-4">
-                {results.map((result, index) => (
-                  <article
-                    key={`${result.type}-${result.title}-${index}`}
-                    className="paper-card rounded-sm p-5 animate-fadeIn"
-                    style={{ animationDelay: `${Math.min(index, 10) * 30}ms` }}
-                  >
-                    <div className="flex items-start gap-4">
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className={`research-tag ${TYPE_COLORS[result.type]}`}>
-                            {TYPE_LABELS[result.type]}
-                          </span>
-                          {result.org && (
-                            <span className="text-xs text-[var(--muted)]">{result.org}</span>
-                          )}
-                        </div>
-                        
-                        <h3 className="font-serif text-lg font-medium text-[var(--foreground)] mb-1">
-                          {result.url.startsWith("http") ? (
-                            <a
-                              href={result.url}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="hover:text-[var(--accent)] transition-colors"
-                            >
-                              {result.title}
-                            </a>
-                          ) : (
+        {/* Results */}
+        {!isSearching && searchResponse && (
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* Main results */}
+            <div className="lg:col-span-2">
+              {/* AI Summary */}
+              {searchResponse.summary && (
+                <div className="paper-card rounded-sm p-5 mb-6 bg-gradient-to-r from-[var(--accent-muted)] to-[var(--background)]">
+                  <div className="flex items-start gap-3">
+                    <SparklesIcon className="w-5 h-5 text-[var(--accent)] flex-shrink-0 mt-0.5" />
+                    <div>
+                      <h2 className="font-medium text-[var(--foreground)] mb-1">AI Summary</h2>
+                      <p className="text-sm text-[var(--muted)]">{searchResponse.summary}</p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Results list */}
+              {searchResponse.results?.length > 0 ? (
+                <div className="space-y-4">
+                  <p className="text-xs text-[var(--muted)] uppercase tracking-wide">
+                    {searchResponse.results.length} relevant results
+                  </p>
+                  
+                  {searchResponse.results.map((result, index) => (
+                    <article
+                      key={`${result.type}-${result.slug}-${index}`}
+                      className="paper-card rounded-sm p-5 animate-fadeIn"
+                      style={{ animationDelay: `${Math.min(index, 10) * 50}ms` }}
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="flex-1">
+                          {/* Type & Org */}
+                          <div className="flex items-center gap-2 mb-2 flex-wrap">
+                            <span className={`text-xs px-2 py-0.5 rounded border ${TYPE_COLORS[result.type]}`}>
+                              {TYPE_LABELS[result.type]}
+                            </span>
+                            {result.org && (
+                              <span className="text-xs text-[var(--muted)]">{result.org}</span>
+                            )}
+                            <span className={`text-xs px-2 py-0.5 rounded ${RELEVANCE_COLORS[result.relevance]}`}>
+                              {result.relevance} match
+                            </span>
+                          </div>
+                          
+                          {/* Title */}
+                          <h3 className="font-serif text-lg font-medium text-[var(--foreground)] mb-2">
                             <Link
-                              href={result.url}
+                              href={getResultUrl(result)}
                               className="hover:text-[var(--accent)] transition-colors no-underline"
                             >
                               {result.title}
                             </Link>
-                          )}
-                        </h3>
-                        
-                        {result.description && (
-                          <p className="text-sm text-[var(--muted)] line-clamp-2">
-                            {result.description}
-                          </p>
-                        )}
-                        
-                        {result.focus_areas && result.focus_areas.length > 0 && (
-                          <div className="mt-2 text-xs text-[var(--muted-light)]">
-                            {result.focus_areas.slice(0, 3).join(" · ")}
+                          </h3>
+                          
+                          {/* Match reason - the key feature! */}
+                          <div className="bg-[var(--background-alt)] rounded p-3 text-sm">
+                            <span className="text-[var(--muted-light)]">Why this matches: </span>
+                            <span className="text-[var(--foreground)]">{result.match_reason}</span>
                           </div>
-                        )}
+                        </div>
                       </div>
-                      
-                      {result.url.startsWith("http") && (
-                        <a
-                          href={result.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex-shrink-0 p-2 text-[var(--muted)] hover:text-[var(--accent)]"
-                        >
-                          <ExternalLinkIcon className="w-4 h-4" />
-                        </a>
-                      )}
-                    </div>
-                  </article>
-                ))}
+                    </article>
+                  ))}
+                </div>
+              ) : hasSearched && !isSearching ? (
+                <div className="text-center py-16">
+                  <p className="text-[var(--muted)] mb-4">No results found for "{query}"</p>
+                  <Link
+                    href="/problems/submit"
+                    className="inline-block px-4 py-2 text-sm text-[var(--accent)] border border-[var(--accent)] rounded hover:bg-[var(--accent)] hover:text-white transition-colors no-underline"
+                  >
+                    Submit as Open Problem
+                  </Link>
+                </div>
+              ) : null}
+            </div>
+
+            {/* Sidebar */}
+            <div className="lg:col-span-1 space-y-6">
+              {/* Related Topics */}
+              {searchResponse.related_topics && searchResponse.related_topics.length > 0 && (
+                <div className="paper-card rounded-sm p-5">
+                  <h3 className="font-medium text-[var(--foreground)] mb-3">Related Topics</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {searchResponse.related_topics.map((topic) => (
+                      <button
+                        key={topic}
+                        onClick={() => { setQuery(topic); performSearch(topic); }}
+                        className="text-xs px-3 py-1.5 bg-[var(--background-alt)] text-[var(--muted)] rounded hover:text-[var(--foreground)] hover:bg-[var(--border)] transition-colors"
+                      >
+                        {topic}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Open Questions */}
+              {searchResponse.open_questions && searchResponse.open_questions.length > 0 && (
+                <div className="paper-card rounded-sm p-5">
+                  <h3 className="font-medium text-[var(--foreground)] mb-3">Open Questions</h3>
+                  <ul className="space-y-2">
+                    {searchResponse.open_questions.map((question, i) => (
+                      <li key={i} className="text-sm text-[var(--muted)] flex gap-2">
+                        <span className="text-[var(--accent)]">?</span>
+                        {question}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Quick Links */}
+              <div className="paper-card rounded-sm p-5">
+                <h3 className="font-medium text-[var(--foreground)] mb-3">Browse</h3>
+                <div className="space-y-2">
+                  <Link href="/" className="block text-sm text-[var(--muted)] hover:text-[var(--foreground)] no-underline">
+                    → All Organizations
+                  </Link>
+                  <Link href="/publications" className="block text-sm text-[var(--muted)] hover:text-[var(--foreground)] no-underline">
+                    → All Publications
+                  </Link>
+                  <Link href="/benchmarks" className="block text-sm text-[var(--muted)] hover:text-[var(--foreground)] no-underline">
+                    → All Benchmarks
+                  </Link>
+                  <Link href="/problems" className="block text-sm text-[var(--muted)] hover:text-[var(--foreground)] no-underline">
+                    → Open Problems
+                  </Link>
+                </div>
               </div>
-            )}
-          </>
+
+              {/* Research Idea Matcher CTA */}
+              <div className="paper-card rounded-sm p-5 bg-gradient-to-br from-[var(--accent-muted)] to-[var(--background)]">
+                <h3 className="font-medium text-[var(--foreground)] mb-2">Have a research idea?</h3>
+                <p className="text-sm text-[var(--muted)] mb-3">
+                  Check if similar work exists and find potential collaborators.
+                </p>
+                <Link
+                  href="/match"
+                  className="inline-block text-sm text-[var(--accent)] hover:underline no-underline"
+                >
+                  → Try Research Matcher
+                </Link>
+              </div>
+            </div>
+          </div>
         )}
 
         {/* Empty state */}
-        {!query.trim() && (
+        {!hasSearched && !isSearching && (
           <div className="text-center py-16">
             <h2 className="font-serif text-xl font-semibold text-[var(--foreground)] mb-4">
               What are you looking for?
@@ -362,7 +391,7 @@ function SearchContent() {
                 className="p-6 paper-card rounded-sm text-left hover:border-[var(--border-dark)] no-underline"
               >
                 <h3 className="font-medium text-[var(--foreground)] mb-1">Publications</h3>
-                <p className="text-sm text-[var(--muted)]">Research papers from across the field</p>
+                <p className="text-sm text-[var(--muted)]">Research papers with citation counts</p>
               </Link>
               <Link
                 href="/benchmarks"
@@ -376,7 +405,7 @@ function SearchContent() {
                 className="p-6 paper-card rounded-sm text-left hover:border-[var(--border-dark)] no-underline"
               >
                 <h3 className="font-medium text-[var(--foreground)] mb-1">Open Problems</h3>
-                <p className="text-sm text-[var(--muted)]">Unsolved research questions</p>
+                <p className="text-sm text-[var(--muted)]">17 unsolved research questions</p>
               </Link>
             </div>
           </div>
@@ -386,7 +415,6 @@ function SearchContent() {
   );
 }
 
-// Loading fallback for Suspense
 function SearchLoading() {
   return (
     <div className="min-h-screen bg-[var(--background)]">
