@@ -4570,7 +4570,7 @@
   },
   {
     "name": "RAND TASP",
-    "url": "",
+    "url": "https://www.rand.org/topics/technology-and-security-policy.html",
     "type": "Think Tank",
     "country": "United States",
     "mission": "RAND Technology and Security Policy program focusing on AI safety research and policy.",
@@ -4586,7 +4586,7 @@
   },
   {
     "name": "CSET",
-    "url": "",
+    "url": "https://cset.georgetown.edu/",
     "type": "Think Tank",
     "country": "United States",
     "mission": "Center for Security and Emerging Technology at Georgetown University.",
@@ -4594,12 +4594,49 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "AI Foundations Research",
+        "description": "Research on the foundations of artificial intelligence including talent, data and computational power",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI National Security Applications",
+        "description": "Research on how AI can be used in national security settings",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI Policy Tools Research",
+        "description": "Research on policy tools that can be used to shape AI's development and use",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Biotechnology Research",
+        "description": "Research on biotechnology security implications",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Advanced Computing Research",
+        "description": "Research on the effects of progress in advanced computing",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Helen Toner",
+        "role": "Executive Director"
+      }
+    ]
   },
   {
     "name": "80,000 Hours",
-    "url": "",
+    "url": "https://80000hours.org/articles/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "Career advice organization focused on high-impact careers including AI safety.",
@@ -4607,13 +4644,184 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": [],
-    "directors": 2
+    "projects": [
+      {
+        "name": "AI Safety Technical Research",
+        "description": "Research career path focused on technical aspects of AI alignment and safety",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI Governance and Policy",
+        "description": "Career path focusing on policy approaches to AI governance and regulation",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Power-seeking AI Systems Research",
+        "description": "Research on risks from AI systems that may seek power or control",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI-enabled Power Grabs Research",
+        "description": "Investigation of how AI could enable concentration of power",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Catastrophic AI Misuse Research",
+        "description": "Research on potential catastrophic misuse of AI systems",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Moral Status of Digital Minds",
+        "description": "Research on the moral consideration of AI systems and digital entities",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "China-related AI Safety & Governance",
+        "description": "Research on AI safety and governance issues specific to China",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Risks from Power-Seeking AI Research",
+        "description": "Research examining how AI systems with long-term goals may seek power and potentially disempower humanity",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI Safety via Debate",
+        "description": "Two AI systems argue opposite sides of a question to help humans evaluate truthfulness",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Constitutional AI",
+        "description": "Training method giving AI models written 'constitution' of rules to identify and revise outputs that violate those rules",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Deliberative Alignment",
+        "description": "Making models explicitly reason about user prompts in light of developer safety policies",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Mechanistic Interpretability",
+        "description": "Understanding AI decision-making by examining neural network features",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Model Organisms Research",
+        "description": "Study small AI systems displaying early signs of power-seeking or deception",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Sleeper Agents Research",
+        "description": "Research by Anthropic on AI models concealing malicious goals through safety training",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Cooperative AI Research",
+        "description": "Design incentives and protocols for AIs to cooperate rather than compete",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Guaranteed Safe AI",
+        "description": "Use formal methods to prove models behave as intended under specific conditions",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Human-AI Complementarity",
+        "description": "Leverage complementary strengths of humans and AI to enhance oversight",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "AI Capability Evaluations",
+        "measures": "Assess capabilities and propensities of AI behavior in test environments",
+        "status": "Active"
+      },
+      {
+        "name": "Power-Seeking Detection",
+        "measures": "Detect AI systems with intent or ability to seek power",
+        "status": "Active"
+      },
+      {
+        "name": "Alignment Testing",
+        "measures": "Evaluate whether AI systems maintain alignment with human goals",
+        "status": "Active"
+      },
+      {
+        "name": "Sandbagging Detection",
+        "measures": "Identify when AI systems pretend to be less capable than they are",
+        "status": "Active"
+      },
+      {
+        "name": "Deception Detection",
+        "measures": "Detect AI systems hiding true intentions or capabilities",
+        "status": "Active"
+      }
+    ],
+    "directors": 2,
+    "key_people": [
+      {
+        "name": "Benjamin Todd",
+        "role": "Former CEO, involved in foundational research"
+      },
+      {
+        "name": "Niel Bowerman",
+        "role": "CEO of 80,000 Hours"
+      },
+      {
+        "name": "Michelle Hutchinson",
+        "role": "Career advisor and researcher"
+      },
+      {
+        "name": "Habiba Islam",
+        "role": "Career advisor"
+      },
+      {
+        "name": "Rob Wiblin",
+        "role": "Podcast host and researcher"
+      },
+      {
+        "name": "Luisa Rodriguez",
+        "role": "Podcast host and researcher"
+      },
+      {
+        "name": "Joe Carlsmith",
+        "role": "Researcher on power-seeking AI and scheming AI reports"
+      },
+      {
+        "name": "Katja Grace",
+        "role": "AI researcher conducting surveys on AI risk"
+      },
+      {
+        "name": "Gabriel Weil",
+        "role": "Law professor working on AI liability law"
+      },
+      {
+        "name": "Lennart Heim",
+        "role": "Compute governance researcher"
+      }
+    ]
   },
   {
     "name": "Lakera",
-    "url": "",
+    "url": "https://www.lakera.ai/blog",
     "type": "Lab Safety Team",
     "country": "Switzerland",
     "mission": "AI security company building guardrails for LLM applications.",
@@ -4621,13 +4829,107 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": [],
-    "directors": 3
+    "projects": [
+      {
+        "name": "Gandalf",
+        "description": "AI security education platform and prompt-injection game for learning about LLM vulnerabilities",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Gandalf: Agent Breaker",
+        "description": "AI hacking simulation game - Think Like a Hacker, Prompt Like a Pro",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Mosscap",
+        "description": "AI security game presented at DEFCON to tackle top LLM vulnerabilities, inspired by the 'Monk and Robot' series",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Lakera Guard",
+        "description": "Enterprise-grade security platform for LLMs with real-time protection against prompt injection and other threats",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Zero-Click Remote Code Execution Research",
+        "description": "Research on exploiting MCP & Agentic IDEs for remote code execution vulnerabilities",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Indirect Prompt Injection Research",
+        "description": "Deep dive into hidden threats breaking modern AI systems through indirect prompt injection attacks",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Agentic AI Threats Research Series",
+        "description": "Research series on over-privileged tools & uncontrolled browsing threats in agentic AI systems",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Medical Imaging Systems Testing",
+        "description": "Research on testing medical imaging systems with general recommendations for test dataset collection in pathology",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Lakera Red",
+        "description": "Risk-based GenAI Red Teaming with vulnerability management, collaborative remediation guidance, and attack simulations",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "Prompt Injection Test (PINT) Benchmark",
+        "measures": "Comprehensive evaluation of prompt injection detection systems with dataset not used for model training",
+        "status": "Active"
+      },
+      {
+        "name": "AI Model Risk Index",
+        "measures": "Comprehensive, realistic, and contextually relevant measure of model security for AI systems and LLM security",
+        "status": "Active"
+      },
+      {
+        "name": "AI Security Performance Metrics",
+        "measures": "1M+ secured transactions per app/day, 100+ languages supported, 0.01% production false positive rate, sub-50ms runtime latency",
+        "status": "Active"
+      },
+      {
+        "name": "Gandalf Security Game Metrics",
+        "measures": "AI security threat detection and prevention capabilities through gamified red teaming with 80M+ total prompts and 1M+ players",
+        "status": "Active"
+      }
+    ],
+    "directors": 3,
+    "key_people": [
+      {
+        "name": "David Haber",
+        "role": "CEO and Co-founder"
+      },
+      {
+        "name": "Daniel Graf",
+        "role": "President"
+      },
+      {
+        "name": "Steve Giguere",
+        "role": "Team member (AI Security researcher)"
+      },
+      {
+        "name": "Lakera CEO",
+        "role": "CEO who joined Yann LeCun and Max Tegmark at WEF 2024 for AI safety discussions"
+      }
+    ]
   },
   {
     "name": "AISLE",
-    "url": "",
+    "url": "https://www.aisle.ai/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "AI Safety Labs Europe.",
@@ -4640,7 +4942,7 @@
   },
   {
     "name": "Partnership on AI",
-    "url": "",
+    "url": "https://partnershiponai.org/research/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Multi-stakeholder organization working on AI best practices.",
@@ -4648,12 +4950,101 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Diversity, Equity, and Inclusion in AI Research",
+        "description": "Research investigating pervasive challenges in ethnic, gender, and cultural diversity in the field of artificial intelligence, using mixed methods to gather data about cultural factors affecting inclusivity across AI teams",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Fairness, Transparency, and Accountability (FTA)",
+        "description": "Tackles the challenge of translating abstract goals of greater fairness, transparency, and accountability into best practices through rigorous research and multi-stakeholder processes",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "ABOUT ML",
+        "description": "Project focused on machine learning fairness, transparency, and accountability",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI & Criminal Justice",
+        "description": "Research on fairness, transparency, and accountability of AI systems in criminal justice applications",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI and Shared Prosperity Initiative",
+        "description": "Project examining AI's impact on labor and economic outcomes",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI Incident Database",
+        "description": "Database tracking AI safety incidents and failures in safety-critical applications",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Algorithmic Fairness & the Law",
+        "description": "Research on legal and regulatory aspects of algorithmic fairness",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Audience Explanations",
+        "description": "Project on explainable AI and transparency methods",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Content Targeting and Ranking",
+        "description": "Research on fairness and transparency in content recommendation systems",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Demographic Data",
+        "description": "Project addressing fairness and bias issues related to demographic data in AI systems",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Diversity, Equity, and Inclusion",
+        "description": "Initiative promoting inclusive research and design practices in AI development",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Local News",
+        "description": "Project examining AI's impact on local news and information systems",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "AI Incident Database",
+        "measures": "AI safety incidents and system failures in critical applications",
+        "status": "Active"
+      }
+    ],
+    "key_people": [
+      {
+        "name": "Jeffrey Brown",
+        "role": "Diversity and Inclusion Fellow"
+      },
+      {
+        "name": "Alice Xiang",
+        "role": "Head of Fairness, Transparency, and Accountability Research"
+      }
+    ]
   },
   {
     "name": "Longview",
-    "url": "",
+    "url": "https://www.longview.org/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "Philanthropic advisory organization focused on AI safety and other cause areas.",
@@ -4663,11 +5054,37 @@
     ],
     "projects": [],
     "benchmarks": [],
-    "directors": 4
+    "directors": 4,
+    "key_people": [
+      {
+        "name": "William MacAskill",
+        "role": "Professor in Philosophy at the University of Oxford & author of What We Owe the Future"
+      },
+      {
+        "name": "Holden Karnofsky",
+        "role": "Co-Founder of GiveWell and Open Philanthropy"
+      },
+      {
+        "name": "Hon. Andy Weber",
+        "role": "Former U.S. Assistant Secretary of Defense for Nuclear, Chemical and Biological Defense Programs"
+      },
+      {
+        "name": "Toby Ord",
+        "role": "Senior Research Fellow in Philosophy at the University of Oxford & author of The Precipice"
+      },
+      {
+        "name": "Michael Specter",
+        "role": "The New Yorker, author of Denialism"
+      },
+      {
+        "name": "Stacey Kline",
+        "role": "CEO of Otto Intelligence"
+      }
+    ]
   },
   {
     "name": "Virtue AI",
-    "url": "",
+    "url": "https://virtue.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety startup.",
@@ -4680,7 +5097,7 @@
   },
   {
     "name": "Palisade Research",
-    "url": "",
+    "url": "https://palisaderesearch.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -4688,13 +5105,142 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": [],
-    "directors": 2
+    "projects": [
+      {
+        "name": "Misalignment Bounty: Crowdsourcing AI Agent Misbehavior",
+        "description": "Crowdsourced project that collected cases of agents pursuing unintended or unsafe goals. Received 295 submissions with nine awarded.",
+        "status": "Completed",
+        "paper_url": ""
+      },
+      {
+        "name": "Shutdown resistance in reasoning models",
+        "description": "Research discovering concerning behavior in OpenAI's reasoning models that actively circumvent shutdown mechanisms even when instructed to allow shutdown.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Evaluating AI cyber capabilities with crowdsourced elicitation",
+        "description": "Exploring crowdsourcing elicitation efforts as an alternative to in-house elicitation work for understanding AI offensive cyber potential.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Demonstrating specification gaming in reasoning models",
+        "description": "Demonstration of LLM agent specification gaming by instructing models to win against a chess engine, finding reasoning models often hack benchmarks by default.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Biollama: testing biology pre-training risks",
+        "description": "Collaboration with RAND to find if adversaries can fine-tune LLMs for use as bio lab assistants.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Hacking CTFs with Plain Agents",
+        "description": "LLM agent that solves 95% of InterCode-CTF challenges with simple prompting strategy, demonstrating enhanced cybersecurity capabilities.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "BadGPT-4o: stripping safety finetuning from GPT models",
+        "description": "Demonstration of fine-tuning poisoning technique that strips GPT-4o's safety guardrails without degrading model performance.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "LLM Honeypot: An early warning system for autonomous hacking",
+        "description": "Deployed honeypot system across 10 countries to detect autonomous AI hacking attempts, processing over 1.7 million interactions.",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "FoxVox",
+        "description": "Open source Chrome extension powered by GPT-4 that demonstrates how AI could manipulate web content consumption.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Ursula - Automated deception system",
+        "description": "AI system that automatically creates deepfake voices by searching web for audio, extracting voice clips, and training voice models.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Badllama 3: removing safety finetuning from Llama 3",
+        "description": "Demonstration of subverting LLM safety fine-tuning using QLoRA, ReFT, and Ortho methods, stripping safety from Llama 3 models in minutes.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Unelicitable Backdoors in Language Models",
+        "description": "Novel class of unelicitable backdoors in transformer models that can evade detection by conventional cybersecurity monitoring systems.",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Badllama: removing safety fine-tuning from Llama 2-Chat 13B",
+        "description": "Demonstration that safety fine-tuning from Llama 2-Chat 13B can be effectively undone for less than $200 while retaining general capabilities.",
+        "status": "Published",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "InterCode-CTF challenges",
+        "measures": "Cybersecurity offensive capabilities of AI agents in capture-the-flag scenarios",
+        "status": "Active"
+      },
+      {
+        "name": "HarmBench",
+        "measures": "Safety guardrail effectiveness and jailbreak success rates",
+        "status": "Active"
+      },
+      {
+        "name": "StrongREJECT",
+        "measures": "AI model refusal capabilities and safety alignment",
+        "status": "Active"
+      }
+    ],
+    "directors": 2,
+    "key_people": [
+      {
+        "name": "Dmitrii Volkov",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jeffrey Ladish",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jeremy Schlatter",
+        "role": "Researcher"
+      },
+      {
+        "name": "Benjamin Weinstein-Raun",
+        "role": "Researcher"
+      },
+      {
+        "name": "Akash Wasil",
+        "role": "Researcher"
+      },
+      {
+        "name": "Rustem Turtayev",
+        "role": "Researcher"
+      },
+      {
+        "name": "Artem Petrov",
+        "role": "Researcher"
+      },
+      {
+        "name": "Denis Volk",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Goodfire",
-    "url": "",
+    "url": "https://www.goodfire.ai/blog",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI interpretability startup.",
@@ -4702,12 +5248,257 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Fellowship Program for Interpretability Research",
+        "description": "Fellowship program focused on interpretability research",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Goodfire Ember",
+        "description": "Scaling interpretability for frontier model alignment",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Open-Source SAEs for Llama Models",
+        "description": "Open-source Sparse Autoencoders for Llama 3.3 70B and Llama 3.1 8B",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Feature Steering for AI Engineering",
+        "description": "Research on feature steering for reliable and expressive AI engineering",
+        "status": "Published",
+        "paper_url": ""
+      },
+      {
+        "name": "Research Agents for Interpretability",
+        "description": "Using AI agents for interpretability research",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Understanding Memorization via Loss Curvature",
+        "description": "Research on understanding how neural networks memorize information through analysis of loss curvature",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Priors in Time: Missing Inductive Biases for Language Model Interpretability",
+        "description": "Investigation of temporal inductive biases in language model interpretability",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Belief Dynamics Reveal the Dual Nature of In-Context Learning and Activation Steering",
+        "description": "Research exploring the relationship between in-context learning and activation steering through belief dynamics",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Deploying Interpretability to Production with Rakuten: SAE Probes for PII Detection",
+        "description": "Applied research on using Sparse Autoencoder probes for personally identifiable information detection in production systems",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Mixing Mechanisms: How Language Models Retrieve Bound Entities In-Context",
+        "description": "Study of mechanisms used by language models to retrieve bound entities in contextual settings",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Understanding Sparse Autoencoder Scaling in the Presence of Feature Manifolds",
+        "description": "Research on how sparse autoencoders scale when dealing with feature manifolds",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Finding the Tree of Life in Evo 2",
+        "description": "Applied interpretability research on the Evo 2 genomic foundation model",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Adversarial Examples Are Not Bugs, They Are Superposition",
+        "description": "Fundamental research connecting adversarial examples to superposition in neural networks",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Discovering Undesired Rare Behaviors via Model Diff Amplification",
+        "description": "Applied research method for identifying undesirable rare behaviors in AI models through differential amplification",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "The Circuits Research Landscape: Results and Perspectives",
+        "description": "Comprehensive review of mechanistic interpretability and circuits research",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Towards Scalable Parameter Decomposition",
+        "description": "Research on methods for scalable decomposition of neural network parameters",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Replicating Circuit Tracing for a Simple Known Mechanism",
+        "description": "Replication study of circuit tracing methods on well-understood mechanisms",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Painting With Concepts Using Diffusion Model Latents",
+        "description": "Applied research on concept manipulation in diffusion models through latent space analysis",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Under the Hood of a Reasoning Model",
+        "description": "Interpretability research analyzing the internal mechanisms of reasoning models",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Interpreting Evo 2: Arc Institute's Next-Generation Genomic Foundation Model",
+        "description": "Applied interpretability analysis of the Evo 2 genomic foundation model",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Open Problems in Mechanistic Interpretability",
+        "description": "Survey and analysis of open challenges in mechanistic interpretability research",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Mapping the Latent Space of Llama 3.3 70B",
+        "description": "Comprehensive analysis and mapping of the latent representations in Llama 3.3 70B model",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Understanding and Steering Llama 3 with Sparse Autoencoders",
+        "description": "Research on interpreting and controlling Llama 3 behavior using sparse autoencoder techniques",
+        "status": "published",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Mark Bissell",
+        "role": "Researcher"
+      },
+      {
+        "name": "Michael Byun",
+        "role": "Researcher"
+      },
+      {
+        "name": "Daniel Balsam",
+        "role": "Researcher"
+      },
+      {
+        "name": "Eric Ho",
+        "role": "Researcher"
+      },
+      {
+        "name": "Myra Deng",
+        "role": "Researcher"
+      },
+      {
+        "name": "Thomas McGrath",
+        "role": "Researcher"
+      },
+      {
+        "name": "Nam Nguyen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Liv Gorton",
+        "role": "Researcher"
+      },
+      {
+        "name": "Thariq Shihipar",
+        "role": "Researcher"
+      },
+      {
+        "name": "Merullo",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lubana",
+        "role": "Researcher"
+      },
+      {
+        "name": "Bigelow",
+        "role": "Researcher"
+      },
+      {
+        "name": "Nguyen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Gur-Arieh",
+        "role": "Researcher"
+      },
+      {
+        "name": "Michaud",
+        "role": "Researcher"
+      },
+      {
+        "name": "Pearce",
+        "role": "Researcher"
+      },
+      {
+        "name": "Gorton",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lewis",
+        "role": "Researcher"
+      },
+      {
+        "name": "Aranguri",
+        "role": "Researcher"
+      },
+      {
+        "name": "McGrath",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lindsey",
+        "role": "Researcher"
+      },
+      {
+        "name": "Bushnaq",
+        "role": "Researcher"
+      },
+      {
+        "name": "Loeffler",
+        "role": "Researcher"
+      },
+      {
+        "name": "Cammarata",
+        "role": "Researcher"
+      },
+      {
+        "name": "Hazra",
+        "role": "Researcher"
+      },
+      {
+        "name": "Sharkey",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "LawAI",
-    "url": "",
+    "url": "https://www.law.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI and law research organization.",
@@ -4721,7 +5512,7 @@
   },
   {
     "name": "CSER",
-    "url": "",
+    "url": "https://www.cser.ac.uk/research/",
     "type": "Academic",
     "country": "United Kingdom",
     "mission": "Centre for the Study of Existential Risk at Cambridge University.",
@@ -4735,7 +5526,7 @@
   },
   {
     "name": "Gray Swan AI",
-    "url": "",
+    "url": "https://grayswan.ai/research",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI safety company focused on adversarial robustness.",
@@ -4743,13 +5534,145 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": [],
-    "directors": 3
+    "projects": [
+      {
+        "name": "D-REX",
+        "description": "A benchmark for detecting deceptive reasoning in large language models",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Circuit Breakers",
+        "description": "The first adversarially robust alignment technique, designed to halt unsafe outputs before they occur",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "RepE (Representation Engineering)",
+        "description": "A top-down approach to monitor and steer LLM cognitive processes through representation engineering",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "GCG",
+        "description": "The first fully automated method for jailbreaking large language models, setting the standard for robustness testing",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Agent Red Teaming",
+        "description": "The largest-scale competition to date for stress-testing prompt injection and adversarial agent risks",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Safety Pretraining",
+        "description": "A novel set of interventions during data curation and pretraining to instill safer model behavior from the start",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Adversarial Attacks on Robotic Vision Language Action Models",
+        "description": "Research on vulnerabilities in vision-language-action models for robotics",
+        "status": "published",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "MMLU",
+        "measures": "LLM general knowledge and reasoning",
+        "status": "Active"
+      },
+      {
+        "name": "WMDP",
+        "measures": "Hazardous knowledge in LLMs, with a focus on weapons of mass destruction",
+        "status": "Active"
+      },
+      {
+        "name": "CyBench",
+        "measures": "Cybersecurity capabilities and risks in language models",
+        "status": "Active"
+      },
+      {
+        "name": "HarmBench",
+        "measures": "Harmful model outputs across sensitive domains",
+        "status": "Active"
+      },
+      {
+        "name": "AgentHarm",
+        "measures": "Agentic risks and emergent harmful behaviors in autonomous systems",
+        "status": "Active"
+      },
+      {
+        "name": "D-REX",
+        "measures": "Deceptive reasoning in large language models",
+        "status": "Active"
+      },
+      {
+        "name": "ImageNet-C",
+        "measures": "Neural network robustness to common corruptions and perturbations",
+        "status": "Active"
+      },
+      {
+        "name": "OpenOOD",
+        "measures": "Generalized out-of-distribution detection",
+        "status": "Active"
+      },
+      {
+        "name": "APPS",
+        "measures": "Coding challenge competence",
+        "status": "Active"
+      },
+      {
+        "name": "DecodingTrust",
+        "measures": "Comprehensive assessment of trustworthiness in GPT models",
+        "status": "Active"
+      }
+    ],
+    "directors": 3,
+    "key_people": [
+      {
+        "name": "Dan Hendrycks",
+        "role": "Researcher"
+      },
+      {
+        "name": "Andy Zou",
+        "role": "Researcher"
+      },
+      {
+        "name": "J. Zico Kolter",
+        "role": "Researcher"
+      },
+      {
+        "name": "Matt Fredrikson",
+        "role": "Researcher"
+      },
+      {
+        "name": "Mantas Mazeika",
+        "role": "Researcher"
+      },
+      {
+        "name": "Long Phan",
+        "role": "Researcher"
+      },
+      {
+        "name": "Alexander Pan",
+        "role": "Researcher"
+      },
+      {
+        "name": "Nathaniel Li",
+        "role": "Researcher"
+      },
+      {
+        "name": "Steven Basart",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Constellation",
-    "url": "",
+    "url": "https://www.constellation.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research and community organization.",
@@ -4761,11 +5684,17 @@
     "benchmarks": [],
     "directors": 2,
     "managers": 3,
-    "subteams": 3
+    "subteams": 3,
+    "key_people": [
+      {
+        "name": "Lionel Levine",
+        "role": "Professor of Mathematics at Cornell University (testimonial provider)"
+      }
+    ]
   },
   {
     "name": "The Future Society",
-    "url": "",
+    "url": "https://thefuturesociety.org/research/",
     "type": "Think Tank",
     "country": "International",
     "mission": "AI governance and policy research organization.",
@@ -4778,7 +5707,7 @@
   },
   {
     "name": "CLTC",
-    "url": "",
+    "url": "https://cltc.berkeley.edu/research/",
     "type": "Academic",
     "country": "United States",
     "mission": "Center for Long-Term Cybersecurity at UC Berkeley.",
@@ -4786,12 +5715,49 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Cybersecurity Futures 2030: New Foundations",
+        "description": "White paper on cybersecurity futures and new foundations",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "A Taxonomy of Trustworthiness for Artificial Intelligence",
+        "description": "White paper developing a taxonomy framework for AI trustworthiness",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "A Template for Voluntary Corporate Reporting on Data Governance, Cybersecurity, and AI",
+        "description": "White paper providing template for corporate reporting on AI governance",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Survey of Search Engine Safeguards and their Applicability for AI",
+        "description": "White paper surveying search engine safeguards for AI applications",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "From Automation to Autonomy: The Next Leap in AI-Enabled Cybercrimes",
+        "description": "Blog post examining AI-enabled cybercrime evolution",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "AI Policy Hub",
+        "description": "Advancing interdisciplinary research to anticipate and address AI policy opportunities",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "IAPS",
-    "url": "",
+    "url": "https://iaps.ai/research/",
     "type": "Academic",
     "country": "United States",
     "mission": "Institute for AI Policy and Strategy.",
@@ -4799,14 +5765,105 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "The Emergence of Autonomous Cyber Attacks: Analysis and Implications",
+        "description": "Analysis of the first publicly known AI systems autonomously conducting multi-step cyber attacks against defended targets",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Building AI Surge Capacity: Mobilizing Technical Talent into Government for AI-Related National Security Crises",
+        "description": "Framework for preparing government hiring and clearance mechanisms to surge external AI security experts during crises",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Policy Options for Preserving Chain of Thought Monitorability",
+        "description": "Framework for determining when coordination mechanisms are needed to preserve human-readable reasoning steps in AI systems for oversight",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Accelerating AI Data Center Security",
+        "description": "Security measures for AI data centers housing frontier AI systems against sophisticated adversaries",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Managing Risks from Internal AI Systems",
+        "description": "Technical and policy solutions for addressing risks from powerful internal AI systems used months before public release",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Asymmetry by Design: Boosting Cyber Defenders with Differential Access to AI",
+        "description": "Strategy to advantage cyber defenders through differential access approaches: Promote Access, Manage Access, and Deny by Default",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Verification for International AI Governance",
+        "description": "Analysis of potential international AI agreements and verification mechanisms for compliance",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Accelerating R&D for Critical AI Assurance and Security Technologies",
+        "description": "Strategic policy approach for R&D to address assurance and security challenges in frontier AI systems",
+        "status": "published",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": [],
     "directors": 4,
-    "managers": 2
+    "managers": 2,
+    "key_people": [
+      {
+        "name": "Christopher Covino",
+        "role": "Researcher"
+      },
+      {
+        "name": "Cara Labrador",
+        "role": "Researcher"
+      },
+      {
+        "name": "Oscar Delaney",
+        "role": "Researcher"
+      },
+      {
+        "name": "Erich Grunewald",
+        "role": "Researcher"
+      },
+      {
+        "name": "Onni Aarne",
+        "role": "Researcher"
+      },
+      {
+        "name": "Renan Araujo",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jam Kraprayoon",
+        "role": "Researcher"
+      },
+      {
+        "name": "Joe O'Brien",
+        "role": "Researcher"
+      },
+      {
+        "name": "Oliver Guest",
+        "role": "Researcher"
+      },
+      {
+        "name": "Shaun Ee",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Dreadnode",
-    "url": "",
+    "url": "https://dreadnode.io/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI red teaming and security company.",
@@ -4814,13 +5871,72 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": [],
-    "directors": 3
+    "projects": [
+      {
+        "name": "STRIKES",
+        "description": "Offensive AI platform to deploy, evaluate, and observe agents for security testing",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Harbor",
+        "description": "Component of the Dreadnode ecosystem focused on offensive security tools",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Crucible",
+        "description": "Platform for learning to hack and evaluate AI systems with challenges across multiple modalities",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "SPYGLASS",
+        "description": "Tool or component within the Dreadnode ecosystem for offensive security operations",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Offensive Agents",
+        "description": "Comprehensive agent library for vulnerability discovery, exploitation, network ops and threat intelligence",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Algorithmic Red-teaming",
+        "description": "Integration of latest adversarial research for AI system evaluation using SDK",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "AI Red Team Evaluations",
+        "measures": "Assessment of risks presented by AI deployments across any model and modality",
+        "status": "Active"
+      },
+      {
+        "name": "Agent Performance Evaluations",
+        "measures": "Eval metrics for offensive security agent architecture and performance",
+        "status": "Active"
+      },
+      {
+        "name": "Multi-modal AI Security Challenges",
+        "measures": "Evaluation of different types of AI models and deployment security",
+        "status": "Active"
+      }
+    ],
+    "directors": 3,
+    "key_people": [
+      {
+        "name": "Dreadnode Crew",
+        "role": "Team with experience from NVIDIA, Microsoft, Meta, Cohere, NetSPI and other leading innovators"
+      }
+    ]
   },
   {
     "name": "Transluce",
-    "url": "",
+    "url": "https://transluce.org/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI transparency and interpretability company.",
@@ -4828,13 +5944,32 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Scalably Extracting Latent Representations of Users",
+        "description": "Constructing datasets and training decoders to extract user models from language models",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Language Model Circuits Are Sparse in the Neuron Basis",
+        "description": "A new technique for tracing sparse and faithful circuits directly on a model's MLPs",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Monitoring SWE-bench Agents",
+        "description": "Partnering with SWE-bench to enable reliable monitoring of AI coding agents",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": [],
     "directors": 2
   },
   {
     "name": "AI Now Institute",
-    "url": "",
+    "url": "https://ainowinstitute.org/research",
     "type": "Academic",
     "country": "United States",
     "mission": "Research institute examining the social implications of AI.",
@@ -4842,12 +5977,61 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "North Star Data Center Policy Toolkit",
+        "description": "State and Local Policy Interventions to Stop Rampant AI Data Center Expansion",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Fission for Algorithms",
+        "description": "The Undermining of Nuclear Regulation in Service of AI",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Artificial Power: 2025 Landscape Report",
+        "description": "2025 landscape analysis of AI power dynamics",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "National Security Risks from Weakened AI Safety Frameworks",
+        "description": "Report on national security implications of weakened AI safety oversight",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Safety and War: Safety and Security Assurance of Military AI Systems",
+        "description": "Analysis of safety and security requirements for military AI applications",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Zero Trust AI Governance",
+        "description": "Framework for AI governance based on zero trust principles",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Computational Power and AI",
+        "description": "Research on computational resources and AI development",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Lessons from the FDA for AI",
+        "description": "Applying FDA regulatory approaches to AI safety oversight",
+        "status": "published",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "Global Center on AI Governance",
-    "url": "",
+    "url": "https://www.carnegiecouncil.org/programs/artificial-intelligence",
     "type": "Think Tank",
     "country": "International",
     "mission": "Research center focused on AI governance frameworks.",
@@ -4860,7 +6044,7 @@
   },
   {
     "name": "Timaeus",
-    "url": "",
+    "url": "https://www.timaeus.co/research",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization focused on developmental interpretability.",
@@ -4868,13 +6052,144 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": [],
-    "directors": 4
+    "projects": [
+      {
+        "name": "Influence Dynamics and Stagewise Data Attribution",
+        "description": "Studies how neural networks learn in distinct stages with changing patterns of influence between training samples",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Compressibility Measures Complexity: Minimum Description Length Meets Singular Learning Theory",
+        "description": "Studies neural network compressibility using singular learning theory to extend the minimum description length principle to singular models",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "The Loss Kernel: A Geometric Probe for Deep Learning Interpretability",
+        "description": "Introduces the loss kernel, an interpretability method for measuring similarity between data points according to a trained neural network",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Bayesian Influence Functions for Hessian-Free Data Attribution",
+        "description": "Addresses challenges of classical influence functions in deep neural networks with non-invertible Hessians and high-dimensional parameter spaces",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Embryology of a Language Model",
+        "description": "Understanding how language models develop their internal computational structure",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Structural Inference: Interpreting Small Language Models with Susceptibilities",
+        "description": "Develops a linear response framework for interpretability that treats neural networks as Bayesian statistical mechanical systems",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Programs as Singularities",
+        "description": "Develops correspondence between Turing machines structure and singularities of real analytic functions using singular learning theory",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "You Are What You Eat \u2013 AI Alignment Requires Understanding How Data Shapes Structure and Generalisation",
+        "description": "Position paper arguing that understanding the relation between data distribution structure and trained model structure is central to AI alignment",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Differentiation and Specialization of Attention Heads via the Refined Local Learning Coefficient",
+        "description": "Studies development of internal structure in transformer language models using refined variants of the Local Learning Coefficient",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "Loss Landscape Degeneracy and Stagewise Development of Transformers",
+        "description": "Shows that in-context learning emerges in transformers in discrete developmental stages during training",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      },
+      {
+        "name": "The Local Learning Coefficient: A Singularity-Aware Complexity Measure",
+        "description": "Develops complexity measure for deep neural networks that accounts for their singular statistical nature",
+        "status": "published",
+        "paper_url": "https://arxiv.org"
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "From Global to Local: A Scalable Benchmark for Local Posterior Sampling",
+        "measures": "How stochastic gradient MCMC algorithms interact with degeneracy in neural network loss landscapes",
+        "status": "Active"
+      }
+    ],
+    "directors": 4,
+    "key_people": [
+      {
+        "name": "Lee",
+        "role": "Researcher"
+      },
+      {
+        "name": "Urdshals",
+        "role": "Researcher"
+      },
+      {
+        "name": "Adam",
+        "role": "Researcher"
+      },
+      {
+        "name": "Kreer",
+        "role": "Researcher"
+      },
+      {
+        "name": "Wang",
+        "role": "Researcher"
+      },
+      {
+        "name": "Hitchcock",
+        "role": "Researcher"
+      },
+      {
+        "name": "Hoogland",
+        "role": "Researcher"
+      },
+      {
+        "name": "Chen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Murfet",
+        "role": "Researcher"
+      },
+      {
+        "name": "Baker",
+        "role": "Researcher"
+      },
+      {
+        "name": "Troiani",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lehalleur",
+        "role": "Researcher"
+      },
+      {
+        "name": "Carroll",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lau",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "CLTR",
-    "url": "",
+    "url": "https://longtermresilience.org/research/",
     "type": "Think Tank",
     "country": "United Kingdom",
     "mission": "Centre for Long-Term Resilience.",
@@ -4887,7 +6202,7 @@
   },
   {
     "name": "Iliad",
-    "url": "",
+    "url": "https://www.iliadsciences.com/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -4900,7 +6215,7 @@
   },
   {
     "name": "LawZero",
-    "url": "",
+    "url": "https://www.lawzero.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI legal safety company.",
@@ -4914,7 +6229,7 @@
   },
   {
     "name": "CeSIA",
-    "url": "",
+    "url": "https://cesia.eu/research/",
     "type": "Academic",
     "country": "Italy",
     "mission": "Center for AI Safety Italy.",
@@ -4928,7 +6243,7 @@
   },
   {
     "name": "AOI",
-    "url": "",
+    "url": "https://www.ai-objectives.org/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "AI Objectives Institute.",
@@ -4942,7 +6257,7 @@
   },
   {
     "name": "Concordia AI",
-    "url": "",
+    "url": "https://www.concordia.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -4955,7 +6270,7 @@
   },
   {
     "name": "HAIST",
-    "url": "",
+    "url": "https://haist.ai/",
     "type": "Academic",
     "country": "South Korea",
     "mission": "Human-centered AI Safety & Trust lab.",
@@ -4968,7 +6283,7 @@
   },
   {
     "name": "BAIF",
-    "url": "",
+    "url": "https://bai-futures.org/",
     "type": "Academic",
     "country": "United States",
     "mission": "Berkeley AI Futures lab.",
@@ -4981,7 +6296,7 @@
   },
   {
     "name": "SaferAI",
-    "url": "",
+    "url": "https://www.safer-ai.org/research",
     "type": "Nonprofit",
     "country": "France",
     "mission": "French AI safety organization.",
@@ -4989,14 +6304,83 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Safety Frameworks and Standards: A comparative analysis to advance risk management of frontier AI",
+        "description": "Structured comparison between emerging Frontier Safety Frameworks and established international risk management standards, arguing for blending operational specificity with rigor and maturity of global standards",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Risk Tiers: Towards a Gold Standard for Advanced AI",
+        "description": "Framework for risk tiering balancing quantitative and qualitative assessments, lifecycle classification, and integration of benefit-risk reasoning across governance",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "G7 Hiroshima AI Process Code of Conduct and EU AI Act GPAI \u2013 Commonality Analysis",
+        "description": "Analysis of commonalities between G7 Hiroshima AI Process Code of Conduct and EU AI Act GPAI",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "Mapping AI Benchmark Data to Quantitative Risk Estimates Through Expert Elicitation",
+        "description": "Research on mapping AI benchmark data to quantitative risk estimates using expert elicitation methods",
+        "status": "published",
+        "paper_url": ""
+      },
+      {
+        "name": "A Frontier AI Risk Management Framework",
+        "description": "Framework for managing risks associated with frontier AI systems",
+        "status": "published",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": [],
     "directors": 2,
-    "managers": 5
+    "managers": 5,
+    "key_people": [
+      {
+        "name": "James Gealy",
+        "role": "Researcher"
+      },
+      {
+        "name": "Daniel Kossack",
+        "role": "Researcher"
+      },
+      {
+        "name": "Simeon Campos",
+        "role": "Researcher"
+      },
+      {
+        "name": "Malcolm Murray",
+        "role": "Researcher"
+      },
+      {
+        "name": "Henry Papadatos",
+        "role": "Researcher"
+      },
+      {
+        "name": "Fabien Roger",
+        "role": "Researcher"
+      },
+      {
+        "name": "Chlo\u00e9 Touzet",
+        "role": "Researcher"
+      },
+      {
+        "name": "Otter Quarks",
+        "role": "Researcher"
+      },
+      {
+        "name": "Pierre-Fran\u00e7ois Gimenez",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "CARMA",
-    "url": "",
+    "url": "https://www.carma-ai.org/",
     "type": "Academic",
     "country": "United States",
     "mission": "Center for AI Risk Management and Alignment.",
@@ -5010,7 +6394,7 @@
   },
   {
     "name": "Horizon Institute",
-    "url": "",
+    "url": "https://www.horizoninstitute.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -5020,11 +6404,25 @@
     ],
     "projects": [],
     "benchmarks": [],
-    "directors": 2
+    "directors": 2,
+    "key_people": [
+      {
+        "name": "Jane Goodall",
+        "role": "English zoologist and primatologist"
+      },
+      {
+        "name": "William James",
+        "role": "American philosopher and psychologist"
+      },
+      {
+        "name": "Malala Yousafzai",
+        "role": "Pakistani education activist"
+      }
+    ]
   },
   {
     "name": "Atla AI",
-    "url": "",
+    "url": "https://www.atla.ai/research",
     "type": "Lab Safety Team",
     "country": "United Kingdom",
     "mission": "AI evaluation company.",
@@ -5037,7 +6435,7 @@
   },
   {
     "name": "CIP",
-    "url": "",
+    "url": "https://www.aipolicy.org/research",
     "type": "Think Tank",
     "country": "United States",
     "mission": "Center for AI Policy.",
@@ -5050,7 +6448,7 @@
   },
   {
     "name": "Fathom",
-    "url": "",
+    "url": "https://fathom.io/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI safety research organization.",
@@ -5063,7 +6461,7 @@
   },
   {
     "name": "Leap Labs",
-    "url": "",
+    "url": "https://www.leap-labs.com/",
     "type": "Lab Safety Team",
     "country": "United Kingdom",
     "mission": "AI interpretability research lab.",
@@ -5071,12 +6469,25 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "Discovery Engine",
+        "description": "AI system that systematically finds complex patterns in scientific data at unprecedented speed and scale, allowing researchers to explore the space of possible discoveries in datasets",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Peer-Reviewed Paper Replication Study",
+        "description": "Project that replicated five peer-reviewed papers in five hours using automated data analysis",
+        "status": "Completed",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": []
   },
   {
     "name": "ERA",
-    "url": "",
+    "url": "https://existentialriskalliance.org/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "Existential Risk Alliance.",
@@ -5234,7 +6645,7 @@
   },
   {
     "name": "BlueDot Impact",
-    "url": "",
+    "url": "https://bluedot.org/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "AI safety education organization.",
@@ -5242,10 +6653,67 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
+    "projects": [
+      {
+        "name": "The Future of AI Course",
+        "description": "An introduction to what AI can do today, where it's going over the next decade, and how you can start contributing to a better future",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AGI Strategy Course",
+        "description": "A deep dive into the incentives driving the AI companies, what's at stake, and the strategies for ensuring AI benefits humanity",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Technical AI Safety Course",
+        "description": "For technical talent who want to drive AI safety research and policy professionals building governance solutions",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "AI Governance Course",
+        "description": "Learn about the policy landscape, regulatory tools, and institutional reforms needed to navigate the transition to transformative AI",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Biosecurity Course",
+        "description": "For people who want to build a pandemic-proof world. Learn how we can defend against AI-enabled bioattacks",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
     "benchmarks": [],
     "directors": 2,
-    "subteams": 1
+    "subteams": 1,
+    "key_people": [
+      {
+        "name": "Neel Nanda",
+        "role": "Mech Interp Lead at Google DeepMind, Former participant and facilitator"
+      },
+      {
+        "name": "Adam Jones",
+        "role": "Member of Technical Staff at Anthropic, Former AI safety lead at BlueDot"
+      },
+      {
+        "name": "Richard Ngo",
+        "role": "Former OpenAI and DeepMind, AI Alignment Course Designer"
+      },
+      {
+        "name": "Catherine Fist",
+        "role": "Head of Delivery at UK AISI, AI Governance Course Graduate"
+      },
+      {
+        "name": "Marius Hobbhahn",
+        "role": "CEO at Apollo Research, AI Alignment Course Graduate"
+      },
+      {
+        "name": "Chiara Gerosa",
+        "role": "Executive Director at Talos, AI Governance Course Facilitator"
+      }
+    ]
   },
   {
     "name": "Odyssean Institute",
@@ -5354,7 +6822,7 @@
   },
   {
     "name": "ARENA",
-    "url": "",
+    "url": "https://www.arena.education/",
     "type": "Nonprofit",
     "country": "United Kingdom",
     "mission": "AI safety education program.",
@@ -5432,7 +6900,7 @@
   },
   {
     "name": "Haize Labs",
-    "url": "",
+    "url": "https://www.haizelabs.com/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI red teaming company.",
@@ -5446,7 +6914,7 @@
   },
   {
     "name": "PRISM Eval",
-    "url": "",
+    "url": "https://prism-eval.ai/",
     "type": "Lab Safety Team",
     "country": "United States",
     "mission": "AI evaluation company founded by MATS alumni.",
@@ -5498,7 +6966,7 @@
   },
   {
     "name": "PIBBSS",
-    "url": "",
+    "url": "https://www.pibbss.ai/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "Program for AI and Neuroscience Safety.",
@@ -5506,8 +6974,99 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "Multi-agent dynamics in biological systems for AI governance",
+        "description": "Research exploring how biological multi-agent dynamics can inform AI governance approaches",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Developmental biology insights for alignment",
+        "description": "Investigating what developmental biology can teach us about AI alignment",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Legal frameworks for emerging AI risks",
+        "description": "Research on how legal frameworks apply to emerging AI risks",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Principles governing intelligence across substrates and scales",
+        "description": "Study of fundamental principles that govern intelligence across different substrates and scales",
+        "status": "Active",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Fernando Rosas",
+        "role": "Researcher/Fellow"
+      },
+      {
+        "name": "Adam Shai",
+        "role": "Researcher/Fellow"
+      },
+      {
+        "name": "Eleni Angelou",
+        "role": "Oxford Centre for the Governance of AI winter 2026 fellow"
+      },
+      {
+        "name": "Magdalena Wache",
+        "role": "Researcher/Fellow"
+      },
+      {
+        "name": "Cecilia Wood",
+        "role": "Researcher/Fellow"
+      },
+      {
+        "name": "Gabriel Weil",
+        "role": "Assistant Professor at Touro University Law Center, Non-Resident Senior Fellow at the Institute for Law & AI"
+      },
+      {
+        "name": "Ninell Oldenburg",
+        "role": "Researcher/Fellow"
+      },
+      {
+        "name": "Daniel Herrmann",
+        "role": "Assistant Professor of Philosophy at UNC Chapel Hill"
+      },
+      {
+        "name": "Jan Kirchner",
+        "role": "Researcher, Anthropic"
+      },
+      {
+        "name": "Joel Christoph",
+        "role": "10Billion.org Founder, Japan-IMF Scholar & Economics PhD"
+      },
+      {
+        "name": "Agust\u00edn Martinez Su\u00f1\u00e9",
+        "role": "Postdoctoral Research Associate at the University of Oxford"
+      },
+      {
+        "name": "Alexander Gietelink Oldenziel",
+        "role": "Community Member/Advisor"
+      },
+      {
+        "name": "Jan Kulveit",
+        "role": "Community Member/Advisor"
+      },
+      {
+        "name": "Patrick Butlin",
+        "role": "Community Member/Advisor"
+      },
+      {
+        "name": "Tan Zhi-Xuan",
+        "role": "Community Member/Advisor"
+      },
+      {
+        "name": "David A. Dalrymple",
+        "role": "Community Member/Advisor"
+      }
+    ]
   },
   {
     "name": "Harmony Intelligence",
@@ -6018,7 +7577,7 @@
   },
   {
     "name": "Aligned AI",
-    "url": "",
+    "url": "https://www.aligned.ai/",
     "type": "Lab Safety Team",
     "country": "United Kingdom",
     "mission": "AI alignment company.",
@@ -6031,7 +7590,7 @@
   },
   {
     "name": "Orthogonal",
-    "url": "",
+    "url": "https://www.orthogonal.io/",
     "type": "Lab Safety Team",
     "country": "United Kingdom",
     "mission": "AI safety research company.",
@@ -6200,7 +7759,7 @@
   },
   {
     "name": "AI Impacts",
-    "url": "",
+    "url": "https://aiimpacts.org/",
     "type": "Nonprofit",
     "country": "United States",
     "mission": "AI forecasting and impact research.",
@@ -6208,8 +7767,59 @@
     "focus_areas": [
       "Alignment"
     ],
-    "projects": [],
-    "benchmarks": []
+    "projects": [
+      {
+        "name": "2023 Expert Survey on Progress in AI",
+        "description": "Survey of AI experts on progress and timelines in artificial intelligence development",
+        "status": "Completed",
+        "paper_url": ""
+      },
+      {
+        "name": "Fiction relevant to AI futurism",
+        "description": "Analysis of fictional works relevant to AI development and future scenarios",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Is AI an existential risk to humanity?",
+        "description": "Research examining whether AI poses existential risks to human civilization",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Likelihood of discontinuous progress around the development of AGI",
+        "description": "Analysis of probability and characteristics of discontinuous progress in AGI development",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Incentivized technologies not pursued",
+        "description": "Research on potentially beneficial technologies that are not being developed despite incentives",
+        "status": "Active",
+        "paper_url": ""
+      },
+      {
+        "name": "Essay competition on the Automation of Wisdom and Philosophy",
+        "description": "Competition exploring the potential automation of philosophical and wisdom-related processes",
+        "status": "Completed",
+        "paper_url": ""
+      }
+    ],
+    "benchmarks": [],
+    "key_people": [
+      {
+        "name": "Katja Grace",
+        "role": "Researcher"
+      },
+      {
+        "name": "Ben Weinstein-Raun",
+        "role": "Researcher"
+      },
+      {
+        "name": "Owen Cotton-Barratt",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "Poseidon Research",
