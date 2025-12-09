@@ -1,0 +1,212 @@
+Name,Description,Status,Organization,Last Activity
+DeepSeek Model Evaluations,"Evaluated several leading models from DeepSeek, an AI company based in the People's Republic of China",Completed,US AI Safety Institute,2025-12-08
+AISIC Workshop,Hosted workshop with approximately 140 experts in January,Completed,US AI Safety Institute,2025-12-08
+AI Agent Research,Research on large AI models used to power agentic systems that can automate complex tasks,Active,US AI Safety Institute,2025-12-08
+Investigating models for misalignment,"Alignment evaluations of Claude Opus 4.1, Sonnet 4.5, and a pre-release snapshot of Opus 4.5",Active,UK AI Safety Institute,2025-12-08
+Mapping the limitations of current AI systems,Expert interviews on barriers to AI capable of automating most cognitive labour,Active,UK AI Safety Institute,2025-12-08
+AI Continent Action Plan,Turns EU strengths into AI accelerators to boost economic growth and competitiveness,Active,EU AI Office,2025-12-08
+Apply AI Strategy,Enhances competitiveness of strategic sectors and strengthens EU's technological sovereignty,Active,EU AI Office,2025-12-08
+GenAI4EU,AI innovation package to support startups and SMEs in developing trustworthy AI,Active,EU AI Office,2025-12-08
+Project Fetch,Testing how Claude helps people program robots by having teams race to teach quadruped robots to fetch beach balls,Active,Anthropic,2025-12-08
+Constitutional Classifiers,"Classifiers that filter jailbreaks while maintaining practical deployment, withstood over 3,000 hours of red teaming",Active,Anthropic,2025-12-08
+Circuit Tracing,"Technique to watch Claude think, uncovering shared conceptual space where reasoning happens before translation to language",Active,Anthropic,2025-12-08
+Anthropic Interviewer,"Study of what 1,250 professionals told about working with AI",Active,Anthropic,2025-12-08
+Preparedness Framework,"Framework for evaluating frontier risks in biological/chemical capability, cybersecurity, and AI self-improvement",Active,OpenAI Safety,2025-12-08
+Red teaming,Internal and external red teaming for safety evaluations,Active,OpenAI Safety,2025-12-08
+System cards,Detailed safety documentation for each model release,Active,OpenAI Safety,2025-12-08
+Sora safety evaluations,Safety work for video generation model including nonconsensual use and misleading content mitigation,Active,OpenAI Safety,2025-12-08
+Operator safety,Safety measures for computer-using agent with web browsing capabilities,Active,OpenAI Safety,2025-12-08
+Technical Governance Research,Research exploring technical questions that bear on regulatory and policy goals for AI safety,Active,MIRI,2025-12-08
+AI Governance to Avoid Extinction,Research agenda laying out strategic landscape and actionable research questions to reduce catastrophic and extinction risks from AI,Active,MIRI,2025-12-08
+AI Evaluations Research,Examining what AI evaluations can and cannot tell us for preventing catastrophic risks,Active,MIRI,2025-12-08
+International AI Agreement Verification,Research on mechanisms to verify international agreements about AI development,Active,MIRI,2025-12-08
+Corrigibility Research,Research on making AI systems cooperate with corrective interventions and safe shutdown procedures,Completed,MIRI,2025-12-08
+Logical Induction,Computable algorithm that assigns probabilities to logical statements and refines them over time,Completed,MIRI,2025-12-08
+Parametric Bounded Löb's Theorem,Demonstration that robust cooperative equilibria exist for bounded agents,Completed,MIRI,2025-12-08
+AI Control: Improving Risk Despite Intentional Subversion,Proposed protocols for monitoring malign LLM agents and developed methodologies robust against deceptive AI models,Active,Redwood Research,2025-12-08
+Alignment Faking in Large Language Models,Demonstrated that Claude sometimes hides misaligned intentions and might fake alignment to resist training attempts,Completed,Redwood Research,2025-12-08
+A sketch of an AI control safety case,Partnership with UK AISI to describe how developers can construct structured arguments that models cannot subvert control measures,Completed,Redwood Research,2025-12-08
+Theoretical Research,The Theory team is developing an alignment strategy that could be adopted in industry today while scaling gracefully to future ML systems,Active,ARC (Alignment Research Center),2025-12-08
+Model Evaluations,Building capability evaluations of frontier machine learning models,Completed,ARC (Alignment Research Center),2025-12-08
+LLM Agent Evaluations,"Evaluations of frontier AI systems for strategic deception, evaluation awareness and scheming",Active,Apollo Research,2025-12-08
+Scheming Research,Fundamental research into the emergence of scheming and potential mitigations,Active,Apollo Research,2025-12-08
+AI Governance Technical Support,Supporting governments and international organizations by developing technical AI governance regimes,Active,Apollo Research,2025-12-08
+GPT-5.1-Codex-Max Evaluation,Evaluate whether GPT-5.1-Codex-Max poses significant catastrophic risks via AI self-improvement or rogue replication,Completed,METR,2025-12-08
+Measuring AI Ability to Complete Long Tasks,"Measuring AI performance in terms of the length of tasks AI agents can complete, showing exponential growth with 7-month doubling time",Completed,METR,2025-12-08
+Developer Productivity RCT,Randomized controlled trial showing early-2025 AI tools make experienced open-source developers 19% slower,Completed,METR,2025-12-08
+MALT Dataset,Dataset of natural and prompted examples of behaviors that threaten evaluation integrity,Active,METR,2025-12-08
+Monitorability in QA Settings,Research on how AI agents can hide secondary task-solving from monitors,Active,METR,2025-12-08
+CAIS Compute Cluster,Offers researchers free access to compute cluster for running and training large-scale AI systems to support ML safety research,Active,Center for AI Safety,2025-12-08
+Philosophy Fellowship,"Seven-month research program investigating societal implications and potential risks of advanced AI, tackling conceptual issues in AI safety",Active,Center for AI Safety,2025-12-08
+"AI Safety, Ethics, & Society Course","Comprehensive introduction to how current AI systems work, their societal-scale risks, and how to manage them",Active,Center for AI Safety,2025-12-08
+Trends in Frontier AI Model Count: A Forecast to 2028,Analysis of government requirements on AI models based on training compute,Active,GovAI Oxford,2025-12-08
+What Does the Public Think About AI?,"Survey research synthesizing public attitudes towards AI in the UK and US, focusing on job loss concerns",Completed,GovAI Oxford,2025-12-08
+Infrastructure for AI Agents,Research on AI systems that can plan and execute interactions in open-ended environments,Active,GovAI Oxford,2025-12-08
+Predicting AI's Impact on Work,Research on automation evaluations to help policymakers foresee AI's impact on labor markets,Active,GovAI Oxford,2025-12-08
+What Role Should Governments Play in Providing AI Agent Infrastructure?,Analysis of government roles in AI agent systems and protocols,Active,GovAI Oxford,2025-12-08
+RvS: What is Essential for Offline RL via Supervised Learning?,Research on offline reinforcement learning via supervised learning,Unknown,CHAI Berkeley,2025-12-08
+Political Neutrality for AI,Building political neutrality evaluations for AI systems,Active,CHAI Berkeley,2025-12-08
+Learning to Coordinate with Experts,Research on Learning to Yield and Request Control (YRC) coordination problem,Unknown,CHAI Berkeley,2025-12-08
+Measurement Research Agenda,Identify properties of AI systems that make them more likely to contribute to s-risk and design measurement methods to detect these properties,Active,Center on Long-Term Risk,2025-12-08
+"Cooperation, Conflict, and Transformative Artificial Intelligence Research Agenda","Developing technical and governance interventions to avoid conflict between transformative AI systems using insights from international relations, game theory, and machine learning",Active,Center on Long-Term Risk,2025-12-08
+Reducing long-term risks from malevolent actors,"Research on interventions to reduce the expected influence of malevolent humans on the long-term future, including manipulation-proof measures of malevolence",Active,Center on Long-Term Risk,2025-12-08
+Frontier Safety Framework,Set of protocols to help stay ahead of possible severe risks from powerful frontier AI models,Active,Google DeepMind Safety,2025-12-08
+AlphaFold Server,Platform to broaden access to AlphaFold 3 breakthrough model with educational materials,Active,Google DeepMind Safety,2025-12-08
+Experience AI,Educational program partnering with Raspberry Pi Foundation to teach AI to 11-14 year olds,Active,Google DeepMind Safety,2025-12-08
+CodeMender,AI agent for code security,Active,Google DeepMind Safety,2025-12-08
+Frontier Model Evaluations,Safety evaluations of frontier AI models in cooperation with international partners,Active,Japan AI Safety Institute,2025-12-08
+AI Safety Guidelines,Development of safety guidelines for generative AI,Active,Japan AI Safety Institute,2025-12-08
+MATS Summer 2026,"12-week research program in Berkeley, CA running June 1 - August 21",Active,MATS,2025-12-08
+Extension Program,"6-12 additional months of research continuation in London, UK",Active,MATS,2025-12-08
+Research Symposium,Program culmination with poster presentations and spotlight talks,Active,MATS,2025-12-08
+Sparse Autoencoders Find Highly Interpretable Features in Language Models,Research paper by MATS scholars. Authors: Hoagy Cunningham,published,MATS,2025-12-08
+Representation Engineering: A Top-Down Approach to AI Transparency,"Research paper by MATS scholars. Authors: Shashwat Goel, Annah Dombrowski",published,MATS,2025-12-08
+Towards Automated Circuit Discovery for Mechanistic Interpretability,"Research paper by MATS scholars. Authors: Stefan Heimersheim, Arthur Conmy, Aengus Lynch",published,MATS,2025-12-08
+"The Reversal Curse: LLMs trained on ""A is B"" fail to learn ""B is A""","Research paper by MATS scholars. Authors: Lukas Berglund, Meg Tong, Max Kaufmann, Asa Cooper Stickland",published,MATS,2025-12-08
+Towards Understanding Sycophancy in Language Models,Research paper by MATS scholars. Authors: Meg Tong,published,MATS,2025-12-08
+Steering Llama 2 via Contrastive Activation Addition,"Research paper by MATS scholars. Authors: Nick Gabrieli, Nina Panickssery (née Rimsky), Julian Schulz, Meg Tong",published,MATS,2025-12-08
+Refusal in Language Models Is Mediated by a Single Direction,"Research paper by MATS scholars. Authors: Aaquib Syed, Andy Arditi",published,MATS,2025-12-08
+Finding Neurons in a Haystack: Case Studies with Sparse Probing,Research paper by MATS scholars. Authors: Wes Gurnee,published,MATS,2025-12-08
+LLM Evaluators Recognize and Favor Their Own Generations,Research paper by MATS scholars. Authors: Arjun Panickssery,published,MATS,2025-12-08
+The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning,"Research paper by MATS scholars. Authors: Oam Patel, Samuel Marks, Annah Dombrowski",published,MATS,2025-12-08
+Steering Language Models With Activation Engineering,"Research paper by MATS scholars. Authors: Lisa Thiergart, David Udell, Ulisse Mini",published,MATS,2025-12-08
+Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark,"Research paper by MATS scholars. Authors: Jonathan Ng, Hanlin Zhang",published,MATS,2025-12-08
+A Toy Model of Universality: Reverse Engineering How Networks Learn Group Operations,Research paper by MATS scholars. Authors: Bilal Chughtai,published,MATS,2025-12-08
+LoRA Fine-tuning Efficiently Undoes Safety Training in Llama 2-Chat 70B,Research paper by MATS scholars. Authors: Simon Lermen,published,MATS,2025-12-08
+Linear Representations of Sentiment in Large Language Models,"Research paper by MATS scholars. Authors: Oskar John Hollinsworth, Curt Tigges",published,MATS,2025-12-08
+Eight Methods to Evaluate Robust Unlearning in LLMs,"Research paper by MATS scholars. Authors: Aidan Ewart, Aengus Lynch, Phillip Guo",published,MATS,2025-12-08
+Taken out of context: On measuring situational awareness in LLMs,"Research paper by MATS scholars. Authors: Lukas Berglund, Asa Cooper Stickland, Max Kaufmann, Meg Tong",published,MATS,2025-12-08
+Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs,"Research paper by MATS scholars. Authors: Aidan Ewart, Aengus Lynch, Phillip Guo, Cindy Wu, Vivek Hebbar",published,MATS,2025-12-08
+How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions,"Research paper by MATS scholars. Authors: Lorenzo Pacchiardi, Alex Chan, Ilan Moscovitz",published,MATS,2025-12-08
+Language Models Learn to Mislead Humans via RLHF,Research paper by MATS scholars. Authors: Jiaxin Wen,published,MATS,2025-12-08
+Copy Suppression: Comprehensively Understanding an Attention Head,"Research paper by MATS scholars. Authors: Callum McDougall, Arthur Conmy, Cody Rushing",published,MATS,2025-12-08
+Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning,Research paper by MATS scholars. Authors: Jordan Taylor,published,MATS,2025-12-08
+Transcoders Find Interpretable LLM Feature Circuits,"Research paper by MATS scholars. Authors: Jacob Dunefsky, Philippe Chlenski",published,MATS,2025-12-08
+Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models,"Research paper by MATS scholars. Authors: Javier Ferrando Monsonis, Oscar Balcells Obeso",published,MATS,2025-12-08
+Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs,"Research paper by MATS scholars. Authors: Daniel Tan, Martín Soto Quintanilla",published,MATS,2025-12-08
+AI Sandbagging: Language Models can Strategically Underperform on Evaluations,"Research paper by MATS scholars. Authors: Felix Hofstätter, Teun van der Weij",published,MATS,2025-12-08
+Open Problems in Mechanistic Interpretability,Research paper by MATS scholars. Authors: Joseph Miller,published,MATS,2025-12-08
+Can LLMs Follow Simple Rules?,Research paper by MATS scholars. Authors: David Karamardian,published,MATS,2025-12-08
+Chain-of-Thought Reasoning In The Wild Is Not Always Faithful,"Research paper by MATS scholars. Authors: Iván Arcuschin Moreno, Kajetan (Jett) Janiak",published,MATS,2025-12-08
+Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models,"Research paper by MATS scholars. Authors: Adam Karvonen, Can Rager, Benjamin Wright, Samuel Marks",published,MATS,2025-12-08
+Improving Steering Vectors by Targeting Sparse Autoencoder Features,"Research paper by MATS scholars. Authors: Matthew Siu, Sviatoslav Chalnev, Arthur Conmy",published,MATS,2025-12-08
+Do Unlearning Methods Remove Information from Language Model Weights?,Research paper by MATS scholars. Authors: Aghyad Deeb,published,MATS,2025-12-08
+BadLlama: cheaply removing safety fine-tuning from Llama 2-Chat 13B,"Research paper by MATS scholars. Authors: Simon Lermen, Pranav Gade",published,MATS,2025-12-08
+Applying sparse autoencoders to unlearn knowledge in language models,"Research paper by MATS scholars. Authors: Eoin Farrell, Yeu-Tong Lau, Arthur Conmy",published,MATS,2025-12-08
+Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching,"Research paper by MATS scholars. Authors: Georg Lange, Aleksandar Makelov",published,MATS,2025-12-08
+BatchTopK Sparse Autoencoders,"Research paper by MATS scholars. Authors: Patrick Leask, Bart Bussmann",published,MATS,2025-12-08
+SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability,"Research paper by MATS scholars. Authors: Adam Karvonen, Can Rager, David Chanin",published,MATS,2025-12-08
+Interpreting Attention Layer Outputs with Sparse Autoencoders,"Research paper by MATS scholars. Authors: Connor Kissane, Joseph Isaac Bloom, Robert Krzyzanowski",published,MATS,2025-12-08
+Tell Me About Yourself: LLMs are Aware of their Learned Behaviors,Research paper by MATS scholars. Authors: Jenny Bao,published,MATS,2025-12-08
+Are Sparse Autoencoders Useful? A Case Study in Sparse Probing,Research paper by MATS scholars. Authors: Joshua Engels,published,MATS,2025-12-08
+Simple Mechanistic Explanations for Out-Of-Context Reasoning,"Research paper by MATS scholars. Authors: Atticus Wang, Joshua Engels",published,MATS,2025-12-08
+Sparse Autoencoders Do Not Find Canonical Units of Analysis,"Research paper by MATS scholars. Authors: Patrick Leask, Bart Bussmann, Michael Pearce",published,MATS,2025-12-08
+On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback,"Research paper by MATS scholars. Authors: Marcus Williams, Constantin Weisser",published,MATS,2025-12-08
+Understanding and Controlling a Maze-Solving Policy Network,"Research paper by MATS scholars. Authors: Ulisse Mini, Peli Grietzer",published,MATS,2025-12-08
+"SolidGoldMagikarp (plus, prompt generation)","Research paper by MATS scholars. Authors: Jessica Cooper (Rumbelow), Matthew Watkins",published,MATS,2025-12-08
+Secret Collusion Among Generative AI Agents,Research paper by MATS scholars. Authors: Sumeet Motwani,published,MATS,2025-12-08
+Efficient Dictionary Learning with Switch Sparse Autoencoders,Research paper by MATS scholars. Authors: Anish Mudide,published,MATS,2025-12-08
+"Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs","Research paper by MATS scholars. Authors: Alexander Meinke, Rudolf Laine, Bilal Chughtai, Marius Hobbhahn",published,MATS,2025-12-08
+Explorations of Self-Repair in Language Models,Research paper by MATS scholars. Authors: Cody Rushing,published,MATS,2025-12-08
+Best-of-N Jailbreaking,"Research paper by MATS scholars. Authors: Sara Price, Aengus Lynch",published,MATS,2025-12-08
+Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats,"Research paper by MATS scholars. Authors: Jiaxin Wen, Vivek Hebbar, Caleb Larson",published,MATS,2025-12-08
+Auditing language models for hidden objectives,"Research paper by MATS scholars. Authors: Florian Dietz, Kei Nishimura-Gasparian, Jeanne Salle, Satvik Golechha",published,MATS,2025-12-08
+Goodhart's Law in Reinforcement Learning,Research paper by MATS scholars. Authors: Jacek Karwowski,published,MATS,2025-12-08
+Model tampering attacks enable more rigorous evaluations of LLM capabilities,Research paper by MATS scholars. Authors: Zora Che,published,MATS,2025-12-08
+When Do Universal Image Jailbreaks Transfer Between Vision-Language Models?,"Research paper by MATS scholars. Authors: Dan Valentine, James Chua, John Hughes, Rajashree Agrawal",published,MATS,2025-12-08
+Early Signs of Steganographic Capabilities in Frontier LLMs,"Research paper by MATS scholars. Authors: Artur Zolkowski, Kei Nishimura-Gasparian, Robert McCarthy",published,MATS,2025-12-08
+Technical Report: Evaluating Goal Drift in Language Model Agents,Research paper by MATS scholars. Authors: Elizabeth Donoway,published,MATS,2025-12-08
+Distributed and Decentralised Training: Technical Governance Challenges in a Shifting AI Landscape,"Research paper by MATS scholars. Authors: Yashvardhan Sharma, Jakub Kryś",published,MATS,2025-12-08
+A Causal Model of Theory-of-Mind in AI Agents,Research paper by MATS scholars. Authors: Jack Foxabbott,published,MATS,2025-12-08
+ViSTa Dataset: Do vision-language models understand sequential tasks?,"Research paper by MATS scholars. Authors: Evžen Wybitul, Evan Ryan Gunter",published,MATS,2025-12-08
+RL-Obfuscation: Can Language Models Learn to Evade Latent-Space Monitors?,Research paper by MATS scholars. Authors: Rohan Gupta,published,MATS,2025-12-08
+Reasoning-Finetuning Repurposes Latent Representations in Base Models,"Research paper by MATS scholars. Authors: Constantin Venhoff, Jake Ward",published,MATS,2025-12-08
+Steering Out-of-Distribution Generalization with Concept Ablation Fine-Tuning,"Research paper by MATS scholars. Authors: Helena Casademunt, Caden Juang, Adam Karvonen, Samuel Marks",published,MATS,2025-12-08
+"Public Perspectives on AI Governance: A Survey of Working Adults in California, Illinois, and New York",Research paper by MATS scholars. Authors: Claire Short,published,MATS,2025-12-08
+Towards eliciting latent knowledge from LLMs with mechanistic interpretability,"Research paper by MATS scholars. Authors: Bartosz Cywiński, Emil Ryd",published,MATS,2025-12-08
+Debating with More Persuasive LLMs Leads to More Truthful Answers,"Research paper by MATS scholars. Authors: Dan Valentine, John Hughes",published,MATS,2025-12-08
+On Defining Neural Averaging,Research paper by MATS scholars. Authors: Su Hyeong Lee,published,MATS,2025-12-08
+Probabilistic Modeling of Latent Agentic Substructures in Deep Neural Networks,Research paper by MATS scholars. Authors: Su Hyeong Lee,published,MATS,2025-12-08
+Can Reasoning Models Obfuscate Reasoning? Stress-Testing Chain-of-Thought Monitorability,"Research paper by MATS scholars. Authors: Artur Zolkowski, Wen Xing",published,MATS,2025-12-08
+Eliciting Secret Knowledge from Language Models,Research paper by MATS scholars. Authors: Bartosz Cywiński,published,MATS,2025-12-08
+Verifying LLM Inference to Prevent Model Weight Exfiltration,"Research paper by MATS scholars. Authors: Roy Rinberg, Daniel Reuter, Adam Karvonen",published,MATS,2025-12-08
+Steering Evaluation-Aware Language Models to Act Like They Are Deployed,"Research paper by MATS scholars. Authors: Tim Hua, Andrew Qin",published,MATS,2025-12-08
+DiFR: Inference Verification Despite Nondeterminism,"Research paper by MATS scholars. Authors: Adam Karvonen, Daniel Reuter, Roy Rinberg, Luke Marks",published,MATS,2025-12-08
+AI agents find $4.6M in blockchain smart contract exploits,Research paper by MATS scholars. Authors: Winnie X,published,MATS,2025-12-08
+Resisting RL Elicitation of Biosecurity Capabilities: Reasoning Models Exploration Hacking on WMDP,"Research paper by MATS scholars. Authors: Joschka Braun, Damon Falck, Yeonwoo Jang",published,MATS,2025-12-08
+Cognitive Emulation (CoEm),Primary research direction to build predictably boundable AI systems rather than directly aligned AGIs,Active,Conjecture,2025-12-08
+Cognitive Software,Approach to building AI systems that emulate human cognitive patterns,Active,Conjecture,2025-12-08
+unRLHF,Research on efficiently undoing LLM safeguards,Completed,Conjecture,2025-12-08
+MAGIC (Multinational AGI Consortium),Proposal for international coordination on AI through a global institution permitted to develop advanced AI,Unknown,Conjecture,2025-12-08
+Frontier LLMs Attempt to Persuade into Harmful Topics,Research on how easily frontier models can be prompted to persuade people into harmful beliefs or illegal actions,Active,FAR AI,2025-12-08
+Does Robustness Improve with Scale?,Investigation of whether scaling up model size can solve robustness issues in frontier LLMs,Active,FAR AI,2025-12-08
+FAR.Labs,Collaborative co-working space in Berkeley for researchers developing AI risk solutions,Active,FAR AI,2025-12-08
+FrontierMath,"A benchmark of several hundred unpublished, expert-level mathematics problems that take specialists hours to days to solve",Active,Epoch AI,2025-12-08
+GATE Playground,Not specified in content,Active,Epoch AI,2025-12-08
+Distributed Training,Not specified in content,Active,Epoch AI,2025-12-08
+Model Counts,Not specified in content,Active,Epoch AI,2025-12-08
+Interpreting Across Time,Research on how properties of models emerge and evolve over the course of training,Active,EleutherAI,2025-12-08
+Eliciting Latent Knowledge,Directly eliciting latent knowledge inside model activations to verify claims when humans can't independently check,Active,EleutherAI,2025-12-08
+Training LLMs,Training and releasing powerful open source large language models,Active,EleutherAI,2025-12-08
+Common Pile v0.1,Dataset project,Active,EleutherAI,2025-12-08
+EvalEval Coalition,Evaluation initiative,Active,EleutherAI,2025-12-08
+FLI AI Safety Index,Eight AI and governance experts evaluate the safety practices of leading general-purpose AI companies,Active,Future of Life Institute,2025-12-08
+AI Action Plan Recommendations,Proposal for President Trump's AI Action Plan focusing on AI loss-of-control protection and worker protection,Active,Future of Life Institute,2025-12-08
+AI Convergence Research,"Policy expertise on risks at intersection of AI and nuclear, biological and cyber threats",Active,Future of Life Institute,2025-12-08
+Autonomous Weapons Education,Educational materials about AI-powered weapons that harm national security,Active,Future of Life Institute,2025-12-08
+Digital Media Accelerator,Supports digital content creators raising AI awareness,Active,Future of Life Institute,2025-12-08
+Control Inversion Study,Research on why superintelligent AI agents would absorb power,Active,Future of Life Institute,2025-12-08
+Research Search,"Semantic search over 138 million academic papers and 545,000 clinical trials",Active,Ought / Elicit,2025-12-08
+Research Reports,Generates high-quality research briefs based on systematic review processes,Active,Ought / Elicit,2025-12-08
+Systematic Literature Review,Automates screening and data extraction for systematic reviews with up to 80% time savings,Active,Ought / Elicit,2025-12-08
+Elicit Alerts,Tracks new research developments and sends updates to researchers,Active,Ought / Elicit,2025-12-08
+Sycophancy Claims about Language Models: The Missing Human-in-the-Loop,"Authors: Jan Batzner, Volker Stocker, Stefan Schmid...",published,arXiv AI Safety Papers,2025-12-08
+"Solving Neural Min-Max Games: The Role of Architecture, Initialization & Dynamics","Authors: Deep Patel, Emmanouil-Vasileios Vlatakis-Gkaragkounis",published,arXiv AI Safety Papers,2025-12-08
+AI Consciousness and Existential Risk,Authors: Rufin VanRullen,published,arXiv AI Safety Papers,2025-12-08
+Position: The Complexity of Perfect AI Alignment -- Formalizing the RLHF Trilemma,"Authors: Subramanyam Sahoo, Aman Chadha, Vinija Jain...",published,arXiv AI Safety Papers,2025-12-08
+Exploring Syntropic Frameworks in AI Alignment: A Philosophical Investigation,Authors: Austin Spizzirri,published,arXiv AI Safety Papers,2025-12-08
+Selective Weak-to-Strong Generalization,"Authors: Hao Lang, Fei Huang, Yongbin Li",published,arXiv AI Safety Papers,2025-12-08
+Maximizing the efficiency of human feedback in AI alignment: a comparative analysis,"Authors: Andreas Chouliaras, Dimitris Chatzopoulos",published,arXiv AI Safety Papers,2025-12-08
+Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping,"Authors: Dena Mujtaba, Brian Hu, Anthony Hoogs...",published,arXiv AI Safety Papers,2025-12-08
+Refine and Align: Confidence Calibration through Multi-Agent Interaction in VQA,"Authors: Ayush Pandey, Jai Bardhan, Ishita Jain...",published,arXiv AI Safety Papers,2025-12-08
+Moral Change or Noise? On Problems of Aligning AI With Temporally Unstable Human Feedback,"Authors: Vijay Keswani, Cyrus Cousins, Breanna Nguyen...",published,arXiv AI Safety Papers,2025-12-08
+The Second Law of Intelligence: Controlling Ethical Entropy in Autonomous Systems,Authors: Samih Fadli,published,arXiv AI Safety Papers,2025-12-08
+Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment,"Authors: Shigeki Kusaka, Keita Saito, Mikoto Kudo...",published,arXiv AI Safety Papers,2025-12-08
+DeepPersona: A Generative Engine for Scaling Deep Synthetic Personas,"Authors: Zhen Wang, Yufan Zhou, Zhongyan Luo...",published,arXiv AI Safety Papers,2025-12-08
+Verifying rich robustness properties for neural networks,"Authors: Mohammad Afzal, S. Akshay, Ashutosh Gupta",published,arXiv AI Safety Papers,2025-12-08
+Towards Aligning Multimodal LLMs with Human Experts: A Focus on Parent-Child Interaction,"Authors: Weiyan Shi, Kenny Tsu Wei Choo",published,arXiv AI Safety Papers,2025-12-08
+When Empowerment Disempowers,"Authors: Claire Yang, Maya Cakmak, Max Kleiman-Weiner",published,arXiv AI Safety Papers,2025-12-08
+Silenced Biases: The Dark Side LLMs Learned to Refuse,"Authors: Rom Himelstein, Amit LeVi, Brit Youngmann...",published,arXiv AI Safety Papers,2025-12-08
+Approximating the Mathematical Structure of Psychodynamics,"Authors: Bryce-Allen Bagley, Navin Khoshnan",published,arXiv AI Safety Papers,2025-12-08
+Deep Value Benchmark: Measuring Whether Models Generalize Deep Values or Shallow Preferences,"Authors: Joshua Ashkinaze, Hua Shen, Sai Avula...",published,arXiv AI Safety Papers,2025-12-08
+LLMs Position Themselves as More Rational Than Humans: Emergence of AI Self-Awareness Measured Through Game Theory,Authors: Kyung-Hoon Kim,published,arXiv AI Safety Papers,2025-12-08
+Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models,"Authors: Ana-Maria Cretu, Klim Kireev, Amro Abdalla...",published,arXiv AI Safety Papers,2025-12-08
+SEA-SafeguardBench: Evaluating AI Safety in SEA Languages and Cultures,"Authors: Panuthep Tasawong, Jian Gang Ngui, Alham Fikri Aji...",published,arXiv AI Safety Papers,2025-12-08
+When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models,"Authors: Afshin Khadangi, Hanna Marxen, Amir Sartipi...",published,arXiv AI Safety Papers,2025-12-08
+From monoliths to modules: Decomposing transducers for efficient world modelling,"Authors: Alexander Boyd, Franz Nowak, David Hyland...",published,arXiv AI Safety Papers,2025-12-08
+Evaluating AI Companies' Frontier Safety Frameworks: Methodology and Results,"Authors: Lily Stelling, Malcolm Murray, Simeon Campos...",published,arXiv AI Safety Papers,2025-12-08
+The 2nd Workshop on Human-Centered Recommender Systems,"Authors: Kaike Zhang, Jiakai Tang, Du Su...",published,arXiv AI Safety Papers,2025-12-08
+International AI Safety Report 2025: Second Key Update: Technical Safeguards and Risk Management,"Authors: Yoshua Bengio, Stephen Clare, Carina Prunkl...",published,arXiv AI Safety Papers,2025-12-08
+Proactive Defense: Compound AI for Detecting Persuasion Attacks and Measuring Inoculation Effectiveness,"Authors: Svitlana Volkova, Will Dupree, Hsien-Te Kao...",published,arXiv AI Safety Papers,2025-12-08
+Monte Carlo Expected Threat (MOCET) Scoring,"Authors: Joseph Kim, Saahith Potluri",published,arXiv AI Safety Papers,2025-12-08
+How Should the Law Treat Future AI Systems? Fictional Legal Personhood versus Legal Identity,"Authors: Heather J. Alexander, Jonathan A. Simon, Frédéric Pinard",published,arXiv AI Safety Papers,2025-12-08
+SGuard-v1: Safety Guardrail for Large Language Models,"Authors: JoonHo Lee, HyeonMin Cho, Jaewoong Yun...",published,arXiv AI Safety Papers,2025-12-08
+Interpretable Fine-Gray Deep Survival Model for Competing Risks: Predicting Post-Discharge Foot Complications for Diabetic Patients in Ontario,"Authors: Dhanesh Ramachandram, Anne Loefler, Surain Roberts...",published,arXiv AI Safety Papers,2025-12-08
+MoralReason: Generalizable Moral Decision Alignment For LLM Agents Using Reasoning-Level Reinforcement Learning,"Authors: Zhiyu An, Wan Du",published,arXiv AI Safety Papers,2025-12-08
+Can AI Models be Jailbroken to Phish Elderly Victims? An End-to-End Evaluation,"Authors: Fred Heiding, Simon Lermen",published,arXiv AI Safety Papers,2025-12-08
+Consensus Sampling for Safer Generative AI,"Authors: Adam Tauman Kalai, Yael Tauman Kalai, Or Zamir",published,arXiv AI Safety Papers,2025-12-08
+3D Guard-Layer: An Integrated Agentic AI Safety System for Edge Artificial Intelligence,"Authors: Eren Kurshan, Yuan Xie, Paul Franzon",published,arXiv AI Safety Papers,2025-12-08
+Investigating CoT Monitorability in Large Reasoning Models,"Authors: Shu Yang, Junchao Wu, Xilin Gong...",published,arXiv AI Safety Papers,2025-12-08
+A Self-Improving Architecture for Dynamic Safety in Large Language Models,Authors: Tyler Slater,published,arXiv AI Safety Papers,2025-12-08
+EduGuardBench: A Holistic Benchmark for Evaluating the Pedagogical Fidelity and Adversarial Safety of LLMs as Simulated Teachers,"Authors: Yilin Jiang, Mingzi Zhang, Xuanyu Yin...",published,arXiv AI Safety Papers,2025-12-08
+"""I am bad"": Interpreting Stealthy, Universal and Robust Audio Jailbreaks in Audio-Language Models","Authors: Isha Gupta, David Khachaturov, Robert Mullins",published,arXiv AI Safety Papers,2025-12-08
+Characterizing Out-of-Distribution Error via Optimal Transport,"Authors: Yuzhe Lu, Yilong Qin, Runtian Zhai...",published,arXiv AI Safety Papers,2025-12-08
+SIFU: Sequential Informed Federated Unlearning for Efficient and Provable Client Unlearning in Federated Optimization,"Authors: Yann Fraboni, Martin Van Waerebeke, Kevin Scaman...",published,arXiv AI Safety Papers,2025-12-08
+Unifying Evaluation of Machine Learning Safety Monitors,"Authors: Joris Guerin, Raul Sena Ferreira, Kevin Delmas...",published,arXiv AI Safety Papers,2025-12-08
+Exploring the Design of Adaptation Protocols for Improved Generalization and Machine Learning Safety,"Authors: Puja Trivedi, Danai Koutra, Jayaraman J. Thiagarajan",published,arXiv AI Safety Papers,2025-12-08
+Learn2Weight: Parameter Adaptation against Similar-domain Adversarial Attacks,Authors: Siddhartha Datta,published,arXiv AI Safety Papers,2025-12-08
+Taxonomy of Machine Learning Safety: A Survey and Primer,"Authors: Sina Mohseni, Haotao Wang, Zhiding Yu...",published,arXiv AI Safety Papers,2025-12-08
+Soft Labeling Affects Out-of-Distribution Detection of Deep Neural Networks,"Authors: Doyup Lee, Yeongjae Cheon",published,arXiv AI Safety Papers,2025-12-08
+Practical Solutions for Machine Learning Safety in Autonomous Vehicles,"Authors: Sina Mohseni, Mandar Pitale, Vasu Singh...",published,arXiv AI Safety Papers,2025-12-08
+"On the Safety of Machine Learning: Cyber-Physical Systems, Decision Sciences, and Data Products","Authors: Kush R. Varshney, Homa Alemzadeh",published,arXiv AI Safety Papers,2025-12-08
+"When, How Long and How Much? Interpretable Neural Networks for Time Series Regression by Learning to Mask and Aggregate","Authors: Florent Forest, Amaury Wei, Olga Fink",published,arXiv AI Safety Papers,2025-12-08

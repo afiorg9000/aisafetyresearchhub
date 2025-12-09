@@ -1,0 +1,9 @@
+Name,Measures,Paper URL,Created By,Status
+Preparedness evals,"Biological and chemical capability, cybersecurity, and AI self-improvement risks",,OpenAI Safety,Active
+GPT-5 evaluations,Safety for fast models and thinking models including code generation capabilities,,OpenAI Safety,Active
+o3 evaluations,Frontier risk assessment across tracked categories under Preparedness Framework v2,,OpenAI Safety,Active
+RE-Bench,Performance on day-long ML research engineering tasks for tracking automation of AI R&D,,METR,Active
+Learning to Yield and Request Control (YRC),When AI should act autonomously vs. seek expert assistance across diverse domains,,CHAI Berkeley,Active
+Factuality benchmark for large language models,Evaluates the factuality of large language models,,Google DeepMind Safety,Active
+FrontierMath,Expert-level mathematics problems that take specialists hours to days to solve,,Epoch AI,Active
+Benchmark for Ranking LLM Preferences Relevant for Existential Risk,LLM preferences related to existential risk scenarios,,AI Safety Camp,Active
