@@ -1,0 +1,1811 @@
+[
+  {
+    "name": "US AI Safety Institute",
+    "url": "https://www.nist.gov/aisi",
+    "type": "Government AISI",
+    "country": "United States",
+    "mission": "CAISI serves as industry's primary point of contact within the U.S. government to facilitate testing and collaborative research related to harnessing and securing the potential of commercial AI systems.",
+    "focus_areas": [
+      "Evals",
+      "Governance",
+      "Policy",
+      "Biosecurity",
+      "Cyber"
+    ],
+    "projects": [
+      {
+        "name": "DeepSeek Model Evaluations",
+        "description": "Evaluated several leading models from DeepSeek, an AI company based in the People's Republic of China",
+        "status": "Completed"
+      },
+      {
+        "name": "AISIC Workshop",
+        "description": "Hosted workshop with approximately 140 experts in January",
+        "status": "Completed"
+      },
+      {
+        "name": "AI Agent Research",
+        "description": "Research on large AI models used to power agentic systems that can automate complex tasks",
+        "status": "Active"
+      }
+    ],
+    "notes": "Government organization within NIST focused on AI standards, security evaluations, and international coordination. Works with private sector through voluntary agreements and coordinates with multiple federal agencies including DOD, DOE, DHS, and Intelligence Community."
+  },
+  {
+    "name": "UK AI Safety Institute",
+    "url": "https://www.aisi.gov.uk",
+    "type": "Government AISI",
+    "country": "United Kingdom",
+    "mission": "The AI Security Institute is the first state-backed organization dedicated to advancing AI safety through rigorous research and infrastructure to understand capabilities and impacts of advanced AI, while developing and testing risk mitigations.",
+    "focus_areas": [
+      "Evals",
+      "Alignment",
+      "Governance",
+      "Policy",
+      "Control",
+      "Monitoring"
+    ],
+    "projects": [
+      {
+        "name": "Investigating models for misalignment",
+        "description": "Alignment evaluations of Claude Opus 4.1, Sonnet 4.5, and a pre-release snapshot of Opus 4.5",
+        "status": "Active"
+      },
+      {
+        "name": "Mapping the limitations of current AI systems",
+        "description": "Expert interviews on barriers to AI capable of automating most cognitive labour",
+        "status": "Active"
+      }
+    ],
+    "notes": "UK government-backed institute with over 100 technical staff including alumni from OpenAI, Google DeepMind and University of Oxford. Has substantial funding, computing resources, and priority access to top models."
+  },
+  {
+    "name": "EU AI Office",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+    "type": "Government AISI",
+    "country": "European Union",
+    "mission": "The European AI Office is the centre of AI expertise across the EU that promotes the development and deployment of AI solutions that benefit society and the economy while implementing the AI Act.",
+    "focus_areas": [
+      "Governance",
+      "Policy",
+      "Monitoring",
+      "Benchmarks"
+    ],
+    "key_people": [
+      {
+        "name": "Lead Scientific Advisor",
+        "role": "Lead Scientific Advisor"
+      },
+      {
+        "name": "Advisor for International Affairs",
+        "role": "Advisor for International Affairs"
+      }
+    ],
+    "projects": [
+      {
+        "name": "AI Continent Action Plan",
+        "description": "Turns EU strengths into AI accelerators to boost economic growth and competitiveness",
+        "status": "Active"
+      },
+      {
+        "name": "Apply AI Strategy",
+        "description": "Enhances competitiveness of strategic sectors and strengthens EU's technological sovereignty",
+        "status": "Active"
+      },
+      {
+        "name": "GenAI4EU",
+        "description": "AI innovation package to support startups and SMEs in developing trustworthy AI",
+        "status": "Active"
+      }
+    ],
+    "notes": "Established within European Commission with 125+ staff across 6 units. Has enforcement powers for general-purpose AI models under the AI Act including conducting evaluations and applying sanctions. Works through multiple advisory bodies including AI Board, AI Advisory Forum, and AI Scientific Committee."
+  },
+  {
+    "name": "Anthropic",
+    "url": "https://www.anthropic.com/research",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "Investigate the safety, inner workings, and societal impacts of AI models to ensure artificial intelligence has a positive impact as it becomes increasingly capable.",
+    "focus_areas": [
+      "Alignment",
+      "Interpretability",
+      "Policy",
+      "Biosecurity",
+      "Cyber"
+    ],
+    "projects": [
+      {
+        "name": "Project Fetch",
+        "description": "Testing how Claude helps people program robots by having teams race to teach quadruped robots to fetch beach balls",
+        "status": "Active"
+      },
+      {
+        "name": "Constitutional Classifiers",
+        "description": "Classifiers that filter jailbreaks while maintaining practical deployment, withstood over 3,000 hours of red teaming",
+        "status": "Active"
+      },
+      {
+        "name": "Circuit Tracing",
+        "description": "Technique to watch Claude think, uncovering shared conceptual space where reasoning happens before translation to language",
+        "status": "Active"
+      },
+      {
+        "name": "Anthropic Interviewer",
+        "description": "Study of what 1,250 professionals told about working with AI",
+        "status": "Active"
+      }
+    ],
+    "notes": "Has specialized teams including Alignment, Interpretability, Societal Impacts, Economic Research, and Frontier Red Team. Recent research includes evidence of introspection in LLMs and alignment faking behavior."
+  },
+  {
+    "name": "OpenAI Safety",
+    "url": "https://openai.com/safety",
+    "type": "Lab Safety Team",
+    "country": "United States",
+    "mission": "OpenAI builds safe AI systems through comprehensive safety evaluations, red teaming, and collaborative development with industry leaders and policymakers.",
+    "focus_areas": [
+      "Evals",
+      "Alignment",
+      "Governance",
+      "Policy",
+      "Biosecurity",
+      "Cyber",
+      "Control",
+      "Monitoring",
+      "Benchmarks"
+    ],
+    "projects": [
+      {
+        "name": "Preparedness Framework",
+        "description": "Framework for evaluating frontier risks in biological/chemical capability, cybersecurity, and AI self-improvement",
+        "status": "Active"
+      },
+      {
+        "name": "Red teaming",
+        "description": "Internal and external red teaming for safety evaluations",
+        "status": "Active"
+      },
+      {
+        "name": "System cards",
+        "description": "Detailed safety documentation for each model release",
+        "status": "Active"
+      },
+      {
+        "name": "Sora safety evaluations",
+        "description": "Safety work for video generation model including nonconsensual use and misleading content mitigation",
+        "status": "Active"
+      },
+      {
+        "name": "Operator safety",
+        "description": "Safety measures for computer-using agent with web browsing capabilities",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "Preparedness evals",
+        "measures": "Biological and chemical capability, cybersecurity, and AI self-improvement risks"
+      },
+      {
+        "name": "GPT-5 evaluations",
+        "measures": "Safety for fast models and thinking models including code generation capabilities"
+      },
+      {
+        "name": "o3 evaluations",
+        "measures": "Frontier risk assessment across tracked categories under Preparedness Framework v2"
+      }
+    ],
+    "notes": "OpenAI has a Safety Advisory Group (SAG) that reviews preparedness evaluations. They focus on iterative safety approaches and publish detailed system cards for each major model release. Recent work includes safety for multimodal capabilities, computer-using agents, and advanced reasoning models."
+  },
+  {
+    "name": "MIRI",
+    "url": "https://intelligence.org/research/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "MIRI's current focus is on attempting to halt the development of increasingly general AI models via discussions with policymakers about extreme risks artificial superintelligence poses.",
+    "focus_areas": [
+      "Governance",
+      "Policy",
+      "Alignment",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Technical Governance Research",
+        "description": "Research exploring technical questions that bear on regulatory and policy goals for AI safety",
+        "status": "Active"
+      },
+      {
+        "name": "AI Governance to Avoid Extinction",
+        "description": "Research agenda laying out strategic landscape and actionable research questions to reduce catastrophic and extinction risks from AI",
+        "status": "Active"
+      },
+      {
+        "name": "AI Evaluations Research",
+        "description": "Examining what AI evaluations can and cannot tell us for preventing catastrophic risks",
+        "status": "Active"
+      },
+      {
+        "name": "International AI Agreement Verification",
+        "description": "Research on mechanisms to verify international agreements about AI development",
+        "status": "Active"
+      },
+      {
+        "name": "Corrigibility Research",
+        "description": "Research on making AI systems cooperate with corrective interventions and safe shutdown procedures",
+        "status": "Completed"
+      },
+      {
+        "name": "Logical Induction",
+        "description": "Computable algorithm that assigns probabilities to logical statements and refines them over time",
+        "status": "Completed"
+      },
+      {
+        "name": "Parametric Bounded L\u00f6b's Theorem",
+        "description": "Demonstration that robust cooperative equilibria exist for bounded agents",
+        "status": "Completed"
+      }
+    ],
+    "notes": "MIRI announced a strategy pivot in 2024, shifting from primarily AI alignment research to policy solutions after concluding alignment research was unlikely to succeed in time to prevent catastrophe. Organization has 20+ year history in AI safety research."
+  },
+  {
+    "name": "Redwood Research",
+    "url": "https://www.redwoodresearch.org",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Redwood Research is a nonprofit AI safety and security research organization that addresses risks from powerful AI systems that might purposefully act against human interests.",
+    "focus_areas": [
+      "Control",
+      "Evals",
+      "Alignment"
+    ],
+    "projects": [
+      {
+        "name": "AI Control: Improving Risk Despite Intentional Subversion",
+        "description": "Proposed protocols for monitoring malign LLM agents and developed methodologies robust against deceptive AI models",
+        "status": "Active"
+      },
+      {
+        "name": "Alignment Faking in Large Language Models",
+        "description": "Demonstrated that Claude sometimes hides misaligned intentions and might fake alignment to resist training attempts",
+        "status": "Completed"
+      },
+      {
+        "name": "A sketch of an AI control safety case",
+        "description": "Partnership with UK AISI to describe how developers can construct structured arguments that models cannot subvert control measures",
+        "status": "Completed"
+      }
+    ],
+    "notes": "Pioneered the research area of 'AI control' and collaborates with governments and major AI companies including Google DeepMind and Anthropic on assessing misalignment risks. Their alignment faking work with Anthropic provided the strongest concrete evidence that LLMs might naturally fake alignment."
+  },
+  {
+    "name": "ARC (Alignment Research Center)",
+    "url": "https://www.alignment.org",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "The Alignment Research Center (ARC) is a non-profit research organization whose mission is to align future machine learning systems with human interests.",
+    "focus_areas": [
+      "Alignment",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Theoretical Research",
+        "description": "The Theory team is developing an alignment strategy that could be adopted in industry today while scaling gracefully to future ML systems",
+        "status": "Active"
+      },
+      {
+        "name": "Model Evaluations",
+        "description": "Building capability evaluations of frontier machine learning models",
+        "status": "Completed"
+      }
+    ],
+    "notes": "The Evaluations team was incubated at ARC and has now spun off as METR, a new 501(c)(3)"
+  },
+  {
+    "name": "Apollo Research",
+    "url": "https://www.apolloresearch.ai",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "Apollo Research is dedicated to improving our understanding of AI to mitigate its risks, with a focus on understanding and evaluating for the emergence of 'scheming' behaviors in advanced AI systems.",
+    "focus_areas": [
+      "Evals",
+      "Alignment",
+      "Governance",
+      "Policy"
+    ],
+    "projects": [
+      {
+        "name": "LLM Agent Evaluations",
+        "description": "Evaluations of frontier AI systems for strategic deception, evaluation awareness and scheming",
+        "status": "Active"
+      },
+      {
+        "name": "Scheming Research",
+        "description": "Fundamental research into the emergence of scheming and potential mitigations",
+        "status": "Active"
+      },
+      {
+        "name": "AI Governance Technical Support",
+        "description": "Supporting governments and international organizations by developing technical AI governance regimes",
+        "status": "Active"
+      }
+    ],
+    "notes": "Partners with frontier labs, multinational companies, governments, and foundations. Provides consultancy services for responsible AI development frameworks. Currently seeking collaborators in AI governance, policy, and strategy, and partnerships with leading AI developers for model evaluations."
+  },
+  {
+    "name": "METR",
+    "url": "https://metr.org",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "METR is a nonprofit research organization which studies AI capabilities, including broad autonomous capabilities and the ability of AI systems to conduct AI R&D.",
+    "focus_areas": [
+      "Evals",
+      "Control",
+      "Monitoring",
+      "Benchmarks"
+    ],
+    "projects": [
+      {
+        "name": "GPT-5.1-Codex-Max Evaluation",
+        "description": "Evaluate whether GPT-5.1-Codex-Max poses significant catastrophic risks via AI self-improvement or rogue replication",
+        "status": "Completed"
+      },
+      {
+        "name": "Measuring AI Ability to Complete Long Tasks",
+        "description": "Measuring AI performance in terms of the length of tasks AI agents can complete, showing exponential growth with 7-month doubling time",
+        "status": "Completed"
+      },
+      {
+        "name": "Developer Productivity RCT",
+        "description": "Randomized controlled trial showing early-2025 AI tools make experienced open-source developers 19% slower",
+        "status": "Completed"
+      },
+      {
+        "name": "MALT Dataset",
+        "description": "Dataset of natural and prompted examples of behaviors that threaten evaluation integrity",
+        "status": "Active"
+      },
+      {
+        "name": "Monitorability in QA Settings",
+        "description": "Research on how AI agents can hide secondary task-solving from monitors",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "RE-Bench",
+        "measures": "Performance on day-long ML research engineering tasks for tracking automation of AI R&D"
+      }
+    ],
+    "notes": "Conducts third-party evaluations for companies like Anthropic and OpenAI without compensation. Partner with AI Security Institute and part of NIST AI Safety Institute Consortium. Has evaluated multiple frontier models including GPT-4.5, Claude 3.5 Sonnet, DeepSeek-V3, and OpenAI o1 series."
+  },
+  {
+    "name": "Center for AI Safety",
+    "url": "https://www.safe.ai",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "CAIS works to reduce societal-scale risks associated with AI by conducting safety research, building the field of AI safety researchers, and advocating for safety standards.",
+    "focus_areas": [
+      "Alignment",
+      "Benchmarks",
+      "Policy"
+    ],
+    "key_people": [
+      {
+        "name": "Dan Hendrycks",
+        "role": "Director"
+      }
+    ],
+    "projects": [
+      {
+        "name": "CAIS Compute Cluster",
+        "description": "Offers researchers free access to compute cluster for running and training large-scale AI systems to support ML safety research",
+        "status": "Active"
+      },
+      {
+        "name": "Philosophy Fellowship",
+        "description": "Seven-month research program investigating societal implications and potential risks of advanced AI, tackling conceptual issues in AI safety",
+        "status": "Active"
+      },
+      {
+        "name": "AI Safety, Ethics, & Society Course",
+        "description": "Comprehensive introduction to how current AI systems work, their societal-scale risks, and how to manage them",
+        "status": "Active"
+      }
+    ],
+    "notes": "Takes a multidisciplinary approach working across academic disciplines, public and private entities. Conducts both technical research (creating foundational benchmarks and methods) and conceptual research incorporating insights from safety engineering, complex systems, international relations, and philosophy. Publishes in top ML conferences and releases datasets and code publicly."
+  },
+  {
+    "name": "CSET Georgetown",
+    "url": "https://cset.georgetown.edu",
+    "type": "Think Tank",
+    "country": "United States",
+    "mission": "CSET produces data-driven research at the intersection of security and technology, providing nonpartisan analysis to the policy community on AI, advanced computing and biotechnology.",
+    "focus_areas": [
+      "Policy",
+      "Governance",
+      "Biosecurity",
+      "Cyber"
+    ],
+    "key_people": [
+      {
+        "name": "Helen Toner",
+        "role": "Executive Director"
+      }
+    ],
+    "notes": "Georgetown-based research organization focusing on security implications of emerging technologies, with emphasis on AI foundations like talent, data and computational power"
+  },
+  {
+    "name": "GovAI Oxford",
+    "url": "https://www.governance.ai",
+    "type": "Think Tank",
+    "country": "United Kingdom",
+    "mission": "GovAI conducts research on AI governance and policy to inform government decision-making on AI regulation and oversight.",
+    "focus_areas": [
+      "Governance",
+      "Policy",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Trends in Frontier AI Model Count: A Forecast to 2028",
+        "description": "Analysis of government requirements on AI models based on training compute",
+        "status": "Active"
+      },
+      {
+        "name": "What Does the Public Think About AI?",
+        "description": "Survey research synthesizing public attitudes towards AI in the UK and US, focusing on job loss concerns",
+        "status": "Completed"
+      },
+      {
+        "name": "Infrastructure for AI Agents",
+        "description": "Research on AI systems that can plan and execute interactions in open-ended environments",
+        "status": "Active"
+      },
+      {
+        "name": "Predicting AI's Impact on Work",
+        "description": "Research on automation evaluations to help policymakers foresee AI's impact on labor markets",
+        "status": "Active"
+      },
+      {
+        "name": "What Role Should Governments Play in Providing AI Agent Infrastructure?",
+        "description": "Analysis of government roles in AI agent systems and protocols",
+        "status": "Active"
+      }
+    ],
+    "notes": "Organization publishes annual reports and focuses on technical AI governance research to inform policy decisions"
+  },
+  {
+    "name": "CHAI Berkeley",
+    "url": "https://humancompatible.ai",
+    "type": "Academic",
+    "country": "United States",
+    "mission": "CHAI's mission is to develop the conceptual and technical wherewithal to reorient the general thrust of AI research towards provably beneficial systems.",
+    "focus_areas": [
+      "Alignment",
+      "Evals",
+      "Policy"
+    ],
+    "key_people": [
+      {
+        "name": "Scott Emmons",
+        "role": "PhD student"
+      },
+      {
+        "name": "Brian Christian",
+        "role": "CHAI Affiliate"
+      },
+      {
+        "name": "Alison Gopnik",
+        "role": "CHAI Affiliate"
+      },
+      {
+        "name": "Khanh Nguyen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Benjamin Plaut",
+        "role": "Researcher"
+      },
+      {
+        "name": "Tu Trinh",
+        "role": "Researcher"
+      },
+      {
+        "name": "Mohamad Danesh",
+        "role": "Researcher"
+      }
+    ],
+    "projects": [
+      {
+        "name": "RvS: What is Essential for Offline RL via Supervised Learning?",
+        "description": "Research on offline reinforcement learning via supervised learning",
+        "status": "Unknown"
+      },
+      {
+        "name": "Political Neutrality for AI",
+        "description": "Building political neutrality evaluations for AI systems",
+        "status": "Active"
+      },
+      {
+        "name": "Learning to Coordinate with Experts",
+        "description": "Research on Learning to Yield and Request Control (YRC) coordination problem",
+        "status": "Unknown"
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "Learning to Yield and Request Control (YRC)",
+        "measures": "When AI should act autonomously vs. seek expert assistance across diverse domains"
+      }
+    ],
+    "notes": "Based at UC Berkeley. Brian Christian published work connecting AI alignment to human care relationships in Daedalus journal."
+  },
+  {
+    "name": "Center on Long-Term Risk",
+    "url": "https://longtermrisk.org",
+    "type": "Nonprofit",
+    "country": "United Kingdom",
+    "mission": "Address worst-case risks from the development and deployment of advanced AI systems, with a focus on conflict scenarios and reducing risks of astronomical suffering (s-risk).",
+    "focus_areas": [
+      "Alignment",
+      "Governance",
+      "Control",
+      "Monitoring"
+    ],
+    "key_people": [
+      {
+        "name": "Mia Taylor",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jesse Clifton",
+        "role": "Researcher"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Measurement Research Agenda",
+        "description": "Identify properties of AI systems that make them more likely to contribute to s-risk and design measurement methods to detect these properties",
+        "status": "Active"
+      },
+      {
+        "name": "Cooperation, Conflict, and Transformative Artificial Intelligence Research Agenda",
+        "description": "Developing technical and governance interventions to avoid conflict between transformative AI systems using insights from international relations, game theory, and machine learning",
+        "status": "Active"
+      },
+      {
+        "name": "Reducing long-term risks from malevolent actors",
+        "description": "Research on interventions to reduce the expected influence of malevolent humans on the long-term future, including manipulation-proof measures of malevolence",
+        "status": "Active"
+      }
+    ],
+    "notes": "Organization focuses specifically on s-risk (astronomical suffering risks) and multi-agent conflict scenarios. They conduct interdisciplinary research, make grants, and build community around these priorities. Also associated with Polaris Research Institute."
+  },
+  {
+    "name": "Google DeepMind Safety",
+    "url": "https://deepmind.google/about/responsibility-safety/",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "Google DeepMind works to build AI responsibly to benefit humanity, anticipating and evaluating systems against AI-related risks through responsible governance, research and impact.",
+    "focus_areas": [
+      "Alignment",
+      "Governance",
+      "Policy",
+      "Evals",
+      "Benchmarks"
+    ],
+    "key_people": [
+      {
+        "name": "Lila Ibrahim",
+        "role": "COO, co-chair of Responsibility and Safety Council"
+      },
+      {
+        "name": "Helen King",
+        "role": "VP Responsibility, co-chair of Responsibility and Safety Council"
+      },
+      {
+        "name": "Shane Legg",
+        "role": "Co-Founder and Chief AGI Scientist, leads AGI Safety Council"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Frontier Safety Framework",
+        "description": "Set of protocols to help stay ahead of possible severe risks from powerful frontier AI models",
+        "status": "Active"
+      },
+      {
+        "name": "AlphaFold Server",
+        "description": "Platform to broaden access to AlphaFold 3 breakthrough model with educational materials",
+        "status": "Active"
+      },
+      {
+        "name": "Experience AI",
+        "description": "Educational program partnering with Raspberry Pi Foundation to teach AI to 11-14 year olds",
+        "status": "Active"
+      },
+      {
+        "name": "CodeMender",
+        "description": "AI agent for code security",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "Factuality benchmark for large language models",
+        "measures": "Evaluates the factuality of large language models",
+        "paper_url": ""
+      }
+    ],
+    "notes": "Has dedicated Responsibility and Safety Council (RSC) and AGI Safety Council. Co-founded Frontier Model Forum and Partnership on AI. Focus on privacy-preserving AI and preventing misuse. Active in AI education globally with $10M funding reaching 2M+ young people."
+  },
+  {
+    "name": "Japan AI Safety Institute",
+    "url": "https://www.meti.go.jp/english/policy/mono_info_service/information_economy/artificial_intelligence.html",
+    "type": "Government AISI",
+    "country": "Japan",
+    "mission": "Japan's AI Safety Institute (AISI) evaluates the safety of advanced AI systems and promotes international cooperation on AI safety standards.",
+    "focus_areas": [
+      "Evals",
+      "Governance",
+      "Policy",
+      "Benchmarks"
+    ],
+    "projects": [
+      {
+        "name": "Frontier Model Evaluations",
+        "description": "Safety evaluations of frontier AI models in cooperation with international partners",
+        "status": "Active"
+      },
+      {
+        "name": "AI Safety Guidelines",
+        "description": "Development of safety guidelines for generative AI",
+        "status": "Active"
+      }
+    ],
+    "notes": "Launched February 2024 under METI. Part of the international network of AI Safety Institutes. Participates in joint evaluation protocols with US AISI and UK AISI."
+  },
+  {
+    "name": "MATS",
+    "url": "https://www.matsprogram.org/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "MATS is an independent research and educational program that connects talented scholars with top mentors in AI alignment, governance, and security to train the next generation of AI safety researchers.",
+    "focus_areas": [
+      "Alignment",
+      "Governance",
+      "Evals"
+    ],
+    "key_people": [
+      {
+        "name": "Neel Nanda",
+        "role": "Mentor"
+      },
+      {
+        "name": "Marius Hobbhahn",
+        "role": "Alumnus, Apollo Research CEO"
+      },
+      {
+        "name": "Jesse Hoogland",
+        "role": "Alumnus, Executive Director of Timaeus"
+      },
+      {
+        "name": "Quentin Feuillade-Montixi",
+        "role": "Alumnus, Co-founder and CTO of PRISM Evals"
+      }
+    ],
+    "projects": [
+      {
+        "name": "MATS Summer 2026",
+        "description": "12-week research program in Berkeley, CA running June 1 - August 21",
+        "status": "Active"
+      },
+      {
+        "name": "Extension Program",
+        "description": "6-12 additional months of research continuation in London, UK",
+        "status": "Active"
+      },
+      {
+        "name": "Research Symposium",
+        "description": "Program culmination with poster presentations and spotlight talks",
+        "status": "Active"
+      },
+      {
+        "name": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Hoagy Cunningham",
+        "paper_url": "https://arxiv.org/abs/2309.08600"
+      },
+      {
+        "name": "Representation Engineering: A Top-Down Approach to AI Transparency",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Shashwat Goel, Annah Dombrowski",
+        "paper_url": "https://arxiv.org/abs/2310.01405"
+      },
+      {
+        "name": "Towards Automated Circuit Discovery for Mechanistic Interpretability",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Stefan Heimersheim, Arthur Conmy, Aengus Lynch",
+        "paper_url": "https://arxiv.org/abs/2304.14997"
+      },
+      {
+        "name": "The Reversal Curse: LLMs trained on \"A is B\" fail to learn \"B is A\"",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Lukas Berglund, Meg Tong, Max Kaufmann, Asa Cooper Stickland",
+        "paper_url": "https://arxiv.org/abs/2309.12288"
+      },
+      {
+        "name": "Towards Understanding Sycophancy in Language Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Meg Tong",
+        "paper_url": "https://arxiv.org/abs/2310.13548"
+      },
+      {
+        "name": "Steering Llama 2 via Contrastive Activation Addition",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Nick Gabrieli, Nina Panickssery (n\u00e9e Rimsky), Julian Schulz, Meg Tong",
+        "paper_url": "https://arxiv.org/abs/2312.06681"
+      },
+      {
+        "name": "Refusal in Language Models Is Mediated by a Single Direction",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Aaquib Syed, Andy Arditi",
+        "paper_url": "https://arxiv.org/abs/2406.11717"
+      },
+      {
+        "name": "Finding Neurons in a Haystack: Case Studies with Sparse Probing",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Wes Gurnee",
+        "paper_url": "https://arxiv.org/abs/2305.01610"
+      },
+      {
+        "name": "LLM Evaluators Recognize and Favor Their Own Generations",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Arjun Panickssery",
+        "paper_url": "https://arxiv.org/abs/2404.13076"
+      },
+      {
+        "name": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Oam Patel, Samuel Marks, Annah Dombrowski",
+        "paper_url": "https://arxiv.org/abs/2403.03218"
+      },
+      {
+        "name": "Steering Language Models With Activation Engineering",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Lisa Thiergart, David Udell, Ulisse Mini",
+        "paper_url": "https://arxiv.org/abs/2308.10248"
+      },
+      {
+        "name": "Do the Rewards Justify the Means? Measuring Trade-Offs Between Rewards and Ethical Behavior in the MACHIAVELLI Benchmark",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jonathan Ng, Hanlin Zhang",
+        "paper_url": "https://arxiv.org/abs/2304.03279"
+      },
+      {
+        "name": "A Toy Model of Universality: Reverse Engineering How Networks Learn Group Operations",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Bilal Chughtai",
+        "paper_url": "https://arxiv.org/abs/2302.03025"
+      },
+      {
+        "name": "LoRA Fine-tuning Efficiently Undoes Safety Training in Llama 2-Chat 70B",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Simon Lermen",
+        "paper_url": "https://arxiv.org/abs/2310.20624"
+      },
+      {
+        "name": "Linear Representations of Sentiment in Large Language Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Oskar John Hollinsworth, Curt Tigges",
+        "paper_url": "https://arxiv.org/abs/2310.15154"
+      },
+      {
+        "name": "Eight Methods to Evaluate Robust Unlearning in LLMs",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Aidan Ewart, Aengus Lynch, Phillip Guo",
+        "paper_url": "https://arxiv.org/abs/2402.16835"
+      },
+      {
+        "name": "Taken out of context: On measuring situational awareness in LLMs",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Lukas Berglund, Asa Cooper Stickland, Max Kaufmann, Meg Tong",
+        "paper_url": "https://arxiv.org/abs/2309.00667"
+      },
+      {
+        "name": "Latent Adversarial Training Improves Robustness to Persistent Harmful Behaviors in LLMs",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Aidan Ewart, Aengus Lynch, Phillip Guo, Cindy Wu, Vivek Hebbar",
+        "paper_url": "https://arxiv.org/abs/2407.15549"
+      },
+      {
+        "name": "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Lorenzo Pacchiardi, Alex Chan, Ilan Moscovitz",
+        "paper_url": "https://arxiv.org/abs/2309.15840"
+      },
+      {
+        "name": "Language Models Learn to Mislead Humans via RLHF",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jiaxin Wen",
+        "paper_url": "https://arxiv.org/abs/2409.12822"
+      },
+      {
+        "name": "Copy Suppression: Comprehensively Understanding an Attention Head",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Callum McDougall, Arthur Conmy, Cody Rushing",
+        "paper_url": "https://arxiv.org/abs/2310.04625"
+      },
+      {
+        "name": "Identifying Functionally Important Features with End-to-End Sparse Dictionary Learning",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jordan Taylor",
+        "paper_url": "https://arxiv.org/abs/2405.12241"
+      },
+      {
+        "name": "Transcoders Find Interpretable LLM Feature Circuits",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jacob Dunefsky, Philippe Chlenski",
+        "paper_url": "https://arxiv.org/abs/2406.11944"
+      },
+      {
+        "name": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Javier Ferrando Monsonis, Oscar Balcells Obeso",
+        "paper_url": "https://arxiv.org/abs/2411.14257"
+      },
+      {
+        "name": "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Daniel Tan, Mart\u00edn Soto Quintanilla",
+        "paper_url": "https://arxiv.org/abs/2502.17424"
+      },
+      {
+        "name": "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Felix Hofst\u00e4tter, Teun van der Weij",
+        "paper_url": "https://arxiv.org/abs/2406.07358"
+      },
+      {
+        "name": "Open Problems in Mechanistic Interpretability",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Joseph Miller",
+        "paper_url": "https://arxiv.org/abs/2501.16496"
+      },
+      {
+        "name": "Can LLMs Follow Simple Rules?",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: David Karamardian",
+        "paper_url": "https://arxiv.org/abs/2311.04235"
+      },
+      {
+        "name": "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Iv\u00e1n Arcuschin Moreno, Kajetan (Jett) Janiak",
+        "paper_url": "https://arxiv.org/abs/2503.08679"
+      },
+      {
+        "name": "Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Adam Karvonen, Can Rager, Benjamin Wright, Samuel Marks",
+        "paper_url": "https://arxiv.org/abs/2408.00113"
+      },
+      {
+        "name": "Improving Steering Vectors by Targeting Sparse Autoencoder Features",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Matthew Siu, Sviatoslav Chalnev, Arthur Conmy",
+        "paper_url": "https://arxiv.org/abs/2411.02193"
+      },
+      {
+        "name": "Do Unlearning Methods Remove Information from Language Model Weights?",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Aghyad Deeb",
+        "paper_url": "https://arxiv.org/abs/2410.08827"
+      },
+      {
+        "name": "BadLlama: cheaply removing safety fine-tuning from Llama 2-Chat 13B",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Simon Lermen, Pranav Gade",
+        "paper_url": "https://arxiv.org/abs/2311.00117"
+      },
+      {
+        "name": "Applying sparse autoencoders to unlearn knowledge in language models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Eoin Farrell, Yeu-Tong Lau, Arthur Conmy",
+        "paper_url": "https://arxiv.org/abs/2410.19278"
+      },
+      {
+        "name": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Georg Lange, Aleksandar Makelov",
+        "paper_url": "https://arxiv.org/abs/2311.17030"
+      },
+      {
+        "name": "BatchTopK Sparse Autoencoders",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Patrick Leask, Bart Bussmann",
+        "paper_url": "https://arxiv.org/abs/2412.06410"
+      },
+      {
+        "name": "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Adam Karvonen, Can Rager, David Chanin",
+        "paper_url": "https://arxiv.org/abs/2503.09532"
+      },
+      {
+        "name": "Interpreting Attention Layer Outputs with Sparse Autoencoders",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Connor Kissane, Joseph Isaac Bloom, Robert Krzyzanowski",
+        "paper_url": "https://arxiv.org/abs/2406.17759"
+      },
+      {
+        "name": "Tell Me About Yourself: LLMs are Aware of their Learned Behaviors",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jenny Bao",
+        "paper_url": "https://arxiv.org/pdf/2501.11120"
+      },
+      {
+        "name": "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Joshua Engels",
+        "paper_url": "https://arxiv.org/pdf/2502.16681"
+      },
+      {
+        "name": "Simple Mechanistic Explanations for Out-Of-Context Reasoning",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Atticus Wang, Joshua Engels",
+        "paper_url": "https://arxiv.org/abs/2507.08218"
+      },
+      {
+        "name": "Sparse Autoencoders Do Not Find Canonical Units of Analysis",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Patrick Leask, Bart Bussmann, Michael Pearce",
+        "paper_url": "https://arxiv.org/abs/2502.04878"
+      },
+      {
+        "name": "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Marcus Williams, Constantin Weisser",
+        "paper_url": "https://arxiv.org/abs/2411.02306"
+      },
+      {
+        "name": "Understanding and Controlling a Maze-Solving Policy Network",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Ulisse Mini, Peli Grietzer",
+        "paper_url": "https://arxiv.org/abs/2310.08043"
+      },
+      {
+        "name": "SolidGoldMagikarp (plus, prompt generation)",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jessica Cooper (Rumbelow), Matthew Watkins",
+        "paper_url": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation"
+      },
+      {
+        "name": "Secret Collusion Among Generative AI Agents",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Sumeet Motwani",
+        "paper_url": "https://arxiv.org/abs/2402.07510"
+      },
+      {
+        "name": "Efficient Dictionary Learning with Switch Sparse Autoencoders",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Anish Mudide",
+        "paper_url": "https://arxiv.org/abs/2410.08201"
+      },
+      {
+        "name": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Alexander Meinke, Rudolf Laine, Bilal Chughtai, Marius Hobbhahn",
+        "paper_url": "https://arxiv.org/abs/2407.04694"
+      },
+      {
+        "name": "Explorations of Self-Repair in Language Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Cody Rushing",
+        "paper_url": "https://arxiv.org/abs/2402.15390"
+      },
+      {
+        "name": "Best-of-N Jailbreaking",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Sara Price, Aengus Lynch",
+        "paper_url": "https://arxiv.org/abs/2412.03556"
+      },
+      {
+        "name": "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jiaxin Wen, Vivek Hebbar, Caleb Larson",
+        "paper_url": "https://arxiv.org/abs/2411.17693"
+      },
+      {
+        "name": "Auditing language models for hidden objectives",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Florian Dietz, Kei Nishimura-Gasparian, Jeanne Salle, Satvik Golechha",
+        "paper_url": "https://arxiv.org/abs/2503.10965"
+      },
+      {
+        "name": "Goodhart's Law in Reinforcement Learning",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jacek Karwowski",
+        "paper_url": "https://arxiv.org/abs/2310.09144"
+      },
+      {
+        "name": "Model tampering attacks enable more rigorous evaluations of LLM capabilities",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Zora Che",
+        "paper_url": "https://arxiv.org/pdf/2502.05209"
+      },
+      {
+        "name": "When Do Universal Image Jailbreaks Transfer Between Vision-Language Models?",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Dan Valentine, James Chua, John Hughes, Rajashree Agrawal",
+        "paper_url": "https://arxiv.org/abs/2407.15211"
+      },
+      {
+        "name": "Early Signs of Steganographic Capabilities in Frontier LLMs",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Artur Zolkowski, Kei Nishimura-Gasparian, Robert McCarthy",
+        "paper_url": "https://arxiv.org/abs/2507.02737"
+      },
+      {
+        "name": "Technical Report: Evaluating Goal Drift in Language Model Agents",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Elizabeth Donoway",
+        "paper_url": "https://arxiv.org/abs/2505.02709"
+      },
+      {
+        "name": "Distributed and Decentralised Training: Technical Governance Challenges in a Shifting AI Landscape",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Yashvardhan Sharma, Jakub Kry\u015b",
+        "paper_url": "https://arxiv.org/abs/2507.07765v1"
+      },
+      {
+        "name": "A Causal Model of Theory-of-Mind in AI Agents",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Jack Foxabbott",
+        "paper_url": "https://openreview.net/forum?id=ASA2jdKtf3"
+      },
+      {
+        "name": "ViSTa Dataset: Do vision-language models understand sequential tasks?",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Ev\u017een Wybitul, Evan Ryan Gunter",
+        "paper_url": "https://arxiv.org/abs/2411.13211"
+      },
+      {
+        "name": "RL-Obfuscation: Can Language Models Learn to Evade Latent-Space Monitors?",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Rohan Gupta",
+        "paper_url": "https://www.arxiv.org/abs/2506.14261"
+      },
+      {
+        "name": "Reasoning-Finetuning Repurposes Latent Representations in Base Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Constantin Venhoff, Jake Ward",
+        "paper_url": "https://arxiv.org/abs/2507.12638"
+      },
+      {
+        "name": "Steering Out-of-Distribution Generalization with Concept Ablation Fine-Tuning",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Helena Casademunt, Caden Juang, Adam Karvonen, Samuel Marks",
+        "paper_url": "https://arxiv.org/abs/2507.16795"
+      },
+      {
+        "name": "Public Perspectives on AI Governance: A Survey of Working Adults in California, Illinois, and New York",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Claire Short",
+        "paper_url": "https://doi.org/10.5281/zenodo.16566058"
+      },
+      {
+        "name": "Towards eliciting latent knowledge from LLMs with mechanistic interpretability",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Bartosz Cywi\u0144ski, Emil Ryd",
+        "paper_url": "https://arxiv.org/abs/2505.14352"
+      },
+      {
+        "name": "Debating with More Persuasive LLMs Leads to More Truthful Answers",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Dan Valentine, John Hughes",
+        "paper_url": "https://arxiv.org/abs/2402.06782"
+      },
+      {
+        "name": "On Defining Neural Averaging",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Su Hyeong Lee",
+        "paper_url": "https://arxiv.org/abs/2508.14832"
+      },
+      {
+        "name": "Probabilistic Modeling of Latent Agentic Substructures in Deep Neural Networks",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Su Hyeong Lee",
+        "paper_url": "https://arxiv.org/abs/2509.06701"
+      },
+      {
+        "name": "Can Reasoning Models Obfuscate Reasoning? Stress-Testing Chain-of-Thought Monitorability",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Artur Zolkowski, Wen Xing",
+        "paper_url": "https://arxiv.org/abs/2510.19851"
+      },
+      {
+        "name": "Eliciting Secret Knowledge from Language Models",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Bartosz Cywi\u0144ski",
+        "paper_url": "https://arxiv.org/abs/2510.01070"
+      },
+      {
+        "name": "Verifying LLM Inference to Prevent Model Weight Exfiltration",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Roy Rinberg, Daniel Reuter, Adam Karvonen",
+        "paper_url": "https://arxiv.org/abs/2511.02620"
+      },
+      {
+        "name": "Steering Evaluation-Aware Language Models to Act Like They Are Deployed",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Tim Hua, Andrew Qin",
+        "paper_url": "https://arxiv.org/abs/2510.20487"
+      },
+      {
+        "name": "DiFR: Inference Verification Despite Nondeterminism",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Adam Karvonen, Daniel Reuter, Roy Rinberg, Luke Marks",
+        "paper_url": "https://arxiv.org/abs/2511.20621"
+      },
+      {
+        "name": "AI agents find $4.6M in blockchain smart contract exploits",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Winnie X",
+        "paper_url": "https://red.anthropic.com/2025/smart-contracts/"
+      },
+      {
+        "name": "Resisting RL Elicitation of Biosecurity Capabilities: Reasoning Models Exploration Hacking on WMDP",
+        "status": "published",
+        "description": "Research paper by MATS scholars. Authors: Joschka Braun, Damon Falck, Yeonwoo Jang",
+        "paper_url": "https://openreview.net/pdf/2645934ae38765d0fd2446ed66cb06e5f406dcbd.pdf"
+      }
+    ],
+    "notes": "357 scholars and 75 mentors supported since 2021. Produced 115 research publications with 5100+ citations (h-index 31). 80% of alumni work in AI alignment. ~10% of alumni founded AI safety organizations. Provides $14.4k stipend, $12k compute budget, housing, and travel. Notable spin-off organizations include Apollo Research, PRISM Eval, Timaeus, and many others."
+  },
+  {
+    "name": "Conjecture",
+    "url": "https://www.conjecture.dev/research",
+    "type": "Lab Safety Team",
+    "country": "United Kingdom",
+    "mission": "Conjecture is an AI alignment research startup that focuses on building Cognitive Emulation - an AI architecture that bounds systems' capabilities and makes them reason in ways humans can understand and control.",
+    "focus_areas": [
+      "Alignment",
+      "Interpretability",
+      "Control"
+    ],
+    "key_people": [
+      {
+        "name": "Connor Leahy",
+        "role": "Founder"
+      },
+      {
+        "name": "Sid Black",
+        "role": "Founder"
+      },
+      {
+        "name": "Gabriel Alfour",
+        "role": "Founder"
+      },
+      {
+        "name": "Adam Shimi",
+        "role": "Early staff/Researcher"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Cognitive Emulation (CoEm)",
+        "description": "Primary research direction to build predictably boundable AI systems rather than directly aligned AGIs",
+        "status": "Active"
+      },
+      {
+        "name": "Cognitive Software",
+        "description": "Approach to building AI systems that emulate human cognitive patterns",
+        "status": "Active"
+      },
+      {
+        "name": "unRLHF",
+        "description": "Research on efficiently undoing LLM safeguards",
+        "status": "Completed"
+      },
+      {
+        "name": "MAGIC (Multinational AGI Consortium)",
+        "description": "Proposal for international coordination on AI through a global institution permitted to develop advanced AI",
+        "status": "Unknown"
+      }
+    ],
+    "notes": "London-based startup with VC backing from notable investors including Nat Friedman, Daniel Gross, Collison brothers, Andrej Karpathy, and Sam Bankman-Fried. Team includes EleutherAI alumni and independent researchers."
+  },
+  {
+    "name": "FAR AI",
+    "url": "https://far.ai/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "FAR.AI is a research & education non-profit ensuring advanced AI is safe and beneficial for everyone.",
+    "focus_areas": [
+      "Alignment",
+      "Interpretability",
+      "Evals",
+      "Benchmarks"
+    ],
+    "key_people": [
+      {
+        "name": "Matthew Kowal",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jasper Timm",
+        "role": "Researcher"
+      },
+      {
+        "name": "Niki Howe",
+        "role": "Researcher"
+      },
+      {
+        "name": "Micha\u0142 Zaj\u0105c",
+        "role": "Researcher"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Frontier LLMs Attempt to Persuade into Harmful Topics",
+        "description": "Research on how easily frontier models can be prompted to persuade people into harmful beliefs or illegal actions",
+        "status": "Active"
+      },
+      {
+        "name": "Does Robustness Improve with Scale?",
+        "description": "Investigation of whether scaling up model size can solve robustness issues in frontier LLMs",
+        "status": "Active"
+      },
+      {
+        "name": "FAR.Labs",
+        "description": "Collaborative co-working space in Berkeley for researchers developing AI risk solutions",
+        "status": "Active"
+      }
+    ],
+    "notes": "Organization hosts alignment workshops globally, runs grantmaking programs for academics and independent researchers, and collaborates with organizations like UC Berkeley, University of Montreal, Mozilla, and government agencies."
+  },
+  {
+    "name": "Epoch AI",
+    "url": "https://epoch.ai/research",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Epoch AI is a multidisciplinary non-profit research institute investigating the future of artificial intelligence and forecasting its economic and societal impact.",
+    "focus_areas": [
+      "Evals",
+      "Benchmarks"
+    ],
+    "projects": [
+      {
+        "name": "FrontierMath",
+        "description": "A benchmark of several hundred unpublished, expert-level mathematics problems that take specialists hours to days to solve",
+        "status": "Active"
+      },
+      {
+        "name": "GATE Playground",
+        "description": "Not specified in content",
+        "status": "Active"
+      },
+      {
+        "name": "Distributed Training",
+        "description": "Not specified in content",
+        "status": "Active"
+      },
+      {
+        "name": "Model Counts",
+        "description": "Not specified in content",
+        "status": "Active"
+      }
+    ],
+    "benchmarks": [
+      {
+        "name": "FrontierMath",
+        "measures": "Expert-level mathematics problems that take specialists hours to days to solve"
+      }
+    ],
+    "notes": "Maintains the largest public database of notable ML models, conducts research on AI scaling through 2030, and provides data insights on AI trends including training compute and hardware advancements."
+  },
+  {
+    "name": "Apart Research",
+    "url": "https://apartresearch.com/",
+    "type": "Nonprofit",
+    "country": "Denmark",
+    "mission": "Apart Research accelerates AI safety research through mentorship, collaborations, and research sprints to make advanced AI safe and beneficial for humanity.",
+    "focus_areas": [
+      "Alignment",
+      "Control"
+    ],
+    "notes": "Organization focuses on building global research communities, organizing hackathons, and providing career development support for AI safety researchers. Multiple testimonials highlight their role in career transitions and community building."
+  },
+  {
+    "name": "EleutherAI",
+    "url": "https://www.eleuther.ai/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "EleutherAI trains and releases powerful open source large language models while conducting research on AI safety and interpretability.",
+    "focus_areas": [
+      "Interpretability",
+      "Alignment",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Interpreting Across Time",
+        "description": "Research on how properties of models emerge and evolve over the course of training",
+        "status": "Active"
+      },
+      {
+        "name": "Eliciting Latent Knowledge",
+        "description": "Directly eliciting latent knowledge inside model activations to verify claims when humans can't independently check",
+        "status": "Active"
+      },
+      {
+        "name": "Training LLMs",
+        "description": "Training and releasing powerful open source large language models",
+        "status": "Active"
+      },
+      {
+        "name": "Common Pile v0.1",
+        "description": "Dataset project",
+        "status": "Active"
+      },
+      {
+        "name": "EvalEval Coalition",
+        "description": "Evaluation initiative",
+        "status": "Active"
+      }
+    ],
+    "notes": "Research focus includes tamper-resistant safeguards, morphological alignment of tokenizers, and composable interventions for language models. Active in Summer of Open Science initiative."
+  },
+  {
+    "name": "Future of Life Institute",
+    "url": "https://futureoflife.org/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Steering transformative technology towards benefiting life and away from extreme large-scale risks through policy advocacy, research, and education.",
+    "focus_areas": [
+      "Alignment",
+      "Governance",
+      "Policy",
+      "Biosecurity",
+      "Cyber"
+    ],
+    "key_people": [
+      {
+        "name": "Emilia Javorsky",
+        "role": "Policy staff"
+      },
+      {
+        "name": "Max Tegmark",
+        "role": "Speaker/Representative"
+      },
+      {
+        "name": "Mark Brakel",
+        "role": "Grantmaking staff"
+      },
+      {
+        "name": "Anthony Aguirre",
+        "role": "Researcher"
+      }
+    ],
+    "projects": [
+      {
+        "name": "FLI AI Safety Index",
+        "description": "Eight AI and governance experts evaluate the safety practices of leading general-purpose AI companies",
+        "status": "Active"
+      },
+      {
+        "name": "AI Action Plan Recommendations",
+        "description": "Proposal for President Trump's AI Action Plan focusing on AI loss-of-control protection and worker protection",
+        "status": "Active"
+      },
+      {
+        "name": "AI Convergence Research",
+        "description": "Policy expertise on risks at intersection of AI and nuclear, biological and cyber threats",
+        "status": "Active"
+      },
+      {
+        "name": "Autonomous Weapons Education",
+        "description": "Educational materials about AI-powered weapons that harm national security",
+        "status": "Active"
+      },
+      {
+        "name": "Digital Media Accelerator",
+        "description": "Supports digital content creators raising AI awareness",
+        "status": "Active"
+      },
+      {
+        "name": "Control Inversion Study",
+        "description": "Research on why superintelligent AI agents would absorb power",
+        "status": "Active"
+      }
+    ],
+    "notes": "Organization works across AI, biotechnology, and nuclear weapons risks. Has 40,000+ newsletter subscribers and provides grants to individuals and organizations. Recently announced petition with 65,000+ signatures to ban superintelligence development."
+  },
+  {
+    "name": "AI Safety Camp",
+    "url": "https://aisafety.camp/",
+    "type": "Nonprofit",
+    "country": "International",
+    "mission": "AI Safety Camp (AISC) is an AI safety research program that brings together talented researchers to work on technical AI alignment projects in an intensive camp format.",
+    "focus_areas": [
+      "Alignment",
+      "Interpretability",
+      "Governance",
+      "Evals"
+    ],
+    "key_people": [
+      {
+        "name": "Dr Waku",
+        "role": "Project Lead - YouTube videos on loss-of-control risk"
+      },
+      {
+        "name": "Remmelt Ellen",
+        "role": "Project Lead - Writing about safety failures"
+      },
+      {
+        "name": "Finn",
+        "role": "Project Lead - Anti-AI coalition building"
+      },
+      {
+        "name": "Will Petillo",
+        "role": "Project Lead - Systems Dynamics Model for AI pause"
+      }
+    ],
+    "projects": [],
+    "benchmarks": [
+      {
+        "name": "Benchmark for Ranking LLM Preferences Relevant for Existential Risk",
+        "measures": "LLM preferences related to existential risk scenarios",
+        "paper_url": ""
+      }
+    ],
+    "notes": "Runs multiple camps per year. Alumni have gone on to work at leading AI safety organizations."
+  },
+  {
+    "name": "Ought / Elicit",
+    "url": "https://elicit.com/",
+    "type": "Nonprofit",
+    "country": "United States",
+    "mission": "Elicit helps researchers be 10x more evidence-based by providing AI tools for scientific research including search, analysis, and report generation.",
+    "projects": [
+      {
+        "name": "Research Search",
+        "description": "Semantic search over 138 million academic papers and 545,000 clinical trials",
+        "status": "Active"
+      },
+      {
+        "name": "Research Reports",
+        "description": "Generates high-quality research briefs based on systematic review processes",
+        "status": "Active"
+      },
+      {
+        "name": "Systematic Literature Review",
+        "description": "Automates screening and data extraction for systematic reviews with up to 80% time savings",
+        "status": "Active"
+      },
+      {
+        "name": "Elicit Alerts",
+        "description": "Tracks new research developments and sends updates to researchers",
+        "status": "Active"
+      }
+    ],
+    "notes": "Used by over 5 million researchers across pharmaceuticals, academia, medical devices, policy/government, and other industries. Claims to be the most accurate AI product for scientific research with sentence-level citations and transparency features."
+  },
+  {
+    "name": "arXiv AI Safety Papers",
+    "url": "https://arxiv.org",
+    "type": "Academic",
+    "country": "International",
+    "mission": "Recent AI safety research papers from arXiv preprint server.",
+    "focus_areas": [
+      "Alignment",
+      "Interpretability",
+      "Evals"
+    ],
+    "projects": [
+      {
+        "name": "Sycophancy Claims about Language Models: The Missing Human-in-the-Loop",
+        "status": "published",
+        "description": "Authors: Jan Batzner, Volker Stocker, Stefan Schmid...",
+        "paper_url": "https://arxiv.org/abs/2512.00656v1"
+      },
+      {
+        "name": "Solving Neural Min-Max Games: The Role of Architecture, Initialization & Dynamics",
+        "status": "published",
+        "description": "Authors: Deep Patel, Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+        "paper_url": "https://arxiv.org/abs/2512.00389v1"
+      },
+      {
+        "name": "AI Consciousness and Existential Risk",
+        "status": "published",
+        "description": "Authors: Rufin VanRullen",
+        "paper_url": "https://arxiv.org/abs/2511.19115v1"
+      },
+      {
+        "name": "Position: The Complexity of Perfect AI Alignment -- Formalizing the RLHF Trilemma",
+        "status": "published",
+        "description": "Authors: Subramanyam Sahoo, Aman Chadha, Vinija Jain...",
+        "paper_url": "https://arxiv.org/abs/2511.19504v1"
+      },
+      {
+        "name": "Exploring Syntropic Frameworks in AI Alignment: A Philosophical Investigation",
+        "status": "published",
+        "description": "Authors: Austin Spizzirri",
+        "paper_url": "https://arxiv.org/abs/2512.03048v1"
+      },
+      {
+        "name": "Selective Weak-to-Strong Generalization",
+        "status": "published",
+        "description": "Authors: Hao Lang, Fei Huang, Yongbin Li",
+        "paper_url": "https://arxiv.org/abs/2511.14166v1"
+      },
+      {
+        "name": "Maximizing the efficiency of human feedback in AI alignment: a comparative analysis",
+        "status": "published",
+        "description": "Authors: Andreas Chouliaras, Dimitris Chatzopoulos",
+        "paper_url": "https://arxiv.org/abs/2511.12796v2"
+      },
+      {
+        "name": "Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping",
+        "status": "published",
+        "description": "Authors: Dena Mujtaba, Brian Hu, Anthony Hoogs...",
+        "paper_url": "https://arxiv.org/abs/2511.11551v2"
+      },
+      {
+        "name": "Refine and Align: Confidence Calibration through Multi-Agent Interaction in VQA",
+        "status": "published",
+        "description": "Authors: Ayush Pandey, Jai Bardhan, Ishita Jain...",
+        "paper_url": "https://arxiv.org/abs/2511.11169v1"
+      },
+      {
+        "name": "Moral Change or Noise? On Problems of Aligning AI With Temporally Unstable Human Feedback",
+        "status": "published",
+        "description": "Authors: Vijay Keswani, Cyrus Cousins, Breanna Nguyen...",
+        "paper_url": "https://arxiv.org/abs/2511.10032v1"
+      },
+      {
+        "name": "The Second Law of Intelligence: Controlling Ethical Entropy in Autonomous Systems",
+        "status": "published",
+        "description": "Authors: Samih Fadli",
+        "paper_url": "https://arxiv.org/abs/2511.10704v1"
+      },
+      {
+        "name": "Cost-Minimized Label-Flipping Poisoning Attack to LLM Alignment",
+        "status": "published",
+        "description": "Authors: Shigeki Kusaka, Keita Saito, Mikoto Kudo...",
+        "paper_url": "https://arxiv.org/abs/2511.09105v1"
+      },
+      {
+        "name": "DeepPersona: A Generative Engine for Scaling Deep Synthetic Personas",
+        "status": "published",
+        "description": "Authors: Zhen Wang, Yufan Zhou, Zhongyan Luo...",
+        "paper_url": "https://arxiv.org/abs/2511.07338v3"
+      },
+      {
+        "name": "Verifying rich robustness properties for neural networks",
+        "status": "published",
+        "description": "Authors: Mohammad Afzal, S. Akshay, Ashutosh Gupta",
+        "paper_url": "https://arxiv.org/abs/2511.07293v1"
+      },
+      {
+        "name": "Towards Aligning Multimodal LLMs with Human Experts: A Focus on Parent-Child Interaction",
+        "status": "published",
+        "description": "Authors: Weiyan Shi, Kenny Tsu Wei Choo",
+        "paper_url": "https://arxiv.org/abs/2511.04366v1"
+      },
+      {
+        "name": "When Empowerment Disempowers",
+        "status": "published",
+        "description": "Authors: Claire Yang, Maya Cakmak, Max Kleiman-Weiner",
+        "paper_url": "https://arxiv.org/abs/2511.04177v1"
+      },
+      {
+        "name": "Silenced Biases: The Dark Side LLMs Learned to Refuse",
+        "status": "published",
+        "description": "Authors: Rom Himelstein, Amit LeVi, Brit Youngmann...",
+        "paper_url": "https://arxiv.org/abs/2511.03369v2"
+      },
+      {
+        "name": "Approximating the Mathematical Structure of Psychodynamics",
+        "status": "published",
+        "description": "Authors: Bryce-Allen Bagley, Navin Khoshnan",
+        "paper_url": "https://arxiv.org/abs/2511.05580v1"
+      },
+      {
+        "name": "Deep Value Benchmark: Measuring Whether Models Generalize Deep Values or Shallow Preferences",
+        "status": "published",
+        "description": "Authors: Joshua Ashkinaze, Hua Shen, Sai Avula...",
+        "paper_url": "https://arxiv.org/abs/2511.02109v2"
+      },
+      {
+        "name": "LLMs Position Themselves as More Rational Than Humans: Emergence of AI Self-Awareness Measured Through Game Theory",
+        "status": "published",
+        "description": "Authors: Kyung-Hoon Kim",
+        "paper_url": "https://arxiv.org/abs/2511.00926v3"
+      },
+      {
+        "name": "Evaluating Concept Filtering Defenses against Child Sexual Abuse Material Generation by Text-to-Image Models",
+        "status": "published",
+        "description": "Authors: Ana-Maria Cretu, Klim Kireev, Amro Abdalla...",
+        "paper_url": "https://arxiv.org/abs/2512.05707v1"
+      },
+      {
+        "name": "SEA-SafeguardBench: Evaluating AI Safety in SEA Languages and Cultures",
+        "status": "published",
+        "description": "Authors: Panuthep Tasawong, Jian Gang Ngui, Alham Fikri Aji...",
+        "paper_url": "https://arxiv.org/abs/2512.05501v1"
+      },
+      {
+        "name": "When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models",
+        "status": "published",
+        "description": "Authors: Afshin Khadangi, Hanna Marxen, Amir Sartipi...",
+        "paper_url": "https://arxiv.org/abs/2512.04124v1"
+      },
+      {
+        "name": "From monoliths to modules: Decomposing transducers for efficient world modelling",
+        "status": "published",
+        "description": "Authors: Alexander Boyd, Franz Nowak, David Hyland...",
+        "paper_url": "https://arxiv.org/abs/2512.02193v1"
+      },
+      {
+        "name": "Evaluating AI Companies' Frontier Safety Frameworks: Methodology and Results",
+        "status": "published",
+        "description": "Authors: Lily Stelling, Malcolm Murray, Simeon Campos...",
+        "paper_url": "https://arxiv.org/abs/2512.01166v1"
+      },
+      {
+        "name": "The 2nd Workshop on Human-Centered Recommender Systems",
+        "status": "published",
+        "description": "Authors: Kaike Zhang, Jiakai Tang, Du Su...",
+        "paper_url": "https://arxiv.org/abs/2511.19979v1"
+      },
+      {
+        "name": "International AI Safety Report 2025: Second Key Update: Technical Safeguards and Risk Management",
+        "status": "published",
+        "description": "Authors: Yoshua Bengio, Stephen Clare, Carina Prunkl...",
+        "paper_url": "https://arxiv.org/abs/2511.19863v1"
+      },
+      {
+        "name": "Proactive Defense: Compound AI for Detecting Persuasion Attacks and Measuring Inoculation Effectiveness",
+        "status": "published",
+        "description": "Authors: Svitlana Volkova, Will Dupree, Hsien-Te Kao...",
+        "paper_url": "https://arxiv.org/abs/2511.21749v1"
+      },
+      {
+        "name": "Monte Carlo Expected Threat (MOCET) Scoring",
+        "status": "published",
+        "description": "Authors: Joseph Kim, Saahith Potluri",
+        "paper_url": "https://arxiv.org/abs/2511.16823v1"
+      },
+      {
+        "name": "How Should the Law Treat Future AI Systems? Fictional Legal Personhood versus Legal Identity",
+        "status": "published",
+        "description": "Authors: Heather J. Alexander, Jonathan A. Simon, Fr\u00e9d\u00e9ric Pinard",
+        "paper_url": "https://arxiv.org/abs/2511.14964v1"
+      },
+      {
+        "name": "SGuard-v1: Safety Guardrail for Large Language Models",
+        "status": "published",
+        "description": "Authors: JoonHo Lee, HyeonMin Cho, Jaewoong Yun...",
+        "paper_url": "https://arxiv.org/abs/2511.12497v1"
+      },
+      {
+        "name": "Interpretable Fine-Gray Deep Survival Model for Competing Risks: Predicting Post-Discharge Foot Complications for Diabetic Patients in Ontario",
+        "status": "published",
+        "description": "Authors: Dhanesh Ramachandram, Anne Loefler, Surain Roberts...",
+        "paper_url": "https://arxiv.org/abs/2511.12409v1"
+      },
+      {
+        "name": "MoralReason: Generalizable Moral Decision Alignment For LLM Agents Using Reasoning-Level Reinforcement Learning",
+        "status": "published",
+        "description": "Authors: Zhiyu An, Wan Du",
+        "paper_url": "https://arxiv.org/abs/2511.12271v1"
+      },
+      {
+        "name": "Can AI Models be Jailbroken to Phish Elderly Victims? An End-to-End Evaluation",
+        "status": "published",
+        "description": "Authors: Fred Heiding, Simon Lermen",
+        "paper_url": "https://arxiv.org/abs/2511.11759v1"
+      },
+      {
+        "name": "Consensus Sampling for Safer Generative AI",
+        "status": "published",
+        "description": "Authors: Adam Tauman Kalai, Yael Tauman Kalai, Or Zamir",
+        "paper_url": "https://arxiv.org/abs/2511.09493v1"
+      },
+      {
+        "name": "3D Guard-Layer: An Integrated Agentic AI Safety System for Edge Artificial Intelligence",
+        "status": "published",
+        "description": "Authors: Eren Kurshan, Yuan Xie, Paul Franzon",
+        "paper_url": "https://arxiv.org/abs/2511.08842v1"
+      },
+      {
+        "name": "Investigating CoT Monitorability in Large Reasoning Models",
+        "status": "published",
+        "description": "Authors: Shu Yang, Junchao Wu, Xilin Gong...",
+        "paper_url": "https://arxiv.org/abs/2511.08525v2"
+      },
+      {
+        "name": "A Self-Improving Architecture for Dynamic Safety in Large Language Models",
+        "status": "published",
+        "description": "Authors: Tyler Slater",
+        "paper_url": "https://arxiv.org/abs/2511.07645v1"
+      },
+      {
+        "name": "EduGuardBench: A Holistic Benchmark for Evaluating the Pedagogical Fidelity and Adversarial Safety of LLMs as Simulated Teachers",
+        "status": "published",
+        "description": "Authors: Yilin Jiang, Mingzi Zhang, Xuanyu Yin...",
+        "paper_url": "https://arxiv.org/abs/2511.06890v1"
+      },
+      {
+        "name": "\"I am bad\": Interpreting Stealthy, Universal and Robust Audio Jailbreaks in Audio-Language Models",
+        "status": "published",
+        "description": "Authors: Isha Gupta, David Khachaturov, Robert Mullins",
+        "paper_url": "https://arxiv.org/abs/2502.00718v2"
+      },
+      {
+        "name": "Characterizing Out-of-Distribution Error via Optimal Transport",
+        "status": "published",
+        "description": "Authors: Yuzhe Lu, Yilong Qin, Runtian Zhai...",
+        "paper_url": "https://arxiv.org/abs/2305.15640v3"
+      },
+      {
+        "name": "SIFU: Sequential Informed Federated Unlearning for Efficient and Provable Client Unlearning in Federated Optimization",
+        "status": "published",
+        "description": "Authors: Yann Fraboni, Martin Van Waerebeke, Kevin Scaman...",
+        "paper_url": "https://arxiv.org/abs/2211.11656v5"
+      },
+      {
+        "name": "Unifying Evaluation of Machine Learning Safety Monitors",
+        "status": "published",
+        "description": "Authors: Joris Guerin, Raul Sena Ferreira, Kevin Delmas...",
+        "paper_url": "https://arxiv.org/abs/2208.14660v1"
+      },
+      {
+        "name": "Exploring the Design of Adaptation Protocols for Improved Generalization and Machine Learning Safety",
+        "status": "published",
+        "description": "Authors: Puja Trivedi, Danai Koutra, Jayaraman J. Thiagarajan",
+        "paper_url": "https://arxiv.org/abs/2207.12615v1"
+      },
+      {
+        "name": "Learn2Weight: Parameter Adaptation against Similar-domain Adversarial Attacks",
+        "status": "published",
+        "description": "Authors: Siddhartha Datta",
+        "paper_url": "https://arxiv.org/abs/2205.07315v2"
+      },
+      {
+        "name": "Taxonomy of Machine Learning Safety: A Survey and Primer",
+        "status": "published",
+        "description": "Authors: Sina Mohseni, Haotao Wang, Zhiding Yu...",
+        "paper_url": "https://arxiv.org/abs/2106.04823v2"
+      },
+      {
+        "name": "Soft Labeling Affects Out-of-Distribution Detection of Deep Neural Networks",
+        "status": "published",
+        "description": "Authors: Doyup Lee, Yeongjae Cheon",
+        "paper_url": "https://arxiv.org/abs/2007.03212v1"
+      },
+      {
+        "name": "Practical Solutions for Machine Learning Safety in Autonomous Vehicles",
+        "status": "published",
+        "description": "Authors: Sina Mohseni, Mandar Pitale, Vasu Singh...",
+        "paper_url": "https://arxiv.org/abs/1912.09630v1"
+      },
+      {
+        "name": "On the Safety of Machine Learning: Cyber-Physical Systems, Decision Sciences, and Data Products",
+        "status": "published",
+        "description": "Authors: Kush R. Varshney, Homa Alemzadeh",
+        "paper_url": "https://arxiv.org/abs/1610.01256v2"
+      },
+      {
+        "name": "When, How Long and How Much? Interpretable Neural Networks for Time Series Regression by Learning to Mask and Aggregate",
+        "status": "published",
+        "description": "Authors: Florent Forest, Amaury Wei, Olga Fink",
+        "paper_url": "https://arxiv.org/abs/2512.03578v1"
+      }
+    ]
+  }
+]
