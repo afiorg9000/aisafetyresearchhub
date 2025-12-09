@@ -7,7 +7,7 @@ import { orgs, slugify, getStats, getAllProjects, getAllBenchmarks, type Org, ty
 import { UserMenu } from "./components/user-menu";
 
 // Tab types
-type TabType = "organizations" | "publications" | "benchmarks" | "problems";
+type TabType = "organizations" | "projects" | "publications" | "benchmarks" | "problems";
 
 const ORG_TYPES = [
   { value: "all", label: "All" },
@@ -105,6 +105,41 @@ function OrgCard({ org, index }: { org: Org; index: number }) {
           >
             <ExternalLinkIcon className="w-4 h-4" />
           </a>
+        )}
+      </div>
+    </article>
+  );
+}
+
+// Project Card - for active/ongoing research
+function ProjectCard({ project, index }: { project: Project & { org: Org }; index: number }) {
+  const statusColor = project.status?.toLowerCase() === "active" 
+    ? "bg-green-50 text-green-700" 
+    : project.status?.toLowerCase() === "completed"
+    ? "bg-blue-50 text-blue-700"
+    : "bg-gray-50 text-gray-600";
+
+  return (
+    <article
+      className="py-4 border-b border-[var(--border)] last:border-0 animate-fadeIn"
+      style={{ animationDelay: `${Math.min(index, 10) * 20}ms` }}
+    >
+      <div className="flex items-start justify-between gap-4">
+        <div className="flex-1">
+          <h3 className="font-serif text-base font-medium text-[var(--foreground)] mb-1 leading-snug">
+            <Link href={`/project/${slugify(project.name)}`} className="hover:text-[var(--accent)] transition-colors no-underline">
+              {project.name}
+            </Link>
+          </h3>
+          <p className="text-sm text-[var(--muted)] mb-1">{project.org.name}</p>
+          {project.description && (
+            <p className="text-sm text-[var(--muted-light)] line-clamp-2">{project.description}</p>
+          )}
+        </div>
+        {project.status && (
+          <span className={`text-xs px-2 py-0.5 rounded whitespace-nowrap ${statusColor}`}>
+            {project.status}
+          </span>
         )}
       </div>
     </article>
@@ -219,8 +254,27 @@ export default function Home() {
     );
   }, [allBenchmarks, orgFilter]);
 
+  // Active projects (not published)
+  const activeProjects = useMemo(() => {
+    return allProjects.filter(p => {
+      const status = p.status?.toLowerCase() || "";
+      return status === "active" || status === "completed" || (status !== "published" && !p.paper_url);
+    });
+  }, [allProjects]);
+
+  // Filter active projects
+  const filteredProjects = useMemo(() => {
+    if (!orgFilter) return activeProjects;
+    return activeProjects.filter((p) =>
+      p.name.toLowerCase().includes(orgFilter.toLowerCase()) ||
+      p.description?.toLowerCase().includes(orgFilter.toLowerCase()) ||
+      p.org.name.toLowerCase().includes(orgFilter.toLowerCase())
+    );
+  }, [activeProjects, orgFilter]);
+
   const tabs = [
     { id: "organizations" as TabType, label: "Organizations", count: orgs.length },
+    { id: "projects" as TabType, label: "Projects", count: activeProjects.length },
     { id: "publications" as TabType, label: "Publications", count: publications.length },
     { id: "benchmarks" as TabType, label: "Benchmarks", count: allBenchmarks.length },
     { id: "problems" as TabType, label: "Open Problems", count: 0 },
@@ -272,7 +326,7 @@ export default function Home() {
 
           {/* Stats - Understated */}
           <p className="text-sm text-[var(--muted)]">
-            {stats.people} researchers · {stats.orgs} organizations · {stats.publications} publications · {stats.benchmarks} benchmarks
+            {stats.people} researchers · {stats.orgs} organizations · {stats.projects} projects · {stats.publications} publications
           </p>
         </div>
       </div>
@@ -359,11 +413,36 @@ export default function Home() {
               </>
             )}
 
+            {/* Projects Tab - Active/Ongoing research */}
+            {activeTab === "projects" && (
+              <>
+                <p className="text-xs text-[var(--muted)] uppercase tracking-wide mb-4">
+                  {filteredProjects.length} active & ongoing research projects
+                </p>
+                {filteredProjects.length === 0 ? (
+                  <div className="text-center py-12">
+                    <p className="text-[var(--muted)]">No projects found</p>
+                  </div>
+                ) : (
+                  <div className="paper-card rounded p-6">
+                    {filteredProjects.slice(0, 25).map((project, index) => (
+                      <ProjectCard key={`${project.org.name}-${project.name}`} project={project} index={index} />
+                    ))}
+                    {filteredProjects.length > 25 && (
+                      <p className="text-center text-sm text-[var(--muted)] pt-4">
+                        Showing 25 of {filteredProjects.length}. Use search for more specific results.
+                      </p>
+                    )}
+                  </div>
+                )}
+              </>
+            )}
+
             {/* Publications Tab */}
             {activeTab === "publications" && (
               <>
                 <p className="text-xs text-[var(--muted)] uppercase tracking-wide mb-4">
-                  {filteredPublications.length} results
+                  {filteredPublications.length} published papers
                 </p>
                 {filteredPublications.length === 0 ? (
                   <div className="text-center py-12">
@@ -438,6 +517,10 @@ export default function Home() {
                 <div className="flex justify-between">
                   <span className="text-[var(--muted)]">Organizations</span>
                   <span className="font-medium text-[var(--foreground)]">{stats.orgs}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[var(--muted)]">Projects</span>
+                  <span className="font-medium text-[var(--foreground)]">{stats.projects}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[var(--muted)]">Publications</span>
