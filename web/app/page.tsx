@@ -236,7 +236,6 @@ export default function Home() {
               AI Safety Research Hub
             </h1>
             <nav className="hidden md:flex items-center gap-6 text-sm">
-              <Link href="/about" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">About</Link>
               <Link href="/submit" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Submit</Link>
             </nav>
           </div>
