@@ -478,6 +478,88 @@
         "measures": "Computer use and agent capabilities",
         "status": "Active"
       }
+    ],
+    "key_people": [
+      {
+        "name": "Jan Leike",
+        "role": "Researcher"
+      },
+      {
+        "name": "Joshua Batson",
+        "role": "Researcher"
+      },
+      {
+        "name": "Beth Barnes",
+        "role": "Researcher"
+      },
+      {
+        "name": "Bilal Chughtai",
+        "role": "Researcher"
+      },
+      {
+        "name": "Catherine Olsson",
+        "role": "Researcher"
+      },
+      {
+        "name": "Daniel Ziegler",
+        "role": "Researcher"
+      },
+      {
+        "name": "Erik Jones",
+        "role": "Researcher"
+      },
+      {
+        "name": "Ethan Perez",
+        "role": "Researcher"
+      },
+      {
+        "name": "Evan Hubinger",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jack Clark",
+        "role": "Co-founder"
+      },
+      {
+        "name": "James Lucassen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Julia Haas",
+        "role": "Researcher"
+      },
+      {
+        "name": "Karina Nguyen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lee Sharkey",
+        "role": "Researcher"
+      },
+      {
+        "name": "Lukas Berglund",
+        "role": "Researcher"
+      },
+      {
+        "name": "Nicholas Schiefer",
+        "role": "Researcher"
+      },
+      {
+        "name": "Peter Barnett",
+        "role": "Researcher"
+      },
+      {
+        "name": "Sam McCulloch",
+        "role": "Researcher"
+      },
+      {
+        "name": "Samuel Marks",
+        "role": "Researcher"
+      },
+      {
+        "name": "Xander Davies",
+        "role": "Researcher"
+      }
     ]
   },
   {
@@ -627,6 +709,34 @@
       {
         "name": "Josh Achiam",
         "role": "Researcher at OpenAI"
+      },
+      {
+        "name": "Collin Burns",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jacob Hilton",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jason Wei",
+        "role": "Researcher"
+      },
+      {
+        "name": "Leo Gao",
+        "role": "Researcher"
+      },
+      {
+        "name": "Miles Brundage",
+        "role": "Researcher"
+      },
+      {
+        "name": "Richard Ngo",
+        "role": "Researcher"
+      },
+      {
+        "name": "William Saunders",
+        "role": "Researcher"
       }
     ]
   },
@@ -866,7 +976,17 @@
     ],
     "notes": "Pioneered the research area of 'AI control' and collaborates with governments and major AI companies including Google DeepMind and Anthropic on assessing misalignment risks. Their alignment faking work with Anthropic provided the strongest concrete evidence that LLMs might naturally fake alignment.",
     "employees": 11,
-    "directors": 2
+    "directors": 2,
+    "key_people": [
+      {
+        "name": "Lawrence Chan",
+        "role": "Researcher"
+      },
+      {
+        "name": "Ryan Greenblatt",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "ARC (Alignment Research Center)",
@@ -953,7 +1073,17 @@
     "notes": "The Evaluations team was incubated at ARC and has now spun off as METR, a new 501(c)(3)",
     "employees": 7,
     "directors": 1,
-    "subteams": 1
+    "subteams": 1,
+    "key_people": [
+      {
+        "name": "Jess Riedel",
+        "role": "Researcher"
+      },
+      {
+        "name": "Paul Christiano",
+        "role": "Founder"
+      }
+    ]
   },
   {
     "name": "Apollo Research",
@@ -1116,6 +1246,24 @@
         "name": "Scheming Reasoning Evaluations",
         "measures": "Reasoning patterns associated with scheming behavior",
         "status": "Active"
+      }
+    ],
+    "key_people": [
+      {
+        "name": "Cass",
+        "role": "Researcher"
+      },
+      {
+        "name": "Kyle Fish",
+        "role": "Researcher"
+      },
+      {
+        "name": "Marius Hobbhahn",
+        "role": "Director"
+      },
+      {
+        "name": "Max Nadeau",
+        "role": "Researcher"
       }
     ]
   },
@@ -1788,6 +1936,10 @@
       {
         "name": "Allan Dafoe",
         "role": "Researcher - AI governance strategy"
+      },
+      {
+        "name": "Thomas Woodside",
+        "role": "Researcher"
       }
     ]
   },
@@ -2148,6 +2300,34 @@
       {
         "name": "Irina Jurenka",
         "role": "AI in education researcher"
+      },
+      {
+        "name": "Alex Turner",
+        "role": null
+      },
+      {
+        "name": "Jonathan Uesato",
+        "role": "Researcher"
+      },
+      {
+        "name": "Neel Nanda",
+        "role": "Researcher"
+      },
+      {
+        "name": "Nitarshan Rajkumar",
+        "role": "Researcher"
+      },
+      {
+        "name": "Rohin Shah",
+        "role": "Researcher"
+      },
+      {
+        "name": "Vikrant Varma",
+        "role": "Researcher"
+      },
+      {
+        "name": "Zac Kenton",
+        "role": "Researcher"
       }
     ],
     "projects": [
@@ -3463,6 +3643,10 @@
       {
         "name": "Micha\u0142 Zaj\u0105c",
         "role": "Researcher"
+      },
+      {
+        "name": "Adri\u00e0 Garriga Alonso",
+        "role": null
       }
     ],
     "projects": [
@@ -9822,7 +10006,12 @@
       }
     ],
     "benchmarks": [],
-    "key_people": []
+    "key_people": [
+      {
+        "name": "Anna Googol",
+        "role": "Researcher"
+      }
+    ]
   },
   {
     "name": "FAR.AI",
@@ -9937,7 +10126,24 @@
     ],
     "projects": [],
     "benchmarks": [],
-    "key_people": []
+    "key_people": [
+      {
+        "name": "Dylan Hadfield-Menell",
+        "role": "Assistant Professor"
+      },
+      {
+        "name": "Andres Campero",
+        "role": "Researcher"
+      },
+      {
+        "name": "Anish Athalye",
+        "role": "Researcher"
+      },
+      {
+        "name": "Stephen Casper",
+        "role": "PhD Student"
+      }
+    ]
   },
   {
     "name": "NYU Alignment Research Group",
@@ -10670,5 +10876,579 @@
     "projects": [],
     "benchmarks": [],
     "key_people": []
+  },
+  {
+    "name": "University of Oxford",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Alessandro Abate",
+        "role": "Professor"
+      },
+      {
+        "name": "Fazl Barez",
+        "role": "Researcher"
+      },
+      {
+        "name": "Michael Cohen",
+        "role": "Researcher"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Johns Hopkins University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Anqi Liu",
+        "role": "Assistant Professor"
+      },
+      {
+        "name": "Andrea Wynn",
+        "role": "PhD Student"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Western University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Aysajan Eziz",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Cornell University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Bart Selman",
+        "role": "Professor"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Texas at Austin",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Brad Knox",
+        "role": "Research Associate Professor"
+      },
+      {
+        "name": "Scott Aaronson",
+        "role": "Professor"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Stanford University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Clark Barrett",
+        "role": "Professor (Research)"
+      },
+      {
+        "name": "Percy Liang",
+        "role": "Professor"
+      },
+      {
+        "name": "Gabe Mukobi",
+        "role": "Researcher"
+      },
+      {
+        "name": "Gabriel Mukobi",
+        "role": "Researcher"
+      },
+      {
+        "name": "Jesse Mu",
+        "role": "Researcher"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Cambridge",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "David Krueger",
+        "role": "Assistant Professor"
+      },
+      {
+        "name": "Alex Chan",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Massachusetts Institute of Technology",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Dylan Hadfield-Menell",
+        "role": "Assistant Professor"
+      },
+      {
+        "name": "Can AI agents learn to be good?",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Princeton University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Elad Hazan",
+        "role": "Professor"
+      },
+      {
+        "name": "Benjamin Eysenbach",
+        "role": "Researcher"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Pavia",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Federico Faroldi",
+        "role": "Professor of Ethics Law and AI"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Carnegie Mellon University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Aashiq Muhamed",
+        "role": "PhD student"
+      },
+      {
+        "name": "Zachary Lipton",
+        "role": "Assistant Professor"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Hong Kong",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Abeer Sharma",
+        "role": null
+      },
+      {
+        "name": "Simon Goldstein",
+        "role": "Researcher"
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Connecticut",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Aidan Kierans",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Bath",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Aishwarya Gurung",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "National Institute of Technology Karnataka",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Allan Suresh",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Waterloo",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety Research"
+    ],
+    "key_people": [
+      {
+        "name": "Amir-Hossein Karimi",
+        "role": null
+      }
+    ],
+    "mission": "Academic institution with researchers in AI safety",
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "UC Berkeley",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Anca Dragan",
+        "role": "Associate Professor"
+      },
+      {
+        "name": "Jacob Steinhardt",
+        "role": "Assistant Professor"
+      },
+      {
+        "name": "Shiry Ginosar",
+        "role": "Assistant Professor"
+      },
+      {
+        "name": "Stuart Russell",
+        "role": "Professor"
+      },
+      {
+        "name": "Arjun Panickssery",
+        "role": "Researcher"
+      },
+      {
+        "name": "Helena Vasconcelos",
+        "role": "Researcher"
+      },
+      {
+        "name": "Michael Chen",
+        "role": "Researcher"
+      },
+      {
+        "name": "Scott Emmons",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "NJIT",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Arnob Ghosh",
+        "role": "Assistant Professor"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Harvard University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Finale Doshi-Velez",
+        "role": "Professor"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "University of Toronto",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Roger Grosse",
+        "role": "Professor"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "New York University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Sam Bowman",
+        "role": "Professor"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Mila",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Yoshua Bengio",
+        "role": "Professor"
+      },
+      {
+        "name": "Alan Chan",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "NIT Karnataka",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Allan Suresh",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "OpenMined",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Andrew Trask",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Allen Institute for AI",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Ashwin Kalyan",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Open Philanthropy",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Daniel Dewey",
+        "role": "Researcher"
+      },
+      {
+        "name": "Holden Karnofsky",
+        "role": "Co-CEO"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Independent",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Daniel Kokotajlo",
+        "role": "Researcher"
+      },
+      {
+        "name": "John Wentworth",
+        "role": "Researcher"
+      },
+      {
+        "name": "Robert Miles",
+        "role": "AI Safety Educator"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Northeastern University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "David Bau",
+        "role": "Assistant Professor"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Sentience Institute",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Jacy Reese Anthis",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Imbue",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Josh Albrecht",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Brown University",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Michael Littman",
+        "role": "Professor"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "LessWrong",
+    "type": "Research",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Oliver Habryka",
+        "role": "Founder"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
+  },
+  {
+    "name": "Future of Humanity Institute",
+    "type": "Academic",
+    "focus_areas": [
+      "AI Safety"
+    ],
+    "key_people": [
+      {
+        "name": "Owen Cotton-Barratt",
+        "role": "Researcher"
+      }
+    ],
+    "source": "FLI AI Existential Safety Community"
   }
 ]
