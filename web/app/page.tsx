@@ -403,10 +403,6 @@ export default function Home() {
               Knowledge Base for AI Safety Research
             </h1>
             <nav className="hidden md:flex items-center gap-6 text-sm">
-              <Link href="/topics/all" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Topics</Link>
-              <Link href="/reading" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Reading</Link>
-              <Link href="/itn" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">ITN Calculator</Link>
-              <Link href="/match" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Matcher</Link>
               <Link href="/submit" className="text-[var(--muted)] hover:text-[var(--foreground)] no-underline">Submit</Link>
             </nav>
           </div>
@@ -773,37 +769,6 @@ export default function Home() {
                     {type}
                   </button>
                 ))}
-              </div>
-            </div>
-
-            {/* AI Tools */}
-            <div>
-              <h3 className="text-xs text-[var(--muted)] uppercase tracking-wide mb-3">AI Tools</h3>
-              <div className="space-y-2">
-                <Link
-                  href="/search"
-                  className="block text-sm text-[var(--accent)] hover:underline"
-                >
-                  AI Search →
-                </Link>
-                <Link
-                  href="/match"
-                  className="block text-sm text-[var(--accent)] hover:underline"
-                >
-                  Research Idea Matcher →
-                </Link>
-                <Link
-                  href="/reading"
-                  className="block text-sm text-[var(--accent)] hover:underline"
-                >
-                  What Should I Read? →
-                </Link>
-                <Link
-                  href="/itn"
-                  className="block text-sm text-[var(--accent)] hover:underline"
-                >
-                  ITN Calculator →
-                </Link>
               </div>
             </div>
 
