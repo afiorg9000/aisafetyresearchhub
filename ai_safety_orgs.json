@@ -3535,6 +3535,414 @@
         "status": "published",
         "description": "Research paper by MATS scholars. Authors: Joschka Braun, Damon Falck, Yeonwoo Jang",
         "paper_url": "https://openreview.net/pdf/2645934ae38765d0fd2446ed66cb06e5f406dcbd.pdf"
+      },
+      {
+        "name": "Learning Multi-Level Features with Matryoshka Sparse Autoencoders",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2503.17547",
+        "citation_count": 43,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Thought Anchors: Which LLM Reasoning Steps Matter?",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.19143",
+        "citation_count": 39,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Understanding Reasoning in Thinking Language Models via Steering Vectors",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.18167",
+        "citation_count": 38,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Agentic Misalignment: How LLMs Could Be Insider Threats",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.05179",
+        "citation_count": 31,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2407.15211",
+        "citation_count": 20,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Large Language Models Often Know When They Are Being Evaluated",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2505.23836",
+        "citation_count": 20,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Model Organisms for Emergent Misalignment",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.11613",
+        "citation_count": 17,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Gradient Routing: Masking Gradients to Localize Computation in Neural Networks",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2410.04332",
+        "citation_count": 14,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Future Events as Backdoor Triggers: Investigating Temporal Vulnerabilities in LLMs",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2407.04108",
+        "citation_count": 12,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Rapid Response: Mitigating LLM Jailbreaks with a Few Examples",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2411.07494",
+        "citation_count": 11,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Convergent Linear Representations of Emergent Misalignment",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.11618",
+        "citation_count": 11,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Tell, don't show: Declarative facts influence how LLMs generalize",
+        "description": "MATS research paper (2023)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2312.07779",
+        "citation_count": 9,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against Llm Jailbreaks and Prompt Injections",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.09023",
+        "citation_count": 9,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2411.18895",
+        "citation_count": 8,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Large language models can learn and generalize steganographic chain-of-thought under process supervision",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.01926",
+        "citation_count": 8,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Adaptive Sparse Allocation with Mutual Choice & Feature Choice Sparse Autoencoders",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2411.02124",
+        "citation_count": 7,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Planning in a recurrent neural network that plays Sokoban",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2407.15421",
+        "citation_count": 7,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.22777",
+        "citation_count": 7,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Training Dynamics of Contextual N-Grams in Language Models",
+        "description": "MATS research paper (2023)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2311.00863",
+        "citation_count": 6,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Will AI Tell Lies to Save Sick Children? Litmus-Testing AI Values Prioritization with AIRiskDilemmas",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2505.14633",
+        "citation_count": 6,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Among Us: A Sandbox for Measuring and Detecting Agentic Deception",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2504.04072",
+        "citation_count": 6,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Constrained belief updates explain geometric structures in transformer representations",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2502.01954",
+        "citation_count": 5,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Distillation Robustifies Unlearning",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.06278",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Analyzing Probabilistic Methods for Evaluating Agent Capabilities",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2409.16125",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Audit Cards: Contextualizing AI Evaluations",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2504.13839",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Feature Hedging: Correlated Features Break Narrow Sparse Autoencoders",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2505.11756",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2504.02922",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "The Partially Observable Off-Switch Game",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2411.17749",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Why Do Some Language Models Fake Alignment While Others Don't?",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.18032",
+        "citation_count": 4,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Catastrophic Goodhart: regularizing RLHF with KL divergence does not mitigate heavy-tailed reward misspecification",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2407.14503",
+        "citation_count": 3,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Time complexity for deterministic string machines",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2405.06043",
+        "citation_count": 3,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Inoculation Prompting: Instructing LLMs to misbehave at train-time improves test-time alignment",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.05024",
+        "citation_count": 3,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Scaling sparse feature circuit finding for in-context learning",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2504.13756",
+        "citation_count": 3,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Control Tax: The Price of Keeping AI in Check",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2506.05296",
+        "citation_count": 3,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Base Models Know How to Reason, Thinking Models Learn When",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.07364",
+        "citation_count": 2,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Towards Safeguarding LLM Fine-tuning APIs against Cipher Attacks",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2508.17158",
+        "citation_count": 2,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Identifying Sparsely Active Circuits Through Local Loss Landscape Decomposition",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2504.00194",
+        "citation_count": 2,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Believe It or Not: How Deeply do LLMs Believe Implanted Facts?",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.17941",
+        "citation_count": 1,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "MISR: Measuring Instrumental Self-Reasoning in Frontier Models",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2412.03904",
+        "citation_count": 1,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Adversarial Circuit Evaluation",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2407.15166",
+        "citation_count": 1,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Inference-Time Decomposition of Activations (ITDA): A Scalable Approach to Interpreting Large Language Models",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2505.17769",
+        "citation_count": 1,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Mapping Industry Practices to the EU AI Act's GPAI Code of Practice Safety and Security Measures",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2504.15181",
+        "citation_count": 1,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Optimizing AI Agent Attacks With Synthetic Data",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2511.02823",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Rank-1 LoRAs Encode Interpretable Reasoning Signals",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2511.06739",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Thought Branches: Interpreting LLM Reasoning Requires Resampling",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.27484",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Too Late to Recall: The Two-Hop Problem in Multimodal Knowledge Retrieval",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://www.arxiv.org/abs/2512.03276",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Higher-Order Belief in Incomplete Information MAIDs",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2503.06323",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2510.13900",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Sparse but Wrong: Incorrect L0 Leads to Incorrect Features in Sparse Autoencoders",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2508.16560",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Towards a unified and verified understanding of group-operation networks",
+        "description": "MATS research paper (2024)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/pdf/2410.07476",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
+      },
+      {
+        "name": "Weird Generalization and Inductive Backdoors: New Ways to Corrupt LLMs",
+        "description": "MATS research paper (2025)",
+        "status": "Published",
+        "paper_url": "https://arxiv.org/abs/2512.09742",
+        "citation_count": 0,
+        "source": "MATS Citations Database"
       }
     ],
     "notes": "357 scholars and 75 mentors supported since 2021. Produced 115 research publications with 5100+ citations (h-index 31). 80% of alumni work in AI alignment. ~10% of alumni founded AI safety organizations. Provides $14.4k stipend, $12k compute budget, housing, and travel. Notable spin-off organizations include Apollo Research, PRISM Eval, Timaeus, and many others.",

@@ -1,0 +1,308 @@
+[
+  {
+    "title": "Learning Multi-Level Features with Matryoshka Sparse Autoencoders",
+    "url": "https://arxiv.org/abs/2503.17547",
+    "citations": 43,
+    "year": "2025"
+  },
+  {
+    "title": "Thought Anchors: Which LLM Reasoning Steps Matter?",
+    "url": "https://arxiv.org/abs/2506.19143",
+    "citations": 39,
+    "year": "2025"
+  },
+  {
+    "title": "Understanding Reasoning in Thinking Language Models via Steering Vectors",
+    "url": "https://arxiv.org/abs/2506.18167",
+    "citations": 38,
+    "year": "2025"
+  },
+  {
+    "title": "Agentic Misalignment: How LLMs Could Be Insider Threats",
+    "url": "https://arxiv.org/abs/2510.05179",
+    "citations": 31,
+    "year": "2025"
+  },
+  {
+    "title": "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+    "url": "https://arxiv.org/abs/2407.15211",
+    "citations": 20,
+    "year": "2024"
+  },
+  {
+    "title": "Large Language Models Often Know When They Are Being Evaluated",
+    "url": "https://arxiv.org/abs/2505.23836",
+    "citations": 20,
+    "year": "2025"
+  },
+  {
+    "title": "Model Organisms for Emergent Misalignment",
+    "url": "https://arxiv.org/abs/2506.11613",
+    "citations": 17,
+    "year": "2025"
+  },
+  {
+    "title": "Gradient Routing: Masking Gradients to Localize Computation in Neural Networks",
+    "url": "https://arxiv.org/abs/2410.04332",
+    "citations": 14,
+    "year": "2024"
+  },
+  {
+    "title": "Future Events as Backdoor Triggers: Investigating Temporal Vulnerabilities in LLMs",
+    "url": "https://arxiv.org/abs/2407.04108",
+    "citations": 12,
+    "year": "2024"
+  },
+  {
+    "title": "Rapid Response: Mitigating LLM Jailbreaks with a Few Examples",
+    "url": "https://arxiv.org/abs/2411.07494",
+    "citations": 11,
+    "year": "2024"
+  },
+  {
+    "title": "Convergent Linear Representations of Emergent Misalignment",
+    "url": "https://arxiv.org/abs/2506.11618",
+    "citations": 11,
+    "year": "2025"
+  },
+  {
+    "title": "Tell, don't show: Declarative facts influence how LLMs generalize",
+    "url": "https://arxiv.org/abs/2312.07779",
+    "citations": 9,
+    "year": "2023"
+  },
+  {
+    "title": "The Attacker Moves Second: Stronger Adaptive Attacks Bypass Defenses Against Llm Jailbreaks and Prompt Injections",
+    "url": "https://arxiv.org/abs/2510.09023",
+    "citations": 9,
+    "year": "2025"
+  },
+  {
+    "title": "Evaluating Sparse Autoencoders on Targeted Concept Erasure Tasks",
+    "url": "https://arxiv.org/abs/2411.18895",
+    "citations": 8,
+    "year": "2024"
+  },
+  {
+    "title": "Large language models can learn and generalize steganographic chain-of-thought under process supervision",
+    "url": "https://arxiv.org/abs/2506.01926",
+    "citations": 8,
+    "year": "2025"
+  },
+  {
+    "title": "Adaptive Sparse Allocation with Mutual Choice & Feature Choice Sparse Autoencoders",
+    "url": "https://arxiv.org/abs/2411.02124",
+    "citations": 7,
+    "year": "2024"
+  },
+  {
+    "title": "Planning in a recurrent neural network that plays Sokoban",
+    "url": "https://arxiv.org/abs/2407.15421",
+    "citations": 7,
+    "year": "2024"
+  },
+  {
+    "title": "Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning",
+    "url": "https://arxiv.org/abs/2506.22777",
+    "citations": 7,
+    "year": "2025"
+  },
+  {
+    "title": "Training Dynamics of Contextual N-Grams in Language Models",
+    "url": "https://arxiv.org/abs/2311.00863",
+    "citations": 6,
+    "year": "2023"
+  },
+  {
+    "title": "Will AI Tell Lies to Save Sick Children? Litmus-Testing AI Values Prioritization with AIRiskDilemmas",
+    "url": "https://arxiv.org/abs/2505.14633",
+    "citations": 6,
+    "year": "2025"
+  },
+  {
+    "title": "Among Us: A Sandbox for Measuring and Detecting Agentic Deception",
+    "url": "https://arxiv.org/abs/2504.04072",
+    "citations": 6,
+    "year": "2025"
+  },
+  {
+    "title": "Constrained belief updates explain geometric structures in transformer representations",
+    "url": "https://arxiv.org/abs/2502.01954",
+    "citations": 5,
+    "year": "2025"
+  },
+  {
+    "title": "Distillation Robustifies Unlearning",
+    "url": "https://arxiv.org/abs/2506.06278",
+    "citations": 4,
+    "year": "2025"
+  },
+  {
+    "title": "Analyzing Probabilistic Methods for Evaluating Agent Capabilities",
+    "url": "https://arxiv.org/abs/2409.16125",
+    "citations": 4,
+    "year": "2024"
+  },
+  {
+    "title": "Audit Cards: Contextualizing AI Evaluations",
+    "url": "https://arxiv.org/abs/2504.13839",
+    "citations": 4,
+    "year": "2025"
+  },
+  {
+    "title": "Feature Hedging: Correlated Features Break Narrow Sparse Autoencoders",
+    "url": "https://arxiv.org/abs/2505.11756",
+    "citations": 4,
+    "year": "2025"
+  },
+  {
+    "title": "Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning",
+    "url": "https://arxiv.org/abs/2504.02922",
+    "citations": 4,
+    "year": "2025"
+  },
+  {
+    "title": "The Partially Observable Off-Switch Game",
+    "url": "https://arxiv.org/abs/2411.17749",
+    "citations": 4,
+    "year": "2025"
+  },
+  {
+    "title": "Why Do Some Language Models Fake Alignment While Others Don't?",
+    "url": "https://arxiv.org/abs/2506.18032",
+    "citations": 4,
+    "year": "2025"
+  },
+  {
+    "title": "Catastrophic Goodhart: regularizing RLHF with KL divergence does not mitigate heavy-tailed reward misspecification",
+    "url": "https://arxiv.org/abs/2407.14503",
+    "citations": 3,
+    "year": "2024"
+  },
+  {
+    "title": "Time complexity for deterministic string machines",
+    "url": "https://arxiv.org/abs/2405.06043",
+    "citations": 3,
+    "year": "2024"
+  },
+  {
+    "title": "Inoculation Prompting: Instructing LLMs to misbehave at train-time improves test-time alignment",
+    "url": "https://arxiv.org/abs/2510.05024",
+    "citations": 3,
+    "year": "2025"
+  },
+  {
+    "title": "Scaling sparse feature circuit finding for in-context learning",
+    "url": "https://arxiv.org/abs/2504.13756",
+    "citations": 3,
+    "year": "2025"
+  },
+  {
+    "title": "Control Tax: The Price of Keeping AI in Check",
+    "url": "https://arxiv.org/abs/2506.05296",
+    "citations": 3,
+    "year": "2025"
+  },
+  {
+    "title": "Base Models Know How to Reason, Thinking Models Learn When",
+    "url": "https://arxiv.org/abs/2510.07364",
+    "citations": 2,
+    "year": "2025"
+  },
+  {
+    "title": "Towards Safeguarding LLM Fine-tuning APIs against Cipher Attacks",
+    "url": "https://arxiv.org/abs/2508.17158",
+    "citations": 2,
+    "year": "2025"
+  },
+  {
+    "title": "Identifying Sparsely Active Circuits Through Local Loss Landscape Decomposition",
+    "url": "https://arxiv.org/abs/2504.00194",
+    "citations": 2,
+    "year": "2025"
+  },
+  {
+    "title": "Believe It or Not: How Deeply do LLMs Believe Implanted Facts?",
+    "url": "https://arxiv.org/abs/2510.17941",
+    "citations": 1,
+    "year": "2025"
+  },
+  {
+    "title": "MISR: Measuring Instrumental Self-Reasoning in Frontier Models",
+    "url": "https://arxiv.org/abs/2412.03904",
+    "citations": 1,
+    "year": "2024"
+  },
+  {
+    "title": "Adversarial Circuit Evaluation",
+    "url": "https://arxiv.org/abs/2407.15166",
+    "citations": 1,
+    "year": "2024"
+  },
+  {
+    "title": "Inference-Time Decomposition of Activations (ITDA): A Scalable Approach to Interpreting Large Language Models",
+    "url": "https://arxiv.org/abs/2505.17769",
+    "citations": 1,
+    "year": "2025"
+  },
+  {
+    "title": "Mapping Industry Practices to the EU AI Act's GPAI Code of Practice Safety and Security Measures",
+    "url": "https://arxiv.org/abs/2504.15181",
+    "citations": 1,
+    "year": "2025"
+  },
+  {
+    "title": "Optimizing AI Agent Attacks With Synthetic Data",
+    "url": "https://arxiv.org/abs/2511.02823",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Rank-1 LoRAs Encode Interpretable Reasoning Signals",
+    "url": "https://arxiv.org/abs/2511.06739",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Thought Branches: Interpreting LLM Reasoning Requires Resampling",
+    "url": "https://arxiv.org/abs/2510.27484",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Too Late to Recall: The Two-Hop Problem in Multimodal Knowledge Retrieval",
+    "url": "https://www.arxiv.org/abs/2512.03276",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Higher-Order Belief in Incomplete Information MAIDs",
+    "url": "https://arxiv.org/abs/2503.06323",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences",
+    "url": "https://arxiv.org/abs/2510.13900",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Sparse but Wrong: Incorrect L0 Leads to Incorrect Features in Sparse Autoencoders",
+    "url": "https://arxiv.org/abs/2508.16560",
+    "citations": 0,
+    "year": "2025"
+  },
+  {
+    "title": "Towards a unified and verified understanding of group-operation networks",
+    "url": "https://arxiv.org/pdf/2410.07476",
+    "citations": 0,
+    "year": "2024"
+  },
+  {
+    "title": "Weird Generalization and Inductive Backdoors: New Ways to Corrupt LLMs",
+    "url": "https://arxiv.org/abs/2512.09742",
+    "citations": 0,
+    "year": "2025"
+  }
+]
